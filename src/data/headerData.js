@@ -22,7 +22,7 @@ export default {
         },
         {
             name: 'Loslegen',
-            url: '/',
+            url: '/contact',
             isButton: true,
         },
     ]

@@ -64,15 +64,15 @@ export default {
         items: [
             {
                 name: 'Angebot',
-                url: '/'
+                url: '/angebot'
             },
             {
                 name: 'Über uns',
-                url: '/'
+                url: '/agentur'
             },
             {
                 name: 'Kontakt',
-                url: '/'
+                url: '/contact'
             },
         ],
     },
