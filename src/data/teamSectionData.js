@@ -1,4 +1,4 @@
-import SandroImage from '../assets/images/team/sandro-huber.jpg';
+import SandroImage from '../assets/images/team/sandrohuber.jpg';
 import AndreImage from '../assets/images/team/andre-zuber.jpg';
 import DominicImage from '../assets/images/team/dominik-rutz.jpg';
 import MichaelImage from '../assets/images/team/michael-allwin.jpg';
