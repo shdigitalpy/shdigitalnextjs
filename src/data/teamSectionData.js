@@ -7,6 +7,10 @@ import instagramIcon from '../assets/icons/instagram.svg';
 import linkedInIcon from '../assets/icons/linkedin.svg';
 import twitterIcon from '../assets/icons/twitter.svg';
 
+
+
+
+
 export default [
     {
         name: 'Sandro Huber',
