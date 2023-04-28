@@ -1,0 +1,32 @@
+.about-us {
+  .banner-heading-lg {
+
+  }
+
+  .bg-gradient {
+    background: linear-gradient(90deg, rgba(24, 46, 70, 0.7) 35.19%, rgba(24, 46, 70, 0.42) 66.75%, rgba(24, 46, 70, 0.7) 84.96%);
+  }
+
+  .sub-heading {
+    font-size: pxToRem(16);
+    line-height: pxToRem(25);
+    letter-spacing: -0.01em;
+    margin-top: pxToRem(24);
+  }
+}
+
+
+@media (max-width: $md-breakpoint) {
+  .about-us {
+    .banner-heading-lg {
+
+    }
+
+    .sub-heading {
+      font-size: pxToRem(48);
+      line-height: pxToRem(70) !important;
+      letter-spacing: -0.01em;
+      margin-top: pxToRem(44);
+    }
+  }
+}

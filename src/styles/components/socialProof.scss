@@ -1,0 +1,172 @@
+.social-proof {
+  padding-top: pxToRem(84);
+  padding-bottom: pxToRem(80);
+
+  .title {
+    margin-bottom: pxToRem(36);
+  }
+
+  .content-wrapper {
+
+    .cards-wrapper {
+      gap: pxToRem(24);
+
+      .card-col-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(24);
+
+        .card-wrapper {
+          line-height: pxToRem(100);
+          padding: pxToRem(36) pxToRem(32);
+
+          .user-details-wrapper {
+            gap: pxToRem(14);
+            align-items: center;
+            margin-bottom: pxToRem(32);
+
+            .user-image {
+              width: pxToRem(48);
+              height: pxToRem(48);
+            }
+
+            .name {
+              font-size: pxToRem(16);
+              line-height: pxToRem(16);
+              margin-bottom: pxToRem(6);
+            }
+
+            .username {
+              color: #5E646D;
+              line-height: pxToRem(14);
+              letter-spacing: -0.03em;
+            }
+
+            .social-icon-link {
+              margin-left: auto;
+
+              .social-icon {
+                width: pxToRem(28);
+                height: pxToRem(28);
+              }
+            }
+          }
+
+          .tweet-content {
+            color: #5E646D;
+            font-size: pxToRem(16);
+            line-height: pxToRem(27);
+            letter-spacing: -0.03em;
+            margin-bottom: pxToRem(40);
+          }
+
+          .date-time-wrapper {
+            display: flex;
+            gap: pxToRem(8);
+            align-items: center;
+
+            .like-icon {
+              width: pxToRem(16);
+              height: pxToRem(16);
+            }
+
+            .date-time {
+              color: #5E646D;
+              font-size: pxToRem(16);
+              line-height: pxToRem(16);
+              letter-spacing: -0.03em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: $md-breakpoint) {
+  .social-proof {
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(160);
+
+    .title {
+      margin-bottom: pxToRem(72);
+    }
+
+    .content-wrapper {
+
+      .cards-wrapper {
+        gap: pxToRem(58);
+
+        .card-col-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: pxToRem(58);
+
+          .card-wrapper {
+            line-height: pxToRem(100);
+            padding: pxToRem(72) pxToRem(64);
+
+            .user-details-wrapper {
+              gap: pxToRem(40);
+              align-items: center;
+              margin-bottom: pxToRem(64);
+
+              .user-image {
+                width: pxToRem(160);
+                height: pxToRem(160);
+              }
+
+              .name {
+                font-size: pxToRem(68);
+                line-height: pxToRem(80);
+                margin-bottom: pxToRem(0);
+              }
+
+              .username {
+                color: #5E646D;
+                line-height: pxToRem(60) !important;
+                letter-spacing: -0.03em;
+              }
+
+              .social-icon-link {
+                margin-left: auto;
+
+                .social-icon {
+                  width: pxToRem(100);
+                  height: pxToRem(100);
+                }
+              }
+            }
+
+            .tweet-content {
+              color: #5E646D;
+              font-size: pxToRem(60);
+              letter-spacing: -0.03em;
+              margin-bottom: pxToRem(70);
+            }
+
+            .date-time-wrapper {
+              display: flex;
+              gap: pxToRem(30);
+              align-items: center;
+
+              .like-icon {
+                width: pxToRem(60);
+                height: pxToRem(60);
+              }
+
+              .date-time {
+                color: #5E646D;
+                font-size: pxToRem(60);
+                letter-spacing: -0.03em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

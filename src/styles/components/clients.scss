@@ -1,0 +1,79 @@
+@use '../utils';
+
+.clients {
+  padding-top: pxToRem(84);
+  padding-bottom: pxToRem(80);
+
+  .title-wrapper {
+    margin-bottom: pxToRem(32);
+
+    .title {
+
+    }
+
+    .title-secondary {
+      margin-bottom: pxToRem(6);
+    }
+  }
+
+  .content-wrapper {
+    gap: pxToRem(15);
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .logo-wrapper {
+      width: pxToRem(222);
+      height: pxToRem(88);
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .client-logo {
+
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .clients {
+    padding-top: pxToRem(170);
+    padding-bottom: pxToRem(170);
+
+    .title-wrapper {
+      margin-bottom: pxToRem(68);
+
+      .title {
+
+      }
+
+      .title-secondary {
+        margin-bottom: pxToRem(6);
+      }
+    }
+
+    .content-wrapper {
+      gap: pxToRem(50);
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .logo-wrapper {
+        width: 45%;
+        height: pxToRem(225);
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+
+        .client-logo {
+          max-width: 75%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.testimonials {
+  padding-top: pxToRem(84);
+  padding-bottom: pxToRem(84);
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: pxToRem(500);
+  }
+}

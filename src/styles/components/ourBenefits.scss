@@ -1,0 +1,139 @@
+.our-benefits  {
+  padding-top: pxToRem(84);
+  padding-bottom: pxToRem(84);
+
+  .main-wrapper {
+    gap: pxToRem(56);
+
+    .image-wrapper {
+      width: 100%;
+
+      .main-image {
+        width: 100%;
+      }
+    }
+
+    .content-wrapper {
+      .title-wrapper {
+
+        .title {
+          margin-bottom: pxToRem(20);
+        }
+
+        .description {
+          line-height: pxToRem(28);
+          letter-spacing: -0.03em;
+          color: #5E646D;
+          margin-bottom: pxToRem(32);
+        }
+      }
+
+      .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(20);
+        margin-bottom: pxToRem(57);
+
+        .item {
+          display: flex;
+          gap: pxToRem(12);
+          align-items: baseline;
+          font-size: pxToRem(20);
+          line-height: pxToRem(28);
+          letter-spacing: -0.02em;
+
+          .check-icon {
+            position: relative;
+            top: pxToRem(8);
+          }
+        }
+      }
+
+      .btn-wrapper {
+        .read-more-icon {
+          width: pxToRem(20);
+          height: pxToRem(20);
+        }
+      }
+    }
+
+    .down-arrows {
+      width: pxToRem(60);
+      height: pxToRem(76);
+    }
+  }
+}
+
+
+
+
+@media (max-width: $md-breakpoint) {
+  .our-benefits  {
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(160);
+
+    .title-wrapper {
+      margin-bottom: pxToRem(90);
+
+      .title {
+        max-width: 100%;
+        margin-bottom: pxToRem(30);
+      }
+
+      .down-arrows {
+        width: pxToRem(180);
+        height: pxToRem(220);
+      }
+    }
+
+    .main-wrapper {
+      gap: pxToRem(40);
+
+      .image-wrapper {
+        width: 100%;
+        margin-bottom: pxToRem(70);
+
+        .main-image {
+          width: 100%;
+        }
+      }
+
+      .content-wrapper {
+
+        .list-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: pxToRem(40);
+          margin-bottom: pxToRem(100);
+
+          .item {
+            display: flex;
+            gap: pxToRem(24);
+            align-items: baseline;
+            font-size: pxToRem(60);
+            line-height: pxToRem(104);
+            letter-spacing: -0.02em;
+
+            .check-icon {
+              position: relative;
+              top: pxToRem(20);
+            }
+          }
+        }
+
+        .btn-wrapper {
+          .read-more-icon {
+            width: pxToRem(60);
+            height: pxToRem(60);
+          }
+        }
+
+        .description {
+          color: #5E646D;
+          font-size: pxToRem(60);
+          letter-spacing: -0.03em;
+        }
+      }
+    }
+  }
+}

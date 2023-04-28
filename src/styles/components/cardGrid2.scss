@@ -1,0 +1,115 @@
+.card-grid-2 {
+  padding-top: pxToRem(42);
+  padding-bottom: pxToRem(42);
+
+  .main-wrapper {
+    gap: pxToRem(24);
+
+    .title-wrapper {
+      .title {
+        margin-bottom: pxToRem(30);
+      }
+
+      .sub-title {
+        margin-bottom: pxToRem(6);
+      }
+
+      .arrows-icon {
+        width: pxToRem(50);
+        height: pxToRem(58);
+      }
+    }
+
+    .card-item {
+      padding: pxToRem(40) pxToRem(52) pxToRem(40) pxToRem(36);
+      border: pxToRem(1) solid transparent;
+      border-bottom: pxToRem(5) solid transparent;
+      background-color: #F9F9F9;
+
+      &:hover {
+        border: pxToRem(1) solid #DDDDDD;
+        border-bottom: pxToRem(5) solid $primary;
+        background-color: $white;
+      }
+
+      .card-icon {
+        width: pxToRem(36);
+        height: pxToRem(36);
+        margin-bottom: pxToRem(26);
+      }
+
+      .card-title {
+        font-size: pxToRem(20);
+        line-height: pxToRem(26);
+        margin-bottom: pxToRem(16);
+      }
+
+      .card-desc {
+        line-height: pxToRem(22);
+        letter-spacing: -0.01em;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .card-grid-2 {
+    padding-top: pxToRem(180);
+    padding-bottom: pxToRem(180);
+
+    .main-wrapper {
+      gap: pxToRem(50);
+
+      .title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          margin-bottom: pxToRem(50);
+        }
+
+        .sub-title {
+          margin-bottom: pxToRem(18);
+        }
+
+        .arrows-icon {
+          width: pxToRem(200);
+          height: pxToRem(232);
+        }
+      }
+
+      .card-item {
+        padding: pxToRem(120) pxToRem(104) pxToRem(120) pxToRem(72);
+        border: pxToRem(1) solid transparent;
+        border-bottom: pxToRem(8) solid transparent;
+        background-color: #F9F9F9;
+
+        &:hover {
+          border: pxToRem(1) solid #DDDDDD;
+          border-bottom: pxToRem(8) solid $primary;
+          background-color: $white;
+        }
+
+        .card-icon {
+          width: pxToRem(125);
+          height: pxToRem(125);
+          margin-bottom: pxToRem(70);
+        }
+
+        .card-title {
+          font-size: pxToRem(68);
+          line-height: pxToRem(26);
+          margin-bottom: pxToRem(64);
+        }
+
+        .card-desc {
+          line-height: pxToRem(22);
+          letter-spacing: -0.01em;
+        }
+      }
+    }
+  }
+}

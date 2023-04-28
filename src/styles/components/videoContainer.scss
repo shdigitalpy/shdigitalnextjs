@@ -1,0 +1,21 @@
+.video-container {
+  cursor: pointer;
+
+  .thumbnail-container {
+    visibility: hidden;
+
+    &.show {
+      visibility: visible;
+    }
+  }
+
+  .video-frame {
+    visibility: hidden;
+    position: absolute;
+    inset: 0;
+
+    &.show {
+      visibility: visible;
+    }
+  }
+}

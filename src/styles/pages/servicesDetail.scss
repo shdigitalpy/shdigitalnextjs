@@ -1,0 +1,32 @@
+.services-detail {
+
+  .banner-heading-lg {
+    max-width: pxToRem(589);
+    margin-bottom: pxToRem(20)
+  }
+
+  .description {
+    max-width: pxToRem(496);
+    font-size: pxToRem(16);
+    line-height: pxToRem(25);
+    letter-spacing: -0.01em;
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .services-detail {
+
+    .banner-heading-lg {
+      max-width: 100%;
+      margin-bottom: pxToRem(40)
+    }
+
+    .description {
+      max-width: 100%;
+      font-size: pxToRem(60);
+      letter-spacing: -0.01em;
+    }
+  }
+}

@@ -1,0 +1,215 @@
+.blog-category-preview {
+  padding-top: pxToRem(30);
+  padding-bottom: pxToRem(30);
+
+  .title {
+    margin-bottom: pxToRem(32);
+  }
+
+  .posts-wrapper {
+    gap: pxToRem(24);
+    margin-bottom: pxToRem(30);
+
+    .post-preview-wrapper {
+
+      .image-date-wrapper {
+        padding: pxToRem(20) pxToRem(20) pxToRem(0) pxToRem(20);
+
+        .post-preview-image {
+          width: 100%;
+          margin-bottom: pxToRem(17);
+        }
+
+        .data-time-wrapper {
+          padding-bottom: pxToRem(17);
+          border-bottom: pxToRem(1) solid #E2E5EA;
+
+          .timing-wrapper {
+            color: #5E646D;
+            gap: pxToRem(8);
+
+            .icon {
+              width: pxToRem(16);
+              height: pxToRem(16);
+            }
+          }
+        }
+      }
+
+      .content-wrapper {
+        padding: pxToRem(20);
+
+        .post-title {
+          font-size: pxToRem(20);
+          line-height: pxToRem(26);
+          margin-bottom: pxToRem(16);
+        }
+
+        .post-description {
+          color: #5E646D;
+          line-height: pxToRem(24);
+          letter-spacing: -0.03em;
+          margin-bottom: pxToRem(28);
+        }
+
+        .read-more-link {
+          color: #1B2431;
+          gap: pxToRem(8);
+
+          .read-more-icon {
+            width: pxToRem(16);
+            height: pxToRem(16);
+          }
+        }
+      }
+    }
+  }
+
+  .pagination-wrapper {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    .pagination-btn {
+      font-weight: 600;
+      width: pxToRem(40);
+      height: pxToRem(40);
+      border: pxToRem(1) solid #242723;
+      border-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:last-child {
+        border-right: pxToRem(1) solid #242723;
+      }
+
+      &.active {
+        color: $white;
+        background-color: #242723;
+      }
+
+      .arrow-icon {
+        width: pxToRem(24);
+        height: pxToRem(24);
+
+        &.left {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: $md-breakpoint) {
+  .blog-category-preview {
+    padding-top: pxToRem(30);
+    padding-bottom: pxToRem(30);
+    margin-bottom: pxToRem(120);
+
+    .title {
+      margin-bottom: pxToRem(64);
+    }
+
+    .posts-wrapper {
+      gap: pxToRem(64);
+      margin-bottom: pxToRem(80);
+
+      .post-preview-wrapper {
+
+        .image-date-wrapper {
+          padding: pxToRem(40) pxToRem(40) pxToRem(0) pxToRem(40);
+
+          .post-preview-image {
+            width: 100%;
+            margin-bottom: pxToRem(34);
+          }
+
+          .data-time-wrapper {
+            padding-bottom: pxToRem(17);
+            border-bottom: pxToRem(1) solid #E2E5EA;
+
+            .timing-wrapper {
+              color: #5E646D;
+              gap: pxToRem(24);
+
+              .icon {
+                width: pxToRem(48);
+                height: pxToRem(48);
+              }
+            }
+          }
+        }
+
+        .content-wrapper {
+          padding: pxToRem(40);
+
+          .post-title {
+            font-size: pxToRem(60);
+            line-height: pxToRem(86);
+            margin-bottom: pxToRem(40);
+          }
+
+          .post-description {
+            color: #5E646D;
+            line-height: pxToRem(24);
+            letter-spacing: -0.03em;
+            margin-bottom: pxToRem(28);
+          }
+
+          .read-more-link {
+            font-size: pxToRem(60);
+            color: #1B2431;
+            gap: pxToRem(24);
+
+            .read-more-icon {
+              width: pxToRem(48);
+              height: pxToRem(48);
+            }
+          }
+        }
+      }
+    }
+
+    .pagination-wrapper {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+
+      .pagination-btn {
+        font-weight: 600;
+        font-size: pxToRem(64);
+        width: pxToRem(140);
+        height: pxToRem(140);
+        border: pxToRem(1) solid #242723;
+        border-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+          border-right: pxToRem(1) solid #242723;
+        }
+
+        &.active {
+          color: $white;
+          background-color: #242723;
+        }
+
+        .arrow-icon {
+          width: pxToRem(66);
+          height: pxToRem(66);
+
+          &.left {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

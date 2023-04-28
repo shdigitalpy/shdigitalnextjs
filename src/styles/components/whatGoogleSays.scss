@@ -1,0 +1,203 @@
+.what-google-says {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title-description-wrapper {
+    width: 100%;
+
+    .title-wrapper {
+      display: flex;
+      gap: pxToRem(70);
+      align-items: flex-end;
+      margin-bottom: pxToRem(28);
+
+      .title {
+        max-width: pxToRem(389);
+      }
+
+      .title-arrow-art {
+        position: relative;
+        top: pxToRem(-10);
+        width: pxToRem(48);
+        height: pxToRem(40);
+        transform: rotate(90deg);
+      }
+    }
+
+    .description-wrapper {
+      display: flex;
+      gap: pxToRem(26);
+      flex-direction: column;
+      max-width: pxToRem(617);
+
+      p {
+        font-size: pxToRem(16);
+        line-height: pxToRem(27);
+      }
+    }
+  }
+
+  .table-content-wrapper {
+    position: relative;
+    top: pxToRem(-120);
+    min-width: pxToRem(377);
+
+    .table-title-wrapper {
+      padding: pxToRem(26) pxToRem(36);
+      border-bottom: pxToRem(1) solid #C1CFC7;
+
+      .table-title {
+        font-size: pxToRem(24);
+        font-weight: 500;
+        line-height: pxToRem(27);
+        letter-spacing: -0.02em;
+      }
+    }
+
+    .content-list-wrapper {
+      gap: pxToRem(18);
+      display: flex;
+      flex-direction: column;
+      padding: pxToRem(32) pxToRem(36) pxToRem(38);
+
+      .list-item {
+        display: flex;
+        cursor: pointer;
+        align-items: flex-start;
+        gap: pxToRem(12);
+        font-size: pxToRem(16);
+        line-height: pxToRem(22);
+        letter-spacing: -0.02em;
+
+        &:hover {
+          color: $secondary;
+
+          .arrow-black {
+            display: none;
+          }
+
+          .arrow-orange {
+            display: block;
+          }
+        }
+
+        .arrow-icon {
+          width: pxToRem(20);
+          height: pxToRem(20);
+        }
+
+        .arrow-orange {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .what-google-says {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: pxToRem(150);
+    padding-bottom: pxToRem(150);
+
+    .title-description-wrapper {
+      width: 100%;
+
+      .title-wrapper {
+        display: flex;
+        gap: pxToRem(70);
+        align-items: center;
+        margin-bottom: pxToRem(56);
+
+        .title {
+          max-width: 100%;
+        }
+
+        .title-arrow-art {
+          position: relative;
+          top: 0;
+          width: pxToRem(140);
+          height: pxToRem(100);
+          transform: rotate(90deg);
+        }
+      }
+
+      .description-wrapper {
+        display: flex;
+        gap: pxToRem(26);
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: pxToRem(80);
+
+        p {
+          font-size: pxToRem(60);
+          line-height: pxToRem(104);
+        }
+      }
+    }
+
+    .table-content-wrapper {
+      position: relative;
+      top: 0;
+      min-width: 100%;
+
+      .table-title-wrapper {
+        padding: pxToRem(80) pxToRem(72);
+        border-bottom: pxToRem(1) solid #C1CFC7;
+
+        .table-title {
+          font-size: pxToRem(74);
+          font-weight: 500;
+          line-height: pxToRem(27);
+          letter-spacing: -0.02em;
+        }
+      }
+
+      .content-list-wrapper {
+        gap: pxToRem(36);
+        display: flex;
+        flex-direction: column;
+        padding: pxToRem(64) pxToRem(72) pxToRem(76);
+
+        .list-item {
+          display: flex;
+          cursor: pointer;
+          align-items: baseline;
+          gap: pxToRem(40);
+          font-size: pxToRem(60);
+          line-height: pxToRem(104);
+          letter-spacing: -0.02em;
+
+          &:hover {
+            color: $secondary;
+
+            .arrow-black {
+              display: none;
+            }
+
+            .arrow-orange {
+              display: block;
+            }
+          }
+
+          .arrow-icon {
+            position: relative;
+            top: pxToRem(5);
+            width: pxToRem(60);
+            height: pxToRem(60);
+          }
+
+          .arrow-orange {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

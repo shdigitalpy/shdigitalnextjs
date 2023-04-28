@@ -1,0 +1,30 @@
+.blog-page {
+  .banner-heading-lg {
+    margin-bottom: pxToRem(24);
+  }
+
+  .sub-heading {
+    font-size: pxToRem(16);
+    line-height: pxToRem(25);
+    letter-spacing: -0.01em;
+    margin-top: pxToRem(24);
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .blog-page {
+    .banner-heading-lg {
+      margin-bottom: pxToRem(44);
+    }
+
+    .sub-heading {
+      font-size: pxToRem(48);
+      line-height: pxToRem(70) !important;
+      letter-spacing: -0.01em;
+      margin-top: pxToRem(44);
+    }
+  }
+
+}

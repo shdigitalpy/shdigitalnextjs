@@ -1,0 +1,115 @@
+.content-with-video {
+  padding-top: pxToRem(100);
+  padding-bottom: pxToRem(104);
+
+  .content-wrapper {
+    .title {
+      margin-bottom: pxToRem(35);
+    }
+
+    .desc {
+      font-size: pxToRem(18);
+      line-height: pxToRem(31);
+      margin-bottom: pxToRem(15);
+    }
+
+    .tag-images {
+      gap: pxToRem(12);
+
+      img {
+        &:nth-child(1) {
+          width: pxToRem(195);
+          height: pxToRem(40);
+        }
+
+        &:nth-child(2) {
+          width: pxToRem(146);
+          height: pxToRem(40);
+        }
+      }
+    }
+  }
+
+  .video-wrapper {
+    .thumbnail-wrapper {
+      width: pxToRem(585);
+      height: pxToRem(361);
+
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+      }
+
+      .play-icon {
+        width: pxToRem(93);
+        height: pxToRem(93);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .content-with-video {
+    padding-top: pxToRem(140);
+    padding-bottom: pxToRem(150);
+    text-align: center;
+
+    .content-wrapper {
+      margin-bottom: pxToRem(100);
+
+      .title {
+        margin-bottom: pxToRem(60);
+      }
+
+      .desc {
+        font-size: pxToRem(60);
+        line-height: pxToRem(80);
+        margin-bottom: pxToRem(15);
+      }
+
+      .tag-images {
+        gap: pxToRem(20);
+        justify-content: center;
+
+        img {
+          &:nth-child(1) {
+            width: pxToRem(390);
+            height: pxToRem(80);
+          }
+
+          &:nth-child(2) {
+            width: pxToRem(292);
+            height: pxToRem(80);
+          }
+        }
+      }
+    }
+
+    .video-wrapper {
+      .thumbnail-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .thumbnail {
+          width: 100%;
+          height: 100%;
+        }
+
+        .play-icon {
+          width: pxToRem(300);
+          height: pxToRem(300);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

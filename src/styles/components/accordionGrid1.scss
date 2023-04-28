@@ -1,0 +1,131 @@
+.accordion-grid {
+  padding-top: pxToRem(85);
+  padding-bottom: pxToRem(84);
+
+  .title-container {
+    gap: 0 pxToRem(118);
+    margin-bottom: pxToRem(44);
+
+    .double-arrow-art {
+      width: pxToRem(68);
+      height: pxToRem(117);
+    }
+  }
+
+  .accordions {
+    gap: 0 pxToRem(24);
+
+    .left-items, .right-items {
+      gap: pxToRem(20) 0;
+    }
+
+    .accordion-wrapper {
+      .accordion-title {
+        cursor: pointer;
+        font-size: pxToRem(20);
+        line-height: pxToRem(26);
+        padding: pxToRem(32) pxToRem(28);
+        user-select: none;
+
+        .accordion-icon {
+          width: pxToRem(24);
+          height: pxToRem(24);
+        }
+      }
+
+      .content-wrapper {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-in;
+      }
+
+      .accordion-content {
+        font-size: pxToRem(16);
+        line-height: pxToRem(27);
+        padding: pxToRem(0) pxToRem(23) pxToRem(0) pxToRem(28);
+        //height: 0;
+        //transform: scaleY(0);
+        //transform-origin: top;
+        transition: all 0.2s ease-in;
+      }
+
+      &.active {
+        padding-bottom: pxToRem(38);
+
+        .accordion-content {
+          //display: block;
+          //transform: scaleY(1);
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .accordion-grid {
+    padding-top: pxToRem(180);
+    padding-bottom: pxToRem(220);
+
+    .title-container {
+      gap: 0;
+      margin-bottom: pxToRem(100);
+      text-align: center;
+
+      .double-arrow-art {
+        width: pxToRem(68);
+        height: pxToRem(117);
+      }
+    }
+
+    .accordions {
+      gap: pxToRem(40) 0;
+
+      .left-items, .right-items {
+        gap: pxToRem(40) 0;
+      }
+
+      .accordion-wrapper {
+        .accordion-title {
+          cursor: pointer;
+          font-size: pxToRem(58);
+          line-height: pxToRem(84);
+          padding: pxToRem(80) pxToRem(64);
+          user-select: none;
+
+          .accordion-icon {
+            width: pxToRem(60);
+            height: pxToRem(60);
+          }
+        }
+
+        .content-wrapper {
+          height: 0;
+          overflow: hidden;
+          transition: all 0.2s ease-in;
+        }
+
+        .accordion-content {
+          font-size: pxToRem(50);
+          line-height: pxToRem(90);
+          padding: pxToRem(0) pxToRem(64) pxToRem(0) pxToRem(64);
+          //height: 0;
+          //transform: scaleY(0);
+          //transform-origin: top;
+          transition: all 0.2s ease-in;
+        }
+
+        &.active {
+          padding-bottom: pxToRem(54);
+
+          .accordion-content {
+            //display: block;
+            //transform: scaleY(1);
+          }
+        }
+      }
+    }
+  }
+
+}

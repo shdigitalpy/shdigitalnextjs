@@ -1,0 +1,202 @@
+.comments {
+  padding-top: pxToRem(80);
+  padding-bottom: pxToRem(44);
+  margin-bottom: pxToRem(80);
+
+  .comment-form-wrapper {
+    padding-bottom: pxToRem(80);
+
+    .title-wrapper {
+      margin-bottom: pxToRem(24);
+
+      .title {
+        margin-bottom: pxToRem(9);
+      }
+
+      .description {
+        color: #5E646D;
+        font-size: pxToRem(16);
+        line-height: pxToRem(25);
+      }
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: pxToRem(20);
+
+      .input-wrapper {
+        width: 100%;
+
+        .input {
+          width: 100%;
+          font-size: pxToRem(16);
+          line-height: pxToRem(16);
+          padding: pxToRem(20);
+          border: pxToRem(1) solid #DDDDDD;
+
+          &.comment-field {
+            min-height: pxToRem(240);
+          }
+        }
+      }
+
+      .input-group {
+        width: 100%;
+        gap: pxToRem(20);
+      }
+    }
+
+    .submit-btn {
+      margin-top: pxToRem(16);
+
+      .submit-btn-icon {
+        width: pxToRem(20);
+        height: pxToRem(20);
+      }
+    }
+  }
+
+
+  .comments-list-wrapper {
+    .comment-row {
+      padding-top: pxToRem(36);
+      padding-bottom: pxToRem(36);
+      border-top: pxToRem(1) solid #DDDDDD;
+
+      .user-details-wrapper {
+        display: flex;
+        gap: pxToRem(16);
+        align-items: center;
+        margin-bottom: pxToRem(32);
+
+        .user-image {
+          height: pxToRem(64);
+          width: pxToRem(64);
+        }
+
+        .user-name {
+          font-size: pxToRem(24);
+          line-height: pxToRem(24);
+        }
+      }
+
+      .comment-wrapper {
+        .highlight {
+          font-size: pxToRem(16);
+          line-height: pxToRem(16);
+          margin-bottom: pxToRem(16);
+        }
+
+        .comment-para {
+          color: #5E646D;
+          font-size: pxToRem(16);
+          line-height: pxToRem(25);
+          letter-spacing: -0.02em;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $md-breakpoint) {
+  .comments {
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(60);
+    margin-bottom: pxToRem(140);
+
+    .comment-form-wrapper {
+      padding-bottom: pxToRem(160);
+
+      .title-wrapper {
+        margin-bottom: pxToRem(60);
+
+        .title {
+          margin-bottom: pxToRem(20);
+        }
+
+        .description {
+          color: #5E646D;
+          font-size: pxToRem(60);
+        }
+      }
+
+      .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(45);
+
+        .input-wrapper {
+          width: 100%;
+
+          .input {
+            width: 100%;
+            font-size: pxToRem(60);
+            line-height: pxToRem(104);
+            padding: pxToRem(40);
+            border: pxToRem(1) solid #DDDDDD;
+
+            &.comment-field {
+              min-height: pxToRem(240);
+            }
+          }
+        }
+
+        .input-group {
+          width: 100%;
+          gap: pxToRem(45);
+        }
+      }
+
+      .submit-btn {
+        margin-top: pxToRem(32);
+
+        .submit-btn-icon {
+          width: pxToRem(65);
+          height: pxToRem(65);
+        }
+      }
+    }
+
+
+    .comments-list-wrapper {
+      .comment-row {
+        padding-top: pxToRem(120);
+        padding-bottom: pxToRem(120);
+        border-top: pxToRem(1) solid #DDDDDD;
+
+        .user-details-wrapper {
+          display: flex;
+          gap: pxToRem(50);
+          align-items: center;
+          margin-bottom: pxToRem(64);
+
+          .user-image {
+            height: pxToRem(260);
+            width: pxToRem(260);
+          }
+
+          .user-name {
+            font-size: pxToRem(68);
+            line-height: pxToRem(84);
+          }
+        }
+
+        .comment-wrapper {
+          .highlight {
+            font-size: pxToRem(64);
+            line-height: pxToRem(74);
+            margin-bottom: pxToRem(28);
+          }
+
+          .comment-para {
+            color: #5E646D;
+            font-size: pxToRem(60);
+            letter-spacing: -0.02em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.analysis-factors  {
+  padding-top: pxToRem(84);
+  padding-bottom: pxToRem(84);
+
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: pxToRem(36);
+
+    .title {
+      max-width: pxToRem(703);
+    }
+
+    .down-arrows {
+      width: pxToRem(80);
+      height: pxToRem(96);
+    }
+  }
+
+  .main-wrapper {
+    gap: pxToRem(40);
+
+    .image-wrapper {
+      width: pxToRem(700);
+
+      .main-image {
+        width: 100%;
+      }
+    }
+
+    .content-wrapper {
+
+      .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(20);
+        margin-bottom: pxToRem(36);
+
+        .item {
+          display: flex;
+          gap: pxToRem(12);
+          align-items: baseline;
+          font-size: pxToRem(20);
+          line-height: pxToRem(28);
+          letter-spacing: -0.02em;
+
+          .check-icon {
+            position: relative;
+            top: pxToRem(8);
+          }
+        }
+      }
+
+      .description {
+        color: #5E646D;
+        font-size: pxToRem(16);
+        line-height: pxToRem(27);
+        letter-spacing: -0.03em;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: $md-breakpoint) {
+  .analysis-factors  {
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(160);
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: pxToRem(90);
+
+      .title {
+        max-width: 100%;
+      }
+
+      .down-arrows {
+        width: pxToRem(180);
+        height: pxToRem(220);
+      }
+    }
+
+    .main-wrapper {
+      gap: pxToRem(40);
+
+      .image-wrapper {
+        width: 100%;
+        margin-bottom: pxToRem(70);
+
+        .main-image {
+          width: 100%;
+        }
+      }
+
+      .content-wrapper {
+
+        .list-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: pxToRem(40);
+          margin-bottom: pxToRem(72);
+
+          .item {
+            display: flex;
+            gap: pxToRem(24);
+            align-items: baseline;
+            font-size: pxToRem(60);
+            line-height: pxToRem(104);
+            letter-spacing: -0.02em;
+
+            .check-icon {
+              position: relative;
+              top: pxToRem(20);
+            }
+          }
+        }
+
+        .description {
+          color: #5E646D;
+          font-size: pxToRem(60);
+          letter-spacing: -0.03em;
+        }
+      }
+    }
+  }
+}

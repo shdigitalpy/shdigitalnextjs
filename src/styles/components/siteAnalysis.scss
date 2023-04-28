@@ -1,0 +1,107 @@
+.site-analysis {
+  padding-top: pxToRem(80);
+  padding-bottom: pxToRem(80);
+
+  .title {
+    max-width: pxToRem(583);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: pxToRem(40);
+  }
+
+  .content-wrapper {
+    gap: pxToRem(18);
+    padding: pxToRem(42);
+
+    .list-box {
+
+      .list-title {
+        font-weight: 500;
+        font-size: pxToRem(24);
+        line-height: pxToRem(28);
+        margin-bottom: pxToRem(28);
+        letter-spacing: -0.02em;
+      }
+
+      .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(12);
+
+        .list-item-wrapper {
+          display: flex;
+          gap: pxToRem(12);
+          padding: pxToRem(9);
+          align-items: flex-start;
+          font-size: pxToRem(16);
+          line-height: pxToRem(22);
+          letter-spacing: -0.02em;
+          background: linear-gradient(90deg, rgba(27, 36, 49, 0.08) 0%, rgba(27, 36, 49, 0) 15.63%);
+          border-radius: pxToRem(2);
+
+          .item-icon {
+            width: pxToRem(24);
+            height: pxToRem(24);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .site-analysis {
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(190);
+
+    .title {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: pxToRem(80);
+    }
+
+    .content-wrapper {
+      gap: pxToRem(150);
+      padding: pxToRem(100) pxToRem(84);
+
+      .list-box {
+
+        .list-title {
+          font-weight: 500;
+          font-size: pxToRem(74);
+          line-height: pxToRem(28);
+          margin-bottom: pxToRem(80);
+          letter-spacing: -0.02em;
+        }
+
+        .list-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: pxToRem(40);
+
+          .list-item-wrapper {
+            display: flex;
+            gap: pxToRem(30);
+            padding: pxToRem(40) pxToRem(30);
+            align-items: flex-start;
+            font-size: pxToRem(60);
+            line-height: pxToRem(104);
+            letter-spacing: -0.02em;
+            background: linear-gradient(90deg, rgba(27, 36, 49, 0.08) 0%, rgba(27, 36, 49, 0) 15.63%);
+            border-radius: pxToRem(2);
+
+            .item-icon {
+              position: relative;
+              top: pxToRem(7);
+              width: pxToRem(80);
+              height: pxToRem(80);
+            }
+          }
+        }
+      }
+    }
+  }
+}

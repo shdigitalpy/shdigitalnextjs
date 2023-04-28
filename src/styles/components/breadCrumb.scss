@@ -1,0 +1,46 @@
+.bread-crumb {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(10);
+  margin-bottom: pxToRem(16);
+
+  .link p {
+    color: #717271;
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .post-title {
+    color: $white;
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .bread-crumb {
+    display: flex;
+    align-items: center;
+    gap: pxToRem(10);
+    margin-bottom: pxToRem(60);
+
+    .link p {
+      color: #717271;
+      font-size: pxToRem(40);
+      transition: color 0.15s ease-in-out;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .post-title {
+      //width: 100%;
+      color: $white;
+      font-size: pxToRem(40);
+    }
+  }
+}

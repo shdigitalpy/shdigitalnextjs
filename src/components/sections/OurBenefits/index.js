@@ -1,0 +1,70 @@
+import React from 'react';
+import FramerMotionAnimation from '../../common/FramerMotionAnimation';
+import meeting from '../../../assets/images/meeting9.png';
+import doubleDownArrow from '../../../assets/images/sharp-double-arrow-down.svg';
+import checkCircleOrange from '../../../assets/icons/check-circle-orange.svg';
+import Image from "next/image";
+import upRightArrowIcon from "../../../assets/icons/up-right-arrow.svg";
+
+const listItems = [
+    {
+        data: 'Biggest levers of growth'
+    },
+    {
+        data: 'Most Efficient Approach to Success'
+    },
+    {
+        data: 'Most Efficient Approach to Success'
+    },
+];
+
+const OurBenefits = () => {
+    return (
+        <section className="our-benefits bg-gray container">
+            <div className="main-wrapper grid md:grid-cols-2">
+                <FramerMotionAnimation
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                    className="image-wrapper">
+                    <Image src={meeting} alt="Analysis factors" className="main-image" />
+                </FramerMotionAnimation>
+                <div className="md:flex items-end">
+                    <div className="content-wrapper">
+                        <FramerMotionAnimation className="title-wrapper">
+                            <h2 className="title">
+                                Benefits of SH Digital
+                            </h2>
+                            <p className="description">
+                                In order to be successful as a business with search engine optimization,
+                                you need a strategy that is tailored to your situation.
+                            </p>
+                        </FramerMotionAnimation>
+                        <div className="list-wrapper">
+                            { listItems?.map((item, index) => (
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.25, delay: index * 0.1 }}
+                                    className="item" key={index}>
+                                    <Image src={checkCircleOrange} alt="check icon" className="check-icon" />
+                                    { item.data }
+                                </FramerMotionAnimation>
+                            ))}
+                        </div>
+                        <FramerMotionAnimation className="btn-wrapper">
+                            <button className="btn-primary">
+                                Kostenlose Potential analyse
+                                <Image src={upRightArrowIcon} alt="arrow icon" className="read-more-icon" />
+                            </button>
+                        </FramerMotionAnimation>
+                    </div>
+
+                    <Image src={doubleDownArrow} alt="down arrows" className="down-arrows" />
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default OurBenefits;

@@ -1,0 +1,134 @@
+.image-and-content {
+  padding-top: pxToRem(71);
+  padding-bottom: pxToRem(88);
+
+  .title-wrapper {
+    text-align: center;
+    margin-bottom: pxToRem(52);
+
+    .title {
+      margin-bottom: pxToRem(25);
+    }
+
+    .title-desc {
+      font-size: pxToRem(16);
+      line-height: pxToRem(27);
+      max-width: pxToRem(746);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .item-row-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: pxToRem(70);
+
+    .item-row {
+      display: flex;
+      align-items: center;
+      gap: pxToRem(100);
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .image-wrapper {
+        width: 50%;
+        overflow: hidden;
+
+        .preview-image {
+          width: 100%;
+          max-width: pxToRem(540);
+        }
+      }
+
+      .content-wrapper {
+        width: 50%;
+
+        .item-title {
+          font-weight: 500;
+          font-size: pxToRem(36);
+          line-height: pxToRem(41);
+          letter-spacing: -0.02em;
+          margin-bottom: pxToRem(20);
+        }
+
+        .item-description {
+          font-size: pxToRem(16);
+          line-height: pxToRem(26);
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .image-and-content {
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(170);
+
+    .title-wrapper {
+      text-align: center;
+      margin-bottom: pxToRem(100);
+
+      .title {
+        margin-bottom: pxToRem(50);
+      }
+
+      .title-desc {
+        font-size: pxToRem(54);
+        line-height: pxToRem(104);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .item-row-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: pxToRem(160);
+
+      .item-row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: pxToRem(65);
+
+        &:nth-child(even) {
+          flex-direction: column;
+        }
+
+        .image-wrapper {
+          width: 100%;
+          overflow: hidden;
+
+          .preview-image {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        .content-wrapper {
+          width: 100%;
+
+          .item-title {
+            font-weight: 500;
+            font-size: pxToRem(84);
+            line-height: pxToRem(100);
+            letter-spacing: -0.02em;
+            margin-bottom: pxToRem(20);
+          }
+
+          .item-description {
+            font-size: pxToRem(60);
+            line-height: pxToRem(104);
+          }
+        }
+      }
+    }
+  }
+}

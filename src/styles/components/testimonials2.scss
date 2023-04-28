@@ -1,0 +1,124 @@
+.testimonial-2 {
+
+  padding-top: pxToRem(78);
+  padding-bottom: pxToRem(84);
+
+  .title-wrapper {
+    margin-bottom: pxToRem(40);
+
+    .title {
+
+    }
+
+    .title-secondary {
+      margin-bottom: pxToRem(12);
+    }
+  }
+
+  .content-wrapper {
+
+    .testimonial-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: pxToRem(10);
+      padding: pxToRem(52) pxToRem(73) pxToRem(51) pxToRem(76);
+
+     .client-details-wrapper {
+       width: 100%;
+
+       .client-image {
+         width: pxToRem(304);
+         height: pxToRem(304);
+         border-radius: 50%;
+       }
+     }
+
+      .feedback {
+        font-size: pxToRem(22);
+        line-height: pxToRem(40);
+        margin-bottom: pxToRem(32);
+      }
+
+      .position {
+        color: #5E646D;
+        font-size: pxToRem(16);
+        line-height: pxToRem(16);
+        margin-bottom: pxToRem(12);
+      }
+
+      .company {
+        font-size: pxToRem(22);
+        line-height: pxToRem(22);
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .testimonial-2 {
+
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(160);
+
+    .title-wrapper {
+      margin-bottom: pxToRem(80);
+
+      .title {
+
+      }
+
+      .title-secondary {
+        margin-bottom: pxToRem(24);
+      }
+    }
+
+    .content-wrapper {
+
+      .testimonial-block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: pxToRem(10);
+        padding: pxToRem(100) pxToRem(100);
+
+        .client-details-wrapper {
+          display: flex;
+          align-items: center;
+          gap: pxToRem(60);
+          margin-bottom: pxToRem(100);
+        }
+
+        .client-details-wrapper {
+          .client-image {
+            width: pxToRem(400);
+            height: pxToRem(400);
+            border-radius: 50%;
+            margin-bottom: pxToRem(0);
+          }
+        }
+
+        .feedback {
+          text-align: center;
+          font-size: pxToRem(60);
+          margin-bottom: pxToRem(30);
+        }
+
+        .position {
+          color: #5E646D;
+          font-size: pxToRem(64);
+          line-height: pxToRem(90) !important;
+          margin-bottom: pxToRem(24);
+        }
+
+        .company {
+          font-size: pxToRem(70);
+          line-height: pxToRem(86);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+.more-interesting-posts {
+  padding-top: pxToRem(40);
+  padding-bottom: pxToRem(84);
+
+  .title-wrapper {
+    margin-bottom: pxToRem(40);
+
+    .title {
+      max-width: pxToRem(476);
+    }
+
+    .description {
+      color: #5E646D;
+      font-size: pxToRem(16);
+      line-height: pxToRem(27);
+      letter-spacing: -0.03em;
+      max-width: pxToRem(476);
+    }
+  }
+
+  .content-wrapper {
+    gap: pxToRem(111);
+    padding: pxToRem(58) pxToRem(15) pxToRem(50) pxToRem(57);
+
+    .block-wrapper {
+
+      .item-icon {
+        width: pxToRem(48);
+        height: pxToRem(48);
+        margin-bottom: pxToRem(40);
+      }
+
+      .item-title {
+        font-size: pxToRem(24);
+        line-height: pxToRem(31);
+        margin-bottom: pxToRem(24);
+        max-width: pxToRem(245);
+      }
+
+      .items-wrapper {
+
+        .item-wrapper {
+          color: #5E646D;
+          font-size: pxToRem(16);
+          line-height: pxToRem(29);
+          letter-spacing: -0.03em;
+          display: flex;
+          align-items: baseline;
+          gap: pxToRem(8);
+          padding-bottom: pxToRem(12);
+          padding-top: pxToRem(12);
+          border-bottom: pxToRem(1) solid #DDDDDD;
+
+          .check-icon {
+            position: relative;
+            top: pxToRem(3);
+            width: pxToRem(16);
+            height: pxToRem(16);
+          }
+
+          .item-description {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            span {
+              margin-right: pxToRem(5);
+            }
+
+            .text-link {
+              color: #5E646D;
+              font-size: pxToRem(16);
+              line-height: pxToRem(29);
+              display: inline-block;
+              margin-right: pxToRem(5);
+              text-decoration: underline;
+
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .more-interesting-posts {
+    padding-top: pxToRem(80);
+    padding-bottom: pxToRem(140);
+
+    .title-wrapper {
+      margin-bottom: pxToRem(85);
+
+      .title {
+        max-width: 100%;
+        margin-bottom: pxToRem(40);
+      }
+
+      .description {
+        color: #5E646D;
+        font-size: pxToRem(60);
+        line-height: pxToRem(104);
+        letter-spacing: -0.03em;
+        max-width: 100%;
+      }
+    }
+
+    .content-wrapper {
+      gap: pxToRem(160);
+      padding: pxToRem(110) pxToRem(70);
+
+      .block-wrapper {
+
+        .item-icon {
+          width: pxToRem(150);
+          height: pxToRem(150);
+          margin-bottom: pxToRem(80);
+        }
+
+        .item-title {
+          font-size: pxToRem(72);
+          line-height: pxToRem(96);
+          margin-bottom: pxToRem(75);
+          max-width: 100%;
+        }
+
+        .items-wrapper {
+
+          .item-wrapper {
+            color: #5E646D;
+            font-size: pxToRem(60);
+            line-height: pxToRem(104);
+            letter-spacing: -0.03em;
+            display: flex;
+            align-items: baseline;
+            gap: pxToRem(24);
+            padding-bottom: pxToRem(24);
+            padding-top: pxToRem(24);
+            border-bottom: pxToRem(1) solid #DDDDDD;
+
+            .check-icon {
+              position: relative;
+              top: pxToRem(22);
+              width: pxToRem(75);
+              height: pxToRem(75);
+            }
+
+            .item-description {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+
+              span {
+                margin-right: pxToRem(15);
+              }
+
+              .text-link {
+                color: #5E646D;
+                font-size: pxToRem(60);
+                line-height: pxToRem(104);
+                display: inline-block;
+                margin-right: pxToRem(15);
+                text-decoration: underline;
+
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.footer {
+  .main-wrapper {
+    padding-top: pxToRem(72);
+    margin-bottom: pxToRem(67);
+    border-top: pxToRem(1) solid #ddd;
+
+    .footer-title {
+      font-weight: 500;
+      font-size: pxToRem(20);
+      line-height: pxToRem(25);
+      letter-spacing: -0.02em;
+      margin-bottom: pxToRem(24);
+    }
+
+    .content {
+      font-weight: 300;
+      opacity: 0.7;
+
+      .link {
+        margin-bottom: pxToRem(10);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .logo-wrapper {
+      margin-right: pxToRem(76);
+
+      .logo {
+        width: pxToRem(126);
+        height: pxToRem(39);
+      }
+    }
+
+    .address-wrapper {
+      width: 100%;
+      white-space:break-spaces;
+      max-width: pxToRem(251);
+      margin-right: pxToRem(113);
+
+      .content {
+        p {
+          margin-bottom: pxToRem(10);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .posts-wrapper {
+      margin-right: pxToRem(109);
+    }
+
+    .social-links-wrapper {
+      margin-right: pxToRem(98);
+
+      .content {
+        opacity: 1;
+        gap: 0 pxToRem(22);
+      }
+
+      .social-icon {
+        cursor: pointer;
+        width: pxToRem(24);
+        height: pxToRem(24);
+      }
+    }
+
+    .pursue-wrapper {
+
+    }
+  }
+
+  .images-wrapper {
+    padding-top: pxToRem(44);
+    padding-bottom: pxToRem(44);
+    border-top: pxToRem(1) solid #ddd;
+
+    .image-container {
+      &:nth-child(1) {
+        .image {
+          width: pxToRem(214);
+          height: pxToRem(72);
+        }
+      }
+
+      &:nth-child(2) {
+        .image {
+          width: pxToRem(145);
+          height: pxToRem(72);
+        }
+      }
+
+      &:nth-child(3) {
+        .image {
+          width: pxToRem(195);
+          height: pxToRem(72);
+        }
+      }
+    }
+  }
+
+  .copyright-wrapper {
+    padding-top: pxToRem(32);
+    padding-bottom: pxToRem(19);
+    border-top: pxToRem(1) solid #ddd;
+
+    p {
+      line-height: pxToRem(25);
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .footer {
+    .main-wrapper {
+      padding-top: pxToRem(72);
+      margin-bottom: pxToRem(67);
+      border-top: pxToRem(1) solid #ddd;
+
+      .footer-title {
+        font-weight: 500;
+        font-size: pxToRem(64);
+        line-height: pxToRem(80);
+        letter-spacing: -0.02em;
+        margin-bottom: pxToRem(20);
+      }
+
+      .content {
+        font-weight: 300;
+        opacity: 0.7;
+        margin-bottom: pxToRem(100);
+
+        .link {
+          font-size: pxToRem(58);
+          line-height: pxToRem(120);
+          margin-bottom: pxToRem(10);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .logo-wrapper {
+        margin-right: 0;
+        margin-bottom: pxToRem(100);
+
+        .logo {
+          width: pxToRem(450);
+          height: pxToRem(150);
+        }
+      }
+
+      .address-wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-right: pxToRem(113);
+
+        .content {
+          p {
+            margin-bottom: pxToRem(10);
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .posts-wrapper {
+        margin-right: pxToRem(109);
+      }
+
+      .social-links-wrapper {
+        margin-right: pxToRem(98);
+
+        .content {
+          opacity: 1;
+          gap: 0 pxToRem(60);
+          padding-top: pxToRem(30);
+        }
+
+        .social-icon {
+          cursor: pointer;
+          width: pxToRem(120);
+          height: pxToRem(120);
+        }
+      }
+
+      .pursue-wrapper {
+
+      }
+    }
+
+    .images-wrapper {
+      padding-top: pxToRem(80);
+      padding-bottom: pxToRem(80);
+      border-top: pxToRem(1) solid #ddd;
+
+      .image-container {
+        &:nth-child(1) {
+          .image {
+            width: pxToRem(340);
+            height: pxToRem(140);
+          }
+        }
+
+        &:nth-child(2) {
+          .image {
+            width: pxToRem(280);
+            height: pxToRem(140);
+          }
+        }
+
+        &:nth-child(3) {
+          .image {
+            width: pxToRem(280);
+            height: pxToRem(140);
+          }
+        }
+      }
+    }
+
+    .copyright-wrapper {
+      padding-top: pxToRem(80);
+      padding-bottom: pxToRem(100);
+      border-top: pxToRem(1) solid #ddd;
+
+      p {
+        line-height: pxToRem(25);
+      }
+    }
+  }
+
+}

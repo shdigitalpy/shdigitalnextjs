@@ -1,0 +1,108 @@
+.customer-expectation {
+
+  padding-top: pxToRem(84);
+  padding-bottom: pxToRem(84);
+
+  .content-wrapper {
+    gap: pxToRem(24);
+
+    .title-wrapper {
+
+      .title {
+        max-width: pxToRem(312);
+        margin-bottom: pxToRem(24);
+      }
+
+      .description {
+        color: #5E646D;
+        font-size: pxToRem(16);
+        line-height: pxToRem(29);
+        margin-bottom: pxToRem(50);
+      }
+
+      .down-arrows {
+        width: pxToRem(60);
+        height: pxToRem(80);
+      }
+    }
+
+    .point-wrapper {
+      padding: pxToRem(44) pxToRem(36);
+
+      .point-icon {
+        width: pxToRem(52);
+        height: pxToRem(52);
+        margin-bottom: pxToRem(32);
+      }
+
+      .point-title {
+        font-size: pxToRem(20);
+        line-height: pxToRem(26);
+        margin-bottom: pxToRem(20);
+      }
+
+      .description {
+        font-size: pxToRem(14);
+        color: #5E646D;
+        line-height: pxToRem(24);
+        letter-spacing: -0.01em;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .customer-expectation {
+
+    padding-top: pxToRem(160);
+    padding-bottom: pxToRem(160);
+
+    .content-wrapper {
+      gap: pxToRem(60);
+
+      .title-wrapper {
+
+        .title {
+          max-width: 100%;
+          margin-bottom: pxToRem(50);
+        }
+
+        .description {
+          color: #5E646D;
+          font-size: pxToRem(60);
+          margin-bottom: pxToRem(50);
+        }
+
+        .down-arrows {
+          width: pxToRem(180);
+          height: pxToRem(240);
+          margin-bottom: pxToRem(50);
+        }
+      }
+
+      .point-wrapper {
+        padding: pxToRem(88) pxToRem(72);
+
+        .point-icon {
+          width: pxToRem(160);
+          height: pxToRem(160);
+          margin-bottom: pxToRem(64);
+        }
+
+        .point-title {
+          font-size: pxToRem(70);
+          line-height: pxToRem(86);
+          margin-bottom: pxToRem(40);
+        }
+
+        .description {
+          font-size: pxToRem(60);
+          color: #5E646D;
+          letter-spacing: -0.01em;
+        }
+      }
+    }
+  }
+}

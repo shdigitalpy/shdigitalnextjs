@@ -1,0 +1,41 @@
+.services-page {
+
+  .sub-heading-wrapper {
+    margin-top: pxToRem(8);
+
+    .sub-heading-image {
+      width: pxToRem(19);
+      height: pxToRem(19);
+      margin-left: pxToRem(5);
+    }
+
+    .sub-heading {
+      font-size: pxToRem(24);
+      line-height: pxToRem(24);
+      letter-spacing: -0.01em;
+    }
+  }
+}
+
+
+@media (max-width: $md-breakpoint) {
+  .services-page {
+
+    .sub-heading-wrapper {
+      margin-top: pxToRem(16);
+
+      .sub-heading-image {
+        width: pxToRem(54);
+        height: pxToRem(54);
+        margin-left: pxToRem(20);
+      }
+
+      .sub-heading {
+        font-size: pxToRem(60);
+        line-height: pxToRem(68);
+        letter-spacing: -0.01em;
+      }
+    }
+  }
+
+}

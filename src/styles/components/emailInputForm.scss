@@ -1,0 +1,68 @@
+.email-input-form {
+  display: flex;
+
+  .email-input {
+    color: $white;
+    padding: pxToRem(12);
+    min-width: pxToRem(316);
+    background-color: transparent;
+    line-height: pxToRem(14);
+    letter-spacing: -0.01em;
+    border: pxToRem(1) solid #999999;
+    border-right: 0;
+    border-radius: 0;
+
+    &:focus-within, &:focus, &:hover, &:active {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .email-submit-btn {
+    color: $primary;
+    font-weight: 500;
+    font-size: pxToRem(16);
+    line-height: pxToRem(16);
+    letter-spacing: -0.01em;
+    border: pxToRem(1) solid $yellow;
+    background-color: $yellow;
+    padding: pxToRem(14) pxToRem(22);
+  }
+}
+
+
+
+@media (max-width: $md-breakpoint) {
+  .email-input-form {
+    display: flex;
+
+    .email-input {
+      color: $white;
+      padding: pxToRem(28);
+      font-size: pxToRem(52);
+      min-width: unset;
+      width: 100%;
+      background-color: transparent;
+      line-height: pxToRem(14);
+      letter-spacing: -0.01em;
+      border: pxToRem(1) solid #999999;
+      border-right: 0;
+      border-radius: 0;
+
+      &:focus-within, &:focus, &:hover, &:active {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+
+    .email-submit-btn {
+      color: $primary;
+      font-weight: 500;
+      font-size: pxToRem(52);
+      line-height: pxToRem(16);
+      letter-spacing: -0.01em;
+      background-color: $yellow;
+      padding: pxToRem(28) pxToRem(44);
+    }
+  }
+}
