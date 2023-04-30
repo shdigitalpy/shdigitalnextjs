@@ -23,12 +23,11 @@ const Hero = () => {
                     <Image src={downArrow} alt="down arrow"/>
                     <Image src={downArrow} alt="down arrow"/>
                 </div>
-                <h1 className="title font-semibold">SEO Agentur</h1>
+                <h1 className="title font-semibold">SEO Agentur <span className="text-4xl">für Neukundengewinnung</span></h1>
                 <p className="desc">
-                    Die von Sandro Huber entwickelte und einmalige Marketing Methode hilft Software, Industrie sowie
+                    Die von Sandro Huber entwickelte und einmalige <strong className="underline">Performance SEO-Pro-Methode®</strong> hilft Software, Industrie sowie
                     E-Commerce Unternehmen mit dem Angebot bei Google auf die erste Seite
-                    zu kommen. Unsere Kunden lassen dadurch die Konkurrenz hinter sich und können die eigenen Produkte
-                    oder Dienstleistungen schneller verkaufen.
+                    zu kommen. Mit dieser Methode lassen Sie die Konkurrenz hinter sich und werden bei Ihrer Zielgruppe allgegenwärtig.
                 </p>
                 <button className="cta-btn text-white bg-primary">
                     Kostenlose Potentialanalyse

@@ -5,36 +5,22 @@ import adsIcon from '../assets/icons/ads.svg';
 import contentIcon from '../assets/icons/content.svg';
 
 export default {
-    title: ['unsere', 'Top-Leistungen'],
-    subTitle: 'Dienstleistungen',
+    title: ['Marketing','Angebot'],
+    subTitle: 'Performance',
     cards: [
-        {
-            icon: premiumIcon,
-            title: 'SEO Methode  für Firmen',
-            description: 'Unsere Methode im Bereich SEO, die Ihnen mehr Sichtbarkeitbei Suchmaschinen bringt.'
-        },
+
         {
             icon: adsIcon,
-            title: 'Google Ads Betreuung',
-            description: 'Unsere Methode im Bereich SEO, die Ihnen konstant Neukundenanfragen über die Webseite bringt.'
+            title: 'Performance-SEO Pro-Methode® für B2B',
+            description: 'Unsere Performance-SEO Pro-Methode® geht über klassisches SEO hinaus und verleiht zusätzliche Power. Wir unterstützen Kunden damit, sichtbar zu bleiben und qualifizierte Anfragen und Neukundentermine zu generieren.'
         },
         {
-            icon: scriptIcon,
-            title: 'Content Marketing',
-            description: 'Wir erstellen für Ihr Angebot wertvolle und relevante Webinhalte, damit unsere Methode noch besser funktioniert.'
+            icon: premiumIcon,
+            title: 'Klassische SEO- / SEA-Betreuung für B2C und Onlineshops',
+            description: 'Die klassische SEO Betreuung für mehr Sichtbarkeit bei bei Suchmaschinen. Steigern Sie das Suchmaschinenranking und gewinnen Sie dadurch neue Kunden.'
         },
-
-        {
-            icon: affiliateIcon,
-            title: 'SEO-getriebener Webseiten Relaunch',
-            description: 'Wir erstellen für Ihr Angebot wertvolle und relevante Webinhalte, damit unsere Methode noch besser funktioniert.'
-        },
-
-        {
-            icon: affiliateIcon,
-            title: 'Backlink Paket',
-            description: 'Wir erstellen für Ihr Angebot wertvolle und relevante Webinhalte, damit unsere Methode noch besser funktioniert.'
-        },
+        
+       
         
     ]
 };

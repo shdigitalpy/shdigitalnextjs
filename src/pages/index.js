@@ -10,7 +10,7 @@ import ImageAndCollapsibleContent from "../components/sections/ImageAndCollapsib
 import FAQ from "../components/sections/FAQ_wovideo";
 import ContentListWithImage from "../components/sections/ContentListWithImage1";
 
-import featuresSectionData from "../data/featuresSectionData";
+import painsSectionData from "../data/painsSectionData";
 import successStoriesSectionData from "../data/successStoriesSectionData";
 import areaOfExpertiseSectionData from "../data/areaOfExpertiseSectionData";
 import advantagesAndProcessSectionData from "../data/advantagesAndProcessSectionData";
@@ -32,7 +32,7 @@ export default function Home() {
             <main>
                 <Hero/>
                 <ContentWithVideo/>
-                <CardGrid data={featuresSectionData} />
+                <CardGrid data={painsSectionData} />
                 <CardGridWithImage data={successStoriesSectionData} />
                 <ContentStrip title="Erscheinen, wenn Personen nach Ihrem Angebot suchen?" btnTitle="Anfrage senden" btnUrl="/" />
                 <AccordionGrid data={areaOfExpertiseSectionData} />
