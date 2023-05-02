@@ -4,6 +4,8 @@ import dummy3 from '../assets/images/dummy3.png';
 import sandro from '../assets/images/blog/sandro.png';
 import analyse from '../assets/images/blog/analyse.jpg';
 import wasistseo from '../assets/images/blog/was-ist-seo-optimierung.jpg';
+import alternateData from '../data/blogPostAlternateSectionData';
+import chartPreview from '../assets/images/growth-preview.png';
 
 export default {
 
@@ -43,13 +45,102 @@ export default {
                 cta: 'Was ist SEO',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                introTitle: 'Was sagt Google zur Dauer?',
-                introDescription: 'Aus einem Beitrag für die Search-Console Hilfe kann man entnehmen, dass Google offiziell sagt, dass man nach einer gestellten Indexierung bis zu einer Woche warten soll, bis man überhaupt überprüft, ob die Seite im “Index” ist.' + 'Wenn die Webseite neu ist, kann dies noch viel länger dauern. Google gibt an, dass es zwischen ein bis zwei Tagen und einigen Wochen dauern kann. Dies wurde auch im Zusammenhang mit der Indexierung beantragen Funktion in der Google Search Console erwähnt.'
+                introTitle: 'Definition',
+                introDescription: 'Bei SEO werden relevante Inhalte auf Webseiten platziert und mit benutzerfreundlichem Design sowie schneller Webtechnologie optimal für Besucher zugänglich gemacht. Mit den richtigen SEO-Massnahmen können Webseiten besser von Suchmaschinen gelesen werden, was die Platzierung in den Ergebnissen verbessert. Unternehmen nutzen Suchmaschinenoptimierung als Marketing, um weiter oben als die Konkurrenz in den Suchergebnissen platziert zu sein.',
+                introId: 'wasistseo',
+                videoTitle : 'Erklärvideo',
+                videoURL: 'https://www.youtube.com/embed/1YXnseEjaKs',
+                videoDescription: 'Der “Index” oder “Google Index” ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als “SERP’s” angezeigt werden. Der Quellcode wird ausgelesen und an den “Index” gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem “Index” gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem “Index” entfernt."',
+                alternateData : [
+                {
+                title: 'Heading Goes Here',
+                 subTitle: 'Aus einem Beitrag für die Search-Console Hilfe kann man entnehmen, dass Google offiziell sagt, dass man nach einer gestellten Indexierung bis zu einer Woche warten soll, bis man überhaupt überprüft, ob die Seite im “Index” ist.',
+                    dataRows: [
+                {
+                    image: chartPreview,
+                    imageAlt: 'preview',
+                    title: 'Situation',
+                    description: 'Es ist beispielsweise der Ausgangspunkt für ein neues Projekt für ein Start-up oder ein neues Unternehmen. Man möchte bei der Gründung des Unternehmens oder während der Lancierung eines neues Produkts in SEO investieren. Oder die Ausgangslage ist eine bestehende aber selten aktualisierte Webseite, bei der bisher kaum Suchmaschinenoptimierung betrieben wurde.'
+                },
+                {
+                    image: chartPreview,
+                    imageAlt: 'preview',
+                    title: 'Situation',
+                    description: 'Es ist beispielsweise der Ausgangspunkt für ein neues Projekt für ein Start-up oder ein neues Unternehmen. Man möchte bei der Gründung des Unternehmens oder während der Lancierung eines neues Produkts in SEO investieren. Oder die Ausgangslage ist eine bestehende aber selten aktualisierte Webseite, bei der bisher kaum Suchmaschinenoptimierung betrieben wurde.'
+                },
+                {
+                    image: chartPreview,
+                    imageAlt: 'preview',
+                    title: 'Situation',
+                    description: 'Es ist beispielsweise der Ausgangspunkt für ein neues Projekt für ein Start-up oder ein neues Unternehmen. Man möchte bei der Gründung des Unternehmens oder während der Lancierung eines neues Produkts in SEO investieren. Oder die Ausgangslage ist eine bestehende aber selten aktualisierte Webseite, bei der bisher kaum Suchmaschinenoptimierung betrieben wurde.'
+                },
+            ]
+                },
+                ],
+                contentList : [
 
+            {
+                item: 'Was ist SEO',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Was sagt Google zur Dauer?',
+                link: '#wasistseo'
+            },
+            {
+                item: '3 Phasen eines SEO-Projekts',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Häufige Fehler bei der Dauer',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Wie lange dauert es im Detail?',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Weiterlesen interessante Beiträge',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Wie funktioniert Indexierung & Ranking?',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Wie erscheint man ganz vorne bei Google?',
+                link: '#wasistseo'
+            },
+            {
+                item: 'Was beeinflusst die Dauer von SEO massgeblich?',
+                link: '#wasistseo'
+            },
+
+
+
+            ]
             }
             
         ],
-        contentlist : [
+       
+    },
+    'content-marketing': {
+        name: 'Content Marketing',
+        alias: 'content-marketing',
+        posts: [
+            {
+                slug: 'post-13',
+                shortTitle: 'Wie Lange Dauert SEO',
+                title: 'Email localization: the key to unlocking global engagement',
+                description: 'Ein Softwareunternehmen aus Zürich steigerte mit unserer Hilfe den Traffic der firmeneigenen Website um 5\'000% seit April 2021 und verzeichnete einen signifikanten Anstieg an Online-Anfragen.',
+                image: dummy1,
+                imageAlt: 'Blog post',
+                readMoreUrl: '/blog/content-marking/post1',
+                date: 'Mar 27, 2022',
+                readingTime: '5 min read',
+                cta: 'Mehr',
+
+                contentList : [
 
             {
                 item: 'Was ist SEO',
@@ -91,22 +182,6 @@ export default {
 
 
             ],
-    },
-    'content-marketing': {
-        name: 'Content Marketing',
-        alias: 'content-marketing',
-        posts: [
-            {
-                slug: 'post-13',
-                shortTitle: 'Wie Lange Dauert SEO',
-                title: 'Email localization: the key to unlocking global engagement',
-                description: 'Ein Softwareunternehmen aus Zürich steigerte mit unserer Hilfe den Traffic der firmeneigenen Website um 5\'000% seit April 2021 und verzeichnete einen signifikanten Anstieg an Online-Anfragen.',
-                image: dummy1,
-                imageAlt: 'Blog post',
-                readMoreUrl: '/blog/content-marking/post1',
-                date: 'Mar 27, 2022',
-                readingTime: '5 min read',
-                cta: 'Mehr'
             },
             
         ]

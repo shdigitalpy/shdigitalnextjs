@@ -9,6 +9,8 @@ const ImageAndContentAlternateRows = ({ data }) => {
         dataRows = [],
     } = data;
 
+    console.log('data', data)
+
     return (
         <section className="image-and-content container">
             <div className="title-wrapper">
