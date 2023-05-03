@@ -7,23 +7,25 @@ import Image from 'next/image';
 import Banner from '../../../components/common/Banner';
 import WhatGoogleSays from '../../../components/sections/WhatGoogleSays';
 import ImageAndContentAlternateRows from '../../../components/sections/ImageAndContentAlternateRows';
+import KnowList from '../../../components/sections/KnowList';
 import BreadCrumb from '../../../components/common/BreadCrumb';
 import ContentStrip2 from '../../../components/sections/ContentStrip2';
 import SiteAnalysis from '../../../components/sections/SiteAnalysis';
 import ContentWithVideo from '../../../components/sections/ContentWithVideo2';
 import CardGrid from '../../../components/sections/CardGrid3';
-import FAQ from '../../../components/sections/FAQ';
+import FAQSEO from '../../../components/sections/FAQSEO';
 import holdingLaptop from '../../../assets/images/holding-laptop-3.png';
 import agencyImage from '../../../assets/images/girl-avatar.png';
 import twitterIcon from '../../../assets/icons/twitter-white.svg';
 import facebookIcon from '../../../assets/icons/facebook-white.svg';
 import peopleSittingChair from '../../../assets/images/people-sitting-chair.png';
-
+import alternateData from '../../../data/blogPostAlternateSectionData';
 import blogData from '../../../data/blogData';
 import phasesOfSeoProjectSectionData from '../../../data/phasesOfSeoProjectSectionData';
-import faqSeoSectionData from '../../../data/faqSeoSectionData';
 import MoreInterestingPosts from "../../../components/sections/MoreInterestingPosts";
 import WorkWithUs from "../../../components/sections/WorkWithUs";
+import TextBlock from "../../../components/sections/TextBlock";
+import TextBlockMehr from "../../../components/sections/TextBlockMehr";
 import Comments from "../../../components/sections/Comments";
 
 const inter = Inter({subsets: ['latin']})
@@ -84,15 +86,31 @@ export default function BlogPost() {
                 </Banner>
                 <WhatGoogleSays post={post}  />
                 <ContentWithVideo title={post.videoTitle} className="bg-gray"
-                                  videoUrl={post.videoURL} thumbnail={peopleSittingChair}
-                                  description={post.videoDescription}/>
-                <ImageAndContentAlternateRows data={post.alternateData} />
+                                  videoUrl={post.videoURL} thumbnail={post.videoThumbnail}
+                                  description={post.videoDescription} description2={post.videoDescription2}/>
+                
+                { post.imageData ?
+                <ImageAndContentAlternateRows data={post} imageData={post.imageData} />
+                : " " }
+                <KnowList data={post} />
+                { post.imageData2 ?
+                <ImageAndContentAlternateRows data={post} imageData={post.imageData2} />
+                : " " }
+
+                { post.imageData3 ?
+                <ImageAndContentAlternateRows data={post} imageData={post.imageData3} />
+                : " " }
+                <TextBlock data={post} />
+                <TextBlockMehr data={post} />
+                { post.imageData4 ?
+                <ImageAndContentAlternateRows data={post} imageData={post.imageData4} />
+                : " " }
                 <SiteAnalysis />
                 <ContentStrip2 title="Kann man “ SEO - Optimierung”sagen?"
                                description="Nein, ,, SEO - Optimierung “ ist als Begriff falsch. Denn SEO ist die Abkurzung fur Suchmachineoptimierung - und du willst ja nicht die Optimierung Optimieren."
                                className="bg-gray" />
                 <CardGrid data={phasesOfSeoProjectSectionData} />
-                <FAQ data={faqSeoSectionData} dark={false} />
+                
                 <MoreInterestingPosts />
                 <WorkWithUs />
                 <Comments />

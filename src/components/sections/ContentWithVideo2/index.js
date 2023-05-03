@@ -8,6 +8,7 @@ const ContentWithVideo = (
     {
         title = '',
         description = '',
+        description2 = '',
         videoUrl = '',
         thumbnail = '',
         className = ''
@@ -32,6 +33,7 @@ const ContentWithVideo = (
                 className="content-wrapper">
                 <h3 className="section-title">{ title }</h3>
                 <p className="description">{ description }</p>
+                <p className="description">{ description2 }</p>
             </FramerMotionAnimation>
         </section>
     );
