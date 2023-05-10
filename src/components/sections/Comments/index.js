@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import {getComments, postComment} from '../../../api/comment';
+import { useReCaptcha } from "next-recaptcha-v3";
 import FramerMotionAnimation from '../../common/FramerMotionAnimation';
 import uprightArrowIcon from '../../../assets/icons/up-right-arrow.svg';
 import user1 from '../../../assets/images/user1.png';
@@ -20,11 +22,51 @@ const commentsListData = [
     },
 ];
 
-const Comments = ({ form = true, commentsList = true}) => {
-    const commentSubmitHandler = (e) => {
-        e.preventDefault();
-        console.log("Comment submitted!");
-    };
+const Comments = ({ slug = '', form = true, commentsList = true}) => {
+    const [comments, setComments] = useState([]);
+    const [success, setSuccess] = useState(false);
+
+    const { executeRecaptcha } = useReCaptcha();
+
+    const commentSubmitHandler = useCallback(
+        async (e, slug) => {
+            e.preventDefault();
+
+            if (slug) {
+                const token = await executeRecaptcha("form_submit");
+
+                const data = {
+                    text: e.target.text.value || '',
+                    name: e.target.name.value || '',
+                    email: e.target.email.value || '',
+                    website: e.target.website.value || '',
+                    slug: slug,
+                    recaptcha: token,
+                };
+
+                const res = await postComment(data);
+                console.log("comment submitted", res);
+                setSuccess(true);
+            }
+
+        },[executeRecaptcha],
+    );
+
+    const getCommentsHandler = async () => {
+        const res = await getComments();
+        const data = res?.filter(item => (item.slug === slug && item.reviewed));
+        setComments(data);
+    }
+
+    useEffect(() => {
+        if (success) {
+            setTimeout(() => setSuccess(false), 5000)
+        }
+    }, [success]);
+
+    useEffect(() => {
+        if (slug) getCommentsHandler();
+    }, [slug])
 
     return (
         <section className="comments container bg-gray">
@@ -34,26 +76,29 @@ const Comments = ({ form = true, commentsList = true}) => {
                         <FramerMotionAnimation type="h2" className="title">Lebe einen Kommentar</FramerMotionAnimation>
                         <FramerMotionAnimation type="p" className="description">Ihre E-Mail-Adresse wird nicht veröffentlicht, Pflichtfelder sind markiert*</FramerMotionAnimation>
                     </div>
-                    <form className="form-wrapper" onSubmit={commentSubmitHandler}>
+                    <form className="form-wrapper" onSubmit={(e) => {commentSubmitHandler(e, slug)}}>
                         <FramerMotionAnimation className="input-wrapper">
-                            <textarea rows={6} className="input comment-field" placeholder="Write here" required />
+                            <textarea rows={6} name="text" className="input comment-field" placeholder="Write here"  />
                         </FramerMotionAnimation>
                         <div className="input-group grid md:grid-cols-2">
                             <FramerMotionAnimation className="input-wrapper">
-                                <input type="text" className="input" placeholder="Name*" required />
+                                <input type="text" name="name" className="input" placeholder="Name*"  />
                             </FramerMotionAnimation>
                             <FramerMotionAnimation className="input-wrapper">
-                                <input type="email" className="input" placeholder="Email*" required />
+                                <input type="email" name="email" className="input" placeholder="Email*"  />
                             </FramerMotionAnimation>
                         </div>
                         <FramerMotionAnimation className="input-wrapper">
-                            <input type="text" className="input" placeholder="Name*" />
+                            <input type="text" name="website" className="input" placeholder="Website*" />
                         </FramerMotionAnimation>
+                        {/*<ReCaptcha onValidate={setToken} action="page_view" />*/}
                         <FramerMotionAnimation>
                             <button className="btn-primary submit-btn" type="submit">
                                 Submit Comment
                                 <Image src={uprightArrowIcon} alt="upright arrow" className="submit-btn-icon" />
                             </button>
+
+                            { success && <p className="success-msg text-lg mt-5">Success!</p> }
                         </FramerMotionAnimation>
                     </form>
                 </div>
@@ -61,19 +106,19 @@ const Comments = ({ form = true, commentsList = true}) => {
 
             { commentsList && (
                 <div className="comments-list-wrapper">
-                    { commentsListData.map((user, index) => (
+                    { comments?.map((user, index) => (
                         <FramerMotionAnimation
                             initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.25, delay: index * 0.1 }}
                             key={index} className="comment-row">
                             <div className="user-details-wrapper">
-                                <Image src={user.image} alt={user.name} className="user-image" />
-                                    <p className="user-name font-medium">{ user.name }</p>
+                                {/*<Image src={user.image} alt={user.name} className="user-image" />*/}
+                                <p className="user-name font-medium">{ user.name }</p>
                             </div>
                             <div className="comment-wrapper">
                                 <p className="highlight font-medium">{ user.highlight }</p>
-                                <p className="comment-para">{ user.comment }</p>
+                                <p className="comment-para">{ user.text }</p>
                             </div>
                         </FramerMotionAnimation>
                     ))}

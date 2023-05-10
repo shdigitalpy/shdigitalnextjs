@@ -7,9 +7,9 @@ import checkCircleOrange from '../../../assets/icons/check-circle-orange.svg';
 
 
 
-const AnalysisFactors = ({data}) => {
+const KnowList = ({data}) => {
     return (
-        <section className="analysis-factors bg-gray container">
+        <section id={data.listId} className="analysis-factors bg-gray container">
             <FramerMotionAnimation className="title-wrapper">
                 <h2 className="title">
                     {data.listTitle}
@@ -46,4 +46,4 @@ const AnalysisFactors = ({data}) => {
     );
 };
 
-export default AnalysisFactors;
+export default KnowList;

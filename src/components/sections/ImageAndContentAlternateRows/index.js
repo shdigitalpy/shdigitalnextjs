@@ -12,7 +12,8 @@ const ImageAndContentAlternateRows = ({ data, imageData }) => {
     } = data;
 
     return (
-        <section className="image-and-content container">
+        <section id={
+            imageData ? imageData.imageId : ""} className="image-and-content container">
             <div className="title-wrapper">
                 <FramerMotionAnimation type="h2" className="title">{ imageData.title }</FramerMotionAnimation>
                 <FramerMotionAnimation type="p" className="title-desc">{ imageData.subTitle }</FramerMotionAnimation>

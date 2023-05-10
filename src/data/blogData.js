@@ -7,6 +7,9 @@ import wasistseo from '../assets/images/blog/was-ist-seo-optimierung.jpg';
 import imageData from '../data/blogPostAlternateSectionData';
 import chartPreview from '../assets/images/growth-preview.png';
 import seoImage from '../assets/images/seo/was-ist-seo.jpg';
+import seoAnalyseTop from '../assets/images/analyse/seo-analyse.webp';
+import seoAnalyseImage from '../assets/images/analyse/seo-analyse-ratgeber.jpg';
+import seoAnalyseCTAImage from '../assets/images/analyse/cta-analyse.jpg';
 import seoFakten from '../assets/images/seo/seo-fakten.webp';
 import imageSnippet from '../assets/images/seo/suchmaschinen-snippet_cpiqtx_c_scale,w_765.jpg'
 import faqSeoSectionData from '../data/faqSeoSectionData';
@@ -171,10 +174,11 @@ export default {
 
 
                
-
-                textBlock: 'Daher stellt die Sichtbarkeit im Internet meist die Basis für einen erfolgreichen Kundenkontakt dar. Egal wie praktisch, hochwertig oder neuartig ein Produkt oder eine Dienstleistung ist – wird ein Unternehmen von potenziellen Kunden gar nicht erst gefunden, kann auch kein Kaufinteresse geweckt werden. Das intensive Vergleichen und Durchforsten von mehreren Seiten der Suchmaschine ist definitiv vorbei. Suchmaschinen Marketing ist also zum einen die wichtigste Möglichkeit, um online Nutzer für die eigene Website zu gewinnen.',
-                textBlock2: 'Ein Nutzer sucht nach einem bestimmten Thema oder Produkt, dann weiss man, dass dieser einen hohen Eigennutzen daraus ziehen möchte. Das Tippen verschiedener Keyword-Varianten und Verfeinerungen in das Thema bestätigen das hohe Eigeninteresse. So ist die Wahrscheinlichkeit groß, dass sie später einen Newsletter abonnieren oder online einen Kauf tätigen.',
-                textBlock3: 'Zuletzt hat Suchmaschinen Marketing den Vorteil, dass es, sofern es professionell aufgebaut wurde, recht nachhaltig ist. Das bedeutet, dass eine Position im Ranking bei Google, die einmal für einen Suchbegriff erreicht wurde, in der Regel stabil bleibt.',
+                textblockTitle: 'Checkliste zur Onpage Optimierung',
+                textBlock: 'Eine automatisierte Analyse mit einem Online Tool kann keine umfassende SEO-Analyse durch einen Menschen ersetzen.',
+                textBlock2: 'Wenn Sie sich weiter in das Thema einarbeiten möchten, haben wir hier die passende Checkliste zusammengestellt. Es handelt sich um Onpage Optimierungskriterien, die aktuell relevant sind.',
+                textBlock3: '',
+                
                 imageData4 : {
                         
                         title: 'Wie funktioniert SEO',
@@ -197,15 +201,203 @@ export default {
                         ]
                         },
 
-                textBlockTitle: 'Grundlagen: Ein laufenden Prozess',
-                textBlock4: 'Die Optimierung für Suchmaschinen ist kein einmaliger Vorgang, bei dem einige Dinge an einer Webseite verändert werden können. Es ist wichtig, regelmässig Inhalte zu aktualisieren oder neue Inhalte zu erstellen. Die Erfahrung zeigt, dass die Suchmaschinen neuen qualitative Inhalte als positives Signal für die eigene Webseite bewerten.',
-                textBlock5: 'Zudem werden die Suchmaschinen durch dessen Ingenieure stets modernisiert, dies zeigen auch jüngste "Core-Updates" des Google Index (Anpassung des Suchalgorithmus). Die Webseiten müssen laufend und spätestens bei Lancierung von solchen Updates entsprechend angepasst sein. Aus diesen Gründen sind laufende Anpassungen für ein hohes Ranking bei Suchmaschinen erforderlich.',
+                blockquoteTitle: 'Grundlagen: Ein laufenden Prozess',
+                blockQuote: 'Die Optimierung für Suchmaschinen ist kein einmaliger Vorgang, bei dem einige Dinge an einer Webseite verändert werden können. Es ist wichtig, regelmässig Inhalte zu aktualisieren oder neue Inhalte zu erstellen. Die Erfahrung zeigt, dass die Suchmaschinen neuen qualitative Inhalte als positives Signal für die eigene Webseite bewerten.',
+                blockQuote1: 'Zudem werden die Suchmaschinen durch dessen Ingenieure stets modernisiert, dies zeigen auch jüngste "Core-Updates" des Google Index (Anpassung des Suchalgorithmus). Die Webseiten müssen laufend und spätestens bei Lancierung von solchen Updates entsprechend angepasst sein. Aus diesen Gründen sind laufende Anpassungen für ein hohes Ranking bei Suchmaschinen erforderlich.',
                 
                 faqSection : '',
 
 
 
+                    },
+            {
+                slug: 'seo-analyse',
+                shortTitle: 'SEO Analyse',
+                title: 'SEO Analyse',
+                description: 'Möchtest du, dass deine Webseite von potenziellen Kunden gefunden wird? Dann ist SEO das A und O!',
+                image: seoAnalyseImage,
+                imageAlt: 'SEO Analyse',
+                readMoreUrl: '/blog/seo/post1',
+                date: '08.11.2022',
+                readingTime: '5min Lesedauer',
+                cta: 'SEO Analyse',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                introTitle: 'Wie gut ist Ihre Webseite?',
+                introDescription: 'Die Optimierung der Webseite für Suchmaschinen ist ein wichtiger Faktor um in der umkämpften Onlinewelt einen Platz am Tisch zu kriegen. Es gibt verschiedene Suchmaschinen Richtlinien, welche von einer guten Webseite eingehalten werden sollten. \n Die SEO Strategie ist massgeblich von korrekten Analysedaten abhängig. In diesem Ratgeber helfen wir Ihnen zu prüfen, wo bei Ihnen Chance und Potentiale für Optimierung sind. Korrekt umgesetzte Optimierungsmassnahmen können zur Steigerung des Rankings beitragen. \n Die Überprüfung der Webseite und die anschliessende Onpage-Verbesserung ist ein erster wichtiger Schritt, allerdings führen nur optimal aufeinander abgestimmte Massnahmen aus verschiedenen Bereichen z.B. Linkaufbau, Content-Design, etc. zu einem langfristigen Erfolg.',
+                introId: 'wasistseo',
+                contentList : [
+
+                {
+                item: 'Gratis SEO Analyse mit dem Online Tool',
+                link: '#onlinetool'
+                },
+                {
+                item: 'Individuellen Bericht innert kürzester Zeit - nachfolgend ausfüllen',
+                link: '#bericht'
+                },
+                {
+                item: 'Checkliste zur Onpage Optimierung',
+                link: '#checkliste'
+                },
+                {
+                item: 'Vorgehen bei einer Website Analyse für ein besseres Ranking',
+                link: '#vorgehen'
+                },
+                {
+                item: 'Mit Sandro Huber und Team eine professionelle Analyse starten!',
+                link: '#professionelleanalyse'
+                },
+                {
+                item: 'Weitere Tools',
+                link: '#weitere'
+                },
+                {   
+                item: 'Umfassende Überprüfung',
+                link: '#umfassend'
+                },
+                 ],
+                videoID : 'onlinetool',
+                videoTitle : 'Gratis SEO Analyse mit dem Online Tool (2023 Update)',
+                videoURL: 'https://www.youtube.com/embed/lvWuXcvtEm8',
+                videoDescription: 'Finden Sie mit unserer SEO Analyse heraus, wie es um Ihr Marketing steht! Füllen Sie die untenstehenden Informationen aus und Sie werden innerhalb einer Stunde eine detaillierte Analyse zu den wichtigsten Onpage-Faktoren Ihrer Website erhalten.',
+                videoDescription2 : 'Wie die meisten Online Tools verwenden wir auch den SEO Score, eine Prozentzahl von 0% bis 100%, welche als Referenzwert für den Fortschritt der Optimierung einer Website verwendet werden kann.',
+                videoThumbnail: seoAnalyseTop,
+                bannerImage: seoAnalyseCTAImage,
+                bannerImageDesc: 'CTA Banner',
+                bannerLink: '/blog/resources/onpage-analyse',
+                
+                listId: 'bericht',
+                listTitle: 'Individuellen Bericht innert kürzester Zeit - nachfolgend ausfüllen', 
+                listDescription: 'Was beinhaltet diese Gratis Analyse?',               
+                listItems: [
+                    {
+                     data: 'Den Gesamtscore der Seite in % - eine Bewertung von 0% bis 100%'
+                            },
+                    {
+                        data: ' Die Anzahl überprüften Unterseiten Ihrer Webseite und wieviele Fehler dort vorhanden sind'
+                    },
+                    {
+                        data: 'Anzahl Fehler, Warnungen und Anmerkungen'
+                    },
+                    { data: ' Die drei wichtigsten Fehler / Top 3 Fehlerbeschreibungen'}
+                    
+                    ],
+                listDescription2: 'Mit der Eingabe Ihrer Daten durchsucht unser Tool Ihre Webseite und prüft 120 technische Onpage Kritieren um darin Fehler zu identifizieren. Aus dem Gesamtergebnis wird ein Score errechnet, der in einer Prozentzahl ausgedrückt wird.',               
+                listDescription3: 'Mit unserem kostenlos Tool finden Sie Baustellen in Ihrer Website, an denen Sie arbeiten sollten. Wenn Sie erfahren wollen, wie man eine manuelle detaillierte Überprüfung selber machen kann, dann lesen Sie hier weiter.',
+                
+                textblockTitle: 'Checkliste zur Onpage Optimierung',
+                textBlock: 'Eine automatisierte Analyse mit einem Online Tool kann keine umfassende SEO-Analyse durch einen Menschen ersetzen.',
+                textBlock2: 'Wenn Sie sich weiter in das Thema einarbeiten möchten, haben wir hier die passende Checkliste zusammengestellt. Es handelt sich um Onpage Optimierungskriterien, die aktuell relevant sind.',
+                textBlock3: '',
+
+                itemsCheckId: 'checkliste',
+                itemstitleH2: 'Checkliste zur Onpage Optimierung',
+                itemsDesc1: 'Eine automatisierte Analyse mit einem Online Tool kann keine umfassende SEO-Analyse durch einen Menschen ersetzen.',
+                itemsDesc2: 'Wenn Sie sich weiter in das Thema einarbeiten möchten, haben wir hier die passende Checkliste zusammengestellt. Es handelt sich um Onpage Optimierungskriterien, die aktuell relevant sind.',
+                itemsTitleH3: 'Checkliste grundliche SEO - Website - Analyse',
+                itemsLeftSubtitle1: 'Meta Angaben und URL',
+                itemsLeft: [
+
+                    {
+                        data: 'Hat der Title Tag Die richtige Lange',
+                    },
+                    {
+                        data: 'Hat die Meta Description die richtige Lange',
+                    },
+                    {
+                        data: 'Crawkbarkeit: Gibt es Problem mit dem Zugiff auf die Webseite',
+                    },
+                    {
+                        data: 'Wurden die Cononical Angaben ruchtig gemacht',
+                    },
+                    {
+                        data: 'Ist die Sprache richting eingestellt',
+                    },
+                    {
+                        data: 'Ist die URL SEO freundlich',
+                    },
+                    {
+                        data: 'Sind weitere Angaben Wie viewport, robots, favicon, etc korrekt',
+                    },],
+                itemsrightSubtitle: 'Content',
+                itemsRight: [
+                     {
+                            data: 'Wie viele Worter befinden sich auf der Seite',
+                        },
+                        {
+                            data: 'Keyword -Analyse: Wurden die richtigen Themen verwndet',
+                        },
+                        {
+                            data: 'Sind die Textinhalte leicht lesbar',
+                        },
+                        {
+                            data: 'Werden die richtigen Medien Fur das Thema verwendet',
+                        },
+                        {
+                            data: 'Sind die inhaltlich relevanten Markups gesetzt',
+                        },
+                        {
+                            data: 'Ist det Content unsperched und Mobile friendly ',
+                        },
+                    
+
+                    ],
+                itemsrightSubtitle2: 'Webseiten Struktur',
+                itemsRight2: [
+                     {
+                            data: 'Sind die Überschriften richtig gewählt worden',
+                        },
+                        {
+                            data: 'Ist die Interne Verlinkung korrekt',
+                        },
+                        {
+                            data: 'Haben alle Links einen Linktext',
+                        }
+                    
+
+                    ],
+                itemsrightSubtitle3: 'Serverkonfiguration',
+                itemsRight3: [
+                     {
+                            data: 'Ist die HTTP Weiterleitung korrekt umgesetzt',
+                        },
+                        {
+                            data: 'Wird der Code mit gängigen Methoden komprimiert',
+                        },
+                        {
+                            data: 'Wie ist die Antwortzeit des Servers',
+                        }
+                    
+
+                    ],
+                itemsrightSubtitle4: 'Performance',
+                itemsRight4: [
+                     {
+                            data: 'Ist die PageSpeed der Webseite wettbewerbsfähig',
+                        },
+                        {
+                            data: 'Hat es Ressourcen, die die Ladezeit negativ beeinträchtigen',
+                        },
+                        {
+                            data: 'Werden moderne Bildformate verwendet',
+                        },
+                        {   data: 'Wie sieht es mit den Web Core Vitals aus'
+
+                        }
+                    
+
+                    ],
+                itemsRightBottomText: 'Bei Unklarheiten bezüglich den Begrifflichkeiten, lesen Sie zuerst unseren Beitrag zum Thema',
+                itemsRightBottomText: 'Was ist SEO.',
+                itemsRightBottomLink: '/blog/seo/was-ist-suchmaschinenoptimierung',
+                faqSection : '',
+
+
+
                     }
+
+
             
         ],
        

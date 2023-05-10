@@ -1,6 +1,7 @@
 import '@/styles/globals.scss'
 import MainLayout from "../layouts/Main";
 import {AnimatePresence} from "framer-motion"
+import { ReCaptchaProvider} from 'next-recaptcha-v3';
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
 import ScrollToTop from "react-scroll-to-top";
@@ -22,7 +23,9 @@ export default function App({Component, pageProps}) {
     return (
         <MainLayout>
             <AnimatePresence>
-                <Component {...pageProps} />
+                <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
+                    <Component {...pageProps} />
+                </ReCaptchaProvider>
                <ScrollToTop smooth component={<p  style={{ backgroundColor:"FF7A00", display: "flex", justifyContent: "center", alignItems:"center"}}><FiArrowUp /></p>} />
             </AnimatePresence>
         </MainLayout>

@@ -1,12 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import usingLaptop from '../../../assets/images/usingLaptop.png';
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
+import {useReCaptcha} from "next-recaptcha-v3";
+import {postForm} from "../../../api/form";
 
 const ContactForm = () => {
-    const submitHandler = (e) => {
+    const [success, setSuccess] = useState(false);
+
+    const { executeRecaptcha } = useReCaptcha();
+
+    const submitHandler = async (e) => {
         e.preventDefault();
+
+        const token = await executeRecaptcha("form_submit");
+        console.log("captcha token", token)
+
+        const data = {
+            client: e.target.name.value || '',
+            company: e.target.pursue.value || '',
+            email: e.target.email.value || '',
+            position: e.target.position.value || '',
+            recaptcha: token,
+        };
+
+        const res = await postForm(data);
+        console.log("res", res);
+        setSuccess(true);
     };
+
+    useEffect(() => {
+        if (success) {
+            setTimeout(() => setSuccess(false), 5000)
+        }
+    }, [success]);
 
     return (
         <section className="contact-form md:flex">
@@ -42,6 +69,7 @@ const ContactForm = () => {
                     </div>
                     <div className="input-wrapper">
                         <button className="submit-btn bg-white text-primary2" type="submit">Jetzt senden</button>
+                        { success && <p className="text-white success-msg text-lg mt-5">Success!</p> }
                     </div>
                 </FramerMotionAnimation>
             </div>

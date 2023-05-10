@@ -104,6 +104,14 @@ img {
   letter-spacing: -0.03em;
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.success-msg {
+  font-size: pxToRem(16);
+}
+
 @media (max-width: 767px) {
   .container {
     padding-left: 4rem;
@@ -142,6 +150,10 @@ img {
     line-height: pxToRem(78);
     padding: pxToRem(50) pxToRem(61);
     gap: pxToRem(24);
+  }
+
+  .success-msg {
+    font-size: pxToRem(64);
   }
 }
 

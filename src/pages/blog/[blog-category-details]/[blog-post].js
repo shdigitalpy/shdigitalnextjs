@@ -85,27 +85,38 @@ export default function BlogPost() {
                     )}
                 </Banner>
                 <WhatGoogleSays post={post}  />
-                <ContentWithVideo title={post.videoTitle} className="bg-gray"
+                <ContentWithVideo id={post.videoID} title={post.videoTitle} className="bg-gray"
                                   videoUrl={post.videoURL} thumbnail={post.videoThumbnail}
                                   description={post.videoDescription} description2={post.videoDescription2}/>
                 
                 { post.imageData ?
-                <ImageAndContentAlternateRows data={post} imageData={post.imageData} />
-                : " " }
-                <KnowList data={post} />
+                <ImageAndContentAlternateRows id={post.videoID} data={post} imageData={post.imageData} />
+                : undefined }
+                
+                { post.bannerImage  ?
+                <a href={post.bannerLink}><Image src={post.bannerImage} layout="responsive"
+                    loading="lazy"
+                    alt={post.bannerImageDesc} /></a>
+                : undefined }
+                
+                <KnowList id={post.knowListID} data={post} />
                 { post.imageData2 ?
+                
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData2} />
-                : " " }
+                : undefined }
 
                 { post.imageData3 ?
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData3} />
-                : " " }
-                <TextBlock data={post} />
-                <TextBlockMehr data={post} />
+                : undefined }
+                
+                { post.textBlock ? <TextBlock data={post} /> : undefined }
+                
+                { post.blockQuote ? <TextBlockMehr data={post} /> : undefined }
+                
                 { post.imageData4 ?
-                <ImageAndContentAlternateRows data={post} imageData={post.imageData4} />
-                : " " }
-                <SiteAnalysis />
+                <ImageAndContentAlternateRows data={post} imageData={post.imageData4} /> : undefined }
+                
+                <SiteAnalysis data={post} />
                 <ContentStrip2 title="Kann man “ SEO - Optimierung”sagen?"
                                description="Nein, ,, SEO - Optimierung “ ist als Begriff falsch. Denn SEO ist die Abkurzung fur Suchmachineoptimierung - und du willst ja nicht die Optimierung Optimieren."
                                className="bg-gray" />

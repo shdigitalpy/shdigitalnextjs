@@ -7,21 +7,31 @@ import checkCircleOrange from '../../../assets/icons/check-circle-orange.svg';
 
 
 
-const TextBlock = ({data}) => {
+const TextBlock = ( { data } ) => {
     return (
         <section className="analysis-factors container">
-           
-            <FramerMotionAnimation type="p" className="description mb-10">
-                        {data.textBlock}
-                    </FramerMotionAnimation>
+            
+            { data.textblockTitle ?
+            <FramerMotionAnimation type="h2" className="title text-center">
+                {data.textblockTitle}
+            </FramerMotionAnimation> : undefined }
+            
 
+            { data.textBlock ?
+            <FramerMotionAnimation type="p" className="description mt-10 mb-10">
+                        {data.textBlock}
+                    </FramerMotionAnimation> : undefined }
+
+                { data.textBlock2 ?
                     <FramerMotionAnimation type="p" className="description mb-10">
                         {data.textBlock2}
                     </FramerMotionAnimation>
+                    : undefined }
 
+                    { data.textBlock3 ?
                     <FramerMotionAnimation type="p" className="description mb-10">
                         {data.textBlock3}
-                    </FramerMotionAnimation>
+                    </FramerMotionAnimation> : undefined }
             
         </section>
     );
