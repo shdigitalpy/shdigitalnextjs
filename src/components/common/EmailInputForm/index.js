@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {postForm} from "../../../api/form";
+import {postEmailForm} from "../../../api/form";
 import {useReCaptcha} from "next-recaptcha-v3";
 
 const EmailInputForm = (
@@ -26,7 +26,7 @@ const EmailInputForm = (
             recaptcha: token,
         };
 
-        const res = await postForm(data);
+        const res = await postEmailForm(data);
         console.log("res", res);
         setSuccess(true);
     };
