@@ -24,7 +24,7 @@ export default {
         name: 'Ressourcen',
         alias: 'resources',
         posts: [
-        
+
             {
                 slug: 'onpage-analyse',
                 shortTitle: 'Wie Lange Dauert SEO',
@@ -44,7 +44,7 @@ export default {
         alias: 'seo',
         posts: [
             {
-                slug: 'was-ist-suchmaschinenoptimierung',
+                slug: 'what-is-seo',
                 shortTitle: 'Was ist SEO',
                 title: 'Was ist SEO',
                 description: 'Möchtest du, dass deine Webseite von potenziellen Kunden gefunden wird? Dann ist SEO das A und O!',
@@ -56,157 +56,6 @@ export default {
                 cta: 'Was ist SEO',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                introTitle: 'Definition',
-                introDescription: 'Bei SEO werden relevante Inhalte auf Webseiten platziert und mit benutzerfreundlichem Design sowie schneller Webtechnologie optimal für Besucher zugänglich gemacht. Mit den richtigen SEO-Massnahmen können Webseiten besser von Suchmaschinen gelesen werden, was die Platzierung in den Ergebnissen verbessert. Unternehmen nutzen Suchmaschinenoptimierung als Marketing, um weiter oben als die Konkurrenz in den Suchergebnissen platziert zu sein.',
-                introId: 'wasistseo',
-                contentList : [
-
-                {
-                item: 'Was ist SEO',
-                link: '#wasistseo'
-                },
-                {
-                item: 'Was sagt Google zur Dauer?',
-                link: '#wasistseo'
-                },
-                {
-                item: '3 Phasen eines SEO-Projekts',
-                link: '#wasistseo'
-                },
-                {
-                item: 'Häufige Fehler bei der Dauer',
-                link: '#wasistseo'
-                },
-                {
-                item: 'Wie lange dauert es im Detail?',
-                link: '#wasistseo'
-                },
-                {
-                item: 'Weiterlesen interessante Beiträge',
-                link: '#wasistseo'
-                },
-                {   
-                item: 'Wie funktioniert Indexierung & Ranking?',
-                link: '#wasistseo'
-                },
-                {
-                item: 'Wie erscheint man ganz vorne bei Google?',
-                link: '#wasistseo'
-                },
-                {
-                item: 'Was beeinflusst die Dauer von SEO massgeblich?',
-                link: '#wasistseo'
-                }, ],
-                videoTitle : 'Kommentar vom Autor',
-                videoURL: 'https://www.youtube.com/embed/1YXnseEjaKs',
-                videoDescription: 'Vielen Dank, dass Sie auf meinen Artikel gestossen sind. Suchmaschinenoptimierung ist und bleibt im 2022 brandaktuell. Neben einem Guide für Einsteiger ins Thema möchte ich Ihnen die neusten Entwicklungen näherbringen.',
-                videoDescription2 : 'Zudem findet sich zu jedem Themenbereich die Möglichkeit, sich noch detaillierter über ein Subthema zu informieren. Entsprechende Links sind pro Thema jeweils vorhanden, die auf die weiterführenden Seiten verweisen.',
-                videoThumbnail: seoImage,
-               
-
-                listTitle: 'Aktuell', 
-                listDescription: 'Was wird aktuell sein im 2022? Wenn man die Branche betrachtet gibt es aus unserer Sicht drei wichtige Themen, die im 2022 auf uns zukommen:',               
-                listDescription2: 'Die Abkürzung SEO steht für „Search Engine Optimization“ – also zu Deutsch Suchmaschinenoptimierung. Umgangssprachlich wird es auch als die Optimierung der Google-Auffindbarkeit einer Webseite genannt. SEO ist ein Teilbereich aus dem Online Marketing, das im 2021 wieder an Relevanz gewonnen hat.',               
-                listDescription3: 'Das Thema beschäftigt sich eigentlich ausschliesslich mit der Sichtbarkeit bei der größten Suchmaschine "Google", theoretisch können Optimierungsprozesse jedoch auch für alle anderen gängigen Suchmaschinen durchgeführt werden. Ein Fakt ist jedoch, dass SEO für Google in Bezug auf den Geschäftserfolg im Internet den größten Nutzen verspricht, deshalb steht die Suchmaschine meist im Vordergrund. Gemäss aktuellen Studien hat Google einen Marktanteil von über 90% im deutschsprachigen Raum.',
-                listItems: [
-                    {
-                     data: ' Video Inhalte nehmen drastisch zu. Zum Thema Video haben wir einen ausführlichen Ratgeber unter Video-SEO.'
-                            },
-                    {
-                        data: ' Kundenfokus: Die Customer Journey wird noch wichtiger'
-                    },
-                    {
-                        data: 'Weg von Redaktionen: Content Creation wird dank AI viel effizienter und jedem zugänglich'
-                    },
-                    
-                    ],
-
-                imageData2 : {
-                        
-                        title: '',
-                        subTitle: '',
-
-                        dataRows: [
-                        {
-                        image: seoFakten,
-                        imageAlt: 'Warum ist SEO für mein Unternehmen wichtig',
-                        title: 'Warum ist SEO für mein Unternehmen wichtig',
-                        description: 'Heutzutage ist es so, dass der Großteil der Menschen seine Informationen online über Suchmaschinen beschafft. Insbesondere, wenn konkrete Themen oder Produkte recherchiert werden sollen, sind die Suchmaschinen die ersten und wichtigsten Anlaufpunkte. Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar:'
-                        },],
-
-                    
-                        smallSource: '(Quelle: seybold.de)',
-                        justList : [
-
-                        {
-                        data: '85% aller Nutzer im Internet benutzen eine Suchmaschine',
-                        
-                        },
-
-                        {
-                        data: '90% der Internetnutzer betrachten nur die Suchresultate der ersten Seite',
-                        
-                        },
-
-
-                        {
-                        data: '75% aller Internetnutzer haben eine deutliche Kaufabsicht',
-                        
-                        },
-
-                        {
-                        data: '3.5 Milliarden Google-Suchanfragen weltweit pro Tag',
-                        
-                        },
-
-                        {
-                        data: '2 Billionen Google-Suchanfragen weltweit pro Jahr',
-                        
-                        },
-
-                        {
-                        data: '64 000 Google-Suchanfragen weltweit pro Sekunde',
-                        
-                        },
-
-                        ]
-                        },
-
-
-               
-                textblockTitle: 'Checkliste zur Onpage Optimierung',
-                textBlock: 'Eine automatisierte Analyse mit einem Online Tool kann keine umfassende SEO-Analyse durch einen Menschen ersetzen.',
-                textBlock2: 'Wenn Sie sich weiter in das Thema einarbeiten möchten, haben wir hier die passende Checkliste zusammengestellt. Es handelt sich um Onpage Optimierungskriterien, die aktuell relevant sind.',
-                textBlock3: '',
-                
-                imageData4 : {
-                        
-                        title: 'Wie funktioniert SEO',
-                        subTitle: 'Zunächst ist es für Interessierte vermutlich beruhigend zu wissen, dass es nicht in jedem Fall darum gehen muss, eine Webseite oder einen Online-Shop von Grund auf zu erneuern. Tatsächlich können bei guter Ausgangslage häufig kleinere aufeinanderfolgende funktionelle und inhaltliche Änderungen zum Erfolg führen. Es handelt sich dann um Verbesserungen, die aufeinander aufbauen und in ihrer Gesamtheit die Erfahrungen eines Nutzers, der auf einer Webseite navigiert, verbessern sollen.',
-
-                        dataRows: [
-                        {
-                        image: imageSnippet,
-                        imageAlt: 'Snippet',
-                        title: '',
-                        description: 'Neben der Verbesserung der Position in den Suchresultaten ist ein weiteres Ziel die Optimierung des Erscheinungsbildes des sogenannten Snippets. Ein Snippet (übersetzt: „Schnipsel“) ist die Kurzzusammenfassung einer Website. Es zeigt die Webseiten-URL, einen Title-Tag und die Meta-Beschreibung, ein sehr wichtiges und unterschätztes Tool.'
-                        },],
-
-                    
-                        smallSource: '',
-                        justList : [
-
-                        
-
-                        ]
-                        },
-
-                blockquoteTitle: 'Grundlagen: Ein laufenden Prozess',
-                blockQuote: 'Die Optimierung für Suchmaschinen ist kein einmaliger Vorgang, bei dem einige Dinge an einer Webseite verändert werden können. Es ist wichtig, regelmässig Inhalte zu aktualisieren oder neue Inhalte zu erstellen. Die Erfahrung zeigt, dass die Suchmaschinen neuen qualitative Inhalte als positives Signal für die eigene Webseite bewerten.',
-                blockQuote1: 'Zudem werden die Suchmaschinen durch dessen Ingenieure stets modernisiert, dies zeigen auch jüngste "Core-Updates" des Google Index (Anpassung des Suchalgorithmus). Die Webseiten müssen laufend und spätestens bei Lancierung von solchen Updates entsprechend angepasst sein. Aus diesen Gründen sind laufende Anpassungen für ein hohes Ranking bei Suchmaschinen erforderlich.',
-                
-                faqSection : '',
-
 
 
                     },
@@ -252,7 +101,7 @@ export default {
                 item: 'Weitere Tools',
                 link: '#weitere'
                 },
-                {   
+                {
                 item: 'Umfassende Überprüfung',
                 link: '#umfassend'
                 },
@@ -266,10 +115,10 @@ export default {
                 bannerImage: seoAnalyseCTAImage,
                 bannerImageDesc: 'CTA Banner',
                 bannerLink: '/blog/resources/onpage-analyse',
-                
+
                 listId: 'bericht',
-                listTitle: 'Individuellen Bericht innert kürzester Zeit - nachfolgend ausfüllen', 
-                listDescription: 'Was beinhaltet diese Gratis Analyse?',               
+                listTitle: 'Individuellen Bericht innert kürzester Zeit - nachfolgend ausfüllen',
+                listDescription: 'Was beinhaltet diese Gratis Analyse?',
                 listItems: [
                     {
                      data: 'Den Gesamtscore der Seite in % - eine Bewertung von 0% bis 100%'
@@ -281,11 +130,11 @@ export default {
                         data: 'Anzahl Fehler, Warnungen und Anmerkungen'
                     },
                     { data: ' Die drei wichtigsten Fehler / Top 3 Fehlerbeschreibungen'}
-                    
+
                     ],
-                listDescription2: 'Mit der Eingabe Ihrer Daten durchsucht unser Tool Ihre Webseite und prüft 120 technische Onpage Kritieren um darin Fehler zu identifizieren. Aus dem Gesamtergebnis wird ein Score errechnet, der in einer Prozentzahl ausgedrückt wird.',               
+                listDescription2: 'Mit der Eingabe Ihrer Daten durchsucht unser Tool Ihre Webseite und prüft 120 technische Onpage Kritieren um darin Fehler zu identifizieren. Aus dem Gesamtergebnis wird ein Score errechnet, der in einer Prozentzahl ausgedrückt wird.',
                 listDescription3: 'Mit unserem kostenlos Tool finden Sie Baustellen in Ihrer Website, an denen Sie arbeiten sollten. Wenn Sie erfahren wollen, wie man eine manuelle detaillierte Überprüfung selber machen kann, dann lesen Sie hier weiter.',
-                
+
                 textblockTitle: 'Checkliste zur Onpage Optimierung',
                 textBlock: 'Eine automatisierte Analyse mit einem Online Tool kann keine umfassende SEO-Analyse durch einen Menschen ersetzen.',
                 textBlock2: 'Wenn Sie sich weiter in das Thema einarbeiten möchten, haben wir hier die passende Checkliste zusammengestellt. Es handelt sich um Onpage Optimierungskriterien, die aktuell relevant sind.',
@@ -340,7 +189,7 @@ export default {
                         {
                             data: 'Ist det Content unsperched und Mobile friendly ',
                         },
-                    
+
 
                     ],
                 itemsrightSubtitle2: 'Webseiten Struktur',
@@ -354,7 +203,7 @@ export default {
                         {
                             data: 'Haben alle Links einen Linktext',
                         }
-                    
+
 
                     ],
                 itemsrightSubtitle3: 'Serverkonfiguration',
@@ -368,7 +217,7 @@ export default {
                         {
                             data: 'Wie ist die Antwortzeit des Servers',
                         }
-                    
+
 
                     ],
                 itemsrightSubtitle4: 'Performance',
@@ -385,10 +234,10 @@ export default {
                         {   data: 'Wie sieht es mit den Web Core Vitals aus'
 
                         }
-                    
+
 
                     ],
-                itemsRightBottomText: 'Bei Unklarheiten bezüglich den Begrifflichkeiten, lesen Sie zuerst unseren Beitrag zum Thema',
+                // itemsRightBottomText: 'Bei Unklarheiten bezüglich den Begrifflichkeiten, lesen Sie zuerst unseren Beitrag zum Thema',
                 itemsRightBottomText: 'Was ist SEO.',
                 itemsRightBottomLink: '/blog/seo/was-ist-suchmaschinenoptimierung',
                 faqSection : '',
@@ -398,9 +247,9 @@ export default {
                     }
 
 
-            
+
         ],
-       
+
     },
     'content-marketing': {
         name: 'Content Marketing',
@@ -461,7 +310,7 @@ export default {
 
             ],
             },
-            
+
         ]
     },
     'saas-marketing': {
@@ -480,7 +329,7 @@ export default {
                 readingTime: '12 min read',
                 cta: 'Mehr'
             },
-            
+
         ]
     },
     'ecommerce-marketing': {
@@ -499,7 +348,7 @@ export default {
                 readingTime: '5 min read',
                 cta: 'Mehr'
             },
-            
+
             {
                 slug: 'post-48',
                 shortTitle: 'Wie Lange Dauert SEO',

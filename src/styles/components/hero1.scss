@@ -24,10 +24,10 @@
   }
 
   .title {
-    font-size: pxToRem(64);
+    font-size: pxToRem(54);
     letter-spacing: -0.03em;
     margin-bottom: pxToRem(32);
-    line-height: pxToRem(64);
+    line-height: pxToRem(60);
   }
 
   .desc {
@@ -97,7 +97,7 @@
       font-size: pxToRem(140);
       letter-spacing: -0.03em;
       margin-bottom: pxToRem(60);
-      line-height: pxToRem(140);
+      line-height: pxToRem(160);
       //color: $white;
     }
 

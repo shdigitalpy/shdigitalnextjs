@@ -8,6 +8,7 @@ const EmailInputForm = (
         btnText = '',
         btnClass = '',
         inputClass = '',
+        successDark = false,
         className = ''
     }) => {
     const [email, setEmail] = useState('');
@@ -19,7 +20,6 @@ const EmailInputForm = (
         e.preventDefault();
 
         const token = await executeRecaptcha("form_submit");
-        console.log("captcha token", token)
 
         const data = {
             email: e.target.email.value || '',
@@ -49,7 +49,7 @@ const EmailInputForm = (
                        onChange={e => setEmail(e.target.value)} />
                 <button type="submit" className={`email-submit-btn ${btnClass}`}>{ btnText }</button>
             </form>
-            { success && <p className="text-white success-msg text-lg mt-5">Success!</p> }
+            { success && <p className={`success-msg text-lg mt-5 ${successDark ? 'text-primary' : 'text-white'}`}>Success!</p> }
         </>
     );
 };

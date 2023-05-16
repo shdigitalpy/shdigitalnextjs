@@ -32,6 +32,7 @@ const inter = Inter({subsets: ['latin']})
 
 export default function BlogPost() {
     const [post, setPost] = useState('');
+    const [slug, setSlug] = useState('');
     const [categoryUrl, setCategoryUrl] = useState('');
     const [category, setCategory] = useState('');
     const { isReady, asPath } = useRouter();
@@ -40,6 +41,7 @@ export default function BlogPost() {
        if (isReady) {
            const [, categoryAlias, postSlug] = asPath.split('/').filter(item => item !== '');
            const postInData = blogData[categoryAlias].posts.filter(item => item.slug === postSlug)[0];
+           setSlug(postSlug);
            setCategory(blogData[categoryAlias].name);
            setCategoryUrl(`/blog/${categoryAlias}`);
            setPost(postInData);
@@ -88,43 +90,43 @@ export default function BlogPost() {
                 <ContentWithVideo id={post.videoID} title={post.videoTitle} className="bg-gray"
                                   videoUrl={post.videoURL} thumbnail={post.videoThumbnail}
                                   description={post.videoDescription} description2={post.videoDescription2}/>
-                
+
                 { post.imageData ?
                 <ImageAndContentAlternateRows id={post.videoID} data={post} imageData={post.imageData} />
                 : undefined }
-                
+
                 { post.bannerImage  ?
                 <a href={post.bannerLink}><Image src={post.bannerImage} layout="responsive"
                     loading="lazy"
                     alt={post.bannerImageDesc} /></a>
                 : undefined }
-                
+
                 <KnowList id={post.knowListID} data={post} />
                 { post.imageData2 ?
-                
+
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData2} />
                 : undefined }
 
                 { post.imageData3 ?
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData3} />
                 : undefined }
-                
+
                 { post.textBlock ? <TextBlock data={post} /> : undefined }
-                
+
                 { post.blockQuote ? <TextBlockMehr data={post} /> : undefined }
-                
+
                 { post.imageData4 ?
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData4} /> : undefined }
-                
+
                 <SiteAnalysis data={post} />
                 <ContentStrip2 title="Kann man “ SEO - Optimierung”sagen?"
                                description="Nein, ,, SEO - Optimierung “ ist als Begriff falsch. Denn SEO ist die Abkurzung fur Suchmachineoptimierung - und du willst ja nicht die Optimierung Optimieren."
                                className="bg-gray" />
                 <CardGrid data={phasesOfSeoProjectSectionData} />
-                
+
                 <MoreInterestingPosts />
                 <WorkWithUs />
-                <Comments />
+                <Comments slug={slug} />
             </main>
         </>
     )

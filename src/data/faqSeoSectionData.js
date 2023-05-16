@@ -8,39 +8,27 @@ export default {
     items: [
         {
             icon: listIcon,
-            question: 'Was macht man bei suchmachineoptimierng?',
+            question: 'Wann kann man Resultate erwarten?',
             answer: {
                 media: {
                     thumbnail: meeting,
                     videoUrl: '/'
                 },
-                description: '"Suchmaschinenoptimierung" oder Englisch "search engine optimization" ist ein Bereich aus dem Online Marketing und steht für den Prozess, durch den ein Unternehmen bzw. die Webseite des Unternehmens online für Suchmaschinen sichtbarer wird. Mit den Themen des Kerngeschäfts eines Unternehmens möchte man ganz oben in den Suchergebnissen stehen und damit am meisten potentielle Kunden erreichen.\n' +
-                    'Weitere Tätigkeiten wie die Onpage-Optimierung sind dazu da, Webseiten für Suchmaschinen technisch, inhaltlich und strukturell einwandfrei zu gestalten. Dabei spielen auch die Verwendung von Keywords eine zentrale Rolle.'
+                description: 'Man unterscheidet zwischen Resultaten, die man als Kunde im Umsatz spürt und den ersten Resultaten in den Rankings nach Beginn einer Zusammenarbeit. Beides ist davon abhängig, mit welcher Ausgangslage ein Kunde zu uns kommt.\n' +
+                    'In der Regel kann man sagen, je höher das Budget des Kunden ist, desto schneller können wir Resultate erreichen. Denn bei höherem Budget können wir mehr Arbeitsstunden in das Projekt stecken. Unsere Dienstleistung ist in verschiedene Pakete gegliedert, eine Übersicht finden Sie im folgenden Abschnitt. Zudem finden Sie dort die Statistik bzw. den Durchschnitt aller bisheriger Kunden, nachdem diese in einer Betreuung eins bis zwei Jahre Kunden waren.'
             }
         },
         {
             icon: loaderIcon,
-            question: 'Was ist SEO - Marketing ?',
+            question: 'Welche Strategie ist die richtige?',
             answer: {
                 media: {
                     thumbnail: meeting,
                     videoUrl: '/'
                 },
-                description: '"Suchmaschinenoptimierung" oder Englisch "search engine optimization" ist ein Bereich aus dem Online Marketing und steht für den Prozess, durch den ein Unternehmen bzw. die Webseite des Unternehmens online für Suchmaschinen sichtbarer wird. Mit den Themen des Kerngeschäfts eines Unternehmens möchte man ganz oben in den Suchergebnissen stehen und damit am meisten potentielle Kunden erreichen.\n' +
-                    'Weitere Tätigkeiten wie die Onpage-Optimierung sind dazu da, Webseiten für Suchmaschinen technisch, inhaltlich und strukturell einwandfrei zu gestalten. Dabei spielen auch die Verwendung von Keywords eine zentrale Rolle.'
+                description: 'In der SEO-Betreuung wird zu Beginn ein Ziel festgelegt, anhand einer anfänglichen SEO-Analyse eine individuelle Strategie für Sie, Ihr Unternehmen, Ihre Produkte oder Ihre Dienstleistung zusammengestellt.\n' +
+                    'Für Shops ist das Vorgehen leicht abweichend. Anhand der Strategie legen die Spezialisten von SH Digital fest, welche Massnahmen Priorität haben. Entsprechend gibt es einen Content- sowie Massnahmen-Implementierungsplan. Für weitere Informationen zum genauen Prozessablauf finden Sie in unserer SEO-Agentur.'
             }
-        },
-        {
-            icon: cpuIcon,
-            question: 'Was ist SEO und SEA?',
-            answer: {
-                media: {
-                    thumbnail: meeting,
-                    videoUrl: '/'
-                },
-                description: '"Suchmaschinenoptimierung" oder Englisch "search engine optimization" ist ein Bereich aus dem Online Marketing und steht für den Prozess, durch den ein Unternehmen bzw. die Webseite des Unternehmens online für Suchmaschinen sichtbarer wird. Mit den Themen des Kerngeschäfts eines Unternehmens möchte man ganz oben in den Suchergebnissen stehen und damit am meisten potentielle Kunden erreichen.\n' +
-                    'Weitere Tätigkeiten wie die Onpage-Optimierung sind dazu da, Webseiten für Suchmaschinen technisch, inhaltlich und strukturell einwandfrei zu gestalten. Dabei spielen auch die Verwendung von Keywords eine zentrale Rolle.'
-            }
-        },
+        }
     ]
 }

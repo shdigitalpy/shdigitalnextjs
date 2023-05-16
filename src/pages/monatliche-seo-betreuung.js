@@ -5,7 +5,7 @@ import CustomerExpectation from '../components/sections/CustomerExpectation';
 import OurBenefits from '../components/sections/OurBenefits';
 import Testimonials from '../components/sections/Testimonial2';
 import Evidence from '../components/sections/Evidence';
-import FAQ from '../components/sections/FAQ';
+import FAQ from '../components/sections/FAQ_wovideo';
 import holdingLaptop from '../assets/images/holding-laptop-3.png';
 import emptyHall from '../assets/images/empty-hall.png';
 import faqSeoSectionData from '../data/faqSeoSectionData';
@@ -16,20 +16,19 @@ export default function BlogCTADetails() {
     return (
         <>
             <Head>
-                <title>SH Digital - Services Detail</title>
-                <meta name="description" content={`SH Digital - Services Detail`}/>
+                <title>Monatliche SEO Betreuung für Firmen | SH Digital</title>
+                <meta name="description" content={`Die monatliche SEO Betreuung von SH Digital verbessert Ihre Rankings und führt langfristig zu mehr Umsatz.`}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main className="services-detail">
                 <Banner arrow={true} bg={holdingLaptop}>
                     <h1 className="banner-heading-lg text-white">
-                        Unsere Angebote &
-                        Dienstleistungen
+                        SEO Betreuung <br />für Firmen
+
                     </h1>
                     <p className="description text-white">
-                        Wir bieten eine Reihe an Losungen, basierend auf den aktuellen
-                        Schwerpunkten bei unseren Klienten.
+                        Die monatliche SEO Betreuung für Firmen hilft Unternehmern und Marketingexperten bei Google ganz nach oben zu kommen.
                     </p>
                 </Banner>
 

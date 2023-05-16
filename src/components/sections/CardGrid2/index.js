@@ -35,9 +35,12 @@ const CardGrid = ({ data }) => {
                         transition={{ duration: 0.5, delay: (index * 0.15) + 0.15 }}
                         className="card-item" key={index}>
                         <Image src={card.icon} alt="icon" className="card-icon" />
-                        <Link href={'services-detail'}>
+                        { card.link ?
+                        <Link href={card.link} title={card.title}>
                             <h4 className="card-title font-medium">{ card.title }</h4>
                         </Link>
+                        : <h4 className="card-title font-medium">{ card.title }</h4> }
+
                         <p className="card-desc">{ card.description }</p>
                     </FramerMotionAnimation>
                 ))}

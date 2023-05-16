@@ -4,21 +4,22 @@ import usingLaptop from '../../../assets/images/usingLaptop.png';
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 import {useReCaptcha} from "next-recaptcha-v3";
 import {postForm} from "../../../api/form";
+import {useRouter} from "next/navigation";
 
 const ContactForm = () => {
     const [success, setSuccess] = useState(false);
 
+    const { push } = useRouter();
     const { executeRecaptcha } = useReCaptcha();
 
     const submitHandler = async (e) => {
         e.preventDefault();
 
         const token = await executeRecaptcha("form_submit");
-        console.log("captcha token", token)
 
         const data = {
             client: e.target.name.value || '',
-            company: e.target.pursue.value || '',
+            company: e.target.company.value || '',
             email: e.target.email.value || '',
             position: e.target.position.value || '',
             recaptcha: token,
@@ -27,6 +28,7 @@ const ContactForm = () => {
         const res = await postForm(data);
         console.log("res", res);
         setSuccess(true);
+        push('/thank-you');
     };
 
     useEffect(() => {
@@ -53,24 +55,25 @@ const ContactForm = () => {
                 <FramerMotionAnimation
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.25 }}
-                    className="form-wrapper" onSubmit={submitHandler}>
-                    <div className="input-wrapper">
-                        <input type="text" className="input" placeholder="Name" required />
-                    </div>
-                    <div className="input-wrapper">
-                        <input type="text" className="input" placeholder="Unternehmen" required />
-                    </div>
-                    <div className="input-wrapper">
-                        <input type="email" className="input" placeholder="E-Mail Adresse" required />
-                    </div>
-                    <div className="input-wrapper">
-                        <input type="text" className="input" placeholder="Position im Unternehmen" required />
-                    </div>
-                    <div className="input-wrapper">
-                        <button className="submit-btn bg-white text-primary2" type="submit">Jetzt senden</button>
-                        { success && <p className="text-white success-msg text-lg mt-5">Success!</p> }
-                    </div>
+                    transition={{ duration: 0.5, delay: 0.25 }}>
+                    <form className="form-wrapper" onSubmit={submitHandler}>
+                        <div className="input-wrapper">
+                            <input type="text" name="name" className="input" placeholder="Name" required />
+                        </div>
+                        <div className="input-wrapper">
+                            <input type="text" name="company" className="input" placeholder="Unternehmen" required />
+                        </div>
+                        <div className="input-wrapper">
+                            <input type="email" name="email" className="input" placeholder="E-Mail Adresse" required />
+                        </div>
+                        <div className="input-wrapper">
+                            <input type="text" name="position" className="input" placeholder="Position im Unternehmen" required />
+                        </div>
+                        <div className="input-wrapper">
+                            <button className="submit-btn bg-white text-primary2" type="submit">Jetzt senden</button>
+                            {/*{ success && <p className="text-white success-msg text-lg mt-5">Success!</p> }*/}
+                        </div>
+                    </form>
                 </FramerMotionAnimation>
             </div>
         </section>

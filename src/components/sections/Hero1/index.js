@@ -23,7 +23,7 @@ const Hero = () => {
                     <Image src={downArrow} alt="down arrow"/>
                     <Image src={downArrow} alt="down arrow"/>
                 </div>
-                <h1 className="title font-semibold">SEO Agentur <span className="text-4xl">für Neukundengewinnung</span></h1>
+                <h1 className="title font-semibold">SEO Agentur: Konstante Sichtbarkeit im Web</h1>
                 <p className="desc">
                     Die von Sandro Huber entwickelte und einmalige <strong className="underline">Performance SEO-Pro-Methode®</strong> hilft Software, Industrie sowie
                     E-Commerce Unternehmen mit dem Angebot bei Google auf die erste Seite

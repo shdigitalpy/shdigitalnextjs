@@ -8,13 +8,13 @@ import upRightArrowIcon from "../../../assets/icons/up-right-arrow.svg";
 
 const listItems = [
     {
-        data: 'Biggest levers of growth'
+        data: '100% spezialisiert auf Software, Industrie und E-Commerce'
     },
     {
-        data: 'Most Efficient Approach to Success'
+        data: 'Methode in mehr als 30 langfristigen Kampagnen perfektionieren'
     },
     {
-        data: 'Most Efficient Approach to Success'
+        data: 'Wir übernehmen für Sie die komplexen Themen und schaffen Ihnen Freiheit.'
     },
 ];
 
@@ -33,11 +33,10 @@ const OurBenefits = () => {
                     <div className="content-wrapper">
                         <FramerMotionAnimation className="title-wrapper">
                             <h2 className="title">
-                                Benefits of SH Digital
+                               Online-Marketing-Kanal endlich professionell angehen
                             </h2>
                             <p className="description">
-                                In order to be successful as a business with search engine optimization,
-                                you need a strategy that is tailored to your situation.
+                                Um als Unternehmen mit Suchmaschinenoptimierung Erfolg zu haben, benötigen Sie eine auf Ihre Situation abgestimmte Strategie.
                             </p>
                         </FramerMotionAnimation>
                         <div className="list-wrapper">
@@ -54,7 +53,7 @@ const OurBenefits = () => {
                         </div>
                         <FramerMotionAnimation className="btn-wrapper">
                             <button className="btn-primary">
-                                Kostenlose Potential analyse
+                                Kostenlose Potentialanalyse
                                 <Image src={upRightArrowIcon} alt="arrow icon" className="read-more-icon" />
                             </button>
                         </FramerMotionAnimation>

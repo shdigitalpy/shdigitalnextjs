@@ -1,5 +1,5 @@
 import React from 'react';
-import clientImage from '../../../assets/images/client-1.png';
+import clientImage from '../../../assets/images/davide-sposato.jpg';
 import Image from "next/image";
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 
@@ -8,22 +8,20 @@ const Testimonials = () => {
         <section className="testimonial-2 container">
             <FramerMotionAnimation className="title-wrapper text-center">
                 <h6 className="title-secondary">Testimonials</h6>
-                <h2 className="title">What our clients says</h2>
+                <h2 className="title">Was unsere Kunden sagen</h2>
             </FramerMotionAnimation>
 
             <div className="content-wrapper">
                 <div className="testimonial-block bg-gray">
                     <FramerMotionAnimation>
                         <p className="feedback">
-                            I recommend to try who has problem skin! Previously, I used other pharmacy products,
-                            but this one helped) The gel is economical, the smell is wow, it&apos;s second, after
-                            washing it is not felt, it also moisturizes the skin. The result is super!
+                           Die Zusammenarbeit mit SH Digital ist professionell, kompetent und unkompliziert. Man bietet eine ehrliche Beratung, transparente Erläuterungen der Maßnahmen und zeitnahe Umsetzung der Aufträge.
                         </p>
                         <div className="client-details hidden md:block">
                             <p className="position">
-                                Kate Taubiks, Chief Mobile Officer
+                                Davide Sposato, Geschäftsführer 
                             </p>
-                            <p className="company font-medium">BMW</p>
+                            <p className="company font-medium">Work-in AG</p>
                         </div>
                     </FramerMotionAnimation>
                     <FramerMotionAnimation className="client-details-wrapper">

@@ -11,11 +11,14 @@ const CustomerExpectation = () => {
             <div className="content-wrapper grid md:grid-cols-3">
                 <div className="title-wrapper">
                     <FramerMotionAnimation type="h2" className="title">
-                        What can our customers expect?
+                        Was können Sie erwarten?
                     </FramerMotionAnimation>
                     <FramerMotionAnimation type="p" className="description">
-                        From technical optimization to content creation, we take care of everything that a
-                        strong digital brand needs.
+                        Die Komplett-Dienstleistung zur Steigerung der Google Rankings sowie eine Online-Vermarktung Ihres Brands.
+
+                        Wir kümmern uns um die Entwicklung von Strategien und deren Umsetzung.
+
+                        Suchen Sie nach mehr Neukunden oder wollen Sie die Wettbewerbsfähigkeit steigern? Lassen Sie sich von uns beraten.
                     </FramerMotionAnimation>
                     <FramerMotionAnimation>
                         <Image src={doubleDownArrow} alt="down arrows" className="down-arrows" />
@@ -28,12 +31,9 @@ const CustomerExpectation = () => {
                     transition={{ duration: 0.5, delay: 0.25 }}
                     className="point-wrapper bg-gray">
                     <Image src={visibilityIcon} alt="point icon" className="point-icon" />
-                    <h6 className="point-title font-semibold">Visibility</h6>
+                    <h6 className="point-title font-semibold">Sichtbarkeit</h6>
                     <p className="description">
-                        Acquiring on the phone or hoping for recommendations is becoming a bigger challenge for
-                        companies.Our service places you as an answer provider for your target group in search
-                        engines and you become ubiquitous in your market . As a result, you gain additional new
-                        inquiries via the website.
+                       Akquise am Telefon oder die Hoffnung auf Empfehlungen wird für Unternehmen immer zur grösseren Herausforderung. Unsere Dienstleistung platziert Sie als Antwortgeber für Ihre Zielgruppe bei Suchmaschinen und Sie werden allgegenwärtig in Ihrem Markt. Dadurch gewinnen Sie zusätzlich neue Anfragen über die Webseite.
                     </p>
                 </FramerMotionAnimation>
 
@@ -43,11 +43,9 @@ const CustomerExpectation = () => {
                     transition={{ duration: 0.5, delay: 0.25 }}
                     className="point-wrapper bg-gray">
                     <Image src={handshakeIcon} alt="point icon" className="point-icon" />
-                    <h6 className="point-title font-semibold">Competitiveness</h6>
+                    <h6 className="point-title font-semibold">Wettbewerbsfähigkeit</h6>
                     <p className="description">
-                        If a company relies on existing business relationships and existing customers,
-                        long-term competitiveness is at risk .We increase the likelihood that prospects
-                        will become your customers.
+                        Wenn man sich als Unternehmen auf existierende Geschäftsbeziehungen und Bestandskunden verlässt, ist die langfristige Wettbewerbsfähigkeit in Gefahr.
                     </p>
                 </FramerMotionAnimation>
             </div>

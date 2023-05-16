@@ -162,3 +162,18 @@ img {
     //color-scheme: dark;
   }
 }
+
+
+@for $i from 0 through 150 {
+  .mt-#{$i} {
+    margin-top: pxToRem($i) !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: pxToRem($i) !important;
+  }
+
+  .p-#{$i} {
+    padding: pxToRem($i) !important;
+  }
+}

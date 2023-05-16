@@ -34,7 +34,7 @@ const ContentWithVideo = (
                 className="content-wrapper">
                 <h3 className="section-title">{ title }</h3>
                 <p className="description">{ description }</p>
-                <p className="description">{ description2 }</p>
+                { description2 && <p className="description">{ description2 }</p> }
             </FramerMotionAnimation>
         </section>
     );

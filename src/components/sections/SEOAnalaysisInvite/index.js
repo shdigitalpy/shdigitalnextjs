@@ -27,7 +27,7 @@ const SEOAnalysisInvite = () => {
                        transition={{ duration: 0.3, delay:  0.4 }}
                        className="form-wrapper">
                        <EmailInputForm
-                           placeHolder="E-Mail Adresse eingeben" inputClass="email-input"
+                           placeHolder="E-Mail Adresse eingeben" inputClass="email-input" successDark={true}
                            btnText="Kostenlose Analyse anfordern" btnClass="submit-btn" />
                    </FramerMotionAnimation>
                    <Image src={curlyArtLeft} alt="curly art" className="curly-art art-1" />
