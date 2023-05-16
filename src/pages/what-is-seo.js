@@ -141,7 +141,7 @@ export default function BlogPost() {
                                 content. Experience shows that the search engines evaluate new qualitative content
                                 as a positive signal for their own website.In addition, the search engines are
                                 constantly being modernized by its engineers, which is also shown by the latest
-                                "core updates" of the Google index (adjustment of the search algorithm).
+                            core updates of the Google index (adjustment of the search algorithm).
                                 The websites must be adapted accordingly on an ongoing basis and at the latest
                                 when such updates are launched. For these reasons, ongoing adjustments are required
                                 for a high search engine ranking .
@@ -226,7 +226,7 @@ export default function BlogPost() {
                                 Begriffs steckt.
                             </p>
                             <p className="desc-sm mb-100 md:mb-50">
-                                Die Analyse kann "Audit" oder "Check" genannt werden, in diesem Zusammenhang
+                                Die Analyse kann &quot;Audit&quot; oder &quot;Check&quot; genannt werden, in diesem Zusammenhang
                                 versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                 Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                 gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
@@ -248,7 +248,7 @@ export default function BlogPost() {
                                     Begriffs steckt.
                                 </p>
                                 <p className="desc-sm mb-50 md:mb-0">
-                                    Die Analyse kann "Audit" oder "Check" genannt werden, in diesem Zusammenhang
+                                    Die Analyse kann &quot;Audit&quot; oder &quot;Check&quot; genannt werden, in diesem Zusammenhang
                                     versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                     Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                     gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
@@ -332,7 +332,7 @@ export default function BlogPost() {
                                     initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
-                                    <h4 className="content-title">1. Bei ersten Beispiel "Hose":</h4>
+                                    <h4 className="content-title">1. Bei ersten Beispiel Hose:</h4>
                                     <Image src={keywords1} alt="img" className="main-image" />
                                 </FramerMotionAnimation>
                                 <FramerMotionAnimation
@@ -341,7 +341,7 @@ export default function BlogPost() {
                                     className="mb-80 md:mb-0"
                                 >
                                     <h4 className="content-title">
-                                        2. Schauen Sie sich das zweite Beispiel an: "lockere jeans hosen damen"
+                                        2. Schauen Sie sich das zweite Beispiel an: lockere jeans hosen damen
                                     </h4>
                                     <Image src={keywords2} alt="img" className="main-image" />
                                 </FramerMotionAnimation>
@@ -473,7 +473,7 @@ const post = {
     videoID: 'wasistseo',
     videoTitle: 'Wie funktioniert Indexierung & Ranking?',
     videoURL: 'https://www.youtube.com/embed/lvWuXcvtEm8',
-    videoDescription: 'Der “Index” oder “Google Index” ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als “SERP’s” angezeigt werden. Der Quellcode wird ausgelesen und an den “Index” gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem “Index” gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem “Index” entfernt.',
+    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als “SERP’s” angezeigt werden. Der Quellcode wird ausgelesen und an den “Index” gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem “Index” gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem “Index” entfernt.',
     videoThumbnail: thumbnail,
 }
 
@@ -507,7 +507,7 @@ const seoImportanceListItems = [
 const seoAnalysisListItems = [
     {
         icon: checkCircleIcon,
-        text: 'Der Webcrawler von Google (auch "Googlebot" genannt) lädt Webinhalte eigenständig herunter',
+        text: 'Der Webcrawler von Google (auch Googlebot genannt) lädt Webinhalte eigenständig herunter',
     },
     {
         icon: checkCircleIcon,
