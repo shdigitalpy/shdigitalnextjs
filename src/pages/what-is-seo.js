@@ -248,7 +248,7 @@ export default function BlogPost() {
                                     Begriffs steckt.
                                 </p>
                                 <p className="desc-sm mb-50 md:mb-0">
-                                    Die Analyse kann Audit oder Check genannt werden, in diesem Zusammenhang
+                                    Die Analyse kann Audit oder &quot;Check genannt werden, in diesem Zusammenhang
                                     versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                     Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                     gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
@@ -384,7 +384,7 @@ export default function BlogPost() {
                                 Für die Keyword-Analyse können verschiedene Programme zur Hilfe gezogen werden.
                                 Nachfolgend finden Sie die Keyword-Übersicht aus dem Keyword-Explorer von SEMrush.com,
                                 einem führenden SEO-Tool auf dem Markt. Das Beispiel Keyword hat ein geschätztes
-                                Suchvolumen von 18'100 Suchanfragen pro Monat, ein Cost per Click von 0.92 USD.
+                                Suchvolumen von 18100 Suchanfragen pro Monat, ein Cost per Click von 0.92 USD.
                             </FramerMotionAnimation>
 
                             <FramerMotionAnimation
@@ -473,7 +473,7 @@ const post = {
     videoID: 'wasistseo',
     videoTitle: 'Wie funktioniert Indexierung & Ranking?',
     videoURL: 'https://www.youtube.com/embed/lvWuXcvtEm8',
-    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als SERP’s angezeigt werden. Der Quellcode wird ausgelesen und an den Index gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem Index gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem Index entfernt.',
+    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als SERPs angezeigt werden. Der Quellcode wird ausgelesen und an den Index gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem Index gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem Index entfernt.',
     videoThumbnail: thumbnail,
 }
 
