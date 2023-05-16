@@ -13,7 +13,7 @@ const BlogCategoriesFilter = ({ category }) => {
         if (categoryAlias === 'overview') return push('/blog');
 
         push({
-            pathname: `/blog/${categoryAlias}`,
+            pathname: `/${categoryAlias}`,
         });
     };
 

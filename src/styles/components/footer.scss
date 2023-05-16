@@ -200,6 +200,8 @@
     }
 
     .images-wrapper {
+      flex-direction: column;
+      gap: pxToRem(80);
       padding-top: pxToRem(80);
       padding-bottom: pxToRem(80);
       border-top: pxToRem(1) solid #ddd;
@@ -226,6 +228,10 @@
           }
         }
       }
+    }
+
+    .rating-image {
+      width: 100%;
     }
 
     .copyright-wrapper {

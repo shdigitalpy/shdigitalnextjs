@@ -57,7 +57,9 @@ const BlogCategoryPreview = ({ data, showPerPage }) => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="post-preview-wrapper bg-gray" key={index}>
                             <div className="image-date-wrapper">
+                            <a href={`/${alias}/${post.slug}`} title={ post.title } className="read-more-link flex items-center">
                                 <Image src={post.image} alt={post.imageAlt} className="post-preview-image" />
+                                </a>
                                 <div className="data-time-wrapper flex justify-between">
 
                                 { post.date ?
@@ -67,8 +69,8 @@ const BlogCategoryPreview = ({ data, showPerPage }) => {
                                     </p>
                                     : ""
                                         }
-                                        
-                                    
+
+
 
                                     { post.readingTime ?
                                     <p className="timing-wrapper flex items-center">
@@ -83,7 +85,7 @@ const BlogCategoryPreview = ({ data, showPerPage }) => {
                             <div className="content-wrapper">
                                 <h4 className="post-title font-medium">{ post.title }</h4>
                                 <p className="post-description">{ description }</p>
-                                <Link href={`/blog/${alias}/${post.slug}`} className="read-more-link flex items-center">
+                                <Link href={`/${alias}/${post.slug}`} title={ post.title } className="read-more-link flex items-center">
                                     {post.cta}
                                     <Image src={arrowRightIcon} alt="arrow right" className="read-more-icon" />
                                 </Link>

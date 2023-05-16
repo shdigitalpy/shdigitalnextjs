@@ -58,33 +58,29 @@ const Footer = () => {
             </div>
 
             <div className="images-wrapper flex justify-between">
-
-            
-
-
                 { partnerImages?.map((item, index) => (
                     <div className="image-container" key={index}>
                         <Image src={item.image} alt={item.name} width={200} height={116} />
                     </div>
 
                 ))}
-                 <div className="image" data-romw-token="3DBzI9TeO33a7z3RriVaPGNnpjbSEjYlAeQLpuudkx9zN4cW9b"></div>
+                <div className="rating-image" data-romw-token="3DBzI9TeO33a7z3RriVaPGNnpjbSEjYlAeQLpuudkx9zN4cW9b"/>
 
-                
- 
-                        
-      
+
+
+
+
             </div>
-           
+
 
             <div className="copyright-wrapper text-center">
                 <p>{ copyright}</p>
             </div>
 
-            <Script async 
+            <Script async
             src="https://reviewsonmywebsite.com/js/v2/embed.js?id=8e7313fc946fd3d8c15c886f791a7ab8"
             type="text/javascript"
-        
+
         />
         </footer>
     );
