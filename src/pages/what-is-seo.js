@@ -179,7 +179,7 @@ export default function BlogPost() {
                                     navigiert, verbessern sollen.</p>
                                 <p className="desc-sm mb-0">Neben der Verbesserung der Position in den Suchresultaten ist
                                     ein weiteres Ziel die Optimierung des Erscheinungsbildes des sogenannten
-                                    Snippets. Ein Snippet (übersetzt: „Schnipsel“) ist die Kurzzusammenfassung
+                                    Snippets. Ein Snippet (übersetzt: &quot;Schnipsel&quot;) ist die Kurzzusammenfassung
                                     einer Website. Es zeigt die Webseiten-URL, einen Title-Tag und die
                                     Meta-Beschreibung, ein sehr wichtiges und unterschätztes Tool.</p>
                             </FramerMotionAnimation>
@@ -473,7 +473,7 @@ const post = {
     videoID: 'wasistseo',
     videoTitle: 'Wie funktioniert Indexierung & Ranking?',
     videoURL: 'https://www.youtube.com/embed/lvWuXcvtEm8',
-    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als “SERP’s” angezeigt werden. Der Quellcode wird ausgelesen und an den Index gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem Index gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem Index entfernt.',
+    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als SERP’s angezeigt werden. Der Quellcode wird ausgelesen und an den Index gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem Index gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem Index entfernt.',
     videoThumbnail: thumbnail,
 }
 
