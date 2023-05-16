@@ -462,7 +462,7 @@ const post = {
     title: 'WIE LANGE DAUERT SEO',
     shortTitle: 'WIE LANGE DAUERT SEO',
     introTitle: 'Was sagt Google zur Dauer?',
-    introDescription: 'Aus einem Beitrag für die Search-Console Hilfe kann man entnehmen, dass Google offiziell sagt, dass man nach einer gestellten Indexierung bis zu einer Woche warten soll, bis man überhaupt überprüft, ob die Seite im “Index” ist. Wenn die Webseite neu ist, kann dies noch viel länger dauern. Google gibt an, dass es zwischen ein bis zwei Tagen und einigen Wochen dauern kann. Dies wurde auch im Zusammenhang mit der Indexierung beantragen Funktion in der Google Search Console erwähnt.',
+    introDescription: 'Aus einem Beitrag für die Search-Console Hilfe kann man entnehmen, dass Google offiziell sagt, dass man nach einer gestellten Indexierung bis zu einer Woche warten soll, bis man überhaupt überprüft, ob die Seite im Index ist. Wenn die Webseite neu ist, kann dies noch viel länger dauern. Google gibt an, dass es zwischen ein bis zwei Tagen und einigen Wochen dauern kann. Dies wurde auch im Zusammenhang mit der Indexierung beantragen Funktion in der Google Search Console erwähnt.',
     category: 'Ratgeber',
     categoryUrl: '/blog/ratgeber',
     author: 'Inflect Agency',
@@ -473,7 +473,7 @@ const post = {
     videoID: 'wasistseo',
     videoTitle: 'Wie funktioniert Indexierung & Ranking?',
     videoURL: 'https://www.youtube.com/embed/lvWuXcvtEm8',
-    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als “SERP’s” angezeigt werden. Der Quellcode wird ausgelesen und an den “Index” gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem “Index” gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem “Index” entfernt.',
+    videoDescription: 'Der Index oder Google Index ist die Gesamtzahl aller mit dem Googlebot gecrawlten Webseiten. Bei diesem Vorgang speichert Google Seiten ab, die dann in den Suchergebnissen als “SERP’s” angezeigt werden. Der Quellcode wird ausgelesen und an den Index gesendet. Täglich werden viele neue Seiten erfasst aber auch aus dem Index gelöscht. Die Google web crawlers springen von Link zu Link auf weitere Webseiten, welche damit ebenfalls erfasst werden. Verstösst eine Webseite massiv gegen die Webmaster-Richtlinien von Google, dann wird Sie aus dem Index entfernt.',
     videoThumbnail: thumbnail,
 }
 
