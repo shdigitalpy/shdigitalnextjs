@@ -179,7 +179,7 @@ export default function BlogPost() {
                                     navigiert, verbessern sollen.</p>
                                 <p className="desc-sm mb-0">Neben der Verbesserung der Position in den Suchresultaten ist
                                     ein weiteres Ziel die Optimierung des Erscheinungsbildes des sogenannten
-                                    Snippets. Ein Snippet (übersetzt: &quot;Schnipsel&quot;) ist die Kurzzusammenfassung
+                                    Snippets. Ein Snippet (übersetzt: Schnipsel) ist die Kurzzusammenfassung
                                     einer Website. Es zeigt die Webseiten-URL, einen Title-Tag und die
                                     Meta-Beschreibung, ein sehr wichtiges und unterschätztes Tool.</p>
                             </FramerMotionAnimation>
@@ -226,7 +226,7 @@ export default function BlogPost() {
                                 Begriffs steckt.
                             </p>
                             <p className="desc-sm mb-100 md:mb-50">
-                                Die Analyse kann &quot;Audit&quot; oder &quot;Check&quot; genannt werden, in diesem Zusammenhang
+                                Die Analyse kann Audit oder Check genannt werden, in diesem Zusammenhang
                                 versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                 Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                 gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
@@ -248,7 +248,7 @@ export default function BlogPost() {
                                     Begriffs steckt.
                                 </p>
                                 <p className="desc-sm mb-50 md:mb-0">
-                                    Die Analyse kann &quot;Audit&quot; oder &quot;Check&quot; genannt werden, in diesem Zusammenhang
+                                    Die Analyse kann Audit oder Check genannt werden, in diesem Zusammenhang
                                     versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                     Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                     gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
