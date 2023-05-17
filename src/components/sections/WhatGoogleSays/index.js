@@ -20,6 +20,9 @@ const WhatGoogleSays = ({ post }) => {
                 </FramerMotionAnimation>
                 <div className="description-wrapper">
                     <FramerMotionAnimation type="p">{post.introDescription}</FramerMotionAnimation>
+
+                    {post.introDescription2 ? <FramerMotionAnimation type="p">{post.introDescription2}</FramerMotionAnimation> : undefined}
+                     {post.introDescription3 ? <FramerMotionAnimation type="p">{post.introDescription3}</FramerMotionAnimation> : undefined}
                     
                 </div>
             </div>

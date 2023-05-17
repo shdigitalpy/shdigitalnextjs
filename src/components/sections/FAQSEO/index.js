@@ -31,7 +31,7 @@ const FAQ = ({ data, dark = true }) => {
                 </h2>
             </FramerMotionAnimation>
 
-            <div className="accordion-wrapper flex flex-col">
+            <div className="accordion-wrapper flex flex-col" style={{ whiteSpace: "break-spaces" }}>
                 { items?.map((item, index) => {
                     const isActive = (activeAccordion === index);
                     return (
@@ -85,8 +85,13 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                         <Image src={item.answer.media.thumbnail} alt="thumbnail" className="thumbnail" />
                         <Image src={playIcon} alt="play" className="play-icon" />
                     </VideoContainer>
-                    <div className="content-container">
-                        { item.answer.description }
+                     <div className="content-container" style={{ whiteSpace: "break-spaces" }}>
+                    { item.answer.description }
+                    { item.answer.description2 ? <div className="content-container desc-md" style={{ whiteSpace: "break-spaces" }}>
+                    <br></br>{ item.answer.description2 }
+                    </div> : undefined }
+                    { item.answer.linklocation ? <div className="content-container desc-md"><br></br><a href={ item.answer.linklocation } title={ item.answer.linktext }>{ item.answer.linktext }</a>
+                    </div> : undefined }
                     </div>
                 </div>
             </CollapsibleContent>

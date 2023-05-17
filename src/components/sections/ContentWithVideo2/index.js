@@ -3,12 +3,14 @@ import Image from "next/image";
 import VideoContainer from "../../common/VideoContainer";
 import playIcon from "../../../assets/icons/play.svg";
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
+import ListItems from '../../../components/common/ListItems';
 
 const ContentWithVideo = (
     {
         title = '',
         description = '',
         description2 = '',
+        list = '',
         videoUrl = '',
         thumbnail = '',
         id = '',
@@ -34,6 +36,10 @@ const ContentWithVideo = (
                 className="content-wrapper">
                 <h3 className="section-title">{ title }</h3>
                 <p className="description">{ description }</p>
+                { list ? <br/> : undefined}
+                { list ?
+                <ListItems items={ list } /> : undefined }
+                { list ? <br/> : undefined}
                 { description2 && <p className="description">{ description2 }</p> }
             </FramerMotionAnimation>
         </section>

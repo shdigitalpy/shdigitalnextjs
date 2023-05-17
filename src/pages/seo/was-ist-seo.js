@@ -14,9 +14,9 @@ import FAQ from "../../components/sections/FAQSEO";
 import thumbnail from '../../assets/images/dummy-thumbnail.png';
 import seoImportance from '../../assets/images/seo/seo-importance.png';
 import seoWork from '../../assets/images/seo/how-seo-work.png';
-import keywords1 from '../../assets/images/seo/keywords-1.png';
-import keywords2 from '../../assets/images/seo/keywords-2.png';
-import keywords3 from '../../assets/images/seo/keywords-3.png';
+import keywords1 from '../../assets/images/seo/hose.jpg';
+import keywords2 from '../../assets/images/seo/long-tail-keyword-analyse.jpg';
+import keywords3 from '../../assets/images/seo/keyword-recherche-seo.jpg';
 import holdingLaptop from '../../assets/images/holding-laptop-3.png';
 import agencyImage from '../../assets/images/girl-avatar.png';
 import twitterIcon from '../../assets/icons/twitter-white.svg';
@@ -35,10 +35,14 @@ import customerReviewIcon from '../../assets/icons/customer-review.svg';
 import doubleQuotesIcon from '../../assets/icons/double-quotes.svg';
 import sandro from '../../assets/images/blog/sandro.png';
 import wasistseo from '../../assets/images/seo/was-ist-seo.jpg';
+import listIcon from '../../assets/icons/layers.svg';
+import VideoContainer from "../../components/common/VideoContainer";
+import playIcon from '../../assets/icons/play.svg';
+import holdingLaptop2 from '../../assets/images/holding-laptop.png';
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
-import faqSeoSectionData from '../../data/faqSeoSectionData';
+import faqSeoSectionDataWIS from '../../data/FAQSectionDataWIS';
 
 const inter = Inter({subsets: ['latin']})
 
@@ -82,7 +86,9 @@ export default function BlogPost() {
 
                 <ContentWithVideo id={post.videoID} title={post.videoTitle} className="bg-gray"
                                   videoUrl={post.videoURL} thumbnail={post.videoThumbnail}
-                                  description={post.videoDescription} description2={post.videoDescription2}/>
+                                  description={post.videoDescription} description2={post.videoDescription2}
+                                  list={post.videoList}
+                                  />
 
 
                 <section className="section-wrapper">
@@ -117,36 +123,33 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mt-100 md:mt-0">
-                            Visibility on the Internet is therefore usually the basis for successful customer contact. No
-                            matter how practical, high-quality or new a product or service is - if a company is not
-                            found by potential customers in the first place, no interest in buying can be aroused. The
-                            intensive comparison and scouring of several pages of the search engine is definitely over.
-                            Search engine marketing is therefore the most important way to win online users for your own
-                            website.If a user is looking for a specific topic or product, then you know that he wants to
-                            derive a lot of personal benefit from it. Typing different keyword variants and refinements
-                            in the topic confirm the high level of self-interest. So there is a high probability that
-                            they will later subscribe to a newsletter or make a purchase online.Finally, search engine
-                            marketing has the advantage that it is quite sustainable if it has been set up
-                            professionally. This means that a position in the Google ranking that has been achieved for
-                            a search term usually remains stable.</FramerMotionAnimation>
+                            Daher stellt die Sichtbarkeit im Internet meist die Basis für einen erfolgreichen Kundenkontakt dar. Egal wie praktisch, hochwertig oder neuartig ein Produkt oder eine Dienstleistung ist – wird ein Unternehmen von potenziellen Kunden gar nicht erst gefunden, kann auch kein Kaufinteresse geweckt werden. Das intensive Vergleichen und Durchforsten von mehreren Seiten der Suchmaschine ist definitiv vorbei. Suchmaschinen Marketing ist also zum einen die wichtigste Möglichkeit, um online Nutzer für die eigene Website zu gewinnen.
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mt-50 md:mt-0">
+                           Ein Nutzer sucht nach einem bestimmten Thema oder Produkt, dann weiss man, dass dieser einen hohen Eigennutzen daraus ziehen möchte. Das Tippen verschiedener Keyword-Varianten und Verfeinerungen in das Thema bestätigen das hohe Eigeninteresse. So ist die Wahrscheinlichkeit groß, dass sie später einen Newsletter abonnieren oder online einen Kauf tätigen.
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mt-50 md:mt-0">
+                            Zuletzt hat Suchmaschinen Marketing den Vorteil, dass es, sofern es professionell aufgebaut wurde, recht nachhaltig ist. Das bedeutet, dass eine Position im Ranking bei Google, die einmal für einen Suchbegriff erreicht wurde, in der Regel stabil bleibt.
+                            </FramerMotionAnimation>
 
                         <FramerMotionAnimation
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             className="content-flag bg-gray">
                             <h4 className="content-title font-medium">
-                                Basics: An ongoing process
+                                Grundlagen: Ein laufenden Prozess
                             </h4>
                             <p className="desc-md">
-                                Search engine optimization is not a one-off process that involves changing a few
-                                things about a website. It is important to regularly update content or create new
-                                content. Experience shows that the search engines evaluate new qualitative content
-                                as a positive signal for their own website.In addition, the search engines are
-                                constantly being modernized by its engineers, which is also shown by the latest
-                            core updates of the Google index (adjustment of the search algorithm).
-                                The websites must be adapted accordingly on an ongoing basis and at the latest
-                                when such updates are launched. For these reasons, ongoing adjustments are required
-                                for a high search engine ranking .
+                                Die Optimierung für Suchmaschinen ist kein einmaliger Vorgang, bei dem einige Dinge an einer Webseite verändert werden können. Es ist wichtig, regelmässig Inhalte zu aktualisieren oder neue Inhalte zu erstellen. Die Erfahrung zeigt, dass die Suchmaschinen neuen qualitative Inhalte als positives Signal für die eigene Webseite bewerten.
+                            </p>
+                            <p className="desc-md">
+                                Zudem werden die Suchmaschinen durch dessen Ingenieure stets modernisiert, dies zeigen auch jüngste "Core-Updates" des Google Index (Anpassung des Suchalgorithmus). Die Webseiten müssen laufend und spätestens bei Lancierung von solchen Updates entsprechend angepasst sein. Aus diesen Gründen sind laufende Anpassungen für ein hohes Ranking bei Suchmaschinen erforderlich.
                             </p>
                         </FramerMotionAnimation>
                     </div>
@@ -190,18 +193,15 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-0">
-                            Visibility on the Internet is therefore usually the basis for successful customer contact. No
-                            matter how practical, high-quality or new a product or service is - if a company is not
-                            found by potential customers in the first place, no interest in buying can be aroused. The
-                            intensive comparison and scouring of several pages of the search engine is definitely over.
-                            Search engine marketing is therefore the most important way to win online users for your own
-                            website.If a user is looking for a specific topic or product, then you know that he wants to
-                            derive a lot of personal benefit from it. Typing different keyword variants and refinements
-                            in the topic confirm the high level of self-interest. So there is a high probability that
-                            they will later subscribe to a newsletter or make a purchase online.Finally, search engine
-                            marketing has the advantage that it is quite sustainable if it has been set up
-                            professionally. This means that a position in the Google ranking that has been achieved for
-                            a search term usually remains stable.</FramerMotionAnimation>
+                            Ein Snippet erscheint online in Suchmaschinen als Suchergebnisseite (siehe Bild oben). Es handelt sich dabei um kurze Texte mit Verlinkung, die dem Nutzer einen Überblick über den Inhalt der Seite geben sollen. Durch diese Angaben überprüft der User, ob der Inhalt für ihn relevant ist. Sobald er auf den Snippet klickt, gerät er schließlich auf die zugehörige Landingpage.
+                            </FramerMotionAnimation>
+                            <br />
+                            <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-0">
+                            Ein Snippet, der den Inhalt präzise zusammenfasst und Interesse weckt, sorgt automatisch für mehr User, die darauf klicken sowie allgemein mehr Besucher. Weitere Maßnahmen, die getroffen werden, unterteilt man außerdem in OnPage und OffPage. Grundsätzlich gibt es dabei zu verstehen, dass etwas direkt auf der Webseite oder ausserhalb sein kann. Diese Unterscheidung ist sinnvoll, da völlig andere Aktivitäten dahinter stecken.
+                            </FramerMotionAnimation>
                     </div>
                 </section>
 
@@ -232,7 +232,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                 versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                 Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                 gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
-                                unseren Beitrag: SEO Analyse: Wie gut ist Ihre Webseite? zum Thema.
+                                unseren Beitrag <a href="/seo/seo-analyse" title="SEO Analyse: Wie gut ist Ihre Webseite">SEO Analyse: Wie gut ist Ihre Webseite</a>.
                             </p>
                         </FramerMotionAnimation>
                         <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
@@ -242,20 +242,13 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                             >
                                 <h4 className="content-title-md mb-50 md:mb-24">Wie untersucht Google eine Webseite</h4>
                                 <p className="desc-sm mb-15">
-                                    Die SEO-Analyse untersucht eine Webseite oder eines Online-Shop auf verschiedene
-                                    Faktoren und versucht Handlungsempfehlungen abzuleiten. Ein grosser Teilbereich
-                                    ist die Keyword-Analyse, bei der nach den richtigen Suchbegriffen für das eigene
-                                    Projekt geforscht wird.Aktuell nimmt dabei die Suchintention eine immer wichtigere
-                                    Rolle ein. Die Suchintention ist die Motivation des Suchenden, die hinter eines
-                                    Begriffs steckt.
+                                    Der <a target="__blank" href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=de" title="Guide für den Einstieg in SEO von Google">Guide für den Einstieg in SEO von Google</a> ist ein Startleitfaden für Anfänger zum Thema. 
+                                    In dieser Anleitung steht die Google Search Console im Mittelpunkt, die Webmaster helfen soll, 
+                                    die verschiedenen Bereiche optimal zu verbessern. Mit Meldungen zu der eigenen Webseite 
+                                    stellt Google Hinweise zur Verfügung, anhand derer Massnahmen zu treffen sind.
+
                                 </p>
-                                <p className="desc-sm mb-50 md:mb-0">
-                                    Die Analyse kann Audit oder &quot;Check genannt werden, in diesem Zusammenhang
-                                    versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
-                                    Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
-                                    gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
-                                    unseren Beitrag: SEO Analyse: Wie gut ist Ihre Webseite? zum Thema.
-                                </p>
+                                
                             </FramerMotionAnimation>
                             <FramerMotionAnimation
                                 initial={{ opacity: 0, x: -50 }}
@@ -286,13 +279,16 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     bei Google steht als andere. Die ist kein öffentlich zugängliche Liste, die man
                                     einfach einsehen kann.
                                 </p>
-                                <p className="desc-md mb-50">
+                                <p className="desc-md mb-15">
                                     Es gibt sehr viele verschiedene Kriterien, die ein Suchmaschinen-Ranking beeinflussen
                                     können. Kein Experte kann eine abschliessende Liste zur Verfügung stellen, denn
-                                    schliesslich bestimmt die Suchmaschine, wie das Ranking festgelegt wird.Experten
+                                    schliesslich bestimmt die Suchmaschine, wie das Ranking festgelegt wird.
+                                    </p>
+                                    <p className="desc-md mb-50">
+                                    Experten
                                     können anhand von Erfahrungen und Tests feststellen, welche Faktoren mehr Einfluss
                                     auf die Positionierung haben als andere. Nachfolgend die aus der Sicht unserer
-                                    Agentur wichtigsten 10# Rankingfaktoren im 2021 und 2022. Diese sollen mehr
+                                    Agentur <b>wichtigsten 10# Rankingfaktoren im 2021 und 2022</b>. Diese sollen mehr
                                     zum Verständnis beitragen, als dass Sie diese nutzen könnten.
                                 </p>
                             </FramerMotionAnimation>
@@ -334,8 +330,9 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
-                                    <h4 className="content-title">1. Bei ersten Beispiel Hose:</h4>
+                                    <h4 className="content-title">1. Beispiel</h4>
                                     <Image src={keywords1} alt="img" className="main-image" />
+                                    <p className="desc-md mt-15">Der Suchende kann nach "einer Hose zum kaufen" suchen oder er möchte wissen, was "eine Hose überhaupt ist". Die genaue Intention ist unbekannt und wird sich im Verlauf der Recherche ergeben.</p>
                                 </FramerMotionAnimation>
                                 <FramerMotionAnimation
                                     initial={{ opacity: 0, x: -50 }}
@@ -343,21 +340,23 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     className="mb-80 md:mb-0"
                                 >
                                     <h4 className="content-title">
-                                        2. Schauen Sie sich das zweite Beispiel an: lockere jeans hosen damen
+                                        2. Beispiel
                                     </h4>
                                     <Image src={keywords2} alt="img" className="main-image" />
+                                    <p className="desc-md mt-15">Bei diesem Suchbegriff ist klar, wonach die Userin gesucht hat. Man kann davon ausgehen, dass man effektiv nach einem solchen Produkt sucht, allerdings noch nicht unbedingt bereit für einen Kauf ist.</p>
+
                                 </FramerMotionAnimation>
                             </div>
 
                             <FramerMotionAnimation
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                className="mb-100 md:mb-24">
-                                <h4 className="content-title ">
+                                className="mb-20 md:mb-12">
+                                <p className="desc-md mt-15">
                                     Es gibt drei wichtige Eigenschaften, die während der Keyword-Analyse besonders
                                     wichtig sind:
-                                </h4>
-                                <Image src={keywords3} alt="img" className="main-image"/>
+                                </p>
+                                
                             </FramerMotionAnimation>
 
                             <FramerMotionAnimation
@@ -377,6 +376,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     über eine bezahlte Anzeige kommt. Wie viel der Anzeigenschalter pro Klick bezahlen
                                     muss.
                                 </p>
+                                
                             </FramerMotionAnimation>
 
                             <FramerMotionAnimation
@@ -387,6 +387,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                 Nachfolgend finden Sie die Keyword-Übersicht aus dem Keyword-Explorer von SEMrush.com,
                                 einem führenden SEO-Tool auf dem Markt. Das Beispiel Keyword hat ein geschätztes
                                 Suchvolumen von 18100 Suchanfragen pro Monat, ein Cost per Click von 0.92 USD.
+                                <Image style={{ maxWidth: "60%"}} src={keywords3} alt="img" className="main-image"/>
                             </FramerMotionAnimation>
 
                             <FramerMotionAnimation
@@ -413,7 +414,234 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
 
                 <CollapsibleList dark={false} data={offpageOptimizationSectionData} />
 
-                <FAQ data={faqSeoSectionData} />
+                 <section className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                                Welche sind die wichtigsten SEO-Tools
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Optimierungs-Tools können dabei helfen, den Erfolg von unternommenen Suchmaschinen-Marketingmassnahmen im Internet zu analysieren, auszuwerten und zu steigern. Auf Basis der Auswertungen wird der aktuelle Zustand verstanden und langfristig verbessert. Dabei gibt es eine Vielzahl an SEO-Tools, die verschiedene Schwerpunkte besitzen und an unterschiedlichen Prozessschritten eingesetzt werden können.
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Einige Tools helfen bei der Verbesserung der Suchmaschinen-Rankings, andere beim Backlink-Profil einer Website und wieder andere konzentrieren sich auf die Keywords. Da die Suchmaschinen-Marketing-Tools sehr unterschiedlich im Angebot und in der Spezialisierung sind, muss man genau analysieren, welches Tool die eigenen Anforderungen am besten erfüllt.
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                          Zur Basisausstattung gehören die Online-Marketingtools, die besonders beliebt sind, sind die Google Search Console, Google Analytics und Screaming Frog. Wer sich tiefer mit der Materie befasst, wird jedoch bald feststellen, dass es eine Vielzahl weiterer nützlicher Tools gibt, die weit verbreitet sind.
+
+
+                        </FramerMotionAnimation>
+
+                        <div className="inner-content-wrapper bg-gray">
+                            <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Google Search Console</h4>
+                                    <p className="desc-md mt-15">Die Google Search Console ist ein kostenfreies Tool, mit dem die Performance der Website in den Google Suchergebnissen beobachtet werden kann. Das Tool hilft dabei, die Sichtbarkeit der Website im Internet zu überwachen und Optimierungspotenziale zu identifizieren.</p>
+                                </FramerMotionAnimation>
+                                 <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Google Analytics</h4>
+                                    <p className="desc-md mt-15">Auch Google Analytics hat eine kostenlose Version, die bereits viele hilfreiche Funktionen bietet. Das Tool stellt Statistiken über die Performance der Website und über das Besucherverhalten bereit. Insbesondere in Verbindung mit der Google Search Console ermöglicht es, zielgerichtet Optimierungspotenziale zu entdecken und umzusetzen. Google Analytics gibt Aufschluss über den Online Traffic einer Website und hilft dabei, Nutzerdemografie und –Vorlieben zu erkennen.</p>
+                                </FramerMotionAnimation>
+                                 <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Screaming Frog</h4>
+                                    <p className="desc-md mt-15">Screaming Frog ist ein Crawler-Tool. Es liefert einen Überblick über die Architektur einer Website und zeigt auf, wo Elemente fehlen oder Inhalte sich doppeln. Speziell für die OnPage-Analyse ist es nützlich.</p>
+                                </FramerMotionAnimation>
+                            </div>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="mb-20 md:mb-12">
+                                <p className="desc-md mt-15">
+                                    Neben diesen drei Tools gibt es eine Vielzahl weiterer, die zur Keyword-Analyse, 
+                                    zum Monitoring und für die technische Optimierung verwendet werden können. 
+                                    Sind Sie auf der Suche nach einem geeigneten Tool, dann lesen 
+                                    Sie unseren Artikel zum Thema <a href="/seo/tools" title="SEO-Tools">SEO-Tools </a> 
+                                    im Vergleich. Unsere Agentur verwendet weitere interne Tools, 
+                                    die Keyword-Daten verfeinern können, diese sind jedoch unseren 
+                                    Kunden vorbehalten. Bei Interesse dürfen Sie gerne auf uns zukommen.
+
+                                </p>
+                                
+                            </FramerMotionAnimation>
+
+                            
+                        </div>
+                    </div>
+                </section>
+
+                 <section className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                                Was genau macht eine SEO-Agentur
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Die Tätigkeiten sind sehr vielfältig und können meist nur von spezialisierten Fachkräften übernommen werden. Eine SEO-Strategie und Umsetzung selbst in die Hand zu nehmen kann auf die Dauer viel Zeit in Anspruch nehmen, ohne dass ein Erfolg garantiert ist.
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Eine SEO-Agentur nimmt Webmastern diese Arbeit ab, wodurch man Zeit spart und den Kopf für andere Inhalte der Webseite oder gar andere Arbeiten im Unternehmen freihat. Grundsätzlich gilt: Je früher professionelle Optimierung in Auftrag gegeben wird, umso besser. Am sinnvollsten ist es bereits beim Aufbau einer neuen Website darauf zu achten, dass man von Grund auf suchmaschinenfreundlich gestaltet.
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                            Natürlich kann auch eine bereits bestehende Website durch eine Agentur verbessert werden. Dabei empfiehlt sich einen einmaligen grösseren Umbau zu Beginn einer Betreuung vorzunehmen und dann kleinere Aktivitäten auf monatlicher Basis fortzuführen.
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                            Grundsätzlich haben Agenturen damit eine Vielzahl an Aufgaben, die mit der Suchmaschinenoptimierung einhergehen: Sie stellen die Erreichbarkeit der Website sicher, optimieren Snippets, Ladezeiten und Content. Sie achten darauf, dass die mobile Darstellung funktioniert, interne und externe Links einwandfrei eingebettet sind. Sie verhindern die Verwendung von "Duplicate Content" und sorgen für ein angenehmes Nutzungsverhalten.
+
+
+                        </FramerMotionAnimation>
+
+                    
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="content-flag bg-white mb-20 md:mb-0">
+                                <h4 className="content-title font-medium">
+                                    Warum eine Agentur
+
+                                </h4>
+                                <p className="desc-md">
+                                   Die Experten von Agenturen besitzen ein fachliches Know-How und können dieses gezielt anwenden. Ausserdem hat ein Experte einen Erfahrungsvorsprung, welcher unmöglich von einem Laien über die Jahre angeeignet werden kann.
+                                <br /> <br />
+                                Die Praxis zeigt, dass sich ein "Know-How-Einkauf" bei einer Agentur über die Zeit obendrein lohnt. Überspitzt gesagt profitieren Sie von den Fehlern, die bei anderen Kunden der Agentur in der Vergangenheit gemacht wurden und haben dadurch eine deutlich höhere Erfolgschance.
+
+
+                                </p>
+                            </FramerMotionAnimation>
+
+                            <section className="content-with-video-2 container flex md:grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.25 }}
+                                    className="video-wrapper">
+                                    <VideoContainer url="https://www.youtube.com/embed/NWsyr-D06Ck"
+                                                    className="thumbnail-wrapper relative">
+                                        <Image src={holdingLaptop2} alt={'thumbnail'} className="thumbnail" />
+                                        <Image src={playIcon} alt={"play icon"} className="play-icon" />
+                                    </VideoContainer>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.25 }}
+                                    className="content-wrapper">
+                                    <h3 className="section-title">Video von Google</h3>
+                                    <p className="description">Wie man einen SEO-Spezialisten aussuchen sollte (auf Englisch).
+                                    </p>
+                                    
+                                </FramerMotionAnimation>
+                            </section>
+                        </div>
+
+
+                   
+                </section>
+
+                 <section className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                                Erfolgsfaktoren
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Eine Herausforderung des Online Marketing ist es, dass die Suchmaschinen-Ranking-Faktoren ständig im Wandel sind. Experten müssen aus diesem Grund stets informiert bleiben und sich über die neuesten Entwicklungen in Kenntnis setzen. Die folgenden Faktoren spielen heutzutage eine große Rolle bei Ranking-Ergebnissen:
+                        </FramerMotionAnimation>
+                        
+
+                        <div className="inner-content-wrapper bg-gray">
+                            <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Die Gegebenheiten des Marktes</h4>
+                                    <p className="desc-md mt-15">Möglicherweise ist das Themenfeld, in dem man sich mit seiner Marke befindet, stark umkämpft und der Wettbewerb sehr hart. Unter diesen Umständen werden es neue Unternehmen schwerer haben, sich zu etablieren. Ein weniger umworbener Markt ist einfacher zu bearbeiten.</p>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Content-Relevanz</h4>
+                                    <p className="desc-md mt-15">Es geht nicht nur darum, Nutzer auf eine Website zu „locken“. Auf der Landingpage angekommen, gilt es auch, das Interesse dort zu halten. Stimmt der Webseiten-Inhalt mit dem suggerierten Inhalt des Snippets nicht überein, wir der Internetnutzer enttäuscht sein und die Seite wieder verlassen.</p>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">User-Experience</h4>
+                                    <p className="desc-md mt-15">Dass Internetnutzer durch ein gutes Ranking auf eine Website aufmerksam gemacht werden, ist die eine Sache. Dass sie letztendlich bleiben, eine andere. Um Nutzer auf einer Webseite zu binden, sollte man diese nicht für Bots ausrichten, sondern auf das effektive menschliche Verhalten.</p>
+                                    <p className="desc-md mt-15">Der User ist auf der Suche nach Informationen oder Produkten, eine angenehme Erfahrung wird den User eher zum Kauf ermuntern. Hierbei spielt der Content eine Rolle, genau wie die ästhetische Aufmachung und thematische Strukturiertheit der Inhalte.</p>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Einfachheit</h4>
+                                    <p className="desc-md mt-15">Websites, auf denen Suchfenster kaum zu finden, Inhalte unübersichtlich und die Navigation kompliziert ist, werden dazu führen, dass Internetnutzer schnell wieder verschwinden. Es gilt also, die Inhalte so aufzubereiten, dass das Relevante auf den ersten Blick ins Auge fällt. Je komplexer eine Website aufgebaut ist, umso weniger attraktiv wird sie von Internetnutzern oft wahrgenommen.</p>
+
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Regelmäßiges Testen</h4>
+                                    <p className="desc-md mt-15">Ob eine Website gut ankommt und die Marketing Maßnahmen im Internet funktionieren, das kann anhand von Klickzahlen, Conversionsraten und Seitenaufrufen gut nachvollzogen werden. Neue Webmaster sollten zunächst testen, welche Marketingmaßnahmen erfolgreich sind und die Wirkung auswerten.</p>
+                                </FramerMotionAnimation>
+                               
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                </section>
+
+                <FAQ data={faqSeoSectionDataWIS} />
             </main>
         </>
     )
@@ -425,36 +653,56 @@ const googleContentList = [
         link: '#wasistseo'
     },
     {
-        item: 'Was sagt Google zur Dauer?',
-        link: '#wasistseo'
+        item: 'Warum ist es für mein Unternehmen wichtig?',
+        link: '#unternehmen'
     },
     {
-        item: '3 Phasen eines SEO-Projekts',
-        link: '#wasistseo'
+        item: 'Wie funktioniert Suchmaschinenoptimierung?',
+        link: '#wiefunktioniertes'
     },
     {
-        item: 'Häufige Fehler bei der Dauer',
-        link: '#wasistseo'
+        item: 'Was sind Rankingfaktoren',
+        link: '#rankingfaktoren'
     },
     {
-        item: 'Wie lange dauert es im Detail?',
-        link: '#wasistseo'
+        item: 'Was sind Keywords',
+        link: '#keywords'
     },
     {
-        item: 'Weiterlesen interessante Beiträge',
-        link: '#wasistseo'
+        item: 'Onpage Optimierung',
+        link: '#onpage'
     },
     {
-        item: 'Wie funktioniert Indexierung & Ranking?',
-        link: '#wasistseo'
+        item: 'Offpage Optimierung',
+        link: '#offpage'
     },
     {
-        item: 'Wie erscheint man ganz vorne bei Google?',
-        link: '#wasistseo'
+        item: 'Welche sind die wichtigsten SEO-Tools',
+        link: '#tools'
     },
     {
-        item: 'Was beeinflusst die Dauer von SEO massgeblich?',
-        link: '#wasistseo'
+        item: 'Was genau macht eine SEO-Agentur',
+        link: '#agentur'
+    },
+    {
+        item: 'Wie lange dauert es bis zu den ersten Resultaten?',
+        link: '#wielange'
+    },
+    {
+        item: 'Erfolgsfaktoren',
+        link: '#erfolgsfaktoren'
+    },
+    {
+        item: 'Was kostet es?',
+        link: '#kosten'
+    },
+    {
+        item: 'Lässt sich Erfolg garantieren?',
+        link: '#erfolg'
+    },
+    {
+        item: 'Häufige Fragen zu Suchmaschinenmarketing',
+        link: '#faq'
     }
 ];
 
@@ -466,6 +714,8 @@ const post = {
     title: 'Was ist SEO',
     shortTitle: 'Was ist SEO',
     introDescription: 'Bei SEO werden relevante Inhalte auf Webseiten platziert und mit benutzerfreundlichem Design sowie schneller Webtechnologie optimal für Besucher zugänglich gemacht. Mit den richtigen SEO-Massnahmen können Webseiten besser von Suchmaschinen gelesen werden, was die Platzierung in den Ergebnissen verbessert. Unternehmen nutzen Suchmaschinenoptimierung als Marketing, um weiter oben als die Konkurrenz in den Suchergebnissen platziert zu sein.',
+    introDescription2: 'Vielen Dank, dass Sie auf meinen Artikel gestossen sind. Suchmaschinenoptimierung ist und bleibt brandaktuell. Neben einem Guide für Einsteiger ins Thema möchte ich Ihnen die neusten Entwicklungen näherbringen.',
+    introDescription3: 'Zudem findet sich zu jedem Themenbereich die Möglichkeit, sich noch detaillierter über ein Subthema zu informieren.',
     category: 'Ratgeber',
     categoryUrl: '/blog',
     author: 'Sandro Huber',
@@ -474,11 +724,28 @@ const post = {
     readingTime: '25min Lesezeit',
     contentList: googleContentList,
     videoID: 'wasistseo',
-    videoTitle: 'Was wird aktuell sein im 2022?',
+    videoTitle: 'Was ist aktuell in SEO los?',
     videoURL: 'https://www.youtube.com/embed/1YXnseEjaKs',
-    videoDescription: 'Wenn man die Branche betrachtet gibt es aus unserer Sicht drei wichtige Themen, die im 2022 auf uns zukommen: Die Abkürzung SEO steht für „Search Engine Optimization“ – also zu Deutsch Suchmaschinenoptimierung. Umgangssprachlich wird es auch als die Optimierung der Google-Auffindbarkeit einer Webseite genannt. SEO ist ein Teilbereich aus dem Online Marketing, das im 2021 wieder an Relevanz gewonnen hat. Das Thema beschäftigt sich eigentlich ausschliesslich mit der Sichtbarkeit bei der größten Suchmaschine "Google", theoretisch können Optimierungsprozesse jedoch auch für alle anderen gängigen Suchmaschinen durchgeführt werden. Ein Fakt ist jedoch, dass SEO für Google in Bezug auf den Geschäftserfolg im Internet den größten Nutzen verspricht, deshalb steht die Suchmaschine meist im Vordergrund. Gemäss aktuellen Studien hat Google einen Marktanteil von über 90% im deutschsprachigen Raum.',
+    videoDescription: 'Wenn man die Branche betrachtet gibt es aus unserer Sicht drei wichtige Themen, die im 2022 auf uns zukommen:',
+    videoDescription2: 'Abkürzung SEO steht für „Search Engine Optimization“ – also zu Deutsch Suchmaschinenoptimierung. Umgangssprachlich wird es auch als die Optimierung der Google-Auffindbarkeit einer Webseite genannt. SEO ist ein Teilbereich aus dem Online Marketing, das im 2021 wieder an Relevanz gewonnen hat. Das Thema beschäftigt sich eigentlich ausschliesslich mit der Sichtbarkeit bei der größten Suchmaschine "Google", theoretisch können Optimierungsprozesse jedoch auch für alle anderen gängigen Suchmaschinen durchgeführt werden. Ein Fakt ist jedoch, dass SEO für Google in Bezug auf den Geschäftserfolg im Internet den größten Nutzen verspricht, deshalb steht die Suchmaschine meist im Vordergrund. Gemäss aktuellen Studien hat Google einen Marktanteil von über 90% im deutschsprachigen Raum.',
     videoThumbnail: wasistseo,
+    videoList : [
+        {
+        icon: listIcon,
+        text: 'Video Inhalte nehmen drastisch zu. Zum Thema Video haben wir einen ausführlichen Ratgeber unter Video-SEO.',
+    },
+    {
+        icon: listIcon,
+        text: 'Kundenfokus: Die Customer Journey wird noch wichtiger',
+    },
+    {
+        icon: listIcon,
+        text: 'Weg von Redaktionen: Content Creation wird dank AI viel effizienter und jedem zugänglich',
+    },
+
+        ]
 }
+
 
 const seoImportanceListItems = [
     {

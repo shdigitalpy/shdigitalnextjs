@@ -13,6 +13,7 @@ const CollapsibleList = ({ data, dark = true }) => {
 
     const {
         title = [''],
+        description = [''],
         items = []
     } = data;
 
@@ -29,7 +30,13 @@ const CollapsibleList = ({ data, dark = true }) => {
                 <h2 className="title text-center">
                     { title?.map((item, index) => <div key={index}>{item}</div>) }
                 </h2>
+                
             </FramerMotionAnimation>
+
+            <FramerMotionAnimation>
+            <div className="description">
+                    { description?.map((item, index) => <div key={index}>{item}<br/><br/></div>) }
+                </div></FramerMotionAnimation>
 
             <div className="accordion-wrapper flex flex-col">
                 { items?.map((item, index) => {
@@ -102,9 +109,24 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
 
 
                     <div className="content-container" style={{ whiteSpace: "break-spaces" }}>
-                        { item.answer.description }
+                    { item.answer.description }
+                    { item.answer.description2 ? <div className="content-container desc-md" style={{ whiteSpace: "break-spaces" }}>
+                    <br></br>{ item.answer.description2 }
+                    </div> : undefined }
+                    { item.answer.linklocation ? <div className="content-container desc-md"><a href={ item.answer.linklocation } title={ item.answer.linktext }>{ item.answer.linktext }</a>
+                    </div> : undefined }
                     </div>
+
+                   { item.answer.blockquote ? <div className="content-container content-flag" style={{ whiteSpace: "break-spaces" }}>{ item.answer.blockquote }
+                    </div> : undefined }
+
+                    
+
+
+                                    
+                    
                 </div>
+
             </CollapsibleContent>
         </FramerMotionAnimation>
     );
