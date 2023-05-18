@@ -24,7 +24,7 @@ const FAQ = ({ data, dark = true, link }) => {
     };
 
     return (
-        <section id={link} className={`faq container ${dark ? 'bg-gray' : 'bg-white'}`}>
+        <section id={link} className={`faq container ${dark ? 'bg-gray' : 'bg-white'}`} itemScope itemType="https://schema.org/FAQPage">
             <FramerMotionAnimation>
                 <h2 className="title text-center">
                     { title?.map((item, index) => <div key={index}>{item}</div>) }
@@ -72,10 +72,10 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
             className="faq-item">
             
 
-            <div className={`question-wrapper flex items-center ${dark ? 'bg-white' : 'bg-gray'}`}
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className={`question-wrapper flex items-center ${dark ? 'bg-white' : 'bg-gray'}`}
                  onClick={() => accordionChangeHandler(index)}>
                 <Image src={item.icon || layersIcon} alt="item icon" className="question-icon" />
-                <h4 className="question font-medium">{ item.question }</h4>
+                <h4 itemProp="name" className="question font-medium">{ item.question }</h4>
                 <div className={`arrow-container flex items-center justify-center ml-auto ${isActive ? 'active' : ''}`}>
                     <Image src={chevronDownIcon} alt="chevron icon" className={`arrow-icon ${isActive ? 'active' : ''}`} />
                 </div>
@@ -105,7 +105,7 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                         )}
 
                   
-                     <div className="content-container" style={{ whiteSpace: "break-spaces" }}>
+                     <div itemProp="text" className="content-container" style={{ whiteSpace: "break-spaces" }}>
                     { item.answer.description }
                     { item.answer.description2 ? <div className="content-container desc-md" style={{ whiteSpace: "break-spaces" }}>
                     <br></br>{ item.answer.description2 }

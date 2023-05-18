@@ -19,13 +19,17 @@ import knowledgeOfSEOSectionData from "../data/knowledgeOfSEOSectionData";
 
 const inter = Inter({subsets: ['latin']})
 
+
+const pageTitle = 'Spezialisierte SEO Agentur in der Schweiz | SH Digital'
+const metaDescription = 'Unsere SEO Agentur Schweiz verbessert die Google Rankings, damit Ihre Webseite nachhaltige ✪Top-Ergebnisse erzielt.'
+
 export default function Home() {
 
     return (
         <>
             <Head>
-                <title>SH Digital</title>
-                <meta name="description" content="SH Digital"/>
+                <title>{pageTitle}</title>
+                <meta name="description" content={metaDescription}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>

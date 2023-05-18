@@ -24,7 +24,7 @@ const FAQ = ({ data, dark = true }) => {
     };
 
     return (
-        <section className={`faq container ${dark ? 'bg-gray' : 'bg-white'}`}>
+        <section className={`faq container ${dark ? 'bg-gray' : 'bg-white'}`} itemScope itemType="https://schema.org/FAQPage">
             <FramerMotionAnimation>
                 <h2 className="title text-center">
                     { title?.map((item, index) => <div key={index}>{item}</div>) }
@@ -70,10 +70,10 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, delay: index * 0.15 }}
             className="faq-item">
-            <div className={`question-wrapper flex items-center ${dark ? 'bg-white' : 'bg-gray'}`}
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className={`question-wrapper flex items-center ${dark ? 'bg-white' : 'bg-gray'}`}
                  onClick={() => accordionChangeHandler(index)}>
                 <Image src={item.icon || layersIcon} alt="item icon" className="question-icon" />
-                <h4 className="question font-medium">{ item.question }</h4>
+                <h4 itemProp="name" className="question font-medium">{ item.question }</h4>
                 <div className={`arrow-container flex items-center justify-center ml-auto ${isActive ? 'active' : ''}`}>
                     <Image src={chevronDownIcon} alt="chevron icon" className={`arrow-icon ${isActive ? 'active' : ''}`} />
                 </div>
@@ -85,7 +85,7 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                         <Image src={item.answer.media.thumbnail} alt="thumbnail" className="thumbnail" />
                         <Image src={playIcon} alt="play" className="play-icon" />
                     </VideoContainer>
-                    <div className="content-container">
+                    <div itemProp="text" className="content-container">
                         { item.answer.description }
                     </div>
                 </div>
