@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-
+import { useRouter } from 'next/router';
 
 
 const structuredDataCorp = 
@@ -100,6 +100,10 @@ const structuredDataBCTop =
 
 
 export default function Document() {
+
+
+
+
   return (
     <Html lang="en">
       <Head>
@@ -123,7 +127,7 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-
+      
         <script
                 key="structured-data"
                 type="application/ld+json"
