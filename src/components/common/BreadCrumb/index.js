@@ -8,7 +8,8 @@ const BreadCrumb = ({ category = '', categoryUrl, post = '' }) => {
     return (
         <div className="bread-crumb" itemScope itemType="https://schema.org/BreadcrumbList">
             <ul style={{ display: 'flex', listStyle: 'none' }}>
-            <li style={{ display: 'inline-block', whiteSpace: 'nowrap'}} itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+            
+            <li style={{ display: 'inline-block', whiteSpace: 'nowrap'}} itemProp="itemListElement" itemType="https://schema.org/ListItem">
             <Link itemscope itemProp="item" href={`${categoryUrl}`} title={ category } className="link">
                 
             <p itemProp="name">{ category }</p>
@@ -18,7 +19,8 @@ const BreadCrumb = ({ category = '', categoryUrl, post = '' }) => {
          
             <Image src={chevronRight} alt="arrow right" className="link-right-icon" />
                 
-            <li style={{ display: 'inline-block',whiteSpace: 'nowrap'}} itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+            <li style={{ display: 'inline-block',whiteSpace: 'nowrap'}} itemProp="itemListElement" itemType="https://schema.org/ListItem">
+            
             <Link itemscope itemProp="item" href={`${post.slug}`} title={ post.title } className="post-title">
             <p itemProp="name" className="post-title">{ post.shortTitle }</p>
            
