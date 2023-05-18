@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
+import Head from 'next/head'
 import Image from 'next/image';
 import Link from 'next/link'
 import logo from '../../../assets/images/logo.png';
 import FramerMotionAnimation from '../FramerMotionAnimation';
 import headerData from '../../../data/headerData';
+
 
 const Header = () => {
     const [expanded, setExpanded] = useState(false);
@@ -19,6 +21,7 @@ const Header = () => {
     }, [expanded]);
 
     return (
+
         <header className="container header flex items-center">
             <Link href={"/"} className="me-auto">
                 <Image src={logo} alt={'logo'} className="logo-image" />
