@@ -92,6 +92,22 @@ const structuredData = {
   "datePublished": "2021-02-05",
   "dateModified": "2021-12-01"
 
+} + {
+
+
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Was ist SEO",
+  "description": "Was ist SEO - ein Guide der Suchmaschinenoptimierung (SEO) für Einsteiger und Interessierte",
+  "thumbnailUrl": [
+    "https://img.youtube.com/vi/1YXnseEjaKs/1.jpg",
+    "https://img.youtube.com/vi/1YXnseEjaKs/0.jpg",
+    "https://img.youtube.com/vi/1YXnseEjaKs/3.jpg"
+  ],
+  "uploadDate": "2021-02-23",
+  "duration": "PT2M9S",
+  "embedUrl": "https://www.youtube.com/embed/1YXnseEjaKs?autoplay=1&mute=1&cc_load_policy=1"
+
 }
 
 export default function BlogPost() {

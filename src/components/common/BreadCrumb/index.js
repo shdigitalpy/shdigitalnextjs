@@ -6,13 +6,15 @@ import Image from "next/image";
 
 const BreadCrumb = ({ category = '', categoryUrl, post = '' }) => {
     return (
-        <div className="bread-crumb">
-            <Link href={`${categoryUrl}`} title={ category } className="link">
-                <p>{ category }</p>
+        <div className="bread-crumb" itemScope itemType="https://schema.org/BreadcrumbList">
+            <Link itemProp="item" href={`${categoryUrl}`} title={ category } className="link">
+                <p itemProp="name">{ category }</p>
+                <meta itemProp="position" content="1" />
             </Link>
             <Image src={chevronRight} alt="arrow right" className="link-right-icon" />
-            <Link href={`${post.slug}`} title={ post.title } className="post-title">
-            <p className="post-title">{ post.shortTitle }</p>
+            <Link itemProp="item" href={`${post.slug}`} title={ post.title } className="post-title">
+            <p itemProp="name" className="post-title">{ post.shortTitle }</p>
+            <meta itemProp="position" content="2" />
             </Link>
         </div>
     );
