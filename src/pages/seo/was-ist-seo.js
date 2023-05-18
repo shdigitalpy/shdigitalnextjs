@@ -203,7 +203,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                 Die Optimierung für Suchmaschinen ist kein einmaliger Vorgang, bei dem einige Dinge an einer Webseite verändert werden können. Es ist wichtig, regelmässig Inhalte zu aktualisieren oder neue Inhalte zu erstellen. Die Erfahrung zeigt, dass die Suchmaschinen neuen qualitative Inhalte als positives Signal für die eigene Webseite bewerten.
                             </p>
                             <p className="desc-md">
-                                Zudem werden die Suchmaschinen durch dessen Ingenieure stets modernisiert, dies zeigen auch jüngste "Core-Updates" des Google Index (Anpassung des Suchalgorithmus). Die Webseiten müssen laufend und spätestens bei Lancierung von solchen Updates entsprechend angepasst sein. Aus diesen Gründen sind laufende Anpassungen für ein hohes Ranking bei Suchmaschinen erforderlich.
+                                Zudem werden die Suchmaschinen durch dessen Ingenieure stets modernisiert, dies zeigen auch jüngste Core-Updates des Google Index (Anpassung des Suchalgorithmus). Die Webseiten müssen laufend und spätestens bei Lancierung von solchen Updates entsprechend angepasst sein. Aus diesen Gründen sind laufende Anpassungen für ein hohes Ranking bei Suchmaschinen erforderlich.
                             </p>
                         </FramerMotionAnimation>
                     </div>
@@ -386,7 +386,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                 >
                                     <h4 className="content-title">1. Beispiel</h4>
                                     <Image src={keywords1} alt="img" className="main-image" />
-                                    <p className="desc-md mt-15">Der Suchende kann nach "einer Hose zum kaufen" suchen oder er möchte wissen, was "eine Hose überhaupt ist". Die genaue Intention ist unbekannt und wird sich im Verlauf der Recherche ergeben.</p>
+                                    <p className="desc-md mt-15">Der Suchende kann nach <b>einer Hose zum kaufen</b> suchen oder er möchte wissen, was <b>eine Hose überhaupt ist</b>. Die genaue Intention ist unbekannt und wird sich im Verlauf der Recherche ergeben.</p>
                                 </FramerMotionAnimation>
                                 <FramerMotionAnimation
                                     initial={{ opacity: 0, x: -50 }}
@@ -580,7 +580,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-90 md:mb-32">
-                            Grundsätzlich haben Agenturen damit eine Vielzahl an Aufgaben, die mit der Suchmaschinenoptimierung einhergehen: Sie stellen die Erreichbarkeit der Website sicher, optimieren Snippets, Ladezeiten und Content. Sie achten darauf, dass die mobile Darstellung funktioniert, interne und externe Links einwandfrei eingebettet sind. Sie verhindern die Verwendung von "Duplicate Content" und sorgen für ein angenehmes Nutzungsverhalten.
+                            Grundsätzlich haben Agenturen damit eine Vielzahl an Aufgaben, die mit der Suchmaschinenoptimierung einhergehen: Sie stellen die Erreichbarkeit der Website sicher, optimieren Snippets, Ladezeiten und Content. Sie achten darauf, dass die mobile Darstellung funktioniert, interne und externe Links einwandfrei eingebettet sind. Sie verhindern die Verwendung von <b>Duplicate Content</b> und sorgen für ein angenehmes Nutzungsverhalten.
 
 
                         </FramerMotionAnimation>
@@ -597,7 +597,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                 <p className="desc-md">
                                    Die Experten von Agenturen besitzen ein fachliches Know-How und können dieses gezielt anwenden. Ausserdem hat ein Experte einen Erfahrungsvorsprung, welcher unmöglich von einem Laien über die Jahre angeeignet werden kann.
                                 <br /> <br />
-                                Die Praxis zeigt, dass sich ein "Know-How-Einkauf" bei einer Agentur über die Zeit obendrein lohnt. Überspitzt gesagt profitieren Sie von den Fehlern, die bei anderen Kunden der Agentur in der Vergangenheit gemacht wurden und haben dadurch eine deutlich höhere Erfolgschance.
+                                Die Praxis zeigt, dass sich ein <b>Know-How-Einkauf</b> bei einer Agentur über die Zeit obendrein lohnt. Überspitzt gesagt profitieren Sie von den Fehlern, die bei anderen Kunden der Agentur in der Vergangenheit gemacht wurden und haben dadurch eine deutlich höhere Erfolgschance.
 
 
                                 </p>
@@ -662,7 +662,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
                                     <h4 className="content-title">Content-Relevanz</h4>
-                                    <p className="desc-md mt-15">Es geht nicht nur darum, Nutzer auf eine Website zu „locken“. Auf der Landingpage angekommen, gilt es auch, das Interesse dort zu halten. Stimmt der Webseiten-Inhalt mit dem suggerierten Inhalt des Snippets nicht überein, wir der Internetnutzer enttäuscht sein und die Seite wieder verlassen.</p>
+                                    <p className="desc-md mt-15">Es geht nicht nur darum, Nutzer auf eine Website zu locken. Auf der Landingpage angekommen, gilt es auch, das Interesse dort zu halten. Stimmt der Webseiten-Inhalt mit dem suggerierten Inhalt des Snippets nicht überein, wir der Internetnutzer enttäuscht sein und die Seite wieder verlassen.</p>
                                 </FramerMotionAnimation>
                                 <FramerMotionAnimation
                                     initial={{ opacity: 0, x: -50 }}
@@ -704,7 +704,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                    Der Erfolg bei SEO lässt sich nicht garantieren, zumal die Suchmaschinen keine detaillierten Informationen zu den Rankingfaktoren (nur Hinweise) veröffentlichen. Es ist in der Hand der entsprechenden Suchmaschine, eine Webseite weiter oben in den Suchergebnissen anzuzeigen oder eben nicht.
 
                                 <br /> <br />
-                                Die Chancen einen Erfolg zu erzielen sind jedoch mit einer professionellen Betreuung deutlich höher als wenn man als "Laie" versucht seine Webseite mit Keywords zu versehen. Solche vermeintlich einfachen Eingriffe in die Webseite können kurz- bis mittelfristige Abstrafungen durch die Suchmaschinen hervorrufen. Ein professioneller Anbieter kann solche Szenarien mit vermeintlich kleinen Schaden rückgängig machen, diese sind jedoch nicht zu empfehlen und können den Weg zum Erfolg deutlich verlängern.
+                                Die Chancen einen Erfolg zu erzielen sind jedoch mit einer professionellen Betreuung deutlich höher als wenn man als Laie versucht seine Webseite mit Keywords zu versehen. Solche vermeintlich einfachen Eingriffe in die Webseite können kurz- bis mittelfristige Abstrafungen durch die Suchmaschinen hervorrufen. Ein professioneller Anbieter kann solche Szenarien mit vermeintlich kleinen Schaden rückgängig machen, diese sind jedoch nicht zu empfehlen und können den Weg zum Erfolg deutlich verlängern.
                                 < br /> <br />
                                 Auf dem Markt gibt es einige Anbieter, welche die Geld-zurück-Garantie bewerben. Theoretisch wird der Erfolg mit diesem Marketing-Trick tatsächlich garantiert. Als Anbieter mit genügend Kunden überhaupt eine solche Klausel aufzunehmen, ist für uns rätselhaft. Aus neutraler Sicht muss sich gefragt werden, ob solche Anbieter nachhaltigen wirtschaftlichen Erfolg haben können, wenn der Grossteil der Kunden dazu aufgefordert wird, das Geld zurückzuverlangen.
 
@@ -902,7 +902,7 @@ const post = {
     videoTitle: 'Was ist aktuell in SEO los?',
     videoURL: 'https://www.youtube.com/embed/1YXnseEjaKs',
     videoDescription: 'Wenn man die Branche betrachtet gibt es aus unserer Sicht drei wichtige Themen, die im 2022 auf uns zukommen:',
-    videoDescription2: 'Abkürzung SEO steht für „Search Engine Optimization“ – also zu Deutsch Suchmaschinenoptimierung. Umgangssprachlich wird es auch als die Optimierung der Google-Auffindbarkeit einer Webseite genannt. SEO ist ein Teilbereich aus dem Online Marketing, das im 2021 wieder an Relevanz gewonnen hat. Das Thema beschäftigt sich eigentlich ausschliesslich mit der Sichtbarkeit bei der größten Suchmaschine "Google", theoretisch können Optimierungsprozesse jedoch auch für alle anderen gängigen Suchmaschinen durchgeführt werden. Ein Fakt ist jedoch, dass SEO für Google in Bezug auf den Geschäftserfolg im Internet den größten Nutzen verspricht, deshalb steht die Suchmaschine meist im Vordergrund. Gemäss aktuellen Studien hat Google einen Marktanteil von über 90% im deutschsprachigen Raum.',
+    videoDescription2: 'Abkürzung SEO steht für Search Engine Optimization – also zu Deutsch Suchmaschinenoptimierung. Umgangssprachlich wird es auch als die Optimierung der Google-Auffindbarkeit einer Webseite genannt. SEO ist ein Teilbereich aus dem Online Marketing, das im 2021 wieder an Relevanz gewonnen hat. Das Thema beschäftigt sich eigentlich ausschliesslich mit der Sichtbarkeit bei der größten Suchmaschine Google, theoretisch können Optimierungsprozesse jedoch auch für alle anderen gängigen Suchmaschinen durchgeführt werden. Ein Fakt ist jedoch, dass SEO für Google in Bezug auf den Geschäftserfolg im Internet den größten Nutzen verspricht, deshalb steht die Suchmaschine meist im Vordergrund. Gemäss aktuellen Studien hat Google einen Marktanteil von über 90% im deutschsprachigen Raum.',
     videoThumbnail: wasistseo,
     videoList : [
         {

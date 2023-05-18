@@ -35,7 +35,7 @@ export default {
                 media: {
                     check: "no"
                 },
-                description: 'Eine mögliche Quelle von Backlinks können auch die sozialen Netzwerke sein, dabei wird von Facebook-Profilen oder Twitter-Posts auf die Webseite verlinkt. Dabei spricht man von Social Media Links. Diese sind vorwiegend nofollow-Backlinks (die Suchmaschinen verfolgen diese Backlinks nicht weiter), jedoch bringen die Social Media Links viel "Trust", eine algorithmische Reproduktion von Vertrauen unter Personen. Sehr verbreitete Webseiten haben einen höheren "Trust" bei Suchmaschinen und die sozialen Netzwerke gehören in der Regel auch dazu.'
+                description: 'Eine mögliche Quelle von Backlinks können auch die sozialen Netzwerke sein, dabei wird von Facebook-Profilen oder Twitter-Posts auf die Webseite verlinkt. Dabei spricht man von Social Media Links. Diese sind vorwiegend nofollow-Backlinks (die Suchmaschinen verfolgen diese Backlinks nicht weiter), jedoch bringen die Social Media Links viel Trust, eine algorithmische Reproduktion von Vertrauen unter Personen. Sehr verbreitete Webseiten haben einen höheren Trust bei Suchmaschinen und die sozialen Netzwerke gehören in der Regel auch dazu.'
             },
         },
         {
@@ -46,7 +46,7 @@ export default {
                     check: "image", 
                     thumbnail: MyBusinessImage
                 },
-                description: 'Google My Business Profil \nDer Google My Business Eintrag ist ein kostenloser Dienst, mit dem man die firmeneigenen Angaben in einem entsprechenden Fenster rechts bei Google anzeigen lassen kann. Der Eintrag enthält Informationen wie Fotos, Öffnungszeiten, Stosszeiten bei Ladengeschäften, Branche, Einzugsgebiet sowie die Anzahl Bewertungen von Kunden. Des Weiteren bietet Google My Business eine Navigation zur Kontaktaufnahme mit dem entsprechenden Unternehmen oder einen Link zur Route über Google Maps.\n\n Google Bewertungen \n Jeder kann bei Google ein Unternehmen bewerten, sofern man über ein Google Konto verfügt. Indem Sie auf dem Google-My-Business Eintrag auf "Rezension schreiben" klicken, können Sie das Unternehmen von eins bis fünf Sterne bewerten und einen Kommentar zur Bewertung schreiben.'
+                description: 'Google My Business Profil \nDer Google My Business Eintrag ist ein kostenloser Dienst, mit dem man die firmeneigenen Angaben in einem entsprechenden Fenster rechts bei Google anzeigen lassen kann. Der Eintrag enthält Informationen wie Fotos, Öffnungszeiten, Stosszeiten bei Ladengeschäften, Branche, Einzugsgebiet sowie die Anzahl Bewertungen von Kunden. Des Weiteren bietet Google My Business eine Navigation zur Kontaktaufnahme mit dem entsprechenden Unternehmen oder einen Link zur Route über Google Maps.\n\n Google Bewertungen \n Jeder kann bei Google ein Unternehmen bewerten, sofern man über ein Google Konto verfügt. Indem Sie auf dem Google-My-Business Eintrag auf Rezension schreiben klicken, können Sie das Unternehmen von eins bis fünf Sterne bewerten und einen Kommentar zur Bewertung schreiben.'
             },
         },
         {

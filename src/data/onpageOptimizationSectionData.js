@@ -19,8 +19,8 @@ export default {
                 media: {
                     check: "no"
                 },
-                description: 'Der Aufbau einer Webseite und die Struktur der URLs. Es gibt zwei Aspekte oder Zielgruppen in dieser Hinsicht, die beachtet werden müssen: Der Internetnutzer, Die Suchmaschine. Es soll für beide Anspruchsgruppen eine logische und optimale Webseitenstruktur gewählt werden. Eine kompetente Agentur wird eine Keyword-Map erstellen und daraus die Webseitenstruktur ableiten. Bei einer "Keyword-Map" werden Suchbegriffe aus der Keyword-Recherche einzelnen URLs auf der Webseite zugeordnet.',
-                blockquote: 'Was wir immer wieder in Gesprächen mit unseren potenziellen Kunden erfahren ist, dass "traditionelle" Webdesigner immer noch weder Internetnutzer noch Suchmaschinen im Designprozess berücksichtigen. Vielmehr wird auf ein schönes und ästhetisches Webdesign geachtet, was natürlich miteinfliessen sollte, Ihnen jedoch finanziell nicht viel bringen wird. Aus diesem Grund bleibt meist eine Webseite dieser Webdesigner nach der Veröffentlichung auch ohne Benutzer.'
+                description: 'Der Aufbau einer Webseite und die Struktur der URLs. Es gibt zwei Aspekte oder Zielgruppen in dieser Hinsicht, die beachtet werden müssen: Der Internetnutzer, Die Suchmaschine. Es soll für beide Anspruchsgruppen eine logische und optimale Webseitenstruktur gewählt werden. Eine kompetente Agentur wird eine Keyword-Map erstellen und daraus die Webseitenstruktur ableiten. Bei einer Keyword-Map werden Suchbegriffe aus der Keyword-Recherche einzelnen URLs auf der Webseite zugeordnet.',
+                blockquote: 'Was wir immer wieder in Gesprächen mit unseren potenziellen Kunden erfahren ist, dass traditionelle Webdesigner immer noch weder Internetnutzer noch Suchmaschinen im Designprozess berücksichtigen. Vielmehr wird auf ein schönes und ästhetisches Webdesign geachtet, was natürlich miteinfliessen sollte, Ihnen jedoch finanziell nicht viel bringen wird. Aus diesem Grund bleibt meist eine Webseite dieser Webdesigner nach der Veröffentlichung auch ohne Benutzer.'
             },
         },
         {
@@ -31,7 +31,7 @@ export default {
                     check: "image",
                     thumbnail: MetaImage, 
                 },
-                description: 'Der Title Tag und der Seitenname sowie die Meta Description sind unsichtbare Bestandteile des Quellcodes einer Webseite. Diese Meta-Elemente werden im HTML Code als Metadaten ausgegeben. Das Google Suchergebnis, das "Google Snippet" besteht aus dem Title Tag und der Meta Description. Das Google Snippet muss relevant zur Suchanfrage sein und entsprechend gestaltet werden.',
+                description: 'Der Title Tag und der Seitenname sowie die Meta Description sind unsichtbare Bestandteile des Quellcodes einer Webseite. Diese Meta-Elemente werden im HTML Code als Metadaten ausgegeben. Das Google Suchergebnis, das Google Snippet besteht aus dem Title Tag und der Meta Description. Das Google Snippet muss relevant zur Suchanfrage sein und entsprechend gestaltet werden.',
                 description2: 'Es gibt noch weitere Meta-Elemente, auf die wir in diesem Kontext nicht detaillierter eingehen können. Beispiele dafür sind z.B. Angaben zum Autor, Anweisungen an den Webcrawler, etc.'
             },
         },
@@ -113,7 +113,7 @@ export default {
                 media: {
                     check: "no"
                 },
-                description: 'Die SSL Zertifikate sind Verschlüsselungsprotokolle bei der online Datenübertragung. Mithilfe des HTTPS Protokolls werden die Daten geschützt und verschlüsselt. Es garantiert den Websitebesuchern, dass die Daten nicht in falsche Hände geraten. Man erkennt die SSL-Verschlüsselung daran, dass die Adresszeile im Browser mit "https" beginnt.',           
+                description: 'Die SSL Zertifikate sind Verschlüsselungsprotokolle bei der online Datenübertragung. Mithilfe des HTTPS Protokolls werden die Daten geschützt und verschlüsselt. Es garantiert den Websitebesuchern, dass die Daten nicht in falsche Hände geraten. Man erkennt die SSL-Verschlüsselung daran, dass die Adresszeile im Browser mit https beginnt.',           
             },
         },
         {
@@ -123,7 +123,7 @@ export default {
                 media: {
                     check: "no"
                 },
-                description: 'Strukturierte Daten werden in den Quelltext eingefügt und helfen den Suchmaschinen Webseiten zu lesen. Es handelt sich um Codeschnipsel, die sich um Themen wie z.B. "Events", "Personen", etc. drehen. Mit strukturierten Daten gibt ein Webmaster der Suchmaschine den Hinweis, was die Bedeutung der entsprechenden Seite ist.',
+                description: 'Strukturierte Daten werden in den Quelltext eingefügt und helfen den Suchmaschinen Webseiten zu lesen. Es handelt sich um Codeschnipsel, die sich um Themen wie z.B. Events, Personen, etc. drehen. Mit strukturierten Daten gibt ein Webmaster der Suchmaschine den Hinweis, was die Bedeutung der entsprechenden Seite ist.',
            
             },
         },

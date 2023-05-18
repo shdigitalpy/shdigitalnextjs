@@ -44,7 +44,7 @@ export default {
                 media: {
                     check: "no",
                 },
-                description: 'Bei Suchmaschinenmarketing geht es in erster Linie darum, mehr User oder Besucher auf die Webseite zu bringen und diese dann einer Information oder einer Transaktion (Kauf eines Produkts) zuzuführen. SEO ist ein Teil von Suchmaschinenmarketing. Daneben gibt es noch die bezahlten Werbeanzeigen bei den Suchmaschinen auch SEA "Search Engine Advertising" genannt.'
+                description: 'Bei Suchmaschinenmarketing geht es in erster Linie darum, mehr User oder Besucher auf die Webseite zu bringen und diese dann einer Information oder einer Transaktion (Kauf eines Produkts) zuzuführen. SEO ist ein Teil von Suchmaschinenmarketing. Daneben gibt es noch die bezahlten Werbeanzeigen bei den Suchmaschinen auch SEA = Search Engine Advertising genannt.'
             }
         },
         {
@@ -54,7 +54,7 @@ export default {
                     check: "no",
                    
                 },
-                description: 'Im Online Marketing wird häufig zwischen SEO und SEA unterschieden. Dabei bezeichnet die klassische Suchmaschinenoptimierung das Marketing mithilfe von jenen Ergebnissen, die organisch von den Suchmaschinen angezeigt werden. SEA hingegen steht für "Search Engine Advertising", also Suchmaschinenwerbung. Darunter versteht man bezahlte Werbung, die meist über Keyword-Advertising in Suchmaschinen eingebunden wird.'
+                description: 'Im Online Marketing wird häufig zwischen SEO und SEA unterschieden. Dabei bezeichnet die klassische Suchmaschinenoptimierung das Marketing mithilfe von jenen Ergebnissen, die organisch von den Suchmaschinen angezeigt werden. SEA hingegen steht für Search Engine Advertising, also Suchmaschinenwerbung. Darunter versteht man bezahlte Werbung, die meist über Keyword-Advertising in Suchmaschinen eingebunden wird.'
                   
             }
         },
@@ -73,7 +73,7 @@ export default {
             }
         },
         {
-            question: 'Was sind Organische Suchergebnisse (englisch: "organic search results")?',
+            question: 'Was sind Organische Suchergebnisse (englisch: organic search results)?',
             answer: {
                 media: {
                     check: "no",
