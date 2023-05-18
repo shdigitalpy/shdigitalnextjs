@@ -92,7 +92,9 @@ const structuredData = {
   "datePublished": "2021-02-05",
   "dateModified": "2021-12-01"
 
-} + {
+}
+
+const structuredDataVideo = {
 
 
   "@context": "https://schema.org",
@@ -118,6 +120,11 @@ export default function BlogPost() {
                 key="structured-data"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+              />
+              <script
+                key="structured-data"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataVideo) }}
               />
                 <title>SEO einfach erklärt (Guide) | SH Digital</title>
                 <meta name="description" content="Alles rund um Suchmaschinenoptimierung im 2022. Der Guide hilft bei allen wichtigen Themen rund um ★SEO"/>
