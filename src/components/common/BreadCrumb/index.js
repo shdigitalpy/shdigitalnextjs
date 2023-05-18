@@ -9,7 +9,9 @@ const BreadCrumb = ({ category = '', categoryUrl, post = '' }) => {
         <div className="bread-crumb" itemScope itemType="https://schema.org/BreadcrumbList">
             
             <Link itemprop="itemListElement" itemtype="https://schema.org/ListItem" href={`${categoryUrl}`} title={ category } className="link">
-                <p itemscope itemProp="item" itemProp="name">{ category }</p>
+                <div itemscope itemProp="item">
+                <p itemProp="name">{ category }</p>
+                </div>
                 <meta itemProp="position" content="1" />
             </Link>
          
@@ -17,7 +19,9 @@ const BreadCrumb = ({ category = '', categoryUrl, post = '' }) => {
             
             <Link itemprop="itemListElement" itemscope
           itemtype="https://schema.org/ListItem" href={`${post.slug}`} title={ post.title } className="post-title">
-            <p itemProp="item" itemProp="name" className="post-title">{ post.shortTitle }</p>
+            <div itemscope itemProp="item">
+            <p itemProp="name" className="post-title">{ post.shortTitle }</p>
+            </div>
             <meta itemProp="position" content="2" />
             </Link>
         
