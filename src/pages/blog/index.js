@@ -11,12 +11,19 @@ import blogData from '../../data/blogData';
 
 const inter = Inter({subsets: ['latin']})
 
+
+
+
+const pageTitle = 'SEO-Ratgeber: Alles rund um SEO | SH Digital'
+const metaDescription = 'Der Ratgeber informiert Sie im Detail über die Themen und Subthemen von Suchmaschinenoptimierung sowie Web Design.'
+
+
 export default function Blog() {
     return (
         <>
             <Head>
-                <title>SH Digital - Blog</title>
-                <meta name="description" content="SH Digital - Blog"/>
+                <title>{pageTitle}</title>
+                <meta name="description" content={metaDescription}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>

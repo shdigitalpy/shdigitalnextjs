@@ -13,12 +13,19 @@ import topServicesSectionData from '../data/topServicesSectionData';
 
 const inter = Inter({subsets: ['latin']})
 
+
+
+
+const pageTitle = 'Über SH Digital die Firma | SH Digital'
+const metaDescription = 'Erfahren Sie mehr über SH Digital, das Team, die Methoden und die Visionen.'
+
+
 export default function AboutUs() {
     return (
         <>
             <Head>
-                <title>SH Digital - About Us</title>
-                <meta name="description" content={`SH Digital - About Us`}/>
+                <title>{pageTitle}</title>
+                <meta name="description" content={metaDescription}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
