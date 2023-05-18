@@ -286,7 +286,8 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                 versteht man den Einsatz von SEO-Tools zur Untersuchung von technischen
                                 Onpage-Problemen. Diese zwei Begriffe sind wiederum ein Teilbereich von der
                                 gesamthaften SEO-Analyse. Wenn Sie sich weiter informieren möchten, lesen Sie
-                                unseren Beitrag <a href="/seo/seo-analyse" title="SEO Analyse: Wie gut ist Ihre Webseite">SEO Analyse: Wie gut ist Ihre Webseite</a>.
+                                unseren Beitrag <Link href="/seo/seo-analyse" 
+                                title="SEO Analyse: Wie gut ist Ihre Webseite">SEO Analyse: Wie gut ist Ihre Webseite</Link>.
                             </p>
                         </FramerMotionAnimation>
                         <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
@@ -532,7 +533,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     Neben diesen drei Tools gibt es eine Vielzahl weiterer, die zur Keyword-Analyse, 
                                     zum Monitoring und für die technische Optimierung verwendet werden können. 
                                     Sind Sie auf der Suche nach einem geeigneten Tool, dann lesen 
-                                    Sie unseren Artikel zum Thema <a href="/seo/tools" title="SEO-Tools">SEO-Tools </a> 
+                                    Sie unseren Artikel zum Thema <Link href="/seo/tools" title="SEO-Tools">SEO-Tools </Link> 
                                     im Vergleich. Unsere Agentur verwendet weitere interne Tools, 
                                     die Keyword-Daten verfeinern können, diese sind jedoch unseren 
                                     Kunden vorbehalten. Bei Interesse dürfen Sie gerne auf uns zukommen.
@@ -744,7 +745,10 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
-                                    <h4 className="content-title"><a href="/seo/seo-analyse" title="SEO-Analyse">SEO-Analyse </a>mit Handlungsempfehlungen</h4>
+                                    <h4 className="content-title">
+                                    <Link href="/seo/seo-analyse" title="SEO-Analyse">
+                                    SEO-Analyse </Link>
+                                    mit Handlungsempfehlungen</h4>
                                      <p className="desc-md mt-15">Die Kosten 
                                      für Keywordanalyse inkl. Handlungsempfehlung 
                                      liegen im Schnitt bei CHF {"1'350"}.</p>
