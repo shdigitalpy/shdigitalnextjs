@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 
 
-const structuredData = 
+const structuredDataCorp = 
 
 
         {
@@ -24,7 +24,9 @@ const structuredData =
             "https://www.youtube.com/channel/UCEPNZoDVpLFfdV018jxB5eA",
             "https://www.linkedin.com/in/sandro-h-811008136/?originalSubdomain=ch"
           ]
-        } +
+        } 
+
+const structuredDataPS = 
 
             {
               "@context": "https://schema.org",
@@ -60,7 +62,9 @@ const structuredData =
                 "closes": "18:00"
                 
               } 
-            } +
+            }
+
+const structuredDataBCTop = 
 
               {
                 "@context": "https://schema.org/", 
@@ -93,7 +97,7 @@ const structuredData =
                 }]
               } 
 
-              
+
 
 export default function Document() {
   return (
@@ -123,7 +127,17 @@ export default function Document() {
         <script
                 key="structured-data"
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataCorp) }}
+              />
+              <script
+                key="structured-data"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataPS) }}
+              />
+              <script
+                key="structured-data"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataBCTop) }}
               />
         </Head>
 
