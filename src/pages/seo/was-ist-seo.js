@@ -39,6 +39,9 @@ import listIcon from '../../assets/icons/layers.svg';
 import VideoContainer from "../../components/common/VideoContainer";
 import playIcon from '../../assets/icons/play.svg';
 import holdingLaptop2 from '../../assets/images/holding-laptop.png';
+import videoSEOThumbnail from '../../assets/images/seo/seovideothumbnail.jpg';
+import seobetreuungImage from '../../assets/images/seo/seo_betreuung_preise.png'
+import seoanalyseImage from '../../assets/images/seo/seo_analyse_kosten.png'
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
@@ -46,10 +49,60 @@ import faqSeoSectionDataWIS from '../../data/FAQSectionDataWIS';
 
 const inter = Inter({subsets: ['latin']})
 
+const structuredData = {
+
+
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.sh-digital.ch//was-ist-seo"
+  },
+  "headline": "Was ist SEO im 2021",
+  "description": "Was ist SEO? Wir zeigen Ihnen wie professionelle Suchmaschinenoptimierung funktioniert und wie Ihr Unternehmen für Suchmaschinen sichtbarer wird.",
+  "image": [
+    "https://www.sh-digital.ch/static/images/seo.webp",
+    "https://www.sh-digital.ch/static/images/was-ist-seo.jpg",
+    "https://www.sh-digital.ch/static/images/sandro-huber1.webp",
+    "https://www.sh-digital.ch/static/images/images/seo-fakten.webp",
+    "https://www.sh-digital.ch/static/images/suchmaschinen-snippet_cpiqtx_c_scale,w_891.jpg",
+    "https://www.sh-digital.ch/static/images/hose.jpg",
+    "https://www.sh-digital.ch/static/images/long-tail-keyword-analyse.jpg",
+    "https://www.sh-digital.ch/static/images/keyword-recherche-seo.jpg",
+    "https://www.sh-digital.ch/static/images/title_tag_meta_description.jpg",
+    "https://www.sh-digital.ch/static/images/page-speed.jpg",
+    "https://www.sh-digital.ch/static/images/content-marketing.webp",
+    "https://www.sh-digital.ch/static/images/google-my-business-eintrag.jpg",
+    "https://www.sh-digital.ch/static/images/seo_analyse_kosten.png",
+    "https://www.sh-digital.ch/static/images/seo_betreuung_preise.png",
+    ""
+  ],  
+  "author": {
+    "@type": "Person",
+    "name": "Sandro Huber"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "SH Digital",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.sh-digital.ch/static/images/sh_digital_final_logo_cdscas_c_scale,w_250.webp"
+    }
+  },
+  "datePublished": "2021-02-05",
+  "dateModified": "2021-12-01"
+
+}
+
 export default function BlogPost() {
     return (
         <>
             <Head>
+            <script
+                key="structured-data"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+              />
                 <title>SEO einfach erklärt (Guide) | SH Digital</title>
                 <meta name="description" content="Alles rund um Suchmaschinenoptimierung im 2022. Der Guide hilft bei allen wichtigen Themen rund um ★SEO"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -64,7 +117,8 @@ export default function BlogPost() {
                         <div className="details-wrapper">
                             <p className="agency-name">{post.author}</p>
                             <div className="date-time-wrapper">
-                                <p className="date">{post.date}</p> ·
+                                <p className="date">Erstellt: {post.date}</p> ·
+                                 <p className="date">Aktualisiert: {post.update}</p> ·
                                 <p className="read-time">{post.readingTime}</p>
                             </div>
                             <div className="social-wrapper">
@@ -91,7 +145,7 @@ export default function BlogPost() {
                                   />
 
 
-                <section className="section-wrapper">
+                <section id="unternehmen" className="section-wrapper" >
                     <div className="container">
                         <div className="grid md:grid-cols-2 title-wrapper">
                             <FramerMotionAnimation
@@ -155,7 +209,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                     </div>
                 </section>
 
-                <section className="section-wrapper bg-gray">
+                <section id="wiefunktioniertes" className="section-wrapper bg-gray">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -205,7 +259,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                     </div>
                 </section>
 
-                <section className="section-wrapper">
+                <section id="analyse" className="section-wrapper">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -260,7 +314,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                     </div>
                 </section>
 
-                <section className="section-wrapper bg-gray">
+                <section id="rankingfaktoren" className="section-wrapper bg-gray">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation type="h2" className="title text-center">
@@ -297,7 +351,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                     </div>
                 </section>
 
-                <section className="section-wrapper keywords">
+                <section id="keywords" className="section-wrapper keywords">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -410,11 +464,11 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                     </div>
                 </section>
 
-                <CollapsibleList data={onpageOptimizationSectionData} />
+                <CollapsibleList link={'onpage'} data={onpageOptimizationSectionData} />
 
-                <CollapsibleList dark={false} data={offpageOptimizationSectionData} />
+                <CollapsibleList link={'offpage'} dark={false} data={offpageOptimizationSectionData} />
 
-                 <section className="section-wrapper keywords">
+                 <section id="tools" className="section-wrapper keywords">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -492,7 +546,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                     </div>
                 </section>
 
-                 <section className="section-wrapper keywords">
+                 <section id="agentur" className="section-wrapper keywords">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -578,7 +632,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                    
                 </section>
 
-                 <section className="section-wrapper keywords">
+                 <section id="erfolgsfaktoren" className="section-wrapper keywords">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -637,12 +691,129 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                             </div>
 
                            
+                       
+                        <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="content-flag bg-white mb-20 md:mb-0">
+                                <h4 className="content-title font-medium">
+                                    Lässt sich Erfolg garantieren?
+
+                                </h4>
+                                <p className="desc-md">
+                                   Der Erfolg bei SEO lässt sich nicht garantieren, zumal die Suchmaschinen keine detaillierten Informationen zu den Rankingfaktoren (nur Hinweise) veröffentlichen. Es ist in der Hand der entsprechenden Suchmaschine, eine Webseite weiter oben in den Suchergebnissen anzuzeigen oder eben nicht.
+
+                                <br /> <br />
+                                Die Chancen einen Erfolg zu erzielen sind jedoch mit einer professionellen Betreuung deutlich höher als wenn man als "Laie" versucht seine Webseite mit Keywords zu versehen. Solche vermeintlich einfachen Eingriffe in die Webseite können kurz- bis mittelfristige Abstrafungen durch die Suchmaschinen hervorrufen. Ein professioneller Anbieter kann solche Szenarien mit vermeintlich kleinen Schaden rückgängig machen, diese sind jedoch nicht zu empfehlen und können den Weg zum Erfolg deutlich verlängern.
+                                < br /> <br />
+                                Auf dem Markt gibt es einige Anbieter, welche die Geld-zurück-Garantie bewerben. Theoretisch wird der Erfolg mit diesem Marketing-Trick tatsächlich garantiert. Als Anbieter mit genügend Kunden überhaupt eine solche Klausel aufzunehmen, ist für uns rätselhaft. Aus neutraler Sicht muss sich gefragt werden, ob solche Anbieter nachhaltigen wirtschaftlichen Erfolg haben können, wenn der Grossteil der Kunden dazu aufgefordert wird, das Geld zurückzuverlangen.
+
+                                </p>
+                            </FramerMotionAnimation>
+                    </div>
+                    </div>
+                </section>
+
+                <section id="kosten" className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                                Was kostet professionelle organische Optimierung?
+
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Es ist schwer möglich, eine pauschale Angabe zu den Kosten zu machen. Wie groß der Arbeitsaufwand bei der Suchmaschinenoptimierung ist, hängt vom aktuellen Zustand der Website und den Zielen des Kunden ab. Somit sind auch die Kosten von Faktoren wie Themengebiet und dem Markt abhängig.
+
+                        </FramerMotionAnimation>
+                        
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                           Grundsätzlich muss zwischen folgenden zwei Teilbereichen unterschieden werden:
+                        </FramerMotionAnimation>
+
+                        <div className="inner-content-wrapper bg-gray">
+                            <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title"><a href="/seo/seo-analyse" title="SEO-Analyse">SEO-Analyse </a>mit Handlungsempfehlungen</h4>
+                                     <p className="desc-md mt-15">Die Kosten für Keywordanalyse inkl. Handlungsempfehlung liegen im Schnitt bei 1'350 CHF.</p>
+                                     <br />
+                                     <Image src={seoanalyseImage} alt="SEO-Analyse" className="main-image" />
+                                    <small className="text-xs mt-15">Quelle: https://www.gryps.ch/produkte/seo-39/seo-kosten/</small>
+
+                                   
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    className="mb-80 md:mb-0"
+                                >
+                                    <h4 className="content-title">
+                                        Content Marketing (Blogkonzept, verfassen von Content)
+                                    </h4>
+                              <p className="desc-md mt-15">Die Kosten für das Content-optimierte Konzept inkl. Erstellen der Blogbeiträge liegen im Schnitt bei 2'750 CHF.</p>
+                                <Image src={seobetreuungImage} alt="Content Marketing" className="main-image" />
+                                <br />
+                                <small className="text-xs">Quelle: https://www.gryps.ch/produkte/seo-39/seo-kosten/</small>
+
+                                </FramerMotionAnimation>
+                            </div>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="content-flag bg-white mb-20 md:mb-0">
+                                <h4 className="content-title font-medium">
+                                    Fazit
+                                </h4>
+                                <p className="desc-md">
+                                    Für eine laufende professionelle Betreuung inklusive Content-Erstellung, mit einer Laufzeit von mindestens 6 Monaten, können Sie mit Kosten um die CHF 2'750 pro Monat rechnen. Daraus ergeben sich für das gesamte Jahr Gesamtkosten von CHF 33'000.
+                                    <br /><br />
+                                    Sichtbarkeit: Die Erfahrung der SH Digital Kunden mit professioneller Betreuung zeigt, dass die SEO-Kosten sich bereits nach 12 bis 18 Monaten durch die grössere Sichtbarkeit refinanziert haben. 
+
+                                </p>
+                            </FramerMotionAnimation>
                         </div>
                     </div>
                 </section>
 
-                <FAQ data={faqSeoSectionDataWIS} />
+                <section className="content-with-video-2 container flex md:grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.25 }}
+                                    className="video-wrapper">
+                                    <VideoContainer url="https://www.youtube.com/embed/lvWuXcvtEm8"
+                                                    className="thumbnail-wrapper relative">
+                                        <Image src={videoSEOThumbnail} alt={'videoSEOThumbnail'} className="thumbnail" />
+                                        <Image src={playIcon} alt={"play icon"} className="play-icon" />
+                                    </VideoContainer>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.25 }}
+                                    className="content-wrapper">
+                                    <h3 className="section-title">Zusammenfassung in Schweizerdeutsch</h3>
+                                    <p className="description">Was ist SEO genau und wie sollte man es einsetzen.
+                                    </p>
+                                    
+                                </FramerMotionAnimation>
+                            </section>
+
+                <FAQ link={'faq'} data={faqSeoSectionDataWIS} />
             </main>
+
+
         </>
     )
 }
@@ -650,7 +821,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
 const googleContentList = [
     {
         item: 'Was ist SEO',
-        link: '#wasistseo'
+        link: '#was-ist-seo'
     },
     {
         item: 'Warum ist es für mein Unternehmen wichtig?',
@@ -659,6 +830,10 @@ const googleContentList = [
     {
         item: 'Wie funktioniert Suchmaschinenoptimierung?',
         link: '#wiefunktioniertes'
+    },
+    {
+        item: 'Was ist eine SEO-Analyse',
+        link: '#analyse'
     },
     {
         item: 'Was sind Rankingfaktoren',
@@ -684,22 +859,21 @@ const googleContentList = [
         item: 'Was genau macht eine SEO-Agentur',
         link: '#agentur'
     },
-    {
-        item: 'Wie lange dauert es bis zu den ersten Resultaten?',
-        link: '#wielange'
-    },
+    
     {
         item: 'Erfolgsfaktoren',
         link: '#erfolgsfaktoren'
     },
     {
-        item: 'Was kostet es?',
+        item: 'Was kostet professionelle organische Optimierung?',
         link: '#kosten'
     },
+
     {
-        item: 'Lässt sich Erfolg garantieren?',
-        link: '#erfolg'
+        item: 'Wie lange dauert es bis zu den ersten Resultaten?',
+        link: '#faq'
     },
+    
     {
         item: 'Häufige Fragen zu Suchmaschinenmarketing',
         link: '#faq'
@@ -721,6 +895,7 @@ const post = {
     author: 'Sandro Huber',
     authorImage: sandro,
     date: '5. Februar 2021',
+    update: '30. November 2021',
     readingTime: '25min Lesezeit',
     contentList: googleContentList,
     videoID: 'wasistseo',

@@ -8,7 +8,7 @@ import {useDimensions} from "../../../hooks/useDimensions";
 import CollapsibleContent from "../../common/CollapsibleContent";
 import VideoContainer from "../../common/VideoContainer";
 
-const FAQ = ({ data, dark = true }) => {
+const FAQ = ({ data, dark = true, link }) => {
     const [activeAccordion, setActiveAccordion] = useState(null);
 
     const {
@@ -24,7 +24,7 @@ const FAQ = ({ data, dark = true }) => {
     };
 
     return (
-        <section className={`faq container ${dark ? 'bg-gray' : 'bg-white'}`}>
+        <section id={link} className={`faq container ${dark ? 'bg-gray' : 'bg-white'}`}>
             <FramerMotionAnimation>
                 <h2 className="title text-center">
                     { title?.map((item, index) => <div key={index}>{item}</div>) }
@@ -70,6 +70,8 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, delay: index * 0.15 }}
             className="faq-item">
+            
+
             <div className={`question-wrapper flex items-center ${dark ? 'bg-white' : 'bg-gray'}`}
                  onClick={() => accordionChangeHandler(index)}>
                 <Image src={item.icon || layersIcon} alt="item icon" className="question-icon" />
@@ -78,13 +80,31 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                     <Image src={chevronDownIcon} alt="chevron icon" className={`arrow-icon ${isActive ? 'active' : ''}`} />
                 </div>
             </div>
+
+
             <CollapsibleContent className={`content-wrapper ${dark ? 'bg-white' : 'bg-gray'}`} expanded={show} height={height}>
                 <div className="answer-wrapper md:flex" ref={contentRef}>
-                    <VideoContainer url="https://www.youtube.com/embed/1YXnseEjaKs"
-                                    className="video-container relative" stop={!isActive}>
-                        <Image src={item.answer.media.thumbnail} alt="thumbnail" className="thumbnail" />
-                        <Image src={playIcon} alt="play" className="play-icon" />
-                    </VideoContainer>
+                    
+                {item.answer.media.check === "no" ? " " :
+
+                        item.answer.media.check === "video" ? (
+                            <VideoContainer
+                                url={item.answer.media.videoUrl}
+                                className="video-container relative"
+                                stop={!isActive}
+                            >
+                                <Image src={item.answer.media.thumbnail} alt="thumbnail" className="thumbnail" />
+                                <Image src={playIcon} alt="play" className="play-icon" />
+                            </VideoContainer>
+                        ) : item.answer.media.check === "image" ? (
+                            <div className="video-container relative">
+                                <Image src={item.answer.media.thumbnail} alt="thumbnail" className="thumbnail" />
+                            </div>
+                        ) : (
+                            ""
+                        )}
+
+                  
                      <div className="content-container" style={{ whiteSpace: "break-spaces" }}>
                     { item.answer.description }
                     { item.answer.description2 ? <div className="content-container desc-md" style={{ whiteSpace: "break-spaces" }}>

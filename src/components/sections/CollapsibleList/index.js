@@ -8,7 +8,7 @@ import {useDimensions} from "../../../hooks/useDimensions";
 import CollapsibleContent from "../../common/CollapsibleContent";
 import VideoContainer from "../../common/VideoContainer";
 
-const CollapsibleList = ({ data, dark = true }) => {
+const CollapsibleList = ({ data, dark = true, link }) => {
     const [activeAccordion, setActiveAccordion] = useState(null);
 
     const {
@@ -25,7 +25,7 @@ const CollapsibleList = ({ data, dark = true }) => {
     };
 
     return (
-        <section className={`collapsible-list container ${dark ? 'bg-gray' : 'bg-white'}`}>
+        <section id={link} className={`collapsible-list container ${dark ? 'bg-gray' : 'bg-white'}`}>
             <FramerMotionAnimation>
                 <h2 className="title text-center">
                     { title?.map((item, index) => <div key={index}>{item}</div>) }
