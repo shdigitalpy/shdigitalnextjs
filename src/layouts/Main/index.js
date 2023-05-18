@@ -1,4 +1,5 @@
 import React from 'react';
+import { Html, Head, Main, NextScript } from 'next/document'
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import FramerMotionAnimation from "../../components/common/FramerMotionAnimation";
