@@ -745,7 +745,9 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
                                     <h4 className="content-title"><a href="/seo/seo-analyse" title="SEO-Analyse">SEO-Analyse </a>mit Handlungsempfehlungen</h4>
-                                     <p className="desc-md mt-15">Die Kosten für Keywordanalyse inkl. Handlungsempfehlung liegen im Schnitt bei 1'350 CHF.</p>
+                                     <p className="desc-md mt-15">Die Kosten 
+                                     für Keywordanalyse inkl. Handlungsempfehlung 
+                                     liegen im Schnitt bei CHF {"1'350"}.</p>
                                      <br />
                                      <Image src={seoanalyseImage} alt="SEO-Analyse" className="main-image" />
                                     <small className="text-xs mt-15">Quelle: https://www.gryps.ch/produkte/seo-39/seo-kosten/</small>
@@ -760,7 +762,9 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     <h4 className="content-title">
                                         Content Marketing (Blogkonzept, verfassen von Content)
                                     </h4>
-                              <p className="desc-md mt-15">Die Kosten für das Content-optimierte Konzept inkl. Erstellen der Blogbeiträge liegen im Schnitt bei 2'750 CHF.</p>
+                              <p className="desc-md mt-15">Die Kosten für 
+                              das Content-optimierte Konzept inkl. Erstellen der Blogbeiträge 
+                              liegen im Schnitt bei CHF {"2'750"}.</p>
                                 <Image src={seobetreuungImage} alt="Content Marketing" className="main-image" />
                                 <br />
                                 <small className="text-xs">Quelle: https://www.gryps.ch/produkte/seo-39/seo-kosten/</small>
@@ -776,9 +780,16 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                                     Fazit
                                 </h4>
                                 <p className="desc-md">
-                                    Für eine laufende professionelle Betreuung inklusive Content-Erstellung, mit einer Laufzeit von mindestens 6 Monaten, können Sie mit Kosten um die CHF 2'750 pro Monat rechnen. Daraus ergeben sich für das gesamte Jahr Gesamtkosten von CHF 33'000.
+                                    Für eine laufende professionelle Betreuung inklusive 
+                                    Content-Erstellung, mit einer Laufzeit von mindestens 
+                                    6 Monaten, können Sie mit Kosten um die 
+                                    CHF {"2'750"} pro Monat rechnen. Daraus ergeben sich 
+                                    für das gesamte Jahr Gesamtkosten von CHF {"33'000"}.
                                     <br /><br />
-                                    Sichtbarkeit: Die Erfahrung der SH Digital Kunden mit professioneller Betreuung zeigt, dass die SEO-Kosten sich bereits nach 12 bis 18 Monaten durch die grössere Sichtbarkeit refinanziert haben. 
+                                    Sichtbarkeit: Die Erfahrung der 
+                                    SH Digital Kunden mit professioneller Betreuung zeigt, 
+                                    dass die SEO-Kosten sich bereits nach 12 bis 18 Monaten 
+                                    durch die grössere Sichtbarkeit refinanziert haben. 
 
                                 </p>
                             </FramerMotionAnimation>
