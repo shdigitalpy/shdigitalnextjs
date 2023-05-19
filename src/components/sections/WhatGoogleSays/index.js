@@ -18,7 +18,7 @@ const WhatGoogleSays = ({ post }) => {
                     <h2 className="title mt-5">{post.introTitle}</h2>
                     <Image src={doubleDownArrow} alt="arrows" className="title-arrow-art" />
                 </FramerMotionAnimation>
-                <div className="description-wrapper">
+                <div className="description-wrapper" style={{ whiteSpace: "break-spaces" }}>
                     <FramerMotionAnimation type="p">{post.introDescription}</FramerMotionAnimation>
 
                     {post.introDescription2 ? <FramerMotionAnimation type="p">{post.introDescription2}</FramerMotionAnimation> : undefined}

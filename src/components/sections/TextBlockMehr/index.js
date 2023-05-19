@@ -7,9 +7,9 @@ import checkCircleOrange from '../../../assets/icons/check-circle-orange.svg';
 
 
 
-const TextBlock = ({data}) => {
+const TextBlockMehr = ({data}) => {
     return (
-        <section className="analysis-factors container">
+        <section style={{ whiteSpace: "break-spaces" }} className="analysis-factors container">
            
             <FramerMotionAnimation type="p" className="title mb-10">
                         {data.blockquoteTitle}
@@ -26,4 +26,4 @@ const TextBlock = ({data}) => {
     );
 };
 
-export default TextBlock;
+export default TextBlockMehr;

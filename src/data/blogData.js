@@ -17,6 +17,7 @@ import meeting from '../assets/images/meeting3.png';
 import listIcon from '../assets/icons/list.svg';
 import loaderIcon from '../assets/icons/loader.svg';
 import cpuIcon from '../assets/icons/cpu.svg';
+import processWebsiteAnalysis from '../data/processWebsiteAnalysis';
 
 export default {
 
@@ -71,7 +72,8 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
                 introTitle: 'Wie gut ist Ihre Webseite?',
-                introDescription: 'Die Optimierung der Webseite für Suchmaschinen ist ein wichtiger Faktor um in der umkämpften Onlinewelt einen Platz am Tisch zu kriegen. Es gibt verschiedene Suchmaschinen Richtlinien, welche von einer guten Webseite eingehalten werden sollten. \n Die SEO Strategie ist massgeblich von korrekten Analysedaten abhängig. In diesem Ratgeber helfen wir Ihnen zu prüfen, wo bei Ihnen Chance und Potentiale für Optimierung sind. Korrekt umgesetzte Optimierungsmassnahmen können zur Steigerung des Rankings beitragen. \n Die Überprüfung der Webseite und die anschliessende Onpage-Verbesserung ist ein erster wichtiger Schritt, allerdings führen nur optimal aufeinander abgestimmte Massnahmen aus verschiedenen Bereichen z.B. Linkaufbau, Content-Design, etc. zu einem langfristigen Erfolg.',
+                introDescription: 'Die Optimierung der Webseite für Suchmaschinen ist ein wichtiger Faktor um in der umkämpften Onlinewelt einen Platz am Tisch zu kriegen. Es gibt verschiedene Suchmaschinen Richtlinien, welche von einer guten Webseite eingehalten werden sollten. Die SEO Strategie ist massgeblich von korrekten Analysedaten abhängig. In diesem Ratgeber helfen wir Ihnen zu prüfen, wo bei Ihnen Chance und Potentiale für Optimierung sind. Korrekt umgesetzte Optimierungsmassnahmen können zur Steigerung des Rankings beitragen.',
+                introDescription2: 'Die Überprüfung der Webseite und die anschliessende Onpage-Verbesserung ist ein erster wichtiger Schritt, allerdings führen nur optimal aufeinander abgestimmte Massnahmen aus verschiedenen Bereichen z.B. Linkaufbau, Content-Design, etc. zu einem langfristigen Erfolg.', 
                 introId: 'wasistseo',
                 contentList: [
 
@@ -142,7 +144,7 @@ export default {
                 itemstitleH2: 'Checkliste zur Onpage Optimierung',
                 itemsDesc1: 'Eine automatisierte Analyse mit einem Online Tool kann keine umfassende SEO-Analyse durch einen Menschen ersetzen.',
                 itemsDesc2: 'Wenn Sie sich weiter in das Thema einarbeiten möchten, haben wir hier die passende Checkliste zusammengestellt. Es handelt sich um Onpage Optimierungskriterien, die aktuell relevant sind.',
-                itemsTitleH3: 'Checkliste grundliche SEO - Website - Analyse',
+                itemsTitleH3: 'Checkliste gründliche \n SEO - Website - Analyse',
                 itemsLeftSubtitle1: 'Meta Angaben und URL',
                 itemsLeft: [
 
@@ -237,15 +239,24 @@ export default {
 
                 ],
                 // itemsRightBottomText: 'Bei Unklarheiten bezüglich den Begrifflichkeiten, lesen Sie zuerst unseren Beitrag zum Thema',
-                itemsRightBottomText: 'Was ist SEO.',
-                itemsRightBottomLink: '/seo/was-ist-suchmaschinenoptimierung',
+                
                 faqSection: '',
-
-
+                contentStripT: 'Mit Sandro Huber und Team eine professionelle Analyse starten!',
+                contentStripD: '                    Melden Sie sich jetzt für eine Potentialanlyse und erfahren Sie, was die nächsten Schritte in "Seite 1 bei Google" sind.',
+                contentStripBT: 'Jetzt anfragen',
+                boxesData: processWebsiteAnalysis,
+                
+                textanalyseTitle: 'Die Basis für Online Erfolg',
+                textanalyseText: 'Wir gratulieren Ihnen zur Erkenntnis, dass Sie eine Analyse für die organische Suche bei Google benötigen. Sie haben einen essentiellen Punkt in der Planung überwunden - sprich die Notwendigkeit und die Effektivität von SEO zu erkennen.',
+                textanalyseText2: 'Vielerorts ist das Verständnis für professionelle Optimierung von Webseiteninhalten nicht vorhanden. Um wettbewerbsfähig im eigenen Markt zu bleiben, sollte man sich mit solchen Themen auseinandersetzen. \n\nDer SEO Check ist nur ein Grundstein, der neue Ideen aufdecken kann, mit welchen man die Konkurrenz im Internet und damit generell im Markt hinter sich lassen kann. Dieser Beitrag gibt Ihnen eine Übersicht über den ersten Teilschritt in einem SEO-Projekt.',
+                textanalyseQuote: 'Um schnelle Ergebnisse im Google Ranking zu erreichen, braucht es eine fundiertere Überprüfung der und die Einstufung der Prioritäten bezüglich',
+                textanalyseLink: 'was-ist-seo',
+                textanalyseLinktext: 'Suchmaschinenoptimierung'
             }
 
-
+                
         ],
+                
 
     },
     'content-marketing': {

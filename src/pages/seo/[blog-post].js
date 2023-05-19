@@ -22,11 +22,13 @@ import peopleSittingChair from '../../assets/images/people-sitting-chair.png';
 import alternateData from '../../data/blogPostAlternateSectionData';
 import blogData from '../../data/blogData';
 import phasesOfSeoProjectSectionData from '../../data/phasesOfSeoProjectSectionData';
-import MoreInterestingPosts from "../../components/sections/MoreInterestingPosts";
+import MoreInterestingPostsAnalyse from "../../components/sections/MoreInterestingPostsAnalyse";
 import WorkWithUs from "../../components/sections/WorkWithUs";
 import TextBlock from "../../components/sections/TextBlock";
 import TextBlockMehr from "../../components/sections/TextBlockMehr";
+import TextBlockAnalyse from "../../components/sections/TextBlockAnalyse";
 import Comments from "../../components/sections/Comments";
+import processWebsiteAnalysis from '../../data/processWebsiteAnalysis';
 
 const inter = Inter({subsets: ['latin']})
 
@@ -119,13 +121,16 @@ export default function BlogPost() {
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData4} /> : undefined }
 
                 <SiteAnalysis data={post} />
-                <ContentStrip2 title="Kann man “ SEO - Optimierung”sagen?"
-                               description="Nein, ,, SEO - Optimierung “ ist als Begriff falsch. Denn SEO ist die Abkurzung fur Suchmachineoptimierung - und du willst ja nicht die Optimierung Optimieren."
-                               className="bg-gray" />
-                <CardGrid data={phasesOfSeoProjectSectionData} />
+                <ContentStrip2 data={post} className="bg-gray" />
+                
 
-                <MoreInterestingPosts />
-                <WorkWithUs />
+                { post.title === 'SEO Analyse' ?
+                <CardGrid data={processWebsiteAnalysis} />
+                : undefined }
+
+                <TextBlockAnalyse data={post} />
+                
+                <MoreInterestingPostsAnalyse />
                 <Comments slug={slug} />
             </main>
         </>

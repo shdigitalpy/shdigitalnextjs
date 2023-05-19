@@ -6,7 +6,7 @@ import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 
 const SiteAnalysis = ({ data }) => {
     return (
-        <section id={data.itemsCheckId} className="site-analysis container bg-gray">
+        <section id={data.itemsCheckId} className="site-analysis container bg-gray" style={{ whiteSpace: "break-spaces" }}>
         
             <FramerMotionAnimation type="h3" className="title text-center">
                 {data.itemsTitleH3}

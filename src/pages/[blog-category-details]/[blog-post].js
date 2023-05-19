@@ -27,6 +27,7 @@ import WorkWithUs from "../../components/sections/WorkWithUs";
 import TextBlock from "../../components/sections/TextBlock";
 import TextBlockMehr from "../../components/sections/TextBlockMehr";
 import Comments from "../../components/sections/Comments";
+import processWebsiteAnalysis from '../../data/processWebsiteAnalysis';
 
 const inter = Inter({subsets: ['latin']})
 
@@ -119,10 +120,12 @@ export default function BlogPost() {
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData4} /> : undefined }
 
                 <SiteAnalysis data={post} />
-                <ContentStrip2 title="Kann man “ SEO - Optimierung”sagen?"
-                               description="Nein, ,, SEO - Optimierung “ ist als Begriff falsch. Denn SEO ist die Abkurzung fur Suchmachineoptimierung - und du willst ja nicht die Optimierung Optimieren."
-                               className="bg-gray" />
-                <CardGrid data={phasesOfSeoProjectSectionData} />
+                
+               
+                <ContentStrip2 data={post} className="bg-gray" />
+                      
+                <CardGrid data={post.boxesData} />
+                
 
                 <MoreInterestingPosts />
                 <WorkWithUs />
