@@ -17,7 +17,7 @@ const ContentWithVideo = (
         className = ''
     }) => {
     return (
-        <section id={id} className={`content-with-video-2 container flex md:grid md:grid-cols-2 ${className}`}>
+        <section style={{ whiteSpace: "break-spaces" }} id={id} className={`content-with-video-2 container flex md:grid md:grid-cols-2 ${className}`}>
             <FramerMotionAnimation
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}

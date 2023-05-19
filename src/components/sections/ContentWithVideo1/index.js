@@ -9,7 +9,7 @@ import VideoContainer from "../../common/VideoContainer";
 
 const ContentWithVideo = () => {
     return (
-        <section className="content-with-video container">
+        <section style={{ whiteSpace: "break-spaces" }} className="content-with-video container">
             <FramerMotionAnimation>
                 <div className="flex flex-col md:flex-row">
                     <FramerMotionAnimation

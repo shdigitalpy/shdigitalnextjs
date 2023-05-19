@@ -88,13 +88,19 @@ export default function BlogPost() {
                         </>
                     )}
                 </Banner>
-                <WhatGoogleSays post={post}  />
+                
+                { post.introTitle ?
+                <WhatGoogleSays post={post}  /> : undefined }
+
+                { post.videoTitle ?
                 <ContentWithVideo id={post.videoID} title={post.videoTitle} className="bg-gray"
                                   videoUrl={post.videoURL} thumbnail={post.videoThumbnail}
                                   description={post.videoDescription} description2={post.videoDescription2}/>
+                : undefined }
+
 
                 { post.imageData ?
-                <ImageAndContentAlternateRows id={post.videoID} data={post} imageData={post.imageData} />
+                <ImageAndContentAlternateRows id={post.imageId} data={post} imageData={post.imageData} />
                 : undefined }
 
                 { post.bannerImage  ?
@@ -103,7 +109,10 @@ export default function BlogPost() {
                     alt={post.bannerImageDesc} /></a>
                 : undefined }
 
+                {post.knowListID ?
                 <KnowList id={post.knowListID} data={post} />
+                : undefined }
+
                 { post.imageData2 ?
 
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData2} />
@@ -120,17 +129,27 @@ export default function BlogPost() {
                 { post.imageData4 ?
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData4} /> : undefined }
 
-                <SiteAnalysis data={post} />
+                { post.itemsCheckId ?
+
+                    <SiteAnalysis data={post} /> : undefined }
+
+                { post.contentStripT ?  
                 <ContentStrip2 data={post} className="bg-gray" />
-                
+                : undefined }
 
                 { post.title === 'SEO Analyse' ?
                 <CardGrid data={processWebsiteAnalysis} />
                 : undefined }
 
+                { post.title === 'SEO Analyse' ?
                 <TextBlockAnalyse data={post} />
-                
-                <MoreInterestingPostsAnalyse />
+                : undefined }
+
+                { post.title === 'SEO Analyse' ?
+                 <MoreInterestingPostsAnalyse />
+                : undefined }
+
+               
                 <Comments slug={slug} />
             </main>
         </>

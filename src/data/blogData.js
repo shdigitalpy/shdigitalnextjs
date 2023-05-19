@@ -18,6 +18,7 @@ import listIcon from '../assets/icons/list.svg';
 import loaderIcon from '../assets/icons/loader.svg';
 import cpuIcon from '../assets/icons/cpu.svg';
 import processWebsiteAnalysis from '../data/processWebsiteAnalysis';
+import seoDauerImage from '../assets/images/seo/suchmaschinenoptimierung-dauer.jpg';
 
 export default {
 
@@ -57,6 +58,24 @@ export default {
                 cta: 'Was ist SEO',
                 author: 'Sandro Huber',
                 authorImage: sandro,
+            },
+
+            {
+                slug: 'seo-dauer',
+                shortTitle: 'Wie lange dauert SEO',
+                title: 'Wie lange dauert SEO',
+                description: 'Sie fragen sich sicherlich, bis wann Resultate erzielt werden können bzw. wie lange es dauert. ',
+                image: seoDauerImage,
+                imageAlt: 'SEO Dauer',
+                readMoreUrl: '/seo/post1',
+                date: '9.12.2022',
+                readingTime: '10min Lesedauer',
+                cta: 'SEO Dauer',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                
+                
+            
             },
             {
                 slug: 'seo-analyse',
