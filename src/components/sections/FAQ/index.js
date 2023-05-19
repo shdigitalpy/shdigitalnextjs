@@ -79,15 +79,20 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                 </div>
             </div>
             <CollapsibleContent className={`content-wrapper ${dark ? 'bg-white' : 'bg-gray'}`} expanded={show} height={height}>
-                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer" className="answer-wrapper md:flex" ref={contentRef}>
+                <div 
+                className="answer-wrapper md:flex" ref={contentRef}>
                     <VideoContainer url="https://www.youtube.com/embed/1YXnseEjaKs"
                                     className="video-container relative" stop={!isActive}>
                         <Image src={item.answer.media.thumbnail} alt="thumbnail" className="thumbnail" />
                         <Image src={playIcon} alt="play" className="play-icon" />
                     </VideoContainer>
+
+                    <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer" >
                     <div itemProp="text" className="content-container">
                         { item.answer.description }
                     </div>
+                    </div>
+
                 </div>
             </CollapsibleContent>
         </FramerMotionAnimation>

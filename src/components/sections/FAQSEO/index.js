@@ -83,7 +83,7 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
 
 
             <CollapsibleContent className={`content-wrapper ${dark ? 'bg-white' : 'bg-gray'}`} expanded={show} height={height}>
-                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer" className="answer-wrapper md:flex" ref={contentRef}>
+                <div className="answer-wrapper md:flex" ref={contentRef}>
                     
                 {item.answer.media.check === "no" ? " " :
 
@@ -104,7 +104,7 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                             ""
                         )}
 
-                  
+                    <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer" >
                      <div itemProp="text" className="content-container" style={{ whiteSpace: "break-spaces" }}>
                     { item.answer.description }
                     { item.answer.description2 ? <div className="content-container desc-md" style={{ whiteSpace: "break-spaces" }}>
@@ -112,6 +112,7 @@ const Accordion = ({ index, isActive, item, dark, changeHandler }) => {
                     </div> : undefined }
                     { item.answer.linklocation ? <div className="content-container desc-md"><br></br><a href={ item.answer.linklocation } title={ item.answer.linktext }>{ item.answer.linktext }</a>
                     </div> : undefined }
+                    </div>
                     </div>
                 </div>
             </CollapsibleContent>
