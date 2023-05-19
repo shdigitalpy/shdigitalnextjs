@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import {Inter} from 'next/font/google';
+import {useEffect, useState} from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Banner from '../../components/common/Banner';
@@ -42,6 +43,7 @@ import holdingLaptop2 from '../../assets/images/holding-laptop.png';
 import videoSEOThumbnail from '../../assets/images/seo/seovideothumbnail.jpg';
 import seobetreuungImage from '../../assets/images/seo/seo_betreuung_preise.png'
 import seoanalyseImage from '../../assets/images/seo/seo_analyse_kosten.png'
+import Comments from "../../components/sections/Comments";
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
@@ -113,6 +115,8 @@ const structuredDataVideo = {
 }
 
 export default function BlogPost() {
+    
+
     return (
         <>
             <Head>
@@ -849,6 +853,7 @@ Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar
                             </section>
 
                 <FAQ link={'faq'} data={faqSeoSectionDataWIS} />
+                <Comments slug={'was-ist-seo'} />
             </main>
 
 

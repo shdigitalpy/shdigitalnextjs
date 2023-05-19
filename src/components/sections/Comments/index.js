@@ -73,32 +73,32 @@ const Comments = ({ slug = '', form = true, commentsList = true}) => {
             { form && (
                 <div className="comment-form-wrapper">
                     <div className="title-wrapper">
-                        <FramerMotionAnimation type="h2" className="title">Lebe einen Kommentar</FramerMotionAnimation>
-                        <FramerMotionAnimation type="p" className="description">Ihre E-Mail-Adresse wird nicht veröffentlicht, Pflichtfelder sind markiert*</FramerMotionAnimation>
+                        <FramerMotionAnimation type="h2" className="title">Einen Kommentar hinterlassen</FramerMotionAnimation>
+                        <FramerMotionAnimation type="p" className="description">Die E-Mail-Adresse wird nicht veröffentlicht, Pflichtfelder sind markiert*</FramerMotionAnimation>
                     </div>
                     <form className="form-wrapper" onSubmit={(e) => {commentSubmitHandler(e, slug)}}>
                         <FramerMotionAnimation className="input-wrapper">
-                            <textarea rows={6} name="text" className="input comment-field" placeholder="Write here"  />
+                            <textarea rows={6} name="text" className="input comment-field" placeholder="Nachricht"  />
                         </FramerMotionAnimation>
                         <div className="input-group grid md:grid-cols-2">
                             <FramerMotionAnimation className="input-wrapper">
                                 <input type="text" name="name" className="input" placeholder="Name*"  />
                             </FramerMotionAnimation>
                             <FramerMotionAnimation className="input-wrapper">
-                                <input type="email" name="email" className="input" placeholder="Email*"  />
+                                <input type="email" name="email" className="input" placeholder="E-Mail*"  />
                             </FramerMotionAnimation>
                         </div>
                         <FramerMotionAnimation className="input-wrapper">
-                            <input type="text" name="website" className="input" placeholder="Website*" />
+                            <input type="text" name="website" className="input" placeholder="Webseite*" />
                         </FramerMotionAnimation>
                         {/*<ReCaptcha onValidate={setToken} action="page_view" />*/}
                         <FramerMotionAnimation>
                             <button className="btn-primary submit-btn" type="submit">
-                                Submit Comment
+                                Kommentar hinterlassen
                                 <Image src={uprightArrowIcon} alt="upright arrow" className="submit-btn-icon" />
                             </button>
 
-                            { success && <p className="success-msg text-lg mt-5">Success!</p> }
+                            { success && <p className="success-msg text-lg mt-5">Erfolgreich! Der Kommentar wird von uns geprüft</p> }
                         </FramerMotionAnimation>
                     </form>
                 </div>
