@@ -49,6 +49,11 @@ import seoDauer1 from '../../assets/images/seo/seo-dauer.webp';
 import seoDauer2 from '../../assets/images/seo/seo-dauer2.webp';
 import checkCircleOrange from '../../assets/icons/check-circle-orange.svg';
 import Comments from "../../components/sections/Comments";
+import taskActionIcon from '../../assets/icons/task-actions.svg';
+import implementationIcon from '../../assets/icons/implementation.svg';
+import readingBookIcon from '../../assets/icons/reading-book.svg';
+import CardGrid from '../../components/sections/CardGrid3';
+
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
@@ -293,10 +298,150 @@ export default function seoDauer() {
 
 
 
+                <section id="" className="analysis-factors container" style={{ paddingTop: 0}} >
+                    <FramerMotionAnimation
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                        className="content-wrapper flex-1">
+                        <h2 className="title font-medium">Was beeinflusst die Dauer von SEO massgeblich?</h2>
+                    
+                    </FramerMotionAnimation>
+                    <br />
+                    <FramerMotionAnimation type="p" className="description mb-50">
+                                Wie in der Einleitung bereits erwähnt, unterscheiden wir aus Erfahrung mit unseren Kunden grundsätzlich zwischen folgenden Ausgangslagen:
+                            </FramerMotionAnimation>
+                    <div className="main-wrapper md:flex">
+                        
+                        <div className="content-wrapper">
 
-                
+                        <FramerMotionAnimation
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                        className="content-wrapper flex-1">
+                        <h4 className="title font-medium">Ausgangslage</h4>
+                        <br />
+                    
+                    </FramerMotionAnimation>
 
-                <FAQ link={'faq'} data={faqSeoSectionDataWIS} />
+                            <div className="list-wrapper">
+                                { ausgangslageItems?.map((item, index) => (
+                                    <FramerMotionAnimation
+                                        initial={{ opacity: 0, x: 50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.25, delay: index * 0.1 }}
+                                        className="item" key={index}>
+                                        <Image src={checkCircleOrange} alt="check icon" className="check-icon" />
+                                        { item.data }
+                                    </FramerMotionAnimation>
+                                ))}
+                            </div>
+                            
+                           
+                        </div>
+
+                        <div className="content-wrapper">
+
+                        <FramerMotionAnimation
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                        className="content-wrapper flex-1">
+                        <h4 className="title font-medium">Was ist die IST-Situation</h4>
+                        <br />
+                    
+                    </FramerMotionAnimation>
+                    <FramerMotionAnimation type="p" className="description mb-15">
+                        Dann wiederum ist die Frage nach der aktuellen IST-Situation, bei neuen Projekten ist dies naheliegend. Bei bestehenden Webseiten sollten Sie sich folgendes Fragen, wenn es darum geht, wie schnell man mit SEO-Massnahmen Ergebnisse erzielt:
+
+
+
+                            </FramerMotionAnimation>
+
+                            <div className="list-wrapper">
+                                { istItems?.map((item, index) => (
+                                    <FramerMotionAnimation
+                                        initial={{ opacity: 0, x: 50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.25, delay: index * 0.1 }}
+                                        className="item" key={index}>
+                                        <Image src={checkCircleOrange} alt="check icon" className="check-icon" />
+                                        { item.data }
+                                    </FramerMotionAnimation>
+                                ))}
+                            </div>
+
+                                <FramerMotionAnimation type="p" className="description">
+                                Diese vier Einstiegsfragen lassen uns ein Projekt einordnen, wie viel Aufwand die Optimierung auf ein Level ist, die mit der Konkurrenz mithalten kann. Aus der Beantwortung dieser Fragen kann auch die Dauer für die Resultate aus den SEO-Massnahmen abgeleitet werden. Wenn Sie erfolgreiche Suchmaschinenoptimierung betreiben möchten, ist eine professionelle SEO-Strategie unumgänglich.
+
+
+
+
+                            </FramerMotionAnimation>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <FramerMotionAnimation className="description mt-50"
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                        >
+                            <p className="desc-sm mb-15">
+                                Wenn eine vorläufige Bewertung der ersten drei Fragen zeigt, dass diese enorm viel Aufwand erfordern, sollten Sie einen Webseiten-Relaunch in Betracht ziehen. Denn Webseiten mit veralteter Technik haben es deutlich schwerer, das Vertrauen bei Nutzer und somit auch bei den Suchmaschinen aufzubauen.
+
+
+
+                            </p>
+                            <p className="desc-sm mb-15 md:mb-15">
+                               Wie schon erwähnt stellt auch die Situation Ihrer Konkurrenten ein entscheidender Faktor dar, wie schnell es mit SEO vorangeht. Finden Sie beispielsweise auf der ersten Seite Ihrer wichtigsten Keywords nur Suchergebnisse mit unschlagbarem Linkprofil (Domain Rating von 50+), dann müssen Sie vermutlich deutlich mehr Aufwand und Kosten aufbringen, als wenn die Situation anders wäre. In diesem Fall gibt es andere Strategien, als auf diese Keywords zu setzen, welche wir in unserer <Link href="/monatliche-seo-betreuun" title="monatlichen SEO Betreuung">monatlichen SEO Betreuung</Link> einsetzen und mit denen man langfristig Erfolg bei SEO-Optimierung haben kann.
+
+                            </p>
+                        
+                            <p className="desc-sm mb-15">
+                                Zu guter Letzt ist es die Suchmaschine selbst, die bestimmt, wie lange es dauert. Selbst wenn eine neu erstellte Unterseite schnell indexiert wird, kann es trotzdem unterschiedlich viel Zeit benötigen, bis die Suchmaschine Ihre Prüfungen abgeschlossen hat und den Content einstuft. Der Suchalgorithmus hat wie längst in diesem Guide erwähnt, gewisse Rankingfaktoren, die von Google überprüft werden. Diese dienen als Qualitätsrichtlinien von den Ergebnissen und haben massgeblichen Einfluss auf das Google-Ranking.
+
+
+                            </p>
+                            <p className="desc-sm mb-15 md:mb-15">
+                                Auf der anderen Seite ändern sich der Algorithmus dauernd und die Guidelines von Google werden angepasst, somit kann eine veröffentlichte Unterseite schon nach einigen Monaten nicht mehr den Guidelines entsprechend. Darauf muss ein professioneller SEO-Experte reagieren können. Die Search Console ist ein interessantes Tool, welches Aufschluss darüber gibt, ob eine Seite bereits indexiert worden ist und ob man dafür organische Impressionen oder gar Klicks erhalten hat.
+
+
+
+                            </p>
+
+                            
+                        </FramerMotionAnimation>
+                </section>
+
+
+
+                 <section id="" className="analysis-factors container" style={{ paddingTop: 0}} >
+                    <FramerMotionAnimation
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                        className="content-wrapper flex-1">
+                        <h2 className="title font-medium">Was sagt Google zur Dauer?</h2>
+                    
+                    </FramerMotionAnimation>
+                    <br />
+                    <FramerMotionAnimation type="p" className="description mb-50">
+                               Aus einem <a href="https://support.google.com/webmasters/answer/7474347?hl=de" 
+                               title="Beitrag für die Search-Console Hilfe">Beitrag für die Search-Console Hilfe</a> kann man entnehmen, dass Google offiziell sagt, dass man nach einer gestellten Indexierung bis zu einer Woche warten soll, bis man überhaupt überprüft, ob die Seite im “Index” ist.
+
+                    Wenn die Webseite neu ist, kann dies noch viel länger dauern. Google gibt an, dass es zwischen ein bis zwei Tagen und einigen Wochen dauern kann. Dies wurde auch im Zusammenhang mit der Indexierung beantragen Funktion in der Google Search Console erwähnt.
+                            </FramerMotionAnimation>
+                    
+                </section>
+
+
+             
+
+            
+                 <CardGrid data={dauerPhasesData} />
+
                 <Comments slug={'seo-dauer'} />
             </main>
 
@@ -398,3 +543,62 @@ const listItems = [
                     {data: ' Überschriften so gestalten, damit Google web crawlers den Inhalt verstehen'}
 
                 ];
+
+const ausgangslageItems = [
+
+                    {
+                        data: ' Neues SEO-Projekt für Startup oder Neugründung'
+                    },
+                    {
+                        data: 'Bestehende Webseite eines Unternehmens'
+                    }
+
+                ];
+
+const istItems = [
+
+                    {
+                        data: 'Wie ist die Webseite technisch optimiert?'
+                    },
+                    {
+                        data: 'Ist die Struktur der Webseite korrekt aufgesetzt?'
+                    },
+                    {
+                        data: 'Hat die Webseite ein ansprechendes Mobile Design?'
+                    },
+                    {data: 'Wie steht es um das Linkprofil der Webseite?'},
+
+
+
+                ];
+
+
+const dauerPhasesData = {
+    title: '3 Phasen eines SEO-Projekts',
+    description: 'Ein SEO-Projekt gliedert sich in drei Phasen, die wiederum jeweils einen individuellen Zweck während der Dauer eines Projekts verfolgen.',
+    cardsData: [
+        {
+            icon: taskActionIcon,
+            title: 'Planungsphase',
+            description: [
+                { link: false, data: 'Während der Planungsphase wird die Webseite im Detail anhand einer' },
+                { link: true, data:'SEO-Analyse', url: 'https://google.com' },
+                { link: false, data: 'zerlegt. Aufgrund einer Konkurrenzanalyse werden Bereiche bei' }
+            ],
+        },
+        {
+            icon: implementationIcon,
+            title: 'Umsetzungsphase',
+            description: [
+                { link: false, data: 'Die Verbesserungsphase ist dazu da, die bisherigen Erkenntnisse ganz detailliert auszuwerten und gegebenenfalls die Gesamtstrategie anzupassen. Durch die stetige Weiterentwicklung des Suchmaschinenalgorithmus haben sich ziemlich sicher neue technische Onpage Herausforderungen ergeben, welche entsprechend wieder behoben werden müssen. Durch den Lernen & Verbessern Vorgang kann die SEO-Strategie neu ausgerichtet werden und erfolgreiche Massnahmen auf den weiteren Verlauf adaptiert werden.' },
+            ],
+        },
+        {
+            icon: readingBookIcon,
+            title: 'Lernen & Verbessern',
+            description: [
+                { link: false, data: 'Die Verbesserungsphase ist dazu da, die bisherigen Erkenntnisse ganz detailliert auszuwerten und gegebenenfalls die Gesamtstrategie anzupassen.' },
+            ],
+        }
+    ]
+}
