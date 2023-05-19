@@ -9,7 +9,6 @@ import WhatGoogleSays from '../../components/sections/WhatGoogleSays';
 import ImageAndContentAlternateRows from '../../components/sections/ImageAndContentAlternateRows';
 import KnowList from '../../components/sections/KnowList';
 import BreadCrumb from '../../components/common/BreadCrumb';
-import ContentStrip2 from '../../components/sections/ContentStrip2';
 import SiteAnalysis from '../../components/sections/SiteAnalysis';
 import ContentWithVideo from '../../components/sections/ContentWithVideo2';
 import CardGrid from '../../components/sections/CardGrid3';

@@ -119,10 +119,7 @@ export default function BlogPost() {
                 <ImageAndContentAlternateRows data={post} imageData={post.imageData4} /> : undefined }
 
                 <SiteAnalysis data={post} />
-                <ContentStrip2 title="Kann man “ SEO - Optimierung”sagen?"
-                               description="Nein, ,, SEO - Optimierung “ ist als Begriff falsch. Denn SEO ist die Abkurzung fur Suchmachineoptimierung - und du willst ja nicht die Optimierung Optimieren."
-                               className="bg-gray" />
-                <CardGrid data={phasesOfSeoProjectSectionData} />
+                
 
                 <MoreInterestingPosts />
                 <WorkWithUs />
