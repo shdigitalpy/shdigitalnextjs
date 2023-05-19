@@ -28,9 +28,9 @@ const Testimonials = () => {
                         <Image src={clientImage} alt="client" className="client-image" />
                         <div className="client-details md:hidden">
                             <p className="position">
-                                Kate Taubiks, Chief Mobile Officer
+                                Davide Sposato, Geschäftsführer 
                             </p>
-                            <p className="company font-medium">BMW</p>
+                            <p className="company font-medium">Work-in AG</p>
                         </div>
                     </FramerMotionAnimation>
                 </div>

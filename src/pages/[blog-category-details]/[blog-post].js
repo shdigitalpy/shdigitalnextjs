@@ -121,8 +121,6 @@ export default function BlogPost() {
 
                 <SiteAnalysis data={post} />
                 
-               
-                <ContentStrip2 data={post} className="bg-gray" />
                       
                 <CardGrid data={post.boxesData} />
                 
