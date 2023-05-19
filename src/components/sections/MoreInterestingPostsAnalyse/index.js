@@ -14,7 +14,7 @@ const itemsLeft = {
     title: '',
     pointsData: [
         [
-            { link: true, url: '/seo-analyse#seoanalyse-jetzt', data: 'Tool von SH Digital'},
+            { link: true, url: 'https://www.sh-digital.ch/seo-analyse#seoanalyse-jetzt', data: 'Tool von SH Digital'},
             { link: false, data: '- es handelt sich um einen Onpage-Seitenaudit mit Handlungsempfehlung.'}
         ],
         [
@@ -100,7 +100,7 @@ const MoreInterestingPosts = () => {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mt-100 md:mt-0">
-                            Oder lesen Sie unseren Beitrag für <a href="/seo-tools" title="SEO-Tools" className="text-link">SEO-Tools</a>, welche Werkzeuge generell für Strategien zur Optimierung verwendet werden können (nicht nur Onpage).
+                            Oder lesen Sie unseren Beitrag für <Link href="/seo-tools" title="SEO-Tools" className="text-link">SEO-Tools</Link>, welche Werkzeuge generell für Strategien zur Optimierung verwendet werden können (nicht nur Onpage).
 
                             </FramerMotionAnimation>
                             <FramerMotionAnimation
