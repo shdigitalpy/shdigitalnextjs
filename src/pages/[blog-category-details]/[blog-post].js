@@ -122,7 +122,6 @@ export default function BlogPost() {
                 <SiteAnalysis data={post} />
                 
                       
-                <CardGrid data={post.boxesData} />
                 
 
                 <MoreInterestingPosts />
