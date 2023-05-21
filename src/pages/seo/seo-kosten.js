@@ -32,7 +32,30 @@ import faqSeoKostenData from '../../data/faqSeoKostenData';
 const inter = Inter({subsets: ['latin']})
 
 
+const number1 = 1500;
+const number2 = 2500;
+const number3 = 2000;
 
+const formattedNumber1 = number1.toLocaleString('en-CH', {
+    style: 'currency',
+    currency: 'CHF',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+
+const formattedNumber2 = number2.toLocaleString('en-CH', {
+    style: 'currency',
+    currency: 'CHF',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+
+const formattedNumber3 = number3.toLocaleString('en-CH', {
+    style: 'currency',
+    currency: 'CHF',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
 
 export default function seoKosten() {
     
@@ -238,7 +261,7 @@ export default function seoKosten() {
                           <tr>
 
                             <td>Kleinere Full Service SEO-Agenturen</td>                        
-                            <td>Ab CHF 1'000.-- monatlich </td>
+                            <td>Ab {formattedNumber1} monatlich </td>
                             <td>Betreuung, Beratung, Einzelpakete</td>                          
                             
                             
@@ -246,14 +269,14 @@ export default function seoKosten() {
                           
                           <tr>
                             <td>Grössere Full Service SEO-Agenturen </td>       
-                            <td>Ab CHF 2'500.-- monatlich</td>
+                            <td>Ab {formattedNumber2} monatlich</td>
                             <td>Betreuung, Beratung, Workshops, Einzelpakete, Google Ads</td>
                         
                           </tr>
 
                           <tr>
                             <td>Webagenturen im Nebengeschäft </td>     
-                            <td>Ab CHF 2'000.-- monatlich</td>
+                            <td>Ab {formattedNumber3} monatlich</td>
                             <td>Betreuung, Beratung, Workshops, Google Ads</td>
                         
                           </tr>
@@ -362,7 +385,8 @@ export default function seoKosten() {
 
                     </div>
                     <FramerMotionAnimation type="p" className="content-flag description">
-                                Bitte beachten Sie auch, dass der Erfolg durch eine SEO-Agentur auch abhängig davon ist, welche Ziele Sie verfolgen und mit welchen SEO-Voraussetzungen gestartet wird.
+                                Bitte beachten Sie auch, dass der Erfolg durch eine SEO-Agentur 
+                                auch abhängig davon ist, welche Ziele Sie verfolgen und mit welchen SEO-Voraussetzungen gestartet wird.
 
 
                             </FramerMotionAnimation>
@@ -389,9 +413,15 @@ export default function seoKosten() {
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                             >
-                                <p className="desc-sm mb-15">Wenn Sie den Wert von SEO verstanden haben, sind diese Beträge nicht hoch und nicht tief. Jedoch wie kann ich messen, ob das für mein Unternehmen wirklich so stimmt?</p>
+                                <p className="desc-sm mb-15">Wenn Sie den 
+                                Wert von SEO verstanden haben, sind diese Beträge 
+                                nicht hoch und nicht tief. Jedoch wie kann ich messen, ob das für mein Unternehmen wirklich so stimmt?</p>
                                 <p className="desc-sm mb-0"> 
-                                Ich, Sandro Huber, der Autor dieses Beitrags bin ein grosser Fan von den Methoden von Warren Buffett. Deshalb vergleiche ich SEO immer wieder gerne mit Investments im Finanzbereich. Zwei Grundsätze von Buffett sind, dass für ansprechende Gewinne Geduld notwendig ist und die gewünschten Umsätze kommen, wenn man in das richtige Management investiert.</p>
+                                Ich, Sandro Huber, der Autor dieses Beitrags bin ein 
+                                grosser Fan von den Methoden von Warren Buffett. Deshalb vergleiche 
+                                ich SEO immer wieder gerne mit Investments im Finanzbereich. Zwei Grundsätze 
+                                von Buffett sind, dass für ansprechende Gewinne Geduld notwendig ist und die gewünschten 
+                                Umsätze kommen, wenn man in das richtige Management investiert.</p>
                             </FramerMotionAnimation>
                         </div>
                         <FramerMotionAnimation
@@ -467,10 +497,19 @@ export default function seoKosten() {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-0">
-                                        Nun drehen wir die Sache um. Sollten Sie jährlich ca. CHF 200'000.-- bis 300'000.-- Umsatz machen, ist ein Mindestbetrag von monatlich CHF 500.-- bis 1'000.-- für SEO in Ordnung. Für andere Umsätze können Sie es sich jetzt einfach selbst errechnen.
+                                        Nun drehen wir die Sache um. Sollten Sie jährlich ca. 
+                                        {`CHF 200'000.-- bis 300'000.--`} Umsatz machen, ist ein Mindestbetrag von monatlich 
+                                        {`CHF 500.-- bis 1'000.--`} für SEO in Ordnung. Für andere Umsätze können 
+                                        Sie es sich jetzt einfach selbst errechnen.
 
                                             <br /><br />
-                                    Wichtig: Obwohl wir diesen Richtwert empfehlen, können Faktoren wie Konkurrenz, Ziele, usw. die Situation komplett verändern. Wenn ein Konkurrenzunternehmen einen jährlichen Umsatz von CHF 300'000.-- erzielt, jedoch seinerseits monatlich deutlich mehr als die 3% ausgibt, dann verändert sich die Lage für Ihr Unternehmen wiederum.
+                                    Wichtig: Obwohl wir diesen Richtwert empfehlen, können 
+                                    Faktoren wie Konkurrenz, Ziele, usw. die Situation komplett 
+                                    verändern. Wenn ein Konkurrenzunternehmen einen 
+                                    jährlichen Umsatz 
+                                    von  {`CHF 300'000.--`} erzielt, jedoch seinerseits monatlich deutlich mehr 
+                                    als die 3% ausgibt, dann verändert sich die Lage 
+                                    für Ihr Unternehmen wiederum.
 
                             </FramerMotionAnimation>
                     </div>
