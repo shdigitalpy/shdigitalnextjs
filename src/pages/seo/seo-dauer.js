@@ -53,11 +53,12 @@ import taskActionIcon from '../../assets/icons/task-actions.svg';
 import implementationIcon from '../../assets/icons/implementation.svg';
 import readingBookIcon from '../../assets/icons/reading-book.svg';
 import CardGrid from '../../components/sections/CardGrid3';
+import MoreInterestingPostsDauer from "../../components/sections/MoreInterestingPostsDauer";
 
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
-import faqSeoSectionDataWIS from '../../data/FAQSectionDataWIS';
+import faqSeoDauerData from '../../data/faqSeoDauerData';
 
 const inter = Inter({subsets: ['latin']})
 
@@ -105,10 +106,6 @@ export default function seoDauer() {
                                   description={post.videoDescription} description2={post.videoDescription2}
                                   list={post.videoList}
                                   />
-
-
-                
-
                 <section id="wiefunktioniertes" className="section-wrapper bg-gray">
                     <div className="container">
                         <div className="title-wrapper">
@@ -162,7 +159,7 @@ export default function seoDauer() {
                   </div>
                 </section>
 
-                <section id="analyse" className="section-wrapper" style={{ paddingBottom: 0}}>
+                <section id="ganzvorne" className="section-wrapper" style={{ paddingBottom: 0}}>
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -238,7 +235,7 @@ export default function seoDauer() {
 
 
 
- <section style={{ whiteSpace: "break-spaces" }} className="content-with-video container">
+ <section id="indexierung" style={{ whiteSpace: "break-spaces" }} className="content-with-video container">
             <FramerMotionAnimation>
                 <div className="flex flex-col md:flex-row">
                     <FramerMotionAnimation
@@ -298,7 +295,7 @@ export default function seoDauer() {
 
 
 
-                <section id="" className="analysis-factors container" style={{ paddingTop: 0}} >
+                <section id="beeinflusst" className="analysis-factors container" style={{ paddingTop: 0}} >
                     <FramerMotionAnimation
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -417,7 +414,7 @@ export default function seoDauer() {
 
 
 
-                 <section id="" className="analysis-factors container" style={{ paddingTop: 0}} >
+                 <section id="google" className="analysis-factors container" style={{ paddingTop: 0}} >
                     <FramerMotionAnimation
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -440,9 +437,97 @@ export default function seoDauer() {
              
 
             
-                 <CardGrid data={dauerPhasesData} />
+                 <CardGrid sectionid={'phasen'} data={dauerPhasesData} />
 
+
+                  <section id="fehler" className="analysis-factors bg-gray container pt-50" style={{ paddingBottom: 0}} >
+                    <FramerMotionAnimation
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                        className="content-wrapper flex-1">
+                        <h2 className="title font-medium">
+                        Häufige Fehler bei der Dauer
+
+                        </h2>
+                    </FramerMotionAnimation>
+                    <br />
+                    <FramerMotionAnimation type="p" 
+                    className="description ">
+                    Rund um das Thema Dauer gibt 
+                    es immer wieder gefährliche 
+                    Vorgehensweisen, die den schnellen 
+                    SEO-Erfolg bringen sollen. Die 
+                    sich zudem bewährt haben sollen, aus 
+                    unserer Sicht allerdings völlig veraltet sind.
+                            </FramerMotionAnimation>
+                    
+                </section>
+                 <FAQ link={'faq'} data={faqSeoDauerData} />
+
+                <MoreInterestingPostsDauer sectionid={'weiterlesen'} />
+
+                <section id="fazit" className="section-wrapper keywords">
+                    <div className="container">
+                <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="bg-white mb-20 md:mb-0">
+                                <h4 className="content-title font-medium">
+                                    Fazit zum Thema
+
+                                </h4>
+                                <p className="desc-md">
+                                Natürlich ist die SEO-Dauer von Bedeutung, wenn Sie Ihr individuelles Projekt planen und damit erfolgreich sein wollen. Sie wissen, dass ein solches Unterfangen in der SEO-Welt Zeit benötigt, jedoch möchten Sie trotzdem einen Zeithorizont für Ihre Ziele erahnen. Diese Information bietet dieser Guide:
+
+                                </p>
+                            </FramerMotionAnimation>
+                    <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="content-flag bg-white mb-20 md:mb-0">
+                                
+                                <p className="desc-md">
+                                <b>Je nach Ausgangslage kann es drei bis vier Monate dauern</b>, 
+                                bis man <b>erste Resultate</b> in den Suchergebnissen sehen kann. 
+                                Bis Ihre potentiellen Kunden Sie auf den entsprechenden 
+                                Suchresultaten wahrgenommen haben und Sie erste <b>organische Klicks, 
+                                welche zahlenmässig von Bedeutung sind</b>, generieren können, vergehen in der 
+                                Regel wiederum zwei bis drei Monate. Was für Sie aber von noch grösserer 
+                                Bedeutung ist, <b>wann Sie Spitzenpositionen einnehmen</b> können.
+                                    <br /><br />
+                                    Top-Platzierungen sind für neue Projekte nach <b>ca. 8 - 12 Monaten</b> möglich, 
+                                    bei besserer Ausgangslage schon deutlich früher. Dazu benötigt es eine sehr 
+                                    gut ausgeführte <Link href="/seo/seo-strategie" title="SEO-Strategie">SEO-Strategie</Link>
+                                    , welche die wichtigsten Wachstumshebel betätigt. 
+                                    Dies ist das Fachgebiet unserer <Link href="/" title="SEO Agentur">SEO-Agentur</Link>, 
+                                    die in der Lage ist, aussergewöhnliche 
+                                    Resultate für Unternehmen und Online Shops zu liefern.
+                                </p>
+                            </FramerMotionAnimation>
+
+
+
+                        <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="bg-white mb-20 md:mb-0">
+                                <p className="desc-md">Diese Angaben sind reale Erfahrungswerte 
+
+                                aber können nicht entsprechend garantiert werden, da jede Kunden- 
+                                und Wettbewerbssituation individuell ist. Alles in allem benötigt 
+                                <Link href="/seo/was-ist-seo" title="SEO">SEO</Link> viel Geduld, welche allerdings auch so belohnt wird, wie in keinem anderen Marketing Bereich. Die Erfolge werden nach Lancierung Ihres Projekts, egal mit welchen Budgets, nicht zu vergleichen sein mit anderen Werbeformen.</p>
+                                <p className="desc-md">
+                                Also nichts wie los - sorgen Sie für einen nachhaltigen Marketing-Mix und fangen Sie an SEO-zu-optimieren! Um den SEO-Erfolg sollte sich jede Firma kümmern, auch wenn Social Media enorm an Popularität dazugewonnen hat, ist es immer noch nicht so zielgerichtet und bringt Ihrem Chef nicht so viele potentielle Kunden wie die SEO-Optimierung.
+                                </p>
+                            </FramerMotionAnimation>
+                    </div>
+                    </section>
                 <Comments slug={'seo-dauer'} />
+
+
+            
+
             </main>
 
 
@@ -461,7 +546,10 @@ const post = {
                 imageAlt: 'SEO Dauer',
                 readMoreUrl: '/seo/post1',
                 date: '9.12.2022',
+                update: '9.12.2022',
                 readingTime: '10min Lesedauer',
+                category: 'Ratgeber',
+                categoryUrl: '/blog',
                 cta: 'SEO Dauer',
                 author: 'Sandro Huber',
                 authorImage: sandro,
@@ -476,12 +564,20 @@ const post = {
                         link: '#ganzvorne'
                     },
                     {
+                        item: 'Einige Kriterien fürs Ranking',
+                        link: '#kriterien'
+                    },
+                    {
                         item: 'Wie funktioniert Indexierung & Ranking?',
                         link: '#indexierung'
                     },
                     {
                         item: 'Was beeinflusst die Dauer von SEO massgeblich?',
                         link: '#beeinflusst'
+                    },
+                    {
+                        item: 'Was sagt Google zur Dauer?',
+                        link: '#google'
                     },
                     {
                         item: '3 Phasen eines SEO-Projekts',
@@ -502,8 +598,8 @@ const post = {
                 ],
                 introTitle: 'Antwort',
                 introDescription: 'Bis man Erfolge verzeichnen kann, dauert es mindestens ca. 6 - 12 Monate. Die SEO-Dauer hängt davon ab, wie gross die Konkurrenz in der Branche ist und wie gut die umgesetzten Massnahmen den Ranking-Kriterien der Suchmaschinen entsprechen.',
-                videoID: 'seodauervideo',
-                videoTitle: 'Bis wann gibt es Resultate',
+                videoID: 'dauer',
+                videoTitle: 'Wie lange dauert es im Detail?',
                 videoURL: 'https://www.youtube.com/embed/1YXnseEjaKs',
                 videoDescription: 'Sie fragen sich sicherlich, bis wann Resultate erzielt werden können bzw. wie lange es dauert, bis man Top-Rankings erreicht. Um herauszufinden, wie lange SEO-Marketing dauert, muss man sich zuerst fragen, über welche Ausgangslage man spricht. \n\nGrundsätzlich unterscheidet man bei der Dauer zwischen bestehenden Webseiten, die schon Autorität bei Suchmaschinen mitbringen oder komplett neue Projekte, die erst am Anfang stehen und gar keine Autorität haben.',
                 videoDescription2: 'Bei völlig neuen Webseiten sollten parallel zusätzlich Backlinks aufgebaut werden, damit man bei Google einen ersten Sichtbarkeitsgewinn verbuchen kann. Aus unserer Sicht staffelt sich SEO in drei Phasen, die Planungs-, die Umsetzungs- sowie die Verbesserungsphase. \n\nEs gilt in der Planungsphase neben den Analysetätigkeiten eine Handvoll Links zu akquirieren und somit schnellstmöglich auf ein Domain Rating von mindestens 10 zu kommen. Bei einem Domain Rating über 10 sind mit gut recherchiertem Content schnelle Resultate in den Suchergebnissen möglich.',
@@ -524,7 +620,7 @@ const post = {
             }
 
 
-const listId = 'test'
+const listId = 'kriterien'
 const listItems = [
 
                     {

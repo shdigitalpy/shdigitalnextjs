@@ -4,7 +4,7 @@ import Link from "next/link";
 import rightArrowIcon from '../../../assets/icons/arrow-right.svg';
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 
-const CardGrid = ({ data }) => {
+const CardGrid = ({ data,sectionid }) => {
     const {
         title = 'Title here',
         cards = [],
@@ -13,7 +13,7 @@ const CardGrid = ({ data }) => {
     } = data;
 
     return (
-        <section className="card-grid container bg-gray">
+        <section id={sectionid} className="card-grid container bg-gray">
             <FramerMotionAnimation>
                 <h2 className="title font-medium text-center">{title}</h2>
             </FramerMotionAnimation>

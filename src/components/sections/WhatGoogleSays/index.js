@@ -12,7 +12,7 @@ const WhatGoogleSays = ({ post }) => {
     return (
         
 
-        <section className="what-google-says container bg-gray">
+        <section id={post.googleId} className="what-google-says container bg-gray">
             <div className="title-description-wrapper">
                 <FramerMotionAnimation className="title-wrapper" id={post.introId}>
                     <h2 className="title mt-5">{post.introTitle}</h2>

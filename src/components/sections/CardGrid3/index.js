@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 
-const CardGrid = ({ data }) => {
+const CardGrid = ({ data, sectionid }) => {
     const {
         title = '',
         description = '',
@@ -11,7 +11,7 @@ const CardGrid = ({ data }) => {
     } = data;
 
     return (
-        <section className="card-grid-3 container">
+        <section id={sectionid} className="card-grid-3 container">
             <div className="title-wrapper text-center">
                 <FramerMotionAnimation type="h2" className="title">{ title }</FramerMotionAnimation>
                 <FramerMotionAnimation type="p" className="description">{ description }</FramerMotionAnimation>

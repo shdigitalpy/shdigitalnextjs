@@ -4,7 +4,7 @@ import Image from "next/image";
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 import Link from "next/link";
 
-const CardGrid = ({ data }) => {
+const CardGrid = ({ data, sectionid }) => {
     const {
         title = '',
         subTitle = '',
@@ -12,7 +12,7 @@ const CardGrid = ({ data }) => {
     } = data;
 
     return (
-        <section className="card-grid-2 container">
+        <section id={sectionid} className="card-grid-2 container">
             <div className="main-wrapper grid md:grid-cols-3">
                 <FramerMotionAnimation
                     initial={{ opacity: 0, x: 50 }}

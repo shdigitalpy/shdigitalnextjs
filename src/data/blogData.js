@@ -19,6 +19,7 @@ import loaderIcon from '../assets/icons/loader.svg';
 import cpuIcon from '../assets/icons/cpu.svg';
 import processWebsiteAnalysis from '../data/processWebsiteAnalysis';
 import seoDauerImage from '../assets/images/seo/suchmaschinenoptimierung-dauer.jpg';
+import seoKostenImage from '../assets/images/seo/kosten-seo.webp';
 
 export default {
 
@@ -45,6 +46,52 @@ export default {
         name: 'SEO',
         alias: 'seo',
         posts: [
+
+            {
+            slug: 'seo-kosten',
+                shortTitle: 'SEO-Kosten: Mit welchen Preisen sollte man rechnen',
+                title: 'SEO-Kosten: Mit welchen Preisen sollte man rechnen',
+                description: 'In Gesprächen mit potentiellen Kunden werden wir immer wieder mit der Frage konfrontiert, wie viel denn SEO kostet.\n\nZu Beginn einmal, SEO ist nicht kostenlos! Auch wenn Sie es selbst machen, kostet die Zeit, die Sie dafür aufwenden. Es gibt keine Tricks, mit denen man SEO automatisieren kann.',
+                image: seoKostenImage,
+                imageAlt: 'Wie viel kostet SEO',
+                readMoreUrl: '/seo/seo-kosten',
+                date: '9.03.2022',
+                readingTime: '10min Lesedauer',
+                cta: 'Was kostet SEO',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                contentList: [
+
+                    {
+                        item: 'Was versteht man unter SEO-Kosten?',
+                        link: '#kosten'
+                    },
+                    {
+                        item: 'Was kostet Suchmaschinenoptimierung?',
+                        link: '#waskostet'
+                    },
+                    {
+                        item: 'Welches Angebot ist das Richtige für Sie?',
+                        link: '#angebot'
+                    },
+                    {
+                        item: 'Was bringt eine Investition in SEO für Potentiale mit?',
+                        link: '#potential'
+                    },
+                    {
+                        item: 'Was kostet SEO von SH Digital?',
+                        link: '#shdigital'
+                    },
+                    {
+                        item: 'Häufige Fragen',
+                        link: '#fehler'
+                    },
+                  
+                
+                ],
+               
+            
+            },
             {
                 slug: 'was-ist-seo',
                 shortTitle: 'Was ist SEO',

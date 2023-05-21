@@ -14,6 +14,7 @@ const ContentWithVideo = (
         videoUrl = '',
         thumbnail = '',
         id = '',
+        imageAlt = '',
         className = ''
     }) => {
     return (
@@ -25,7 +26,7 @@ const ContentWithVideo = (
                 className="video-wrapper">
                 <VideoContainer url={videoUrl}
                                 className="thumbnail-wrapper relative">
-                    <Image src={thumbnail} alt="thumbnail" className="thumbnail-image" />
+                    <Image src={thumbnail} alt={imageAlt} className="thumbnail-image" />
                     <Image src={playIcon} alt={"play icon"} className="play-icon" />
                 </VideoContainer>
             </FramerMotionAnimation>
