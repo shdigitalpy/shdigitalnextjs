@@ -191,7 +191,7 @@ export default function seoKosten() {
                             </div>
 
                             <FramerMotionAnimation type="p" className="description mt-25">
-                          Verpassen Sie es nicht, bereits heute damit zu beginnen. Statt sechs Monate selbst zu testen, was funktioniert, lieber frühzeitig professionell angehen. Denn sechs Monate Zeit "gewinnen oder verlieren" können bei der Suchmaschinenoptimierung bereits einen grossen Unterschied machen.
+                          Verpassen Sie es nicht, bereits heute damit zu beginnen. Statt sechs Monate selbst zu testen, was funktioniert, lieber frühzeitig professionell angehen. Denn sechs Monate Zeit {'"gewinnen oder verlieren"'} können bei der Suchmaschinenoptimierung bereits einen grossen Unterschied machen.
 
                         </FramerMotionAnimation>
                            
@@ -427,7 +427,7 @@ export default function seoKosten() {
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-0">
                                 
-                                Er kommt zum Schluss, dass Unternehmen nicht mehr als 60% seines Umsatzes in Lohn, Werbung und "Selling-Expenses" ausgeben sollten. Spricht Geld für den Verkauf und die Neukundengewinnung. Die besten haben sogar nur 20% des Umsatzes für diesen Typ von Ausgaben.
+                                Er kommt zum Schluss, dass Unternehmen nicht mehr als 60% seines Umsatzes in Lohn, Werbung und {'"Selling-Expenses"'} ausgeben sollten. Spricht Geld für den Verkauf und die Neukundengewinnung. Die besten haben sogar nur 20% des Umsatzes für diesen Typ von Ausgaben.
 
 
 
