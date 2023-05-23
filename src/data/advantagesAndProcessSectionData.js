@@ -42,14 +42,14 @@ export default {
                     step: 'Schritt 1',
                     icon: forecastIcon,
                     title: 'Nachfrage erkennen',
-                    content: 'Unsere SEO-Experten führen eine gründliche Keyword-Analyse durch, um Ihr Ranking in den Suchergebnissen zu verbessern.',
+                    content: 'Erkennen der Nachfrage durch Definition der Zielgruppe, Positionierung anhand bewährter Kriterien.',
                 },
                 {
                     id: 5,
                     step: 'Schritt 2',
                     icon: strategyIcon,
-                    title: 'Google Strategie',
-                    content: 'Basierend auf dem Suchverhalten Ihrer Zielgruppe entwickeln wir ein Konzept, um Ihr Unternehmen schnell auf Seite 1 bei Google zu bringen.',
+                    title: 'Performance-SEO Pro-Methode®',
+                    content: 'Aufsetzen der Performance-SEO Pro-Methode® mit LinkedIn und Google Werbeanzeigen zur Erzeugung von Sichtbarkeit.',
                 },
                 {
                     id: 6,

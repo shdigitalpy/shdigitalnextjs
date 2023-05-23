@@ -28,6 +28,10 @@ import seoOnlineshop from '../../assets/images/seo/online-shop-suchmaschinenopti
 import onlineshopImage from '../../assets/images/seo/online-shop-seo.webp'
 import doubleDownArrow from '../../assets/images/sharp-double-arrow-down.svg';
 import squareIcon from '../../assets/icons/square.svg';
+import seoTrends from '../../assets/images/seo/google-trends.png'
+import galaxusImage from '../../assets/images/seo/galaxus-search.png';
+import zooplusImage from '../../assets/images/seo/beispiel-zooplus.webp';
+import keywords3 from '../../assets/images/seo/keyword-recherche-seo.jpg';
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
@@ -232,8 +236,746 @@ export default function seoKosten() {
             </div>
         </section>
                    
+          <section id="waskostet" className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                               Welche Shopsysteme gibt es?
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-15 md:mb-15">
+                        Aus dem vorherigen Abschnitt haben wir gelernt, dass das korrekte Aufsetzen des Shopsystem essenziell für den Erfolg mit SEO ist. Nicht nur wie das Ganze aufgebaut wird, sondern auch auf welcher Technologie dies basiert.
 
-                   
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-15 md:mb-15">
+                        Wir möchten hier nicht nur einen Blick auf die verschiedenen Shopsysteme werfen, sondern auch konkret auf die dahinterstehende Technologie. Diese ist ausschlaggebend für den Funktionsumfang und die Möglichkeiten, die eine Optimierung für Suchmaschinen bietet.
+
+ 
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-15 md:mb-15">
+                        Vorweg möchten wir erwähnen, dass wir das Universum von Shopsystem für KMU sowie grössere Unternehmen untersuchen. Da sich aus unserer Erfahrung mit Kunden in diesen zwei Bereichen signifikante Unterschiede bestehen. Ob diese Unterschiede gut oder schlecht sind, erfahren Sie am Ende dieses Abschnitts.
+
+
+
+ 
+
+                        </FramerMotionAnimation>
+
+                            <br />
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h3" className="title text-center">
+                               Shopsystem im KMU-Bereich
+
+
+                            </FramerMotionAnimation>
+                            <Image src={doubleArrowIcon} alt="arrows" className="ml-auto double-arrow-art" />
+                        </div>
+                        <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="image-wrapper p-0 bg-gray">
+                                <Image src={seoTrends} alt="Shopsysteme Trends" className="main-image" />
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">Die in der Grafik aufgeführte Popularität setzt sich aus unserer eigenen Meinung sowie den Statistiken von Google Trends zusammen. Wir haben die Shopsysteme für KMU nach Suchbegriffe und Thema untersucht und unsere eigene Meinung einfliessen lassen.</p>
+                                <p className="desc-sm mb-0"> 
+                                Aus unserer Analyse entstanden ist folgendes Popularitäts-Ranking, dies betrifft nur die Schweiz. Viele dieser Shopsysteme sind weltweit oder insbesondere im DACH-Raum verbreitet.
+
+                                </p>
+                            </FramerMotionAnimation>
+                        </div>
+                       
+                
+                        
+
+                       <table class="tg">
+                        <thead>
+                          <tr>
+                            
+                            <th class="tg-1oat">Software</th>
+                            <th class="tg-1oat">Technologie</th>
+                            <th class="tg-1oat">Popularität Shopsystem (1 - 10)</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          <tr>
+
+                            <td class="tg-1oat">Shopify</td>                        
+                            <td class="tg-1oat">Ruby on Rails</td>
+                            <td class="tg-1oat">9</td>                          
+                            
+                            
+                          </tr>
+                          
+                          <tr>
+                            <td class="tg-1oat">WooCommerce </td>       
+                            <td class="tg-1oat">PHP</td>
+                            <td class="tg-1oat">9</td>
+                        
+                          </tr>
+
+                          <tr>
+                            <td class="tg-1oat">PrestaShop</td>
+                            <td class="tg-1oat">PHP</td>
+                            <td class="tg-1oat">7</td>
+                          </tr>
+                            
+                            <tr>
+                            <td class="tg-1oat">Magento</td>
+                            <td class="tg-1oat">PHP</td>
+                            <td class="tg-1oat">5</td>
+                          </tr>
+
+                          
+
+                           <tr>
+                            <td class="tg-1oat">OpenCart</td>
+                            <td class="tg-1oat">PHP</td>
+                            <td class="tg-1oat">2</td>
+                          </tr>
+
+                          <tr>
+                            <td class="tg-1oat">Gambio</td>
+                            <td class="tg-1oat">PHP</td>
+                            <td class="tg-1oat">2</td>
+                          </tr>
+
+                         
+
+                        </tbody>
+                        </table>
+                        <br /><br />
+                        <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">Fazit: In der Schweiz sind <a href="https://www.shopify.com/de" target="__blank" title="Shopify">Shopify</a> und <a href="https://woocommerce.com/" target="__blank" title="Woocommerce">Woocommerce</a>, als Plugin für Wordpress, generell und insbesondere bei kleinen und mittelgrossen Unternehmen sehr verbreitet.</p>
+                                <p className="desc-sm mb-0"> 
+                               Aus unserer Erfahrung mit bisherigen Kunden wissen wir, dass die Lösungen von Anbietern wie z.B. Gambio, Jimdo, usw. eher nicht für SEO in Frage kommen. Es ist möglich, dort SEO zu betreiben, langfristig hat man aufgrund des eingeschränkten Funktionsumfanges enorme Nachteile (Stand: Frühling 2022).
+
+
+                                </p>
+                            </FramerMotionAnimation>
+                                <br /><br />
+                             <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h3" className="title text-center">
+                               Shopsystem bei den grossen Unternehmen
+
+                            </FramerMotionAnimation>
+                            <Image src={doubleArrowIcon} alt="arrows" className="ml-auto double-arrow-art" />
+                        </div>
+                        <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="image-wrapper p-0 bg-gray">
+                                
+                                    <table class="tg">
+                        <thead>
+                          <tr>
+                            
+                            <th class="tg-1oat">Unternehmen</th>
+                            <th class="tg-1oat">Shopsystem</th>
+                            <th class="tg-1oat">Technologie</th>
+                            <th class="tg-1oat">Umsatz Mio. 2020</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          <tr>
+
+                            <td class="tg-1oat"><a target="__blank" href="https://www.digitec.ch/" title="digitec.ch">digitec.ch</a></td>                       
+                            <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/digitec.ch" title="builtwith.com">Eigenentwicklung</a></td>
+                            <td class="tg-1oat">React, Next.js</td> 
+                            <td class="tg-1oat">1'125.0</td>                            
+                            
+                            
+                          </tr>
+                          
+                          <tr>
+                             <td class="tg-1oat"><a target="__blank" href="https://www.galaxus.ch/" title="galaxus.ch">galaxus.ch</a></td>                      
+                            <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/galaxus.ch" title="builtwith.com">Eigenentwicklung</a></td>
+                            <td class="tg-1oat">React, Next.js</td> 
+                            <td class="tg-1oat">561.0</td>  
+                        
+                          </tr>
+
+                            <tr>
+                             <td class="tg-1oat"><a target="__blank" href="https://www.brack.ch/" title="brack.ch">brack.ch</a></td>                        
+                            <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/brack.ch" title="builtwith.com">Eigenentwicklung</a></td>
+                            <td class="tg-1oat">React, Gatsby.js</td>   
+                            <td class="tg-1oat">460.0</td>  
+                        
+                          </tr>
+                            
+                              <tr>
+                             <td class="tg-1oat"><a target="__blank" href="https://www.nespresso.com/ch/" title="nespresso.com/ch">nespresso.com/ch/</a></td>                       
+                            <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/nespresso.com" title="builtwith.com">Magento / SAP-Hybris</a></td>
+                            <td class="tg-1oat">PHP</td>    
+                            <td class="tg-1oat">400.0</td>  
+                        
+                          </tr>
+
+                          
+
+                             <tr>
+                             <td class="tg-1oat"><a target="__blank" href="https://www.microspot.ch/de" title="microspot.ch">microspot.ch</a></td>                      
+                            <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/microspot.ch" title="builtwith.com">SAP-Hybris</a></td>
+                            <td class="tg-1oat">React, Java</td>    
+                            <td class="tg-1oat">334.0</td>  
+                        
+                          </tr>
+
+                           <tr>
+                             <td class="tg-1oat"><a target="__blank" href="https://shop.migros.ch/de/" title="shop.migros.ch">shop.migros.ch</a></td>                       
+                            <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/shop.migros.ch" title="builtwith.com">Eigenentwicklung</a></td>
+                            <td class="tg-1oat">PHP</td>    
+                            <td class="tg-1oat">266.0</td>  
+                        
+                          </tr>
+
+                         
+
+                        </tbody>
+                        </table>
+
+
+                                                        </FramerMotionAnimation>
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">Bei den grössten Unternehmen mit 
+                                Onlineshop setzen fast 70% auf eigenentwickelte Shopsysteme. 
+                                Zu diesem Ergebnis kamen wir während der Analyse 
+                                von den <a href="https://blog.carpathia.ch/2021/05/20/die-umsatzstaerksten-schweizer-onlineshops-2021/" target="__blank" title="10 umsatzstärksten Onlineshops">10 umsatzstärksten Onlineshops</a> im 2020. 
+                                Hier ein Auszug aus den Shops mit Hauptsitz in der Schweiz.</p>
+                                <p className="desc-sm mb-0"> 
+                                Aus unserer Analyse entstanden ist folgendes Popularitäts-Ranking, dies betrifft nur die Schweiz. Viele dieser Shopsysteme sind weltweit oder insbesondere im DACH-Raum verbreitet.
+
+                                </p>
+                            </FramerMotionAnimation>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">
+                                    Es ist offensichtlich, die grossen Unternehmen im E-Commerce Bereich in der Schweiz setzen auf eigenentwickelte Lösungen. Aus unserer Sicht hat dies vor allem den Grund, dass diese Lösungen extrem skalierbar sind und viel besser auf die Nutzererfahrung eingegangen werden kann.
+
+
+                                </p>
+                            </FramerMotionAnimation>
+                        </div>
+                    </div>
+                </section>
+
+                 <section id="analyse" className="section-wrapper" style={{ padding: 0}}>
+                    <div className="container">
+                        
+                        <FramerMotionAnimation
+                                type="h3" className="title text-center">
+                               Fazit Shopystem für SEO
+
+                            </FramerMotionAnimation>
+                            <br />
+
+                        
+                    </div>
+                </section>
+
+                <section id={listId} className="analysis-factors container" style={{ paddingTop: 0}} >
+                    
+                
+                    <div className="main-wrapper md:flex">
+                        
+                        <div className="content-wrapper">
+                            <div className="list-wrapper">
+                                { listItems?.map((item, index) => (
+                                    <FramerMotionAnimation
+                                        initial={{ opacity: 0, x: 50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.25, delay: index * 0.1 }}
+                                        className="item" key={index}>
+                                        <Image src={checkCircleOrange} alt="check icon" className="check-icon" />
+                                        { item.data }
+                                    </FramerMotionAnimation>
+                                ))}
+                            </div>
+                            <FramerMotionAnimation type="p" className="content-flag description">
+                            Für die meisten kleinen Unternehmen ist WooCommerce oder Shopify eine gute Wahl. 
+                            Man macht sich dadurch aber auch abhängig von der Strategie des Anbieters. 
+                            Dafür kriegt man viele wichtige Updates einfach dazu.
+
+                            </FramerMotionAnimation>
+
+                            
+                           
+                        </div>
+                    </div>
+                </section>
+
+                <section id="keywords" className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                                Shop-SEO-Analyse
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                           In diesem Abschnitt geben wir Ihnen Tipps für die Vorbereitung von Onlineshops auf die Optimierung von Suchmaschinen. 
+                           Dies ist kein umfassender Ratgeber zum Thema 
+                           SEO-Analyse, sondern soll Ihnen aufzeigen, 
+                           was bei Webshops anders ist als bei normalen Webseiten. 
+                           Den umfassenden Ratgeber finden Sie unter <Link href="/seo/seo-analyse" title="SEO Analyse">SEO Analyse</Link>.
+
+
+                        </FramerMotionAnimation>
+                         <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                Zielgruppe kennen
+                            </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                           Grundsätzlich geht es bei der Zielgruppe darum, wer deine Produkte kauft und kaufen möchte. Wonach suchen die potenziellen Käufer und mit welchen Produkten erreicht man diese. Folgende Fragen können bei der Zielgruppenanalyse helfen:
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="mb-24">
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Welche Motivation hat deine Zielgruppe beim Online-Einkauf?
+
+
+                                </p>
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                   Über welche Kanäle recherchiert deine Zielgruppe?
+
+                                </p>
+                                <p className="desc-md-2 primary">
+                                    Wer ist deine Zielgruppe im Detail?
+
+                                </p>
+                                 <p className="desc-md-2 primary">
+                                    Was ist das Alleinstellungsmerkmal unseres Produkts und wie nützt dies dem potentiellen Kunden?
+
+
+                                </p>
+                                
+                            </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                            Dies sind nur drei Beispielfragen, welche in der Zielgruppenanalyse im Rahmen der SEO-Strategie im Detail ausgearbeitet werden. Der SEO-Experte definiert für das Unternehmen die detaillierten Zielgruppeninformationen im Zuge der Strategie.
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                Keyword Recherche
+
+                            </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                           Auf der Suchen nach den richtigen Keywords für Onlineshops wird man oft über "informelle Keywords" stolpern. Das sind Suchbegriffe, die zum Finden von hilfreichen Informationen zu jeglichen Themen eingegeben werden.
+
+                        </FramerMotionAnimation>
+
+                        <div className="inner-content-wrapper bg-gray">
+                            <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Beispiel</h4>
+                                    
+                                    <p className="desc-md mt-15">Wie druckt man selbst etwas aus dem 3D-Drucker.
+                                    </p>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                <p className="desc-md mt-15">
+                                Diese Suchbegriffe können im Bereich E-Commerce auch verwendet werden, jedoch werden die meisten Suchanfragen sich um "produktspezifische Informationen" nicht um "informelle Keywords" drehen.
+                                 Wie druckt man selbst etwas aus dem 3D-Drucker.
+                                    </p>
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    className="mb-80 md:mb-0"
+                                >
+                                    <h4 className="content-title">
+                                        Beispiel
+                                    </h4>
+                                   
+                                    <p className="desc-md mt-15">Beispiel: 3D-Drucker, 3D-Drucker kaufen.</p>
+
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                <p className="desc-md mt-15">
+                               Dies bedeutet, der wichtigste Faktor bei der Keyword-Recherche für Onlineshops ist, einen entsprechenden Produkt-Fokus im Hinterkopf zu behalten. Umgangssprachlich mag das sehr einfach klingen, in der Praxis gibt es viele hilfreiche Tricks, um das Ganze zu vereinfachen.
+
+
+                                    </p>
+                                </FramerMotionAnimation>
+                            </div>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="content-flag bg-white mb-20 md:mb-0">
+                                
+                                <p className="desc-md">
+                                   Man sollte bei der Recherche der Keywords versuchen, 
+                                   nicht nur die klassischen SEO-Kennzahlen zu verwenden. 
+                                   Man kann beispielsweise Informationen aus <a href="https://ads.google.com/" target="__blank" title="Google Ads">Google Ads</a> verwenden, um den 
+                                   Produkt-Fokus eines Keywords festzustellen. 
+                                   Bei SH Digital haben wir Tools, die solche Daten automatisch 
+                                   nach Thema aufbereiten.
+
+
+                                </p>
+                            </FramerMotionAnimation>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 className="bg-white mb-20 md:mb-0">
+                                
+                                <p className="desc-md">
+                                  Um eine möglichst passende Keywordliste für das Unternehmen zu finden, versucht man verschiedene Informationen aus den wichtigsten Quellen zusammenzutragen.
+                                  <br />Eine gute und in SEO vielfach nicht verwendete Quelle sind grosse E-Commerce Anbieter und deren Webseiten. Man kriegt dort einen Eindruck, welche Suchbegriffe von einer grossen Anzahl von Kunden bereits verwendet wurde. Und kann diese Keywords neben weiteren in die Keywordliste aufnehmen.
+
+
+
+
+                                </p>
+                            </FramerMotionAnimation>
+
+                            
+                    
+                       
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="image-wrapper p-0 bg-gray">
+                                <Image src={galaxusImage} alt="Galaxus Image" className="main-image" />
+                                <small>Quelle: galaxus.ch</small>
+                            </FramerMotionAnimation>
+                            <br />
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">Wenn Sie den 
+                               An dieser Stelle kann nicht detailliert auf eine ausführliche Recherche eingegangen werden, diese gestaltet sich sehr umfassend und kann einige Zeit in Anspruch nehmen. Aus unserer Sicht ist ein Experte von einer SEO-Agentur zu bevorzugen, wenn es um eine Keyword-Recherche für Onlineshops geht. Eine solide Datenbasis ist ein zentraler Erfolgsfaktor für den Erfolg bei SEO für Ihr Unternehmen.
+
+                                </p>
+                                <p className="desc-sm mb-0"> 
+                               Falls Sie noch weitere Informationen zur Keyword-Recherche suchen, verlinken wir am Ende dieses Beitrags auf weitere interessante Beiträge.
+
+                                </p>
+                            </FramerMotionAnimation>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="wiefunktioniertes" className="section-wrapper bg-gray">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h3" className="title text-center">
+                               Weshalb lohnt sich Suchmaschinenoptimierung für Onlineshops?
+
+                            </FramerMotionAnimation>
+                            <Image src={doubleArrowIcon} alt="arrows" className="ml-auto double-arrow-art" />
+                        </div>
+                        <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="image-wrapper p-0 bg-gray">
+                                <Image src={onlineshopImage} alt="Studie Gartner" className="main-image" />
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">Wenn Sie den 
+                                Mit SEO können Sie die organische Sichtbarkeit des Onlineshops signifikant erhöhen. 
+                                Potenzielle Kunden finden die Produkte aus Ihrem Sortiment an verschiedenen Stellen bei der Recherche über ein Produkt. Dieser Ausbau der Reichweite bei Suchmaschinen skaliert die Websuchanfragen über die Zeit für den eigenen Shop drastisch.
+                                </p>
+                                <p className="desc-sm mb-0"> 
+                                Zum einen werden bestehende Suchbegriffe für ein höheres Rankings optimiert, 
+                                anderseits sollen sich auch die Anzahl der Suchbegriffe mit SEO erhöhen, 
+                                auf denen Sie gefunden werden. In unserem Beitrag über <Link href="/seo/was-ist-seo" title="SEO">SEO</Link> finden Sie weitere 
+                                Gründe und Statistiken, weshalb Sie noch heute in Suchmaschinenoptimierung investieren sollten!
+
+                                </p>
+                            </FramerMotionAnimation>
+                        </div>
+                       
+                    </div>
+                </section>
+
+              <section className="site-analysis container bg-gray" style={{ whiteSpace: "break-spaces" }}>
+        
+                 <div className="content-wrapper bg-white grid md:grid-cols-2">
+                <div className="list-box">
+                    <FramerMotionAnimation type="h6" className="list-title">
+                      Konkurrenzanalyse
+                    </FramerMotionAnimation>
+                    <div className="list-wrapper">
+                        { itemsComp?.map((item, index) => (
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -70 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.25, delay: index * 0.1 }}
+                                className="list-item-wrapper" key={index}>
+                                <Image src={squareIcon} alt="square" className="item-icon" />
+                                {item.data}
+                            </FramerMotionAnimation>
+                        ))}
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">Wenn Sie den 
+                                            Die Antworten auf obenstehende Fragen geben einem Aufschluss, inwiefern man SEO für das eigene Unternehmen betreiben sollte. Je nach Bereich, in dem man etwas aufzuholen hat, sollte man dies tun. Langfristig ist natürlich das Ziel, auf allen Ebenen mit der Konkurrenz schrittzuhalten.
+
+                                </p>
+                               
+                            </FramerMotionAnimation>
+
+        </section>
+         <br /> <br />
+         <section id="analyse" className="section-wrapper" style={{ padding: 0}}>
+                    <div className="container">
+                        
+                        <FramerMotionAnimation
+                                type="h3" className="title text-center">
+                               Struktur des Onlineshops
+
+
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation type="p" className="content-flag description">
+                           Hat man verlässliche Daten in der Analyse sammeln können, dann sollen diese jetzt im Webshop verwendet werden können. Durch die professionelle Keyword-Recherche und anschliessendem Mapping wissen wir, welche Keywords auf welcher Seite im Onlineshop vorkommen sollen.
+
+
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation type="p" className="content-flag description">
+                           Wir intern verwenden ein Tool, bei dem die Keyword-Liste in Form einer Content-Type Übersicht dargestellt werden kann. Somit kenne ich als Besitzer des Onlineshops, welche Seiten ich anlegen muss und welches die passende URL ist.
+
+
+                            </FramerMotionAnimation>
+
+                        
+                    </div>
+                </section>
+                <br />
+                <section className="analysis-factors container" style={{ paddingTop: 0}} >
+                     <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                               URL-Struktur
+
+
+
+                            </FramerMotionAnimation>
+                             <br /> <br />
+                            <FramerMotionAnimation type="p" className=" description">
+                              Die Struktur der URL ist abhängig von den Seiten, die wir implementieren möchten. In der Regel sieht das bei Onlineshops wie folgt aus:
+
+                            </FramerMotionAnimation>
+                             <br />
+                
+                    <div className="main-wrapper md:flex">
+                        
+                        <div className="content-wrapper">
+                            <div className="list-wrapper">
+                                { listStructure?.map((item, index) => (
+                                    <FramerMotionAnimation
+                                        initial={{ opacity: 0, x: 50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.25, delay: index * 0.1 }}
+                                        className="item" key={index}>
+                                        <Image src={checkCircleOrange} alt="check icon" className="check-icon" />
+                                        { item.data }
+                                    </FramerMotionAnimation>
+                                ))}
+                            </div>
+                            
+
+                            
+                           
+                        </div>
+                    </div>
+                </section>
+
+
+                <section className="analysis-factors container" style={{ paddingTop: 0}} >
+                     <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                               Startseite
+
+
+
+                            </FramerMotionAnimation>
+                             <br /> <br />
+                            <FramerMotionAnimation type="p" className=" description">
+                              Die Startseite ist immer die <b>populärste Seite auf Ihrem Onlineshops</b>. Das bedeutet, dort muss das <b>Wichtigste zu Ihrem Unternehmen und die Marke </b>stehen.
+
+                            </FramerMotionAnimation>
+                            
+                             <FramerMotionAnimation type="p" className=" description">
+                            Beispiel: Sie betreiben einen Shop, der Hundezubehör verkauft. Das Unternehmen heisst Dog4Life AG in der Schweiz. Ihre Kunden möchten folgendes sehen:
+
+                             <br /><br />
+                            <br />
+                            </FramerMotionAnimation>
+                
+                    <div className="main-wrapper md:flex">
+                        
+                        <div className="content-wrapper">
+                            <div className="list-wrapper">
+                                { listExample?.map((item, index) => (
+                                    <FramerMotionAnimation
+                                        initial={{ opacity: 0, x: 50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.25, delay: index * 0.1 }}
+                                        className="item" key={index}>
+                                        <Image src={checkCircleOrange} alt="check icon" className="check-icon" />
+                                        { item.data }
+                                    </FramerMotionAnimation>
+                                ))}
+                            </div>
+                            
+
+                             <FramerMotionAnimation type="p" className=" description">
+                                Jetzt stellt sich die Frage, soll die Startseite für das Keyword "Hunde Shop" und die Marke "Dog4Life" optimiert werden. Anhand verschiedener Kriterien wird „Branche + Shop“ eruiert, es kann "Hundezubehör Shop", "Hunde Shop" oder ähnliches sein.
+
+                            </FramerMotionAnimation>
+
+                            <FramerMotionAnimation type="p" className=" description">
+                                Für eine Beurteilung braucht es eine umfassende Analyse, die mehr Daten als oberflächliche Basisinformationen bieten. Viele Kunden kennen bereits die wichtigsten Keywords, da diese von Konkurrenten belegt sind oder diese tendenziell viel Suchvolumen haben. Nicht in jedem Fall ist dies dann das richtige Keyword.
+
+
+                            </FramerMotionAnimation>
+                           
+                        </div>
+
+                    </div>
+                </section>
+                
+                   <section className="section-wrapper bg-white" style={{ whiteSpace: "break-spaces", paddingBottom: 0 }}>
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                               Kategorieseiten inkl. Checkliste
+
+
+                            </FramerMotionAnimation>
+                            <Image src={doubleArrowIcon} alt="arrows" className="ml-auto double-arrow-art" />
+                            <small>Quelle: zooplus.ch</small>
+                        </div>
+                        <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="image-wrapper p-0 bg-gray">
+                                <Image src={zooplusImage} alt="Zooplus Image" className="main-image" />
+                            </FramerMotionAnimation>
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">
+                                Die Kategorieseiten sind sehr wichtig für Shop-SEO, diese dienen als Angebotsübersicht, bei dem sich potentielle Kunden einen Überblick verschaffen. Die Kategorieseiten sind Ausgangspunkt für die wichtigsten Vorgänge auf Ihrer Webseite. Ausserdem lassen sich damit meist die wichtigsten Keywords abdecken.
+
+
+                                <br /><br />
+                                Die Kategorieseite sollte so aufgebaut werden, dass die Überschrift, Einleitungstext, Filter sowie die Produkte bereits im Abovethefold des Webshops zu sehen sind. Beim Aufbau der Produktauflistung empfehlen wir, sich bei der Konkurrenz zu orientieren. Je nach Branche und Anzahl Produkte funktionieren unterschiedliche Layouts. Eine ausführlichere Checkliste mit Fragen finden Sie unter Kategorieseite Checkliste
+                                <br /><br />Die Produktauflistung sollte zudem farblich abgestimmt sein, bei einigen Kundenprojekten konnten wir die Anzahl Klicks schon mit kleinen Änderungen am Layout viele neue Klicks generieren. UX / UI ist nicht zu unterschätzen und sollte optimal verwendet werden.
+
+                                </p>
+                                </FramerMotionAnimation>
+
+                        </div>
+                       
+                    </div>
+                </section>
+
+              <section className="site-analysis container bg-gray" style={{ whiteSpace: "break-spaces" }}>
+        
+                 <div className="content-wrapper bg-white grid md:grid-cols-2">
+                <div className="list-box">
+                    <FramerMotionAnimation type="h6" className="list-title">
+                       Kategorieseite richtig aufbauen
+
+                    </FramerMotionAnimation>
+                    <div className="list-wrapper">
+                        { listCategory?.map((item, index) => (
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -70 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.25, delay: index * 0.1 }}
+                                className="list-item-wrapper" key={index}>
+                                <Image src={squareIcon} alt="square" className="item-icon" />
+                                {item.data}
+                            </FramerMotionAnimation>
+                        ))}
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            
+        </section>
                                        
 
                 <FAQ link={'faq'} data={faqSeoKostenData} />
@@ -344,6 +1086,25 @@ const post = {
             
             };
 
+const listId = 'test'
+const listItems = [
+
+                    {
+                        data: 'Lassen Sie sich Zeit für das Planen des Shopsystems, ein Wechsel ist mit viel Aufwand verbunden und kann teuer werden.'
+                    },
+                    {
+                        data: 'Denken Sie an die Zukunft. Auch wenn Ihr Unternehmen aktuell klein ist, rechnen Sie damit, dass Sie künftig grösser sein können.'
+                    },
+                    {
+                        data: 'Verwenden Sie kein Shopsystem, weil es anderen verwenden. Prüfen Sie Ihre Bedürfnisse und wählen Sie dann.'
+                    },
+                    {data: 'Eine Umsetzung'},
+
+                    {data: 'Denken Sie an eine Eigenentwicklung, denn dann haben Sie die volle Kontrolle über Design, Funktionen, usw. Ob eine Eigenentwicklung möglich ist hängt vom Budget ab. Wenn Sie ein Online-Business aufbauen möchten, ist der Shop das Herzstück Ihres Geschäfts und sollte dementsprechend Rechnung getragen werden.'},
+
+
+                ];
+
 const itemsCheckId = 'funktionen'
 const itemsLeftSubtitle1 = 'Zwingend'
 const itemsLeft = [
@@ -412,53 +1173,82 @@ const listAufsetzen = [
                 ];
 
 
-const firstItems = [
+const itemsComp = [
 
                     {
-                        data: 'Handwerker'
+                        data: ' Wer ist unsere Konkurrenz?'
                     },
                     {
-                        data: 'Bio-Laden'
+                        data: ' Wie viele indexierte URLs hat die Konkurrenz?'
                     },
                     {
-                        data: 'Restaurants'
+                        data: ' Wie viele Top10 Rankings hat die Konkurrenz?'
                     },
-                    {data: 'Rechtsanwälte'},
-                        {data: 'Immobilienmakler'},
+                    {data: ' Wie hoch ist das Domain Rating der Konkurrenz?'},
+
+                    {data: 'Wie oft wird die Marke der Konkurrenz gesucht?'},
+                    {data: ' Wie ist man bezüglich Mobile Web aufgestellt?'},
+                    {data: 'Wie gestaltet sich das Nutzerverhalten bei der Konkurrenz?'},
 
                 ];
 
 
-const secondItems = [
+const listStructure = [
 
                     {
-                        data: 'Kleine und mittlere Onlineshops'
+                        data: '[domain]/ (startseite)'
                     },
                     {
-                        data: 'KMU andere Branchen'
+                        data: '[domain]/kategorie1'
                     },
                     {
-                        data: 'Digitalagenturen'
+                        data: '[domain]/kategorie1/produkt1'
                     },
-                    {data: 'Immobilienmakler (mehrere Standorte)'},
+                    {data: '[domain]/kategorie1/produkt2'},
+                    {data: '[domain]/kategorie2/produkt1'},
+                     {data: '[domain]/kategorie2/produkt2'},
+                    {data: '[domain]/ratgeber'},
+                    {data: '[domain]/blog'},
 
 
                 ];
 
 
 
-const thirdItems = [
+const listExample = [
 
                     {
-                        data: 'Software, SaaS, IT'
+                        data: 'Was für ein Unternehmen haben Sie bzw. aus welcher Branche'
                     },
                     {
-                        data: 'Grosse Onlineshops'
+                        data: 'Welche Vorteile bietet dein Shop, was andere nicht bieten können (USP)'
                     },
-                    {
-                        data: 'Industriehersteller'
-                    },
-                    {data: 'Versicherungen & Banken'},
+                    
 
+                ];
+
+
+const listCategory = [
+
+                    {
+                        data: ' Eine Keyword-optimierte Überschrift'
+                    },
+                    {
+                        data: 'Sekundärnavigation (Breadcrumb)'
+                    },
+                    {
+                        data: 'Ein kurzer Einleitungstext mit den wichtigsten Informationen zum Angebot'
+                    },
+                    {
+                        data: 'Auflistung von Produkten inkl. Kurzbeschreibung'
+                    },
+                    {
+                        data: 'Filter- und Sortierfunktion nach Produktrelevanz am besten links oder oben'
+                    },
+                    {
+                        data: ' Einen langen Text zur Kategorie'
+                    },
+                    
+                    
 
                 ];
