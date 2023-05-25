@@ -42,7 +42,8 @@ const Footer = () => {
                     <div className="content flex">
 
                         { socialMedia.items?.map((item, index) => (
-                        <a target="__blank" href={item.url} title={item.name}><Image src={item.icon} alt={item.name} className="social-icon" key={index} /></a>
+                        <a key={index} target="__blank" href={item.url} title={item.name}>
+                        <Image src={item.icon} alt={item.name} className="social-icon" /></a>
                         ))}
                     </div>
                 </div>
