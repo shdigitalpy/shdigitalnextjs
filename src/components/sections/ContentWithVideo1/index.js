@@ -20,8 +20,14 @@ const ContentWithVideo = () => {
                         <h2 className="title font-medium">Der Konkurrenz immer einen Schritt voraus</h2>
                         <p className="desc">Bekannt aus:</p>
                         <div className="tag-images flex align-center">
-                            <Image src={marketingch} alt={'logo'} />
-                            <Image src={leaderdigital} alt={'logo'} />
+                            <a 
+                            href="https://marketing.ch/suchmaschinenmarketing/sandro-huber-zeigt-auf-in-6-schritten-zu-erfolgreichem-b2b-seo-im-jahr-2022/" target="__blank" title="marketing.ch">
+                            <Image src={marketingch} alt={'marketing.ch'} /></a>
+                            
+                            <a 
+                            href="https://www.leaderdigital.ch/news/wie-sandro-huber-mit-seiner-seo-dienstleistung-unternehmen-im-digitalen-vertrieb-unterstuetzt-8538.html" target="__blank" 
+                            title="leaderdigital">
+                            <Image src={leaderdigital} alt={'leaderdigital'} /></a>
                         </div>
                     </FramerMotionAnimation>
 

@@ -8,6 +8,7 @@ import Clients from '../components/sections/Clients';
 import Testimonials from '../components/sections/Testimonials';
 import TopServices from '../components/sections/TopServices';
 import meeting from '../assets/images/meeting7.png';
+import SocialProof from "../components/sections/SocialProof";
 
 import topServicesSectionData from '../data/topServicesSectionData';
 
@@ -38,7 +39,7 @@ export default function AboutUs() {
                 <PostInMagazine />
                 <Team />
                 <Clients />
-                <Testimonials />
+                <SocialProof />
                 <TopServices data={topServicesSectionData} />
             </main>
         </>

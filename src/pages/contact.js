@@ -15,7 +15,7 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>Potentianalyse | SH Digital</title>
+                <title>Kontakt | SH Digital</title>
                 <meta name="description" content="SH Digital - Services"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 

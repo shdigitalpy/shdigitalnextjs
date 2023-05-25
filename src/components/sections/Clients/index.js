@@ -13,16 +13,17 @@ import i18next from '../../../assets/images/clients/i18next.png';
 import swissQRreader from '../../../assets/images/clients/swissqrreader.png';
 import locize from '../../../assets/images/clients/locaze.png';
 import crossWorks from '../../../assets/images/clients/cross-works.png';
+import sitrag from '../../../assets/images/clients/blachen.png';
 
 
 const data = [
 
-    {
-        name: 'Locize',
+     {
+        name: 'Lo cize',
         image: locize
     },
     {
-        name: 'Arrigato',
+        name: 'Arr igato',
         image: arrigato
     },
     {
@@ -34,11 +35,11 @@ const data = [
         image: hakaGerudor
     },
     {
-        name: 'Fleischhandel',
+        name: 'Fleisch handel',
         image: fleischhandel
     },
     {
-        name: 'Schroder Adveq',
+        name: 'Schord Adveq',
         image: schroderAdveq
     },
     {
@@ -46,7 +47,11 @@ const data = [
         image: ubs
     },
     {
-        name: 'Elcode',
+        name: 'sitrag',
+        image: sitrag
+    },
+    {
+        name: 'Elco de',
         image: elcode
     },
     {
@@ -58,11 +63,11 @@ const data = [
         image: i18next
     },
     {
-        name: 'Swiss QR Reader',
+        name: 'Swiss Reader',
         image: swissQRreader
     },
     {
-        name: 'crossworks',
+        name: 'cross Workx',
         image: crossWorks
     },
     

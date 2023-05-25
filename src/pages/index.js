@@ -38,7 +38,7 @@ export default function Home() {
                 <ContentWithVideo/>
                 <CardGrid data={painsSectionData} />
                 <CardGridWithImage data={successStoriesSectionData} />
-                <ContentStrip title="Erscheinen, wenn Personen nach Ihrem Angebot suchen?" btnTitle="Anfrage senden" btnUrl="/" />
+                <ContentStrip title="Erscheinen, wenn Personen nach Ihrem Angebot suchen?" btnTitle="Anfrage senden" btnUrl="/contact" />
                 <AccordionGrid data={areaOfExpertiseSectionData} />
                 <ImageAndCollapsibleContent data={advantagesAndProcessSectionData} />
                 <FAQ data={FAQSectionData} />

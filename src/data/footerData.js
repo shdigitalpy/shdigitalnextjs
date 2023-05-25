@@ -4,6 +4,7 @@ import facebookIcon from '../assets/icons/facebook.svg';
 import instagramIcon from '../assets/icons/instagram.svg';
 import googlePartner from '../assets/images/mainpage/google-partner.webp';
 import swissMadeSoftware from '../assets/images/mainpage/swiss-made-software.webp';
+import linkedinIcon from '../assets/icons/linkedin.svg';
 
 export default {
     logo: logo,
@@ -17,19 +18,19 @@ export default {
         items: [
             {
                 name: 'Übersicht',
-                url: '/'
+                url: '/blog'
             },
             {
                 name: 'Was ist SEO',
-                url: '/'
+                url: '/seo/was-ist-seo'
             },
             {
                 name: 'Online Shop Ratgeber',
-                url: '/'
+                url: '/seo/online-shop-seo'
             },
             {
                 name: 'SEO-Check',
-                url: '/'
+                url: '/seo/seo-analyse'
             },
             
         ]
@@ -37,26 +38,21 @@ export default {
     socialMedia: {
         title: 'SOCIAL MEDIA',
         items: [
-            {
-                name: 'Twitter',
-                icon: twitterIcon,
-                url: '/'
-            },
-            {
-                name: 'Instagram',
-                icon: instagramIcon,
-                url: '/'
-            },
+            
+            
             {
                 name: 'Facebook',
                 icon: facebookIcon,
-                url: '/'
+                url: 'https://www.facebook.com/shdigitalch'
             },
+            
             {
-                name: 'Twitter',
-                icon: twitterIcon,
-                url: '/'
+                name: 'LinkedIn',
+                icon: linkedinIcon,
+                url: 'https://www.linkedin.com/company/sh-digital-gmbh/'
             },
+
+
         ],
     },
     pursue: {

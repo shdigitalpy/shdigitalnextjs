@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 import seoagentur from '../../../assets/images/mainpage/seo-agentur.webp';
 import downArrow from '../../../assets/icons/down-arrow-1.svg';
@@ -25,14 +26,16 @@ const Hero = () => {
                 </div>
                 <h1 className="title font-semibold">SEO Agentur: Konstante Sichtbarkeit im Web</h1>
                 <p className="desc">
-                    Die von Sandro Huber entwickelte und einmalige <strong className="underline">Performance SEO-Pro-Methode®</strong> hilft Software, Industrie sowie
-                    E-Commerce Unternehmen mit dem Angebot bei Google auf die erste Seite
-                    zu kommen. Mit dieser Methode lassen Sie die Konkurrenz hinter sich und werden bei Ihrer Zielgruppe allgegenwärtig.
+                    Die von uns entwickelte und einmalige <strong className="underline">Performance SEO-Pro-Methode®</strong> hilft Software, Industrie sowie
+                    E-Commerce Unternehmen mit dem Angebot bei Google auf die erste Seite zu kommen. Ausserdem unterstützen wir Sie mit bezahlten Werbeanzeigen gezielt eine konstante Sichtbarkeit bei Ihrer Zielgruppe zu erreichen und zu nutzen.
                 </p>
+                <Link href="/contact">
                 <button className="cta-btn text-white bg-primary">
-                    Kostenlose Potentialanalyse
+                    
+                    Kontakt
+
                     <Image src={upRightArrow} alt={'up right arrow'} className="arrow-icon" />
-                </button>
+                </button></Link>
             </FramerMotionAnimation>
         </FramerMotionAnimation>
     );

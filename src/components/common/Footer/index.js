@@ -40,8 +40,9 @@ const Footer = () => {
                 <div className="social-links-wrapper">
                     <div className="footer-title">{socialMedia.title}</div>
                     <div className="content flex">
+
                         { socialMedia.items?.map((item, index) => (
-                            <Image src={item.icon} alt={item.name} className="social-icon" key={index} />
+                        <a target="__blank" href={item.url} title={item.name}><Image src={item.icon} alt={item.name} className="social-icon" key={index} /></a>
                         ))}
                     </div>
                 </div>

@@ -27,10 +27,7 @@ const CardGrid = ({ data,sectionid }) => {
                             <h5 className="card-title title-up font-semibold">{card.titleUp}</h5>
                             <h5 className="card-title title-below relative font-semibold">{card.titleBelow}</h5>
                             <p className="card-desc">{card.description}</p>
-                            <Link href={card.readMoreLink} className="read-more-link flex align-center">
-                                Mehr erfahren
-                                <Image src={rightArrowIcon} alt="arrow right" className="arrow-icon" />
-                            </Link>
+                            
                         </div>
                     )) }
                 </div>

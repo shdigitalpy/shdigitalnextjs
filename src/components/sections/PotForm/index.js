@@ -52,7 +52,7 @@ const PotForm = () => {
 
             <div className="content-wrapper bg-primary2">
                 <FramerMotionAnimation type="h2" className="title text-white">
-                    Jetzt die Potentialanalyse anfragen
+                   Unverbindliche Anfrage
                 </FramerMotionAnimation>
 
                 <FramerMotionAnimation

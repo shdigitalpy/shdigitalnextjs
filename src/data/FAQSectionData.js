@@ -34,7 +34,7 @@ export default {
                     thumbnail: gsc,
                     videoUrl: '/'
                 },
-                description: '"Erhöht die Sichtbarkeit einer Webseite durch eine Reihe von Massnahmen. Dazu gehören das Publizieren von qualitativem Content sowie technisches Optimieren der Website-Architektur. Eine zentrale Rolle dabei spielen Inhalte, die wirklich auf die Bedürfnisse der Kunden des entsprechenden Themenbereichs abgestimmt sind.'
+                description: 'Erhöht die Sichtbarkeit einer Webseite durch eine Reihe von Massnahmen. Dazu gehören das Publizieren von qualitativem Content sowie technisches Optimieren der Website-Architektur. Eine zentrale Rolle dabei spielen Inhalte, die wirklich auf die Bedürfnisse der Kunden des entsprechenden Themenbereichs abgestimmt sind.'
             }
         },
         {

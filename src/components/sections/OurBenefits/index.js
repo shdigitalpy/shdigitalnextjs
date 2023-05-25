@@ -5,6 +5,7 @@ import doubleDownArrow from '../../../assets/images/sharp-double-arrow-down.svg'
 import checkCircleOrange from '../../../assets/icons/check-circle-orange.svg';
 import Image from "next/image";
 import upRightArrowIcon from "../../../assets/icons/up-right-arrow.svg";
+import Link from "next/link";
 
 const listItems = [
     {
@@ -52,10 +53,10 @@ const OurBenefits = () => {
                             ))}
                         </div>
                         <FramerMotionAnimation className="btn-wrapper">
-                            <button className="btn-primary">
-                                Kostenlose Potentialanalyse
+                           <Link href="/contact"> <button className="btn-primary">
+                                Anfrage senden
                                 <Image src={upRightArrowIcon} alt="arrow icon" className="read-more-icon" />
-                            </button>
+                            </button></Link>
                         </FramerMotionAnimation>
                     </div>
 

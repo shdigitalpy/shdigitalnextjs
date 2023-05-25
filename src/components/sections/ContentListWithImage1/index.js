@@ -24,7 +24,7 @@ const ContentListWithImage = ({ data }) => {
                         <p className="sub-title">{ subTitle }</p>
                     </div>
                     <Link href={viewAllLinkUrl} className="view-all-link flex items-center">
-                        <p>Zum Ratgeber</p>
+                        <Link href="/blog" title="Ratgeber"><p>Zum Ratgeber</p></Link>
                         <Image src={rightArrow} alt="icon" className="redirect-icon" />
                     </Link>
                 </div>
@@ -46,12 +46,13 @@ const ContentListWithImage = ({ data }) => {
                     { contentList?.map((item, index) => (
                         <div className="item md:flex hover:bg-gray"
                             key={index}>
-                            <h4 className="content-title w-full">
+                            <h4 className="content-title w-full"><Link href={item.url} title={item.title}>
+
                                 { item.title }
                                 <Image src={upRightArrowIcon} alt="icon" className="redirect-icon-2" />
-                            </h4>
+                            </Link></h4>
                             <p className="content-description"> { item.description }</p>
-                            <Image src={upRightArrowIcon} alt="icon" className="redirect-icon" />
+                            <Link href={item.url} title={item.title}><Image src={upRightArrowIcon} alt="icon" className="redirect-icon" /> </Link>
                         </div>
                     ))}
                 </FramerMotionAnimation>
