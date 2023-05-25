@@ -31,11 +31,19 @@ import squareIcon from '../../assets/icons/square.svg';
 import seoTrends from '../../assets/images/seo/google-trends.png'
 import galaxusImage from '../../assets/images/seo/galaxus-search.png';
 import zooplusImage from '../../assets/images/seo/beispiel-zooplus.webp';
-import keywords3 from '../../assets/images/seo/keyword-recherche-seo.jpg';
+import keywords1 from '../../assets/images/seo/snippet-ebike.png';
+import keywords2 from '../../assets/images/seo/snippet-migros.png';
+import keywords3 from '../../assets/images/seo/snippet-heimwerker.png'
+import duplicateImage from '../../assets/images/seo/duplicate-content.png'
+import duplicateAhrefsImage from '../../assets/images/seo/duplicate-content-ahrefs-tool.png'
+import CollapsibleList from "../../components/sections/CollapsibleList";
+
 
 import onpageOptimizationSectionData from '../../data/onpageOptimizationSectionData';
 import offpageOptimizationSectionData from '../../data/offpageOptimizationSectionData';
-import faqSeoKostenData from '../../data/faqSeoKostenData';
+import faqSeoShopData from '../../data/faqSeoShopData';
+import seoShopTechData from '../../data/seoShopTechData';
+import seoLinkData from '../../data/seoLinkData';
 
 const inter = Inter({subsets: ['latin']})
 
@@ -102,7 +110,7 @@ export default function seoKosten() {
                 <WhatGoogleSays post={post} />
 
 
-            <section id="wiefunktioniertes" className="section-wrapper bg-gray">
+            <section id="lohnt" className="section-wrapper bg-gray">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -193,7 +201,7 @@ export default function seoKosten() {
             
         </section>
 
-         <section id="" className="analysis-factors bg-gray container">
+         <section id="setup" className="analysis-factors bg-gray container">
             <FramerMotionAnimation className="title-wrapper">
                 <h2 className="title">
                     Aufsetzen eines Onlineshops für SEO
@@ -236,7 +244,7 @@ export default function seoKosten() {
             </div>
         </section>
                    
-          <section id="waskostet" className="section-wrapper keywords">
+          <section id="shopsysteme" className="section-wrapper keywords">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -410,7 +418,7 @@ export default function seoKosten() {
                             <td class="tg-1oat"><a target="__blank" href="https://www.digitec.ch/" title="digitec.ch">digitec.ch</a></td>                       
                             <td class="tg-1oat"><a target="__blank" href="https://builtwith.com/digitec.ch" title="builtwith.com">Eigenentwicklung</a></td>
                             <td class="tg-1oat">React, Next.js</td> 
-                            <td class="tg-1oat">1'125.0</td>                            
+                            <td class="tg-1oat">1 125.0</td>                            
                             
                             
                           </tr>
@@ -538,7 +546,7 @@ export default function seoKosten() {
                     </div>
                 </section>
 
-                <section id="keywords" className="section-wrapper keywords">
+                <section id="shopanalyse" className="section-wrapper keywords">
                     <div className="container">
                         <div className="title-wrapper">
                             <FramerMotionAnimation
@@ -610,7 +618,7 @@ export default function seoKosten() {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-50 md:mb-20">
-                           Auf der Suchen nach den richtigen Keywords für Onlineshops wird man oft über "informelle Keywords" stolpern. Das sind Suchbegriffe, die zum Finden von hilfreichen Informationen zu jeglichen Themen eingegeben werden.
+                           Auf der Suchen nach den richtigen Keywords für Onlineshops wird man oft über {'"informelle Keywords"'} stolpern. Das sind Suchbegriffe, die zum Finden von hilfreichen Informationen zu jeglichen Themen eingegeben werden.
 
                         </FramerMotionAnimation>
 
@@ -630,7 +638,7 @@ export default function seoKosten() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
                                 <p className="desc-md mt-15">
-                                Diese Suchbegriffe können im Bereich E-Commerce auch verwendet werden, jedoch werden die meisten Suchanfragen sich um "produktspezifische Informationen" nicht um "informelle Keywords" drehen.
+                                Diese Suchbegriffe können im Bereich E-Commerce auch verwendet werden, jedoch werden die meisten Suchanfragen sich um {'"produktspezifische Informationen"'} nicht um {'"informelle Keywords"'} drehen.
                                  Wie druckt man selbst etwas aus dem 3D-Drucker.
                                     </p>
                                 </FramerMotionAnimation>
@@ -718,43 +726,7 @@ export default function seoKosten() {
                     </div>
                 </section>
 
-                <section id="wiefunktioniertes" className="section-wrapper bg-gray">
-                    <div className="container">
-                        <div className="title-wrapper">
-                            <FramerMotionAnimation
-                                type="h3" className="title text-center">
-                               Weshalb lohnt sich Suchmaschinenoptimierung für Onlineshops?
-
-                            </FramerMotionAnimation>
-                            <Image src={doubleArrowIcon} alt="arrows" className="ml-auto double-arrow-art" />
-                        </div>
-                        <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
-                            <FramerMotionAnimation
-                                initial={{ opacity: 0, x: -50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                className="image-wrapper p-0 bg-gray">
-                                <Image src={onlineshopImage} alt="Studie Gartner" className="main-image" />
-                            </FramerMotionAnimation>
-                            <FramerMotionAnimation
-                                initial={{ opacity: 0, x: -50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                            >
-                                <p className="desc-sm mb-15">Wenn Sie den 
-                                Mit SEO können Sie die organische Sichtbarkeit des Onlineshops signifikant erhöhen. 
-                                Potenzielle Kunden finden die Produkte aus Ihrem Sortiment an verschiedenen Stellen bei der Recherche über ein Produkt. Dieser Ausbau der Reichweite bei Suchmaschinen skaliert die Websuchanfragen über die Zeit für den eigenen Shop drastisch.
-                                </p>
-                                <p className="desc-sm mb-0"> 
-                                Zum einen werden bestehende Suchbegriffe für ein höheres Rankings optimiert, 
-                                anderseits sollen sich auch die Anzahl der Suchbegriffe mit SEO erhöhen, 
-                                auf denen Sie gefunden werden. In unserem Beitrag über <Link href="/seo/was-ist-seo" title="SEO">SEO</Link> finden Sie weitere 
-                                Gründe und Statistiken, weshalb Sie noch heute in Suchmaschinenoptimierung investieren sollten!
-
-                                </p>
-                            </FramerMotionAnimation>
-                        </div>
-                       
-                    </div>
-                </section>
+                
 
               <section className="site-analysis container bg-gray" style={{ whiteSpace: "break-spaces" }}>
         
@@ -793,7 +765,7 @@ export default function seoKosten() {
 
         </section>
          <br /> <br />
-         <section id="analyse" className="section-wrapper" style={{ padding: 0}}>
+         <section id="struktur" className="section-wrapper" style={{ padding: 0}}>
                     <div className="container">
                         
                         <FramerMotionAnimation
@@ -860,18 +832,17 @@ export default function seoKosten() {
                      <FramerMotionAnimation
                                 type="h4" className="title text-center">
                                Startseite
-
-
-
                             </FramerMotionAnimation>
                              <br /> <br />
                             <FramerMotionAnimation type="p" className=" description">
-                              Die Startseite ist immer die <b>populärste Seite auf Ihrem Onlineshops</b>. Das bedeutet, dort muss das <b>Wichtigste zu Ihrem Unternehmen und die Marke </b>stehen.
+                              Die Startseite ist immer die <b>populärste Seite auf Ihrem Onlineshops</b>. 
+                              Das bedeutet, dort muss das <b>Wichtigste zu Ihrem Unternehmen und die Marke </b>stehen.
 
                             </FramerMotionAnimation>
                             
                              <FramerMotionAnimation type="p" className=" description">
-                            Beispiel: Sie betreiben einen Shop, der Hundezubehör verkauft. Das Unternehmen heisst Dog4Life AG in der Schweiz. Ihre Kunden möchten folgendes sehen:
+                            Beispiel: Sie betreiben einen Shop, der Hundezubehör verkauft. 
+                            Das Unternehmen heisst Dog4Life AG in der Schweiz. Ihre Kunden möchten folgendes sehen:
 
                              <br /><br />
                             <br />
@@ -895,12 +866,19 @@ export default function seoKosten() {
                             
 
                              <FramerMotionAnimation type="p" className=" description">
-                                Jetzt stellt sich die Frage, soll die Startseite für das Keyword "Hunde Shop" und die Marke "Dog4Life" optimiert werden. Anhand verschiedener Kriterien wird „Branche + Shop“ eruiert, es kann "Hundezubehör Shop", "Hunde Shop" oder ähnliches sein.
+                                Jetzt stellt sich die Frage, soll die Startseite für das Keyword 
+                                <b>Hunde Shop</b> und die Marke Dog4Life optimiert werden. Anhand 
+                                verschiedener Kriterien wird <b>Branche + Shop</b> eruiert, es kann 
+                                <b>Hundezubehör Shop</b>, <b>Hunde Shop</b> oder ähnliches sein.
 
                             </FramerMotionAnimation>
 
                             <FramerMotionAnimation type="p" className=" description">
-                                Für eine Beurteilung braucht es eine umfassende Analyse, die mehr Daten als oberflächliche Basisinformationen bieten. Viele Kunden kennen bereits die wichtigsten Keywords, da diese von Konkurrenten belegt sind oder diese tendenziell viel Suchvolumen haben. Nicht in jedem Fall ist dies dann das richtige Keyword.
+                                Für eine Beurteilung braucht es eine umfassende Analyse, 
+                                die mehr Daten als oberflächliche Basisinformationen bieten. 
+                                Viele Kunden kennen bereits die wichtigsten Keywords, da diese 
+                                von Konkurrenten belegt sind oder diese tendenziell viel 
+                                Suchvolumen haben. Nicht in jedem Fall ist dies dann das richtige Keyword.
 
 
                             </FramerMotionAnimation>
@@ -934,12 +912,27 @@ export default function seoKosten() {
                                 whileInView={{ opacity: 1, x: 0 }}
                             >
                                 <p className="desc-sm mb-15">
-                                Die Kategorieseiten sind sehr wichtig für Shop-SEO, diese dienen als Angebotsübersicht, bei dem sich potentielle Kunden einen Überblick verschaffen. Die Kategorieseiten sind Ausgangspunkt für die wichtigsten Vorgänge auf Ihrer Webseite. Ausserdem lassen sich damit meist die wichtigsten Keywords abdecken.
+                                Die Kategorieseiten sind sehr wichtig für Shop-SEO, 
+                                diese dienen als Angebotsübersicht, bei dem sich potentielle 
+                                Kunden einen Überblick verschaffen. Die Kategorieseiten sind 
+                                Ausgangspunkt für die wichtigsten Vorgänge auf Ihrer Webseite. 
+                                Ausserdem lassen sich damit meist die wichtigsten Keywords abdecken.
 
 
                                 <br /><br />
-                                Die Kategorieseite sollte so aufgebaut werden, dass die Überschrift, Einleitungstext, Filter sowie die Produkte bereits im Abovethefold des Webshops zu sehen sind. Beim Aufbau der Produktauflistung empfehlen wir, sich bei der Konkurrenz zu orientieren. Je nach Branche und Anzahl Produkte funktionieren unterschiedliche Layouts. Eine ausführlichere Checkliste mit Fragen finden Sie unter Kategorieseite Checkliste
-                                <br /><br />Die Produktauflistung sollte zudem farblich abgestimmt sein, bei einigen Kundenprojekten konnten wir die Anzahl Klicks schon mit kleinen Änderungen am Layout viele neue Klicks generieren. UX / UI ist nicht zu unterschätzen und sollte optimal verwendet werden.
+                                Die Kategorieseite sollte so aufgebaut werden, dass 
+                                die Überschrift, Einleitungstext, Filter sowie die Produkte 
+                                bereits im Abovethefold des Webshops zu sehen sind. Beim 
+                                Aufbau der Produktauflistung empfehlen wir, sich bei der 
+                                Konkurrenz zu orientieren. Je nach Branche und Anzahl 
+                                Produkte funktionieren unterschiedliche Layouts. Eine 
+                                ausführlichere Checkliste mit Fragen finden Sie unter 
+                                Kategorieseite Checkliste
+                                <br /><br />Die Produktauflistung sollte zudem 
+                                farblich abgestimmt sein, bei einigen Kundenprojekten 
+                                konnten wir die Anzahl Klicks schon mit kleinen Änderungen 
+                                am Layout viele neue Klicks generieren. UX / UI ist nicht 
+                                zu unterschätzen und sollte optimal verwendet werden.
 
                                 </p>
                                 </FramerMotionAnimation>
@@ -976,9 +969,624 @@ export default function seoKosten() {
             
             
         </section>
+
+
+              <section className="site-analysis container bg-gray" style={{ whiteSpace: "break-spaces" }}>
+              <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                  Produktseiten inkl. Checkliste
+
+
+                            </FramerMotionAnimation>
+              
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">
+                                   Oftmals werden die Produktseiten als minder wichtig herabgestuft oder von Agenturen gar nicht bearbeitet. Wir empfehlen dort Ressourcen zu investieren, denn es sind die Seiten, welche den Kaufabschluss begünstigen bzw. von dort kommt in der Regel der Umsatz. Aus SEO-Sicht ist die Kategorieseite wichtiger als Produktseite. Aus Kundensicht in der Regel die Produktseite. Da man für Kunden und nicht für Suchmaschinen optimieren sollte, nimmt die Produktseite einen höheren Rang ein.
+
+
+                                </p>
+                                <p className="desc-sm mb-15">
+                                    In unserer SEO-Agentur haben wir in verschiedenen Projekten User-Experience-Tests durchgeführt. Wenn die Produktseite überdurchschnittlich viel relevante Informationen enthalten hatte, kehrte der gleiche Benutzer mehrfach als Direkteinstieg oder über die Markensuche zurück. In Diskussionen mit SEO-Kunden bestand immer wieder der Irrglaube, man müsse gewisse Informationen zurückhalten, um den potentiellen Kunden neugieriger zu machen.
+
+
+                                </p>
+
+                                <p className="desc-sm mb-15">
+                                   Unser Tipp: Gestalten Sie die Produktbeschreibung so vielfältig und trotzdem einheitlich wie möglich und beachten Sie folgende Punkte:
+
+
+
+                                </p>
+                               
+                            </FramerMotionAnimation>
+                            <br />
+        
+                 <div className="content-wrapper bg-white grid md:grid-cols-2">
+                <div className="list-box">
+                    <FramerMotionAnimation type="h6" className="list-title">
+                      Wichtig zu beachten
+
+                    </FramerMotionAnimation>
+                    <div className="list-wrapper">
+                        { itemsImport?.map((item, index) => (
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -70 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.25, delay: index * 0.1 }}
+                                className="list-item-wrapper" key={index}>
+                                <Image src={squareIcon} alt="square" className="item-icon" />
+                                {item.data}
+                            </FramerMotionAnimation>
+                        ))}
+                    </div>
+                </div>
+                
+                
+            </div>
+            <br/><br/>
+
+            <p className="desc-sm mb-15">Unter Beachtung dieser Punkte verbessern Sie das Einkaufserlebnis für Ihre Kunden und maximieren die Conversion Ihrer Produkte.
+                                </p>
+
+                                <p className="desc-sm mb-15">Wenn Sie den 
+                                   Gute Beispiele von Produktbeschreibungen lassen sich viele im Netz finden. Bei digitec.ch und zalando.ch ist es aus unserer Sicht sehr gut umgesetzt.
+                                </p>
+                                <br /> <br/>
+
+
+              
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                            >
+                                <p className="desc-sm mb-15">
+                                   Um erfolgreich bei Shop-SEO zu werden, sollte eine Strategie zur Erstellung von nicht kommerziellen Inhalten definiert werden. Meist wird dies in Form eines Ratgebers oder eines Bereichs mit Wissenstexten umgesetzt. In diesem Ratgeberbereich werden die wichtigsten Problemstellungen im Zusammenhang mit den Produkten in Form der Möglichkeit zur Eigenrecherche des Kunden abgehandelt.
+
+
+
+                                </p>
+                                <p className="desc-sm mb-15">
+                                    Durch gezielte Informationen will man die Bedürfnisse der Kunden befriedigen und einen Leitfaden bieten, der zum Kaufabschluss animiert. Ein solcher Bereich ist nicht zentral in den Shop zu integrieren, sondern eher am Rande. Es bietet sich an, einen Ratgeber dezent am Schluss des Hauptmenüs einzufügen. Oder in Form eines Untermenüs, dann allerdings so, dass der Kunde schnell dahin gelangt.
+
+
+
+                                </p>
+
+                                <p className="desc-sm mb-15">
+                                    Im Bereich Content Marketing gehen wir weiter unten nochmals auf nicht kommerzielle Inhalte für Shops ein.
+
+
+
+
+                                </p>
+                               
+                            </FramerMotionAnimation>
+
+           
+
+        </section>
+
+        <section id="onpage" className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                                Onpage für Onlineshops
+
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Im vorherigen Abschnitt haben wir gezeigt, welche Seitentypen bei Onlineshops vorkommen können. Nun geht es mehr ins Detail, welche effektiven Onpage-Massnahmen müssen beachtet werden.
+
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Nach einer Keyword-Recherche weiss man, welche Keywords wichtig sind. Wenn man diese den Seiten zugewiesen hat, geht es darum, die einzelnen Seiten selbst zu optimieren. Dabei gibt es, obwohl es unterschiedliche Seitentypen gibt, die gleichen Faktoren zu beachten.
+
+
+                        </FramerMotionAnimation>
+
+                         <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                 Page Title & Meta Description
+                            </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                           Bei der Auslieferung bei Google des Page Title und der Meta Beschreibung einer Unterseite spricht man vom Snippet. Ob ein potentieller Kunde auf Ihr Suchergebnis klickt oder nicht, ist massgeblich vom Snippet abhängig. Denn sprechen die dort verwendeten Informationen den Benutzer an, so folgt dieser mit einem Klick in Ihren Online Shop.
+
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                           Aus diesem Grund sollte man die Informationen im Snippet selbst steuern und festlegen. Vor allem für die wichtigen Keywords kann man damit mehr als die Konkurrenz herausholen, wenn man den Snippet individuell pro Shopseite gestaltet.
+
+
+                        </FramerMotionAnimation>
+
+                        <div className="inner-content-wrapper bg-gray">
+                            <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <h4 className="content-title">Beispiel Snippet Kategorie</h4>
+                                    <Image src={keywords1} alt="img" className="main-image" />
+                                </FramerMotionAnimation>
+                                <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    className="mb-80 md:mb-0"
+                                >
+                                    <h4 className="content-title">
+                                        Beispiel Snippet Produkt
+
+                                    </h4>
+                                    <Image src={keywords2} alt="img" className="main-image" />
+                                    
+                                </FramerMotionAnimation>
+
+                                 <FramerMotionAnimation
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    className="mb-80 md:mb-0"
+                                >
+                                    <h4 className="content-title">
+                                        Beispiel Snippet Sonstiges
+
+
+                                    </h4>
+                                    <Image src={keywords3} alt="img" className="main-image" />
+                                    
+                                </FramerMotionAnimation>
+                            </div>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="mb-20 md:mb-12">
+                                <p className="desc-md mt-15">
+                                    Wir haben willkürlich drei Snippets aus der Schweiz von Onlineshops rausgesucht. Ob diese gut optimiert sind oder nicht, lassen wir an dieser Stelle offen. Bei Onlinshops sollte man darauf hinarbeiten, dass im Snippet auch Preise und Bewertungen von Kunden angezeigt werden.
+
+                                </p>
+                                
+                            </FramerMotionAnimation>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="mb-24">
+                                
+                                   <h5 className="content-title">
+                                        Benutzerfreundlichkeit (Usability)
+                                    </h5>
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Ein Onlineshop ist benutzerfreundlich, wenn der Benutzer schnell zu den gewünschten Produkten kommt, die er sucht. Sich jeder intuitiv im Onlineshop zurechtfindet. Einer der wichtigsten Punkte ist ein übersichtlicher Shop mit leicht zu bedienender Navigation, die das schnelle Auffinden der gewünschten Produkte ermöglicht. Da sich die Onlinewelt in einem Wandel hin zu Mobile befindet, ist die Usability sowohl auf dem Desktop-Gerät wie auch dem Mobile sicherzustellen.
+
+
+                                </p>
+                                <div className="site-analysis">
+                                <div className="content-wrapper bg-white grid md:grid-cols-2">
+                                <div className="list-box">
+                                    
+                                    <div className="list-wrapper">
+                                        { itemsUsability?.map((item, index) => (
+                                            <FramerMotionAnimation
+                                                initial={{ opacity: 0, x: -70 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                transition={{ duration: 0.25, delay: index * 0.1 }}
+                                                className="list-item-wrapper" key={index}>
+                                                <Image src={squareIcon} alt="square" className="item-icon" />
+                                                {item.data}
+                                            </FramerMotionAnimation>
+                                        ))}
+                                    </div>
+                                </div>
+                                
+                                
+                            </div> 
+                            </div>
+                                
+                                
+                            </FramerMotionAnimation>
+
+
+
+
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                 type="p" className="desc-md-2 primary mb:100 md:mb-24">
+                               In erster Linie bezieht sich Benutzerfreundlichkeit auf Effizienz, Effektivität und Zufriedenheit der Kunden in Ihrem Webshop. Wie man technische Verbesserung anbringen kann, die das Verhalten effizienter machen.
+
+
+                            </FramerMotionAnimation>
+
+                           <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="mb-24">
+                                <h5 className="content-title">
+                                        Benutzererfahrung (User Experience, UX)
+
+                                    </h5>
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    
+                                    Die User Experience ist der Eindruck, welche Ihr Onlineshop beim Kunden hinterlässt. Welches Gefühl bei dem Benutzer aufkommt, wenn er mit dem Onlineshop interagiert. Dabei spielen Marketingbotschaften wie auch die Leistung des Shops eine zentrale Rolle.
+
+
+
+                                </p>
+                                   
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Wenn Ihr Onlineshop einfach zu bedienen ist, ist die Benutzererfahrung nicht zwingend gut. Nachfolgend möchten wir einige Bespiele anführen, die zur Veranschaulichung von UX dienen:
+
+
+
+                                </p>
+
+                                <table class="tg">
+                        <thead>
+                          <tr>
+                            <th class="tg-1oat">Zustand</th>
+                            <th class="tg-1oat">Gefühle</th>
+                            <th class="tg-1oat">SEO-Massnahme im Webshop</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          <tr>
+                            <td class="tg-1oat">Viele nicht relevante Inhalte im Blog</td>                      
+                            <td class="tg-1oat">Fühlt sich verwirrt, stellt Seriosität der Marke infrage</td>
+                            <td class="tg-1oat">Klare prägnante Inhalte</td>                            
+                
+                            
+                          </tr>
+                          
+                          <tr>
+                            <td class="tg-1oat">Inhalte sind schlecht platziert, unten & rechts </td>       
+                            <td class="tg-1oat">Fühlt sich gelangweilt und genervt</td>
+                            <td class="tg-1oat">Inhalte im oberen Bereich und auf der linken Seite platzieren</td>
+        
+                            
+                          </tr>
+                            
+                            <tr>
+                            <td class="tg-1oat">Der Onlineshop lädt sehr langsam</td>
+                            <td class="tg-1oat">Wird ungeduldig </td>
+                            <td class="tg-1oat">Ladezeiten beschleunigen</td>
+            
+                            
+                          </tr>
+
+                          <tr>
+                            <td class="tg-1oat">Unpassende Farben verwendet</td>
+                            <td class="tg-1oat">Fühlt sich unsicher, Stimmung trübt</td>
+                            <td class="tg-1oat">Wählen Sie Farben gemäss Branchenstandards</td>
+                            
+                          </tr>
+
+                        </tbody>
+                        </table>
+
+
+
+
+
+                                 <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Im Verlaufe eines SEO-Projekts, im Optimalfall bereits bei Erstellung des Shops, sollten Sie sich mit UX auseinandersetzen und eine Software verwenden, um mögliche Schwachpunkte zu analysieren. Dabei finden Sie heraus, was in Ihrer Branche die Standards sind und wie Sie zur Verbesserung beitragen können. In diesem Zusammenhang kann man sich auch vieles von den Top-Konkurrenten abschauen, die womöglich das gleiche ebenfalls gemacht haben.
+
+
+
+
+                                </p>
+
+
+
+
+                                
+                                
+                            </FramerMotionAnimation>
+
+                            <FramerMotionAnimation
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                className="mb-24">
+                                <h5 className="content-title">
+                                        Duplicate Content
+
+
+                                    </h5>
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    
+                                    Online-Shops mit Shopsystemen sind anfällig für Duplicate Content, deshalb haben wir hier einen extra Abschnitt dazu verfasst. Meistens werden solche Inhalte von Shop- oder CMS-System automatisch generiert. Es kann sich um Suchergebnisseiten im eigenen Onlineshop handeln oder Filter-Seiten, die gleiche Produkte oder Inhalte mehrfach zeigen.
+
+
+
+                                </p>
+                                   
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Auch bei internationalen Shops muss man aufpassen, da dort die gleichen Produkte für verschiedene Länder oder Sprachen angezeigt werden. Dabei muss mit einem entsprechenden Tag die jeweilige Zugehörigkeit markiert werden.
+
+
+
+
+                                </p>
+
+
+                                 <Image src={duplicateImage} alt="duplicate content" className="main-image" />
+                                 <small>Quelle: <a href="https://ahrefs.com/blog/duplicate-content/" target="__blank" title="ahrefs blog">ahrefs blog</a></small>
+                                 <br />
+                                 <br />
+                                 <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Bei Kunden haben wir Duplicate Content beobachtet, wenn von Lieferanten die Produktbeschreibungen eins zu eins übernommen werden. Wir empfehlen Ihnen dabei eigene und abgeänderte Versionen zu erstellen.
+
+
+
+                                </p>
+
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    <a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls?hl=de" target="__blank" title="duplicate content definition">Die offizielle Definition, was bei Google als Duplicate Content angesehen wird</a>, darf hier nicht fehlen:
+
+
+                                </p>
+                                <b className="desc-md-2 mb-50 md:mb-15 primary">
+                                Von Duplicate Content wird gesprochen, 
+                                wenn umfassende Inhalte in derselben Sprache auf derselben oder einer 
+                                anderen Webseite mehrfach vorhanden sind.</b>
+                                <br /><br /><p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    Die wichtigsten Basis-Tipps für Onlineshops aus unserer Sicht:
+
+
+
+                                </p>
+
+                                <ul>
+                                    
+                                    <li>Verwende Top-Level-Domains</li>
+                                     <li> Reduziere wiederkehrende Textbausteine</li>
+                                      <li>Vermeide die Veröffentlichung von Platzhaltern</li>
+                                       <li>Reduziere ähnliche Inhalte</li>
+                                </ul>
+
+                                <br/><br/>
+                                 <h5 className="content-title">
+                                        Bei Ihrem Onlineshop prüfen
+
+
+
+                                    </h5>
+                                <p className="desc-md-2 mb-50 md:mb-15 primary">
+                                    
+                                    Besteht der Verdacht auf Duplicate Content 
+                                    bei Ihrem Onlineshop, so gibt es verschiedene Tools, 
+                                    um dies zu prüfen. Der Anbieter ahrefs.com stellt eine Analyse zur Verfügung, 
+                                    die Content Quality Report heisst. 
+                                    Dort kann man die betroffenen Seiten auslesen und entsprechende Schritte in die Wege leiten.
+
+
+
+
+                                </p>
+
+                                <Image src={duplicateAhrefsImage} alt="ahrefs Duplicate Content" className="main-image"/>
+
+                                
+                                
+                            </FramerMotionAnimation>
+                        </div>
+                    </div>
+                </section>
+
+                <CollapsibleList link={'technisch'} data={seoShopTechData} />
+
+
+
+
+                <section id="content" className="section-wrapper keywords">
+                    <div className="container">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                               Content Marketing
+
+
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Als Shopbetreiber möchten Sie hohe Einnahmen erzielen. Eine gezielte Contentstrategie kann Ihrem Unternehmen dabei helfen, mehr Kunden zu erreichen. Ob nun ein Text verfasst wird, um ein Problem der Zielgruppe zu lösen oder ein Produkt zu bewerben, nützliche Inhalte kommen bei Benutzern in der Regel sehr gut an. Auch bei Suchmaschinen kommen einzigartige Inhalte gut an, denn diese möchten den Benutzer mit Ihrem Algorithmus möglichst gut bedienen.
+
+
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                 Markenaufbau
+                            </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                        Personen im Internet kaufen eher bei Marken, das ist seit langem bekannt. Besonders große und bekannte Marken werden von Google als Autoritäten eingestuft und aus diesem Grund bei bestimmten Suchanfragen bevorzugt.
+
+
+                        </FramerMotionAnimation>
+
+                         
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                           Das Problem beim Branding von Kampagnen ist, dass der Effekt nur schwer messbar ist. Markenbekanntheit lässt sich nur schwer erforschen oder bestimmen. Somit ist es problematisch, den genauen Effekt einer einzelnen Content-Kampagne zu bestimmen. Hier kommt E-A-T ins Spiel, ein von Google eingeführte Markenbewertung. Wenn Sie E-A-T für Content Marketing im Kontext von SEO nicht berücksichtigen, können Sie gleich die Flinte ins Korn werfen.
+
+
+
+                        </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                Vertrauen stärken
+
+                            </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                           <a href="" title="In diesem Leitfaden bestätigt Google" target="__blank">In diesem Leitfaden bestätigt Google</a>, was wir auch in der Praxis beobachten. Man sollte sich in einem bestimmten Bereich einen Ruf für Kompetenz über die eigene Webseite oder einen informellen Bereich des Shops aufbauen. Content Marketing ist dazu das effektivste Instrument.
+
+
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-15 md:mb-10">
+                           Google streicht auch hervor, dass man Kompetenz zeigt, z.B. indem man auch als Shop einen eigenen Kundenservice-Bereich implementiert. Alle diese Faktoren gehen wieder in den Bereich von E-A-T, auf das wir oben bereits eingegangen sind. Eine Checkliste für den Vertrauensaufbau von Onlineshops bei Nutzern:
+
+                        </FramerMotionAnimation>
+
+                        <div className="site-analysis" style={{ padding: 0}}>
+                                <div className="content-wrapper bg-white grid md:grid-cols-2">
+                                <div className="list-box">
+                                    
+                                    <div className="list-wrapper">
+                                        { itemsTrust?.map((item, index) => (
+                                            <FramerMotionAnimation
+                                                initial={{ opacity: 0, x: -70 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                transition={{ duration: 0.25, delay: index * 0.1 }}
+                                                className="list-item-wrapper" key={index}>
+                                                <Image src={squareIcon} alt="square" className="item-icon" />
+                                                {item.data}
+                                            </FramerMotionAnimation>
+                                        ))}
+                                    </div>
+                                </div>
+                                
+                                
+                            </div> 
+                            </div>
+
+
+                            <FramerMotionAnimation
+                                type="h4" className="title text-center">
+                                Interne Verlinkung
+
+
+                            </FramerMotionAnimation>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                          Das Content Marketing wird im Bereich SEO dazu verwendet, die interne Verlinkung zu stärken. Mit dem Erstellen von Inhalten und entsprechenden internen Links sollen wichtige Unterseiten gestärkt werden.
+
+
+
+                        </FramerMotionAnimation>
+
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-15 md:mb-10">
+                           Dazu gibt es wiederum Standards von Google aus dem gleichen Leitfaden in Bezug auf Linktext, Keywords, usw., die man berücksichtigen sollte. In diesem Ratgeber können wir nicht detailliert über die interne Verlinkung eingehen, da dies den Rahmen sprengt. Trotzdem führen wir Ihnen einige Google-Tipps dazu auf:
+
+
+                        </FramerMotionAnimation>
+
+                        <div className="site-analysis" style={{ padding: 0}}>
+                                <div className="content-wrapper bg-white grid md:grid-cols-2">
+                                <div className="list-box">
+                                    
+                                    <div className="list-wrapper">
+                                        { itemsInternal?.map((item, index) => (
+                                            <FramerMotionAnimation
+                                                initial={{ opacity: 0, x: -70 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                transition={{ duration: 0.25, delay: index * 0.1 }}
+                                                className="list-item-wrapper" key={index}>
+                                                <Image src={squareIcon} alt="square" className="item-icon" />
+                                                {item.data}
+                                            </FramerMotionAnimation>
+                                        ))}
+                                    </div>
+                                </div>
+                                
+                                
+                            </div> 
+                            </div>
+
+                    </div>
+                </section>
+
+
+                 <section id="linkaufbau" className="section-wrapper keywords">
+                    <div className="container bg-grey">
+                        <div className="title-wrapper">
+                            <FramerMotionAnimation
+                                type="h2" className="title text-center">
+                               Linkaufbau
+
+
+
+                            </FramerMotionAnimation>
+                        </div>
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                            Grundsätzlich bewertet die Google-Suchmaschine Links als Gradmesser für Popularität im Internet. Dabei galt lange, dass ältere Domains möglicherweise effektiver sind als Neue. Die genauen Rankingfaktoren sind nicht bekannt, jedoch können viele SEO-Experten aus Erfahrungen sagen, dass gewisse Faktoren wichtiger sind als andere.
+
+
+
+
+                        </FramerMotionAnimation>
+
+                       
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-50 md:mb-20">
+                        <Link href="/seo/was-ist-seo#ranking" title="In unserem Was-ist-SEO-Artikel">In unserem Was-ist-SEO-Artikel</Link> legen wir dar, welche die zehn wichtigsten Rankingfaktoren aus unserer Sicht sind. Es ist von zentraler Bedeutung, dass wenn man versucht Links von anderen Webseiten zu bekommen, dass dies hochwertige und zum eigenen Unternehmen relevante Quellen sind.
+
+                        </FramerMotionAnimation>
+
+                         
+                        <FramerMotionAnimation
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            type="p" className="desc-md mb-90 md:mb-32">
+                           Beim Linkaufbau für Onlineshops sehen wir vier wichtige Bereiche:
+
+                        </FramerMotionAnimation>
+
+
+                        </div>
+
+                     <CollapsibleList link={'backlinks'} data={seoLinkData} />
+                </section>
                                        
 
-                <FAQ link={'faq'} data={faqSeoKostenData} />
+
+                <FAQ link={'faq'} data={faqSeoShopData} />
 
                  <WorkWithUs />
 
@@ -1049,18 +1657,12 @@ const post = {
                         item: 'Shop Content Marketing',
                         link: '#content'
                     },
-                    {
-                        item: 'Shop Kategorie Checkliste',
-                        link: '#checkliste'
-                    },
+                    
                      {
                         item: 'Linkaufbau',
                         link: '#linkaufbau'
                     },
-                    {
-                        item: 'Fazit',
-                        link: '#fazit'
-                    },
+                    
                     {
                         item: 'Häufige Fragen',
                         link: '#faq'
@@ -1147,6 +1749,25 @@ const itemsLeft2 = [
                     {data: ' Man muss einfach Produkte-Videos in die Beschreibung einbinden können'},
 
                    
+
+                ];
+
+const itemsTrust = [
+
+                    {
+                        id: '1',
+                        data: 'Eine angemessene Menge an Inhalten'
+                    },
+                    {   
+                         id: '2',
+                        data: 'Ablenkende Werbung vermeiden'
+                    },
+                    {
+                        data: 'Optimieren von Inhalten für Nutzer, nicht für die Suchmaschinen'
+                    },
+                    {data: 'Erstellen von frischen, einzigartigen Inhalten'},
+                     
+
 
                 ];
 
@@ -1252,3 +1873,82 @@ const listCategory = [
                     
 
                 ];
+
+const itemsImport = [
+
+      {
+                        data: 'Überschrift ist der Produktename oder die -bezeichung'
+                    },
+                    {
+                        data: 'Sekundärnavigation (Breadcrumb)'
+                    },
+                    {
+                        data: 'Mindestens 50 Wörter einzigartiger Inhalt (sonst Abstufung durch Suchmaschine)'
+                    },
+                    {
+                        data: 'Gestalten Sie einen Kopfbereich mit Bild und den wichtigsten Informationen wie z.B. Preis, Verfügbarkeit und USP.'
+                    },
+                    {
+                        data: ' Bereichern Sie die Inhalte mit Bildern, Produkte-Videos, usw.'
+                    },
+                    {
+                        data: 'Zeigen Sie die Zahlungsmöglichkeiten, damit der Kunde nicht danach suchen muss'
+                    },
+
+                     {
+                        data: 'Zeigen Sie echte Kundenbewertungen zu den Produkten'
+                    },
+                    
+
+                     {
+                        data: 'Sofern relevant, Technische Details und mögliches Zubehör zum Produkt anzeigen'
+                    },
+                     {
+                        data: 'Ähnliche Produkte anzeigen, sofern es um ein Produkt mit grosser Auswahl handelt'
+                    },
+                    
+                    
+
+
+    ]
+
+
+const itemsUsability = [
+
+      {
+                        data: 'Bietet das Design alle notwendigen Elemente?'
+                    },
+                    {
+                        data: 'Ist die Navigation einfach und zielführend?'
+                    },
+                    {
+                        data: 'Gelangt man ohne grossen Aufwand zu den Produkten?'
+                    },
+                    {
+                        data: 'Ist der Bezahlprozess sicher und einfach?'
+                    },
+                    {
+                        data: 'Gibt es entsprechende Suchfelder und Sortiermöglichkeiten, die eine Suche oder Verfeinerung leicht machen?'
+                    },
+                    {
+                        data: 'Gelangt ein Benutzer einfach zu hochwertigen Produktfotos oder -videos?'
+                    },
+
+    ]
+
+const itemsInternal = [
+                            {
+                            data: 'Einen aussagekräftigen Ankertext wählen'
+                    },
+                    {
+                        data: 'Interne Links leicht erkennbar machen'
+                    },
+                    {
+                        data: 'Keine Ankertexte wie z.B. Seite, Artikel oder hier klicken'
+                    },
+                    {
+                        data: 'Keine interne Verlinkung oder thematischen Bezug'
+                    },
+                   
+
+    ]

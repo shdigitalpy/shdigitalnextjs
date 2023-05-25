@@ -25,7 +25,7 @@ const CollapsibleList = ({ data, dark = true, link }) => {
     };
 
     return (
-        <section id={link} className={`collapsible-list container ${dark ? 'bg-gray' : 'bg-white'}`}>
+        <section id={link} style={{ whiteSpace: "break-spaces" }} className={`collapsible-list container ${dark ? 'bg-gray' : 'bg-white'}`}>
             <FramerMotionAnimation>
                 <h2 className="title text-center">
                     { title?.map((item, index) => <div key={index}>{item}</div>) }
