@@ -173,7 +173,7 @@ export default function seoStrategie() {
                                 <p className="desc-md-2 mb-50 md:mb-15 primary">
                                     Dabei werden Online-Vermarkter dazu gezwungen, 
                                     sich daran anzupassen, was ein User zu einem Thema möglichst komprimiert 
-                                    (in einem Beitrag) sehen will. Und verbannt viele {'"alte"'}' SEO-Taktiken 
+                                    (in einem Beitrag) sehen will. Und verbannt viele {'"alte"'} SEO-Taktiken 
                                     (z.B. Keyword stuffing, für jede Keyword-Kombination eine Landingpage) 
                                     aus dem Suchmaschinen-Universum, was schon lange Zeit war. In der 
                                     Strategie spielt der Weg bis zum Verkaufsabschluss ebenfalls eine 
@@ -181,7 +181,16 @@ export default function seoStrategie() {
                                     Marketingkonzepte wie das AIDA-Modell zum Zuge.
                                 </p>
                                 <p className="desc-md-2 primary">
-                                  Kombiniert man beispielsweise die Themencluster mit der Phase, indem sich ein Käufer befindet, entsteht ein sehr effektives Instrument, um moderne SEO-Optimierung zu betreiben. Ein interessanter Beitrag zum Thema finden Sie unter <a href="https://moz.com/blog/keyword-research-to-match-buyers-journey" title="Evolving Keyword Research to Match Your Buyer's Journey" target="__blank">Evolving Keyword Research to Match Your Buyer's Journey.</a>
+                                  Kombiniert man beispielsweise die 
+                                  Themencluster mit der Phase, 
+                                  indem sich ein Käufer befindet, 
+                                  entsteht ein sehr effektives Instrument, 
+                                  um moderne SEO-Optimierung zu betreiben. 
+                                  Ein interessanter Beitrag zum Thema finden Sie 
+                                  unter <a href="https://moz.com/blog/keyword-research-to-match-buyers-journey" 
+                                  title="Evolving Keyword Research to Match Your Buyers Journey" target="__blank">
+                                  Evolving Keyword Research to Match Your Buyers Journey.
+                                  </a>
                                 </p>
 
                                                         
@@ -244,15 +253,23 @@ export default function seoStrategie() {
                             whileInView={{ opacity: 1, x: 0 }}
                         >
                             <p className="desc-sm mb-15">
-                                Bei der Strategie geht es um die Beantwortung vieler wichtiger Fragen, die dem SEO-Manager einen Eindruck vermitteln, in welche Richtung es mit dem Projekt gehen soll. Werden die richtigen Schlüsse gezogen, kann man erfolgreich und schnell organischen Traffic aufbauen. 
+                                Bei der Strategie geht es um die Beantwortung 
+                                vieler wichtiger Fragen, die dem SEO-Manager einen 
+                                Eindruck vermitteln, in welche Richtung es mit dem Projekt gehen soll. 
+                                Werden die richtigen Schlüsse gezogen, kann man erfolgreich und schnell organischen Traffic aufbauen. 
 
                             </p>
                             <p className="desc-sm mb-15 md:mb-15">
-                               Werden die falschen Schlüsse gezogen, können die Resultate sehr lange auf sich warten lassen. Gar ohne eine Strategie oder ein SEO-Konzept starten zu wollen, empfehlen wir auf keinen Fall. 
+                               Werden die falschen Schlüsse gezogen, 
+                               können die Resultate sehr lange auf sich warten lassen. 
+                               Gar ohne eine Strategie oder ein SEO-Konzept starten zu wollen, empfehlen wir auf keinen Fall. 
                             </p>
                         
                             <p className="desc-sm mb-15">
-                                Mindestens die noch folgenden Fragen sollten Sie sich in Ihrem Projekt stellen. Aus der Strategie wird zudem im Verlauf der Umsetzungsphase eine Art "Cockpit" für die SEO-Massnahmen, die dort laufend gemessen und neu ausgerichtet werden.
+                                Mindestens die noch folgenden Fragen sollten 
+                                Sie sich in Ihrem Projekt stellen. Aus der Strategie wird 
+                                zudem im Verlauf der Umsetzungsphase eine Art 
+                                Cockpit für die SEO-Massnahmen, die dort laufend gemessen und neu ausgerichtet werden.
 
                             </p>
                             
