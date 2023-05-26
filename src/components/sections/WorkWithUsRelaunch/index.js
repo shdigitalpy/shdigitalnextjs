@@ -13,15 +13,17 @@ const WorkWithUs = () => {
                 <FramerMotionAnimation
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="content-wrapper relative">
-                    <h6 className="sub-title title-secondary">Bereit für das nächste Level</h6>
+                    <h6 className="sub-title title-secondary">Steht ein Relaunch an?</h6>
                     <h1 className="title text-white">
-                        <div>Performance-SEO</div>
-                        <div> Pro-Methode®</div>
+                        <div>Mit SH Digital neu lancieren</div>
+                        
                     </h1>
+                    
+
                     <p className="description text-white">
-                        Unsere markenrechtlich geschützte SEO-Methode ergänzt die klassische Suchmaschinenoptimierung 
-                        mit weiteren Marketingmassnahmen. Damit können deutlich schnellere und kosteneffizientere Ergebnisse erzielt werden.
+                        Unser Team hat schon viele Website-Relaunchs begleitet oder komplett durchgeführt. 
                     </p>
+                    
                     <Link href={"/contact"} className="inquire-btn btn-secondary">
                         Jetzt anfragen
                         <Image src={upRightArrowIcon} alt="arrow icon" className="inquire-btn-icon" />

@@ -9,7 +9,7 @@ import checkCircleOrange from '../../../assets/icons/check-circle-orange.svg';
 
 const TextBlock = ( { data } ) => {
     return (
-        <section className="analysis-factors container">
+        <section className="analysis-factors container" style={{ whiteSpace: "break-spaces" }}>
             
             { data.textblockTitle ?
             <FramerMotionAnimation type="h2" className="title text-center">

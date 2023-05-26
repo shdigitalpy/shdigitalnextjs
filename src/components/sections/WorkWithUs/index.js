@@ -7,7 +7,7 @@ import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 
 const WorkWithUs = () => {
     return (
-        <section className="work-with-us relative">
+        <section id="work-with-us" className="work-with-us relative">
             <Image src={holdingLaptop} alt="Work with us" className="bg-image" />
             <div className="container">
                 <FramerMotionAnimation

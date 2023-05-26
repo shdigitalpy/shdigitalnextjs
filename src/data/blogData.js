@@ -21,6 +21,10 @@ import processWebsiteAnalysis from '../data/processWebsiteAnalysis';
 import seoDauerImage from '../assets/images/seo/suchmaschinenoptimierung-dauer.jpg';
 import seoOnlineshop from '../assets/images/seo/online-shop-suchmaschinenoptimierung.jpg';
 import seoKostenImage from '../assets/images/seo/kosten-seo.webp';
+import seoStrategieImage from '../assets/images/seo/strategie.jpg';
+import DatenschutzImage from '../assets/images/content/neues-datenschutzgesetz-schweiz-webseite.webp';
+import seoRelaunchImage from '../assets/images/seo/relaunch-seo-web.webp'
+
 
 export default {
 
@@ -48,7 +52,7 @@ export default {
         alias: 'seo',
         posts: [
 
-            {
+              {
                 slug: 'was-ist-seo',
                 shortTitle: 'Was ist SEO',
                 title: 'Was ist SEO',
@@ -62,61 +66,22 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
-            
-
-            {
-                slug: 'online-shop-seo',
-                shortTitle: 'Mit Online-Shop SEO das Ranking bei Google verbessern',
-                title: 'Online-Shop SEO perfektionieren (inkl. Checklisten)',
-                description: 'Diese SEO-Massnahmen machen deinen Online-Shop bei Google erfolgreich! ✪Tipps zu Keywords & Shopsystem.',
-                image: seoOnlineshop,
-                imageAlt: 'Online Shop SEO',
-                readMoreUrl: '/seo/online-shop-seo',
-                date: '03.03.2022',
-                readingTime: '21min Lesedauer',
-                cta: 'Online Shop SEO',
+                {
+                 slug: 'relaunch-seo',
+                
+                shortTitle: 'Relaunch-SEO',
+                title: 'Relaunch-SEO: Checkliste für den perfekten Neustart Ihrer Webseite',
+                description: 'Es gibt gute Gründe für einen CMS-Wechsel, Redesign oder Rebranding. Bei einem Relaunch sollte SEO berücksichtigt werden, denn eine Website kann schnell Sichtbarkeit und Traffic verlieren.',
+                image: seoRelaunchImage,
+                imageAlt: 'Relaunch-SEO',
+                readMoreUrl: '/seo/relaunch-seo',
+                date: '15.03.2022',
+                update: '15.03.2022',
+                readingTime: '6min Lesedauer',
+                cta: 'Relaunch SEO',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                
-                
-            
-            },
-            {
-            slug: 'seo-kosten',
-                shortTitle: 'SEO-Kosten: Mit welchen Preisen sollte man rechnen',
-                title: 'SEO-Kosten: Mit welchen Preisen sollte man rechnen',
-                description: 'In Gesprächen mit potentiellen Kunden werden wir immer wieder mit der Frage konfrontiert, wie viel denn SEO kostet.\n\nZu Beginn einmal, SEO ist nicht kostenlos! Auch wenn Sie es selbst machen, kostet die Zeit, die Sie dafür aufwenden. Es gibt keine Tricks, mit denen man SEO automatisieren kann.',
-                image: seoKostenImage,
-                imageAlt: 'Wie viel kostet SEO',
-                readMoreUrl: '/seo/seo-kosten',
-                date: '9.03.2022',
-                readingTime: '10min Lesedauer',
-                cta: 'Was kostet SEO',
-                author: 'Sandro Huber',
-                authorImage: sandro,
-                
-               
-            
-            },
-            
-
-            {
-                slug: 'seo-dauer',
-                shortTitle: 'Wie lange dauert SEO',
-                title: 'Wie lange dauert SEO',
-                description: 'Sie fragen sich sicherlich, bis wann Resultate erzielt werden können bzw. wie lange es dauert. ',
-                image: seoDauerImage,
-                imageAlt: 'SEO Dauer',
-                readMoreUrl: '/seo/seo-dauer',
-                date: '9.12.2022',
-                readingTime: '10min Lesedauer',
-                cta: 'SEO Dauer',
-                author: 'Sandro Huber',
-                authorImage: sandro,
-                
-                
-            
-            },
+                },
             {
                 slug: 'seo-analyse',
                 shortTitle: 'SEO Analyse',
@@ -311,7 +276,66 @@ export default {
                 textanalyseQuote: 'Um schnelle Ergebnisse im Google Ranking zu erreichen, braucht es eine fundiertere Überprüfung der und die Einstufung der Prioritäten bezüglich',
                 textanalyseLink: 'was-ist-seo',
                 textanalyseLinktext: 'Suchmaschinenoptimierung'
-            }
+            },
+
+          
+            
+            {
+            slug: 'seo-kosten',
+                shortTitle: 'SEO-Kosten: Mit welchen Preisen sollte man rechnen',
+                title: 'SEO-Kosten: Mit welchen Preisen sollte man rechnen',
+                description: 'In Gesprächen mit potentiellen Kunden werden wir immer wieder mit der Frage konfrontiert, wie viel denn SEO kostet.\n\nZu Beginn einmal, SEO ist nicht kostenlos! Auch wenn Sie es selbst machen, kostet die Zeit, die Sie dafür aufwenden. Es gibt keine Tricks, mit denen man SEO automatisieren kann.',
+                image: seoKostenImage,
+                imageAlt: 'Wie viel kostet SEO',
+                readMoreUrl: '/seo/seo-kosten',
+                date: '9.03.2022',
+                readingTime: '10min Lesedauer',
+                cta: 'Was kostet SEO',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                
+               
+            
+            },
+
+            
+            
+            
+
+            {
+                slug: 'seo-dauer',
+                shortTitle: 'Wie lange dauert SEO',
+                title: 'Wie lange dauert SEO',
+                description: 'Sie fragen sich sicherlich, bis wann Resultate erzielt werden können bzw. wie lange es dauert. ',
+                image: seoDauerImage,
+                imageAlt: 'SEO Dauer',
+                readMoreUrl: '/seo/seo-dauer',
+                date: '9.12.2022',
+                readingTime: '10min Lesedauer',
+                cta: 'SEO Dauer',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                
+                
+            
+            },
+
+            {
+                slug: 'seo-strategie',
+                shortTitle: 'SEO-Strategie entwickeln',
+                title: 'Eine SEO-Strategie entwickeln',
+                description: 'Die 10 Bausteine einer SEO-Strategie. Wie Sie Ihre Webseite anhand eines ✅Projektplans strategisch optimieren können.',
+                image: seoStrategieImage,
+                imageAlt: 'Eine SEO-Strategie entwickeln',
+                readMoreUrl: '/seo/seo-strategie',
+                date: '15.09.2021',
+                update: '15.09.2021',
+                readingTime: '7min Lesedauer',
+                cta: 'SEO-Strategie',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+            },
+            
 
                 
         ],
@@ -323,70 +347,30 @@ export default {
         alias: 'content-marketing',
         posts: [
             {
-                slug: 'post-13',
-                shortTitle: 'Wie Lange Dauert SEO',
-                title: 'Email localization: the key to unlocking global engagement',
-                description: 'Ein Softwareunternehmen aus Zürich steigerte mit unserer Hilfe den Traffic der firmeneigenen Website um 5\'000% seit April 2021 und verzeichnete einen signifikanten Anstieg an Online-Anfragen.',
-                image: dummy1,
-                imageAlt: 'Blog post',
-                readMoreUrl: '/blog/content-marking/post1',
-                date: 'Mar 27, 2022',
-                readingTime: '5 min read',
-                cta: 'Mehr',
-
-                contentList: [
-
-                    {
-                        item: 'Was ist SEO',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Was sagt Google zur Dauer?',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: '3 Phasen eines SEO-Projekts',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Häufige Fehler bei der Dauer',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Wie lange dauert es im Detail?',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Weiterlesen interessante Beiträge',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Wie funktioniert Indexierung & Ranking?',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Wie erscheint man ganz vorne bei Google?',
-                        link: '#wasistseo'
-                    },
-                    {
-                        item: 'Was beeinflusst die Dauer von SEO massgeblich?',
-                        link: '#wasistseo'
-                    },
-
-
-                ],
+                slug: 'neues-datenschutzgesetz-schweiz-webseite',
+                shortTitle: 'Neues Datenschutzgesetz in der Schweiz',
+                title: 'Neues Datenschutzgesetz: Fakten für Webseitenbetreiber',
+                description: 'Wir haben für Sie die wichtigsten Aspekte des neuen Datenschutzgesetzes (nDSG) für Webseitenbetreiber zusammengestellt.',
+                image: DatenschutzImage,
+                imageAlt: 'Neues Datenschutzgesetz: Fakten',
+                date: '08.02.2023',
+                update: '10.02.2023',
+                readingTime: '3min Lesedauer',
+                cta: 'Neues Datenschutz - Gesetz in der Schweiz',
+                author: 'Sandro Huber',
+                authorImage: sandro,
             },
 
         ]
     },
     'saas-marketing': {
         name: 'Saas Marketing',
-        alias: 'saas-marketing',
+        alias: 'saas',
         posts: [
             {
                 slug: 'post-25',
-                shortTitle: 'Wie Lange Dauert SEO',
-                title: 'Best translation software tools for business growth',
+                shortTitle: 'Neues Datenschutzgesetz in der Schweiz',
+                title: 'Neues Datenschutzgesetz: Fakten für Webseitenbetreiber',
                 description: 'If you’re a business owner or manager looking to expand internationally the thought of managing the complexity of translation workflows, maintaining consistency, and. If you’re looking to expand your business for an international audience, you probably already know there are two ways to grow: paid channels and organic channels. One of the most.',
                 image: dummy2,
                 imageAlt: 'Blog post',
@@ -396,36 +380,31 @@ export default {
                 cta: 'Mehr'
             },
 
+             
+            
+
         ]
     },
     'ecommerce-marketing': {
         name: 'E-Commerce Marketing',
-        alias: 'ecommerce-marketing',
+        alias: 'ecommerce',
         posts: [
             {
-                slug: 'post-37',
-                shortTitle: 'Wie Lange Dauert SEO',
-                title: 'Email localization: the key to unlocking global engagement',
-                description: 'Ein Softwareunternehmen aus Zürich steigerte mit unserer Hilfe den Traffic der firmeneigenen Website um 5\'000% seit April 2021 und verzeichnete einen signifikanten Anstieg an Online-Anfragen.',
-                image: dummy1,
-                imageAlt: 'Blog post',
-                readMoreUrl: '/blog/ecommerce-marketing/post1',
-                date: 'Mar 27, 2022',
-                readingTime: '5 min read',
-                cta: 'Mehr'
-            },
-
-            {
-                slug: 'post-48',
-                shortTitle: 'Wie Lange Dauert SEO',
-                title: 'Email localization: the key to unlocking global engagement',
-                description: 'Ein Softwareunternehmen aus Zürich steigerte mit unserer Hilfe den Traffic der firmeneigenen Website um 5\'000% seit April 2021 und verzeichnete einen signifikanten Anstieg an Online-Anfragen.',
-                image: dummy1,
-                imageAlt: 'Blog post',
-                readMoreUrl: '/blog/ecommerce-marketing/post1',
-                date: 'Mar 27, 2022',
-                readingTime: '5 min read',
-                cta: 'Mehr'
+                slug: 'online-shop-seo',
+                shortTitle: 'Mit Online-Shop SEO das Ranking bei Google verbessern',
+                title: 'Online-Shop SEO perfektionieren (inkl. Checklisten)',
+                description: 'Diese SEO-Massnahmen machen deinen Online-Shop bei Google erfolgreich! ✪Tipps zu Keywords & Shopsystem.',
+                image: seoOnlineshop,
+                imageAlt: 'Online Shop SEO',
+                readMoreUrl: '/ecommerce/online-shop-seo',
+                date: '03.03.2022',
+                readingTime: '21min Lesedauer',
+                cta: 'Online Shop SEO',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                
+                
+            
             },
         ]
     }

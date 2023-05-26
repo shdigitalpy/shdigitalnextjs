@@ -131,7 +131,7 @@ export default function seoKosten() {
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                             >
-                                <p className="desc-sm mb-15">Wenn Sie den 
+                                <p className="desc-sm mb-15">
                                 Mit SEO können Sie die organische Sichtbarkeit des Onlineshops signifikant erhöhen. 
                                 Potenzielle Kunden finden die Produkte aus Ihrem Sortiment an verschiedenen Stellen bei der Recherche über ein Produkt. Dieser Ausbau der Reichweite bei Suchmaschinen skaliert die Websuchanfragen über die Zeit für den eigenen Shop drastisch.
                                 </p>
