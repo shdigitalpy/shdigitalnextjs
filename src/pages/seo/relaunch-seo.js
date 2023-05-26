@@ -420,7 +420,7 @@ const post =  {
                 ],
                 itemsCheckId: 'umsetzung',
                 textblockTitle: 'Umsetzung und Weiterleitung',
-                textBlock: 'Die technische Umsetzung sollte Hand-in-Hand gehen mit Abteilungen Marketing, Webentwicklung, usw. Wir empfehlen so viel wie möglich auf dem Testserver vorzubereiten. Das eine oder andere noch kurz "live" zu korrigieren, wird die Suchmaschine aus unserer Erfahrung noch mehr verwirren, als dass schon nicht genügend Verwirrung vorhanden ist.',
+                textBlock: 'Die technische Umsetzung sollte Hand-in-Hand gehen mit Abteilungen Marketing, Webentwicklung, usw. Wir empfehlen so viel wie möglich auf dem Testserver vorzubereiten. Das eine oder andere noch kurz live zu korrigieren, wird die Suchmaschine aus unserer Erfahrung noch mehr verwirren, als dass schon nicht genügend Verwirrung vorhanden ist.',
                 itemsLeftSubtitle1: 'Testumgebung',
                 itemsLeft: [
 
@@ -497,11 +497,11 @@ const seoFehlerListItems = [
     },
     {
         icon: checkMinusIcon,
-        text: 'Die "alte" Seite ist nicht mehr als Backup verfügbar',
+        text: 'Die bisherige Seite ist nicht mehr als Backup verfügbar',
     },
     {
         icon: checkMinusIcon,
-        text: 'Die "alte" Seite wird noch indexiert und es entsteht Duplicate-Content',
+        text: 'Die bisherige Seite wird noch indexiert und es entsteht Duplicate-Content',
     }
    
     
