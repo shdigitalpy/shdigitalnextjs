@@ -445,7 +445,7 @@ export default function contentMarketing() {
                                 Wikipedia Definition</a>
                             </h4>
                             <p className="desc-md">
-                                Inbound-Marketing (englisch inbound „eingehend“ oder "ankommend") ist eine Marketing-Methode, die darauf basiert, von potenziellen Kunden aktiv aufgesucht und gefunden zu werden. Die Kunden kommen auf einen zu. Es steht im Gegensatz zum klassischen Outbound-Marketing (Interruption marketing), bei dem Nachrichten an Kunden gesendet werden,[1] wie es per Postwurfsendung, Radiowerbung, Fernsehwerbung, Flyer, Spam, Telefonmarketing und klassischer Werbung üblich ist. Inbound-Marketing bedient sich neben Content-Marketing-Methodiken auch Maßnahmen zur Kundengewinnung und Kundenbindung wie E-Mail-Marketing, CRM und Lead Nurturing, die durch Marketing Automation unterstützt werden können.[2] Beim Inbound-Marketing treffen die beiden Aspekte Marketing und Vertrieb ("Sales") aufeinander. Die grundlegende Philosophie ist hierbei immer die Annahme, dass Kunden ein Problem haben, welches sie gelöst haben wollen und freiwillig zu einem Anbieter kommen. Das steht im Gegensatz zu bisherigen Vertriebsmethoden wie z. B. der "Kaltakquise".
+                                Inbound-Marketing (englisch inbound eingehend oder ankommend) ist eine Marketing-Methode, die darauf basiert, von potenziellen Kunden aktiv aufgesucht und gefunden zu werden. Die Kunden kommen auf einen zu. Es steht im Gegensatz zum klassischen Outbound-Marketing (Interruption marketing), bei dem Nachrichten an Kunden gesendet werden,[1] wie es per Postwurfsendung, Radiowerbung, Fernsehwerbung, Flyer, Spam, Telefonmarketing und klassischer Werbung üblich ist. Inbound-Marketing bedient sich neben Content-Marketing-Methodiken auch Maßnahmen zur Kundengewinnung und Kundenbindung wie E-Mail-Marketing, CRM und Lead Nurturing, die durch Marketing Automation unterstützt werden können.[2] Beim Inbound-Marketing treffen die beiden Aspekte Marketing und Vertrieb ("Sales") aufeinander. Die grundlegende Philosophie ist hierbei immer die Annahme, dass Kunden ein Problem haben, welches sie gelöst haben wollen und freiwillig zu einem Anbieter kommen. Das steht im Gegensatz zu bisherigen Vertriebsmethoden wie z. B. der "Kaltakquise".
 
                             </p>
                            
@@ -957,7 +957,7 @@ const post =  {
                 authorImage: sandro,
                 
 
-                introId: 'definition',
+                googleId: 'definition',
                 introTitle: 'Was ist Content Marketing?',
                 introDescription: 'Content Marketing ist eine Marketing Ausrichtung, bei der mithilfe von Inhalten eine klar definierte Zielgruppe angesprochen wird. Hierfür wird informierender und beratender Content publiziert, mit dem Ziel, die Zielgruppe vom eigenen Unternehmen zu überzeugen und als Kunden zu gewinnen.',
                 

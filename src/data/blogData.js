@@ -25,6 +25,8 @@ import seoStrategieImage from '../assets/images/seo/strategie.jpg';
 import DatenschutzImage from '../assets/images/content/datenschutz.jpg';
 import seoRelaunchImage from '../assets/images/seo/relaunch-seo-web.webp'
 import contentMarketingImage from '../assets/images/seo/was-ist-content-marketing.webp'
+import seotoolsImage from '../assets/images/seo/seo-tools.jpg'
+
 
 export default {
 
@@ -345,6 +347,24 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
+
+            {
+                slug: 'seo-tools-blog',
+                shortTitle: '5 SEO Tools, die man kennen sollte',
+                title: '5 SEO Tools, die man kennen sollte',
+                description: 'Haben Sie schon davon geträumt, mit einem SEO-Tool über Nacht ganz an die Spitze der Suchergebnisse zu kommen? In diesem Artikel erfahren Sie wie das geht. Natürlich nicht! Bei SEO geht es um Keywords, um Rankings und um Optimierungspotentiale, bei deren Themen-Umfang viele Marketingverantwortliche und Selbstumsetzer an Ihre Grenzen stossen.',
+                image: seotoolsImage,
+                imageAlt: '5 SEO Tools',
+                readMoreUrl: '/seo/seo-tools-blog',
+                date: '15.03.2022',
+                update: '15.03.2022',
+                readingTime: '2min Lesedauer',
+                cta: 'SEO-Tools',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                category: 'Ratgeber',
+                categoryUrl: '/blog',
+            }
             
 
                 

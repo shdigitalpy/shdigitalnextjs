@@ -193,7 +193,7 @@ export default function BlogPost() {
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }} >
                                 <p className="desc-sm">Heutzutage ist es so, dass der Großteil der Menschen seine Informationen online über Suchmaschinen beschafft. Insbesondere, wenn konkrete Themen oder Produkte recherchiert werden sollen, sind die Suchmaschinen die ersten und wichtigsten Anlaufpunkte.
-Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar:</p>
+                                        Prozentzahlen zu der Nutzung des Internets in der Schweiz legen diese Fakten dar:</p>
 
                                 <ListItems items={seoImportanceListItems} />
                                 <br />
