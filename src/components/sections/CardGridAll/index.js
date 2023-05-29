@@ -30,9 +30,7 @@ const CardGrid = ({ data, sectionid }) => {
                         <div className="card-description">
                              
                            { card.description }
-                            
-                                   
-                       
+
                         </div>
                         <div className="card-description">
                              

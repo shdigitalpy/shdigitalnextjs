@@ -24,7 +24,7 @@ import seoStudie from '../../assets/images/seo/studie.webp'
 import FAQ from "../../components/sections/FAQSEO";
 import Comments from "../../components/sections/Comments";
 import WorkWithUs from "../../components/sections/WorkWithUsKosten";
-import DatenschutzImage from '../../assets/images/content/neues-datenschutzgesetz-schweiz-webseite.webp';
+import DatenschutzImage from '../../assets/images/content/datenschutz.jpg';
 import vorlageImage from '../../assets/images/seo/2021-Vorlage-SEO-Strategie-Kunde.jpg';
 import upRightArrow from '../../assets/icons/up-right-arrow.svg';
 import MoreInterestingPostsDatenschutz from "../../components/sections/MoreInterestingPostsDatenschutz";

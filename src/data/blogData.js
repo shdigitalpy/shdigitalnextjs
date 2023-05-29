@@ -22,9 +22,9 @@ import seoDauerImage from '../assets/images/seo/suchmaschinenoptimierung-dauer.j
 import seoOnlineshop from '../assets/images/seo/online-shop-suchmaschinenoptimierung.jpg';
 import seoKostenImage from '../assets/images/seo/kosten-seo.webp';
 import seoStrategieImage from '../assets/images/seo/strategie.jpg';
-import DatenschutzImage from '../assets/images/content/neues-datenschutzgesetz-schweiz-webseite.webp';
+import DatenschutzImage from '../assets/images/content/datenschutz.jpg';
 import seoRelaunchImage from '../assets/images/seo/relaunch-seo-web.webp'
-
+import contentMarketingImage from '../assets/images/seo/was-ist-content-marketing.webp'
 
 export default {
 
@@ -43,6 +43,20 @@ export default {
                 readMoreUrl: '/blog/resources/post1',
 
                 cta: 'Zur Onpage Analyse'
+            },
+            {
+               slug: 'neues-datenschutzgesetz-schweiz-webseite',
+                shortTitle: 'Neues Datenschutzgesetz in der Schweiz',
+                title: 'Neues Datenschutzgesetz: Fakten für Webseitenbetreiber',
+                description: 'Wir haben für Sie die wichtigsten Aspekte des neuen Datenschutzgesetzes (nDSG) für Webseitenbetreiber zusammengestellt.',
+                image: DatenschutzImage,
+                imageAlt: 'Neues Datenschutzgesetz: Fakten',
+                date: '08.02.2023',
+                update: '10.02.2023',
+                readingTime: '3min Lesedauer',
+                cta: 'Neues Datenschutzgesetz in der Schweiz',
+                author: 'Sandro Huber',
+                authorImage: sandro,
             },
         ]
     },
@@ -298,10 +312,6 @@ export default {
             
             },
 
-            
-            
-            
-
             {
                 slug: 'seo-dauer',
                 shortTitle: 'Wie lange dauert SEO',
@@ -346,45 +356,27 @@ export default {
         name: 'Content Marketing',
         alias: 'content-marketing',
         posts: [
+
             {
-                slug: 'neues-datenschutzgesetz-schweiz-webseite',
-                shortTitle: 'Neues Datenschutzgesetz in der Schweiz',
-                title: 'Neues Datenschutzgesetz: Fakten für Webseitenbetreiber',
-                description: 'Wir haben für Sie die wichtigsten Aspekte des neuen Datenschutzgesetzes (nDSG) für Webseitenbetreiber zusammengestellt.',
-                image: DatenschutzImage,
-                imageAlt: 'Neues Datenschutzgesetz: Fakten',
-                date: '08.02.2023',
-                update: '10.02.2023',
-                readingTime: '3min Lesedauer',
-                cta: 'Neues Datenschutz - Gesetz in der Schweiz',
+            slug: 'content-marketing',
+                shortTitle: 'Ein Content Marketing Ratgeber',
+                title: 'Ein Content Marketing Ratgeber',
+                description: 'In diesem umfassenden Guide erklären wir die Grundlagen von Content Marketing und ob es wichtig ist. Und wie es anhand einiger Tipps im Marketing eingesetzt werden sollte.',
+                image: contentMarketingImage,
+                imageAlt: 'Content Marketing',
+                readMoreUrl: '/content-marketing/content-marketing',
+                date: '08.07.2022',
+                update: '08.07.2022',
+                readingTime: '15min Lesedauer',
+                cta: 'Was ist Content Marketing',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-            },
-
-        ]
-    },
-    'saas-marketing': {
-        name: 'Saas Marketing',
-        alias: 'saas',
-        posts: [
-            {
-                slug: 'post-25',
-                shortTitle: 'Neues Datenschutzgesetz in der Schweiz',
-                title: 'Neues Datenschutzgesetz: Fakten für Webseitenbetreiber',
-                description: 'If you’re a business owner or manager looking to expand internationally the thought of managing the complexity of translation workflows, maintaining consistency, and. If you’re looking to expand your business for an international audience, you probably already know there are two ways to grow: paid channels and organic channels. One of the most.',
-                image: dummy2,
-                imageAlt: 'Blog post',
-                readMoreUrl: '/blog/saas-marketing/post1',
-                date: 'Jan 30, 2022',
-                readingTime: '12 min read',
-                cta: 'Mehr'
-            },
-
-             
+            }
             
 
         ]
     },
+    
     'ecommerce-marketing': {
         name: 'E-Commerce Marketing',
         alias: 'ecommerce',
