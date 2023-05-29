@@ -391,7 +391,7 @@ export default function seoTools() {
                                 <h4 className="content-title">Beste Funktionen</h4>
                                 <p className="desc-md mt-15">deutschsprachige Version
                                     / Übersicht mit Prozentwerten nach Bereich / Sehr übersichtliche Checkliste / Alle relevanten technischen Punkte
-                                    / Auch Content-KPI's vorhanden
+                                    / Auch Content-KPIs vorhanden
 
                                 </p>
 

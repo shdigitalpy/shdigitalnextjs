@@ -23,10 +23,10 @@ const ContentListWithImage = ({ data }) => {
                         <h2 className="title">{ title }</h2>
                         <p className="sub-title">{ subTitle }</p>
                     </div>
-                    <Link href={viewAllLinkUrl} className="view-all-link flex items-center">
+                    <div className="view-all-link flex items-center">
                         <Link href="/blog" title="Ratgeber"><p>Zum Ratgeber</p></Link>
-                        <Image src={rightArrow} alt="icon" className="redirect-icon" />
-                    </Link>
+                        <Link href={viewAllLinkUrl}><Image src={rightArrow} alt="icon" className="redirect-icon" /></Link>
+                    </div>
                 </div>
             </FramerMotionAnimation>
 
