@@ -26,6 +26,7 @@ import DatenschutzImage from '../assets/images/content/datenschutz.jpg';
 import seoRelaunchImage from '../assets/images/seo/relaunch-seo-web.webp'
 import contentMarketingImage from '../assets/images/seo/was-ist-content-marketing.webp'
 import seotoolsImage from '../assets/images/seo/seo-tools.jpg'
+import tiktokImage from '../assets/images/tiktok/tiktok-nutzerzahlen.svg'
 
 
 export default {
@@ -62,6 +63,8 @@ export default {
             },
         ]
     },
+
+    
 
     'seo': {
         name: 'SEO',
@@ -394,6 +397,32 @@ export default {
             }
             
 
+        ]
+    },
+
+    'saas': {
+        name: 'Saas Marketing',
+        alias: 'saas',
+        posts: [
+
+           
+            {
+               slug: 'tiktok-nutzer',
+                shortTitle: 'TikTok Zahlen 2022',
+                title: 'TikTok Zahlen 2022',
+                description: '',
+                image: tiktokImage,
+                imageAlt: 'TikTok Zahlen 2022',
+                readMoreUrl: '/seo/seo-kosten',
+                date: '11.04.2022',
+                update: '11.04.2022',
+                readingTime: '7min Lesedauer',
+                cta: 'TikTok Nutzerzahlen',
+                category: 'Ratgeber',
+                categoryUrl: '/blog',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+            },
         ]
     },
     
