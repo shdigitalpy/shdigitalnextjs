@@ -27,7 +27,7 @@ import seoRelaunchImage from '../assets/images/seo/relaunch-seo-web.webp'
 import contentMarketingImage from '../assets/images/seo/was-ist-content-marketing.webp'
 import seotoolsImage from '../assets/images/seo/seo-tools.jpg'
 import tiktokImage from '../assets/images/tiktok/tiktok-nutzerzahlen.svg'
-
+import videoSEOImage from '../assets/images/seo/videos-im-seo.jpg'
 
 export default {
 
@@ -85,6 +85,21 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
+            {
+            slug: 'video-seo',
+                shortTitle: 'Video-SEO für eine bessere Reichweite',
+                title: 'Video-SEO für eine bessere Reichweite',
+                description: 'Wie nutzt man SEO, um erfolgreicher bei Suchmaschinen und YouTube platziert zu werden.',
+                image: videoSEOImage,
+                imageAlt: 'Video SEO',
+                readMoreUrl: '/seo/video-seo',
+                date: '25.03.2022',
+                update: '25.03.2022',
+                readingTime: '12min Lesedauer',
+                cta: 'Video SEO',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                },
                 {
                  slug: 'relaunch-seo',
                 
