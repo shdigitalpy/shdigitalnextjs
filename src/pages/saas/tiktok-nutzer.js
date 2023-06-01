@@ -26,6 +26,58 @@ import faqSeoKostenData from '../../data/faqSeoKostenData';
 import tiktokcomImage from '../../assets/images/tiktok/social-media-populaerste-plattformen.webp'
 
 
+const hundert = 100000;
+const number1 = 1600000000;
+const number2 = 1250000000;
+const number3 = 1000000000;
+const follower = 100000
+const follower2 = 5000
+const follower3 = 1000
+
+const formattedhundert = hundert.toLocaleString('en-CH', {
+    style: 'currency',
+    currency: 'CHF',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+
+const formattedhundertUSD = hundert.toLocaleString('en-CH', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+
+const formattedNumber1 = number1.toLocaleString('en-CH', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+const formattedNumber2 = number2.toLocaleString('en-CH', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+const formattedNumber3 = number3.toLocaleString('en-CH', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+const formattedFollower = follower.toLocaleString('en-CH', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+const formattedFollower2 = follower2.toLocaleString('en-CH', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+const formattedFollower3 = follower3.toLocaleString('en-CH', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+
 export default function tiktokNutzer() {
     
 
@@ -75,7 +127,7 @@ export default function tiktokNutzer() {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-15 md:mb-15">
-                       TikTok ist als Video-Plattform 2016 in China entstanden. Merkmal der App sind mit dem Smartphone gedrehte Kurzvideos. Der Slogan "Make every second count" reflektiert sich in den meist nur 15 Sekunden dauernden Handy-Videos, die Nutzer mit Musik veredeln.
+                       TikTok ist als Video-Plattform 2016 in China entstanden. Merkmal der App sind mit dem Smartphone gedrehte Kurzvideos. Der Slogan <b>Make every second count</b> reflektiert sich in den meist nur 15 Sekunden dauernden Handy-Videos, die Nutzer mit Musik veredeln.
                         </FramerMotionAnimation>
                         
 
@@ -83,25 +135,7 @@ export default function tiktokNutzer() {
                     </div>
                 </section>
 
-                <section id="intro" className="section-wrapper keywords">
-                    <div className="container">
-                        <div className="title-wrapper">
-                            <FramerMotionAnimation
-                                type="h2" className="title text-center">
-                                Was ist TikTok und wann ist es entstanden?
-                            </FramerMotionAnimation>
-                        </div>
-                        <FramerMotionAnimation
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            type="p" className="desc-md mb-15 md:mb-15">
-                       TikTok ist als Video-Plattform 2016 in China entstanden. Merkmal der App sind mit dem Smartphone gedrehte Kurzvideos. Der Slogan "Make every second count" reflektiert sich in den meist nur 15 Sekunden dauernden Handy-Videos, die Nutzer mit Musik veredeln.
-                        </FramerMotionAnimation>
-                        
-
-                       
-                    </div>
-                </section>
+               
 
                 <section className="section-wrapper keywords">
                     <div className="container">
@@ -181,7 +215,7 @@ export default function tiktokNutzer() {
 
                                     </h4>
                                     <p className="desc-md mt-15">
-                                   Um auf der chinesischen App Einnahmen von USD 100'000 zu generieren, benötigt es 10'000 Follower sowie 270 Millionen Aufrufe.
+                                   Um auf der chinesischen App Einnahmen von {formattedhundertUSD} zu generieren, benötigt es zehntausend Follower sowie 270 Millionen Aufrufe.
 
 
                                     </p>
@@ -312,14 +346,14 @@ export default function tiktokNutzer() {
                             
                             <tr>
                             <td class="tg-1oat">2022</td>
-                            <td class="tg-1oat">1'600'000'000</td>
+                            <td class="tg-1oat">{formattedNumber1}</td>
                             <td class="tg-1oat">28%</td>
                             
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">2021 </td>      
-                            <td class="tg-1oat">1'250'000'000</td>
+                            <td class="tg-1oat">{formattedNumber2}</td>
                             <td class="tg-1oat">25%</td>
                             
                             
@@ -327,7 +361,7 @@ export default function tiktokNutzer() {
 
                           <tr>
                             <td class="tg-1oat">2020</td>                       
-                            <td class="tg-1oat">1'000'000'000</td>
+                            <td class="tg-1oat">{formattedNumber3}</td>
                             <td class="tg-1oat">-</td>                          
                             
                             
@@ -512,7 +546,7 @@ export default function tiktokNutzer() {
 
                             <p className="desc-md mb-15 md:mb-15">Beim Vergleich zu anderen Videoformaten wie z.B. digitale Videos, TV, usw. will man mit den <a href="https://ads.tiktok.com/" target="__blank" title="Ads">Ads</a> 23% besser sein als Werbung in diesen anderen Formaten.  </p>
 
-                            <p className="desc-md mb-15 md:mb-15">Wir teilen diese Auffassung, da die Ersteller der Videos auf TikTok eine Art von "Kurzgeschichte" darstellen müssen. Im Gegensatz dazu werden zum Beispiel auf Instagram oftmals Fotos aus dem vermeintlich coolsten Alltag publiziert. </p>
+                            <p className="desc-md mb-15 md:mb-15">Wir teilen diese Auffassung, da die Ersteller der Videos auf TikTok eine Art von Kurzgeschichte darstellen müssen. Im Gegensatz dazu werden zum Beispiel auf Instagram oftmals Fotos aus dem vermeintlich coolsten Alltag publiziert. </p>
 
                             <p className="desc-md mb-15 md:mb-15">Die chinesische Video-App hat die höchste Verweildauer <a href="https://www.statista.com/statistics/579411/top-us-social-networking-apps-ranked-by-session-length/" title="bei den Nutzern in den USA" target="__blank">bei den Nutzern in den USA</a>. Im Durchschnitt pro Sitzung rund 10 Minuten. Facebook als Vergleich hat etwas weniger als 5 Minuten. TikTok-Marketing kann also aus Sicht der Aufmerksamkeit eine sehr effektive Werbeform sein.</p>
 
@@ -598,23 +632,23 @@ export default function tiktokNutzer() {
 
                          <tr>
                             <td class="tg-1oat">YouTube</td>
-                            <td class="tg-1oat">100'000 Subscribers, 24 Millionen Aufrufe</td>
-                            <td class="tg-1oat">für USD 100'000</td>
+                            <td class="tg-1oat">{formattedFollower} Subscribers, 24 Millionen Aufrufe</td>
+                            <td class="tg-1oat">für {formattedhundertUSD}</td>
                             
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">Instagram</td>
-                            <td class="tg-1oat">5'000 Follower und 308 bezahlte Posts</td>
-                            <td class="tg-1oat">für USD 100'000</td>
+                            <td class="tg-1oat">{formattedFollower2} Follower und 308 bezahlte Posts</td>
+                            <td class="tg-1oat">für {formattedhundertUSD}</td>
                          
                             
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">TikTok</td>
-                            <td class="tg-1oat">10'000 Follower und 270 Millionen Aufrufe</td>
-                            <td class="tg-1oat">für USD 100'000 </td>
+                            <td class="tg-1oat">{formattedFollower3} Follower und 270 Millionen Aufrufe</td>
+                            <td class="tg-1oat">für {formattedhundertUSD} </td>
                 
                             
                           </tr>
