@@ -28,6 +28,8 @@ import contentMarketingImage from '../assets/images/seo/was-ist-content-marketin
 import seotoolsImage from '../assets/images/seo/seo-tools.jpg'
 import tiktokImage from '../assets/images/tiktok/tiktok-nutzerzahlen.svg'
 import videoSEOImage from '../assets/images/seo/videos-im-seo.jpg'
+import localSEOImage from '../assets/images/seo/local-tipps.jpg'
+
 
 export default {
 
@@ -85,6 +87,21 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
+            {
+            slug: 'local-seo',
+                shortTitle: 'Local SEO für lokale Unternehmen',
+                title: 'Local SEO für lokale Unternehmen (Tipps & Checkliste)',
+                description: 'Innert weniger Sekunden können Sie in der heutigen Zeit über die Suchmaschine Google einen lokalen Service finden. Gemäss der Mobile Search Trends Studie von Google beziehen sich ein Drittel der Suchanfragen auf eine Suche bezüglich einer lokalen Dienstleistung.',
+                image: localSEOImage,
+                imageAlt: 'Local SEO',
+                readMoreUrl: '/seo/local-seo',
+                date: '26.04.2021',
+                update: '26.04.2021',
+                readingTime: '11min Lesedauer',
+                cta: 'Local SEO',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                },
             {
             slug: 'video-seo',
                 shortTitle: 'Video-SEO für eine bessere Reichweite',
