@@ -151,7 +151,7 @@ export default function videoSEO() {
                                 whileInView={{ opacity: 1, x: 0 }} >
                                <p className="desc-sm mb-15">                     
                                 Zum Einbetten der Videos auf der Webseite kommt es auf das Content-Management-System an, welches verwendet wird. In den meisten Fällen erfolgt das 
-                                Einbinden der Videos auf den Webseiten mithilfe von <b>"iframes"</b>.
+                                Einbinden der Videos auf den Webseiten mithilfe von <b>iframes</b>.
                                 </p>
 
                                 <p className="desc-sm mb-15">Videos sollten über späteres Nachladen (engl. lazy load) implementiert werden, sofern sich das Video nach dem Laden der Webseite nicht im sichtbaren Bereich für den Nutzer befindet.

@@ -4,13 +4,13 @@ import readingBookIcon from '../assets/icons/reading-book.svg';
 
 export default {
     title: '5 Tricks für YouTube-SEO',
-    description: 'Man muss also Nutzer für ein Video und im besten Fall für ein "Like" des Kanals motivieren. Aus dieser Interaktion gibt es dann positive Signale für den YouTube Algorithmus. Durch dieses positive Signal wird man höher positioniert.',
+    description: 'Man muss also Nutzer für ein Video und im besten Fall für ein Like des Kanals motivieren. Aus dieser Interaktion gibt es dann positive Signale für den YouTube Algorithmus. Durch dieses positive Signal wird man höher positioniert.',
     cardsData: [
 
         {
             icon: implementationIcon,
             title: 'Das populäre Thema wählen',
-            description: 'Um ein passendes Thema bei YouTube zu finden, gibt es verschiedene Wege. Nehmen wir an, man erstellt ein Video zu Pflanzen. Man gibt in der Suchleiste von YouTube "Pflanzen" ein und schaut, was YouTube vorschlägt:',
+            description: 'Um ein passendes Thema bei YouTube zu finden, gibt es verschiedene Wege. Nehmen wir an, man erstellt ein Video zu Pflanzen. Man gibt in der Suchleiste von YouTube Pflanzen ein und schaut, was YouTube vorschlägt:',
             description2: 'Untenstehende Auswahl kann bei der Themenfindung helfen und gleichzeitig weiss man, was YouTube zum Thema als relevant einstuft. Die Wahl eines vorgeschlagenen Titels ist sicherlich nicht falsch.\n\nTipp: Anhand der Popularität kann man die Liste sortieren, um die besten Videos zum Thema zu finden.'
             
         },
