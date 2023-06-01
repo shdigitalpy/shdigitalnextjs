@@ -87,21 +87,25 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
+
             {
-            slug: 'local-seo',
-                shortTitle: 'Local SEO für lokale Unternehmen',
-                title: 'Local SEO für lokale Unternehmen (Tipps & Checkliste)',
-                description: 'Innert weniger Sekunden können Sie in der heutigen Zeit über die Suchmaschine Google einen lokalen Service finden. Gemäss der Mobile Search Trends Studie von Google beziehen sich ein Drittel der Suchanfragen auf eine Suche bezüglich einer lokalen Dienstleistung.',
-                image: localSEOImage,
-                imageAlt: 'Local SEO',
-                readMoreUrl: '/seo/local-seo',
-                date: '26.04.2021',
-                update: '26.04.2021',
-                readingTime: '11min Lesedauer',
-                cta: 'Local SEO',
+                slug: 'seo-dauer',
+                shortTitle: 'Wie lange dauert SEO',
+                title: 'Wie lange dauert SEO',
+                description: 'Sie fragen sich sicherlich, bis wann Resultate erzielt werden können bzw. wie lange es dauert. ',
+                image: seoDauerImage,
+                imageAlt: 'SEO Dauer',
+                readMoreUrl: '/seo/seo-dauer',
+                date: '9.12.2022',
+                readingTime: '10min Lesedauer',
+                cta: 'SEO Dauer',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                },
+                
+                
+            
+            },
+            
             {
             slug: 'video-seo',
                 shortTitle: 'Video-SEO für eine bessere Reichweite',
@@ -349,23 +353,7 @@ export default {
             
             },
 
-            {
-                slug: 'seo-dauer',
-                shortTitle: 'Wie lange dauert SEO',
-                title: 'Wie lange dauert SEO',
-                description: 'Sie fragen sich sicherlich, bis wann Resultate erzielt werden können bzw. wie lange es dauert. ',
-                image: seoDauerImage,
-                imageAlt: 'SEO Dauer',
-                readMoreUrl: '/seo/seo-dauer',
-                date: '9.12.2022',
-                readingTime: '10min Lesedauer',
-                cta: 'SEO Dauer',
-                author: 'Sandro Huber',
-                authorImage: sandro,
-                
-                
             
-            },
 
             {
                 slug: 'seo-strategie',
@@ -382,6 +370,22 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
+
+            {
+            slug: 'local-seo',
+                shortTitle: 'Local SEO für lokale Unternehmen',
+                title: 'Local SEO für lokale Unternehmen (Tipps & Checkliste)',
+                description: 'Innert weniger Sekunden können Sie in der heutigen Zeit über die Suchmaschine Google einen lokalen Service finden. Gemäss der Mobile Search Trends Studie von Google beziehen sich ein Drittel der Suchanfragen auf eine Suche bezüglich einer lokalen Dienstleistung.',
+                image: localSEOImage,
+                imageAlt: 'Local SEO',
+                readMoreUrl: '/seo/local-seo',
+                date: '26.04.2021',
+                update: '26.04.2021',
+                readingTime: '11min Lesedauer',
+                cta: 'Local SEO',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+                },
 
             {
                 slug: 'seo-tools-blog',

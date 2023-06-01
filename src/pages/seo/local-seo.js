@@ -114,7 +114,7 @@ export default function localSEO() {
                                 whileInView={{ opacity: 1, x: 0 }}
                             >
                                
-                                    <p className="desc-sm mb-15">Für die <a href="#betroffeneunternehmen" alt="folgenden Unternehmen">Unternehmen</a> weiter unten sollte eine <strong>lokale Marketingstrategie</strong> also ganz oben auf der ”To-do-Liste” stehen. Profitieren Sie von unseren angebotenen Dienstleistungen in diesem Bereich, damit Sie langfristig alle Probleme auf Ihrer mobilen Seite beheben können.
+                                    <p className="desc-sm mb-15">Für die <a href="#betroffeneunternehmen" alt="folgenden Unternehmen">Unternehmen</a> weiter unten sollte eine <strong>lokale Marketingstrategie</strong> also ganz oben auf der To-do-Liste stehen. Profitieren Sie von unseren angebotenen Dienstleistungen in diesem Bereich, damit Sie langfristig alle Probleme auf Ihrer mobilen Seite beheben können.
                                 </p>
                             </FramerMotionAnimation>
                             
@@ -225,7 +225,7 @@ export default function localSEO() {
                                 
                             </FramerMotionAnimation>
                         </div>                   
-                                  <p className="desc-sm mb-15">Ein grosser Vorteil bei Local SEO ist, dass man keine grossen Ressourcen benötigt, um gute Ergebnisse erzielen zu können. Es benötigt die richtigen Schritte, welche dann vergleichsweise "einfach" ausgeführt werden können. Die Suchmaschinen machen die Suchergebnisse davon abhängig, ob standortbezogene Suchwörter verwendet werden oder ermitteln anhand der IP-Adresse die nächstmöglichen Anbieter.
+                                  <p className="desc-sm mb-15">Ein grosser Vorteil bei Local SEO ist, dass man keine grossen Ressourcen benötigt, um gute Ergebnisse erzielen zu können. Es benötigt die richtigen Schritte, welche dann vergleichsweise einfach ausgeführt werden können. Die Suchmaschinen machen die Suchergebnisse davon abhängig, ob standortbezogene Suchwörter verwendet werden oder ermitteln anhand der IP-Adresse die nächstmöglichen Anbieter.
 
                                 </p>
 
@@ -286,7 +286,7 @@ export default function localSEO() {
                              <FramerMotionAnimation
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }} >
-                                <p className="desc-sm mb-15">Das folgende Bild zeigt das Ergebnis der lokalen Suche einer "Buchhandlung" in "Zürich".
+                                <p className="desc-sm mb-15">Das folgende Bild zeigt das Ergebnis der lokalen Suche einer Buchhandlung in Zürich.
                                 </p>
                                 
                             </FramerMotionAnimation>
@@ -322,13 +322,6 @@ export default function localSEO() {
                                 
                             </FramerMotionAnimation>
 
-                             <FramerMotionAnimation
-                                initial={{ opacity: 0, x: -50 }}
-                                whileInView={{ opacity: 1, x: 0 }} >
-                                <p className="desc-sm mb-15">Das folgende Bild zeigt das Ergebnis der lokalen Suche einer "Buchhandlung" in "Zürich".
-                                </p>
-                                
-                            </FramerMotionAnimation>
                             <FramerMotionAnimation
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -341,7 +334,20 @@ export default function localSEO() {
                                 whileInView={{ opacity: 1, x: 0 }} >
                                 <p className="desc-sm mb-15">
 
-                                Unsere Methoden der Keyword-Recherche sind aufbauend, das bedeutet wir beginnen mit einem Haupt-Keyword z.B. "Buchhandlung" und bauen darauf auf. In diesem Fall scheint der Begriff "Buchhandlung" + "Ort" gängig zu sein. Man kann mithilfe von verschiedenen Methoden die Liste erweitern z.B. Keyword-Modifiers machen bei der lokalen Suche sicherlich ebenfalls Sinn. Ein Beispiel dazu kann sein "günstige Buchhandlung", obwohl womöglich dann eher "Bücher günstig" infrage kommt. Dies müsste im Detail analysiert und die Keyword Varianten mit Synonymen erweitert werden. Hilfreiche Tools dabei sind beispielsweise das Keyword Tool von ahrefs.com, welches "Having same terms" Keywords ausspuckt - um nur eines zu erwähnen. Weitere Informationen zu Keywords finden Sie auch in unseren <Link href="/seo/was-ist-seo" title="SEO">SEO</Link> Guide.
+                                Unsere Methoden der Keyword-Recherche sind aufbauend, das bedeutet wir beginnen mit einem Haupt-Keyword z.B.
+                                {'Buchhandlung'} und bauen darauf auf. 
+                                In diesem Fall scheint der Begriff {'Buchhandlung'} + {'Ort'} gängig zu sein. 
+                                Man kann mithilfe von verschiedenen Methoden 
+                                die Liste erweitern z.B. Keyword-Modifiers machen 
+                                bei der lokalen Suche sicherlich ebenfalls Sinn. 
+                                Ein Beispiel dazu kann sein {'günstige Buchhandlung'}, 
+                                obwohl womöglich dann eher {'Bücher günstig'} infrage kommt. 
+                                Dies müsste im Detail analysiert und die Keyword Varianten 
+                                mit Synonymen erweitert werden. Hilfreiche Tools dabei sind 
+                                beispielsweise das Keyword Tool von ahrefs.com, welches {'Having same terms'} Keywords ausspuckt - um 
+                                nur eines zu erwähnen. Weitere Informationen 
+                                zu Keywords finden Sie auch in 
+                                unseren <Link href="/seo/was-ist-seo" title="SEO">SEO</Link> Guide.
                             </p>
                                 
                             </FramerMotionAnimation>
@@ -379,7 +385,7 @@ export default function localSEO() {
 
                             <p className="desc-sm mb-15">
 
-                                 Wo kauft man” + “in meiner Nähe
+                                 Wo kauft man + in meiner Nähe
 
 
 
@@ -736,7 +742,7 @@ const rankingListItems = [
     },
     {
         icon: checkCircleIcon,
-        text: 'Social Media Check-ins: Wenn die Konsumenten auf den Social Media Profilen sich bei Ihrer Firma "einchecken" bzw. den Besuch an Ihrem Standort "markieren"',
+        text: 'Social Media Check-ins: Wenn die Konsumenten auf den Social Media Profilen sich bei Ihrer Firma einchecken bzw. den Besuch an Ihrem Standort markieren',
     },
 
     ]
