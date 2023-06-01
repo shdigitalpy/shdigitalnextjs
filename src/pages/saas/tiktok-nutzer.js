@@ -616,7 +616,7 @@ export default function tiktokNutzer() {
                             </FramerMotionAnimation>
                         </div>
 
-                   <p className="desc-md mb-15 md:mb-15">Auf Basis dieses <a href="https://www.cnbc.com/2021/04/30/how-much-money-you-can-make-off-social-media-following-calculator.html" title="Artikels">Artikels</a> haben wir untersucht, wie viel Einnahmen es auf den verschiedenen Plattformen benötigt, um USD 100'000 zu generieren:
+                   <p className="desc-md mb-15 md:mb-15">Auf Basis dieses <a href="https://www.cnbc.com/2021/04/30/how-much-money-you-can-make-off-social-media-following-calculator.html" title="Artikels">Artikels</a> haben wir untersucht, wie viel Einnahmen es auf den verschiedenen Plattformen benötigt, um USD 100 000 zu generieren:
                     </p>
 
                     <table class="tg">
