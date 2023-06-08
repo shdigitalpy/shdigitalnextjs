@@ -81,7 +81,7 @@ export default function AGB() {
         <br />
         <h2>5. Mitarbeiterschutz und Abwerbeverbot</h2>
         <p>5.1 Mitarbeiter: Der Vertragspartner verpflichtet sich, weder unmittelbar noch mittelbar Mitarbeiter von SH Digital oder von ihr eingesetzte Dritte abzuwerben und direkte Vertragsbeziehungen zu ihnen zu begründen. Vorstehendes Abwerbungsverbot gilt mit Vertragsschluss und wirkt fort für die Dauer von einem Jahr ab Beendigung der Vertragsbeziehung.</p>
-        <p>5.2 Vertragsstrafe: Verletzt der Vertragspartner diese Verpflichtung, so zahlt er in jedem Falle der Verletzung eine Vertragsstrafe in Höhe von CHF 100'000.00. Das Recht, Schadensersatz und/oder Unterlassung zu verlangen bleibt hiervon unberührt. Die Vertragsstrafe wird auf einen etwaigen Schadensersatzanspruch angerechnet.</p>
+        <p>5.2 Vertragsstrafe: Verletzt der Vertragspartner diese Verpflichtung, so zahlt er in jedem Falle der Verletzung eine Vertragsstrafe in Höhe von CHF 100000.00. Das Recht, Schadensersatz und/oder Unterlassung zu verlangen bleibt hiervon unberührt. Die Vertragsstrafe wird auf einen etwaigen Schadensersatzanspruch angerechnet.</p>
         <br />
         <h2>6. Anwendbares Recht / Gerichtsstand</h2>
         <p>6.1 Schweizer Recht: Anwendbar ist ausschliesslich schweizerisches Recht. Die Bestimmungen des Übereinkommens der
