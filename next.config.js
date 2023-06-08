@@ -68,7 +68,65 @@ const nextConfig = {
         permanent: true,
       },
 
-      
+      {
+        source: '/leistungen/seo-analyse-paket',
+        destination: '/resources/onpage-analyse',
+        permanent: true,
+      },
+      {
+        source: '/seo-agentur-fuer-kleine-unternehmen',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/ratgeber/seo-kosten',
+        destination: '/seo/seo-kosten',
+        permanent: true,
+      },
+
+      {
+        source: '/ratgeber/relaunch-seo',
+        destination: '/seo/relaunch-seo',
+        permanent: true,
+      },
+
+      {
+        source: '/ratgeber/online-shop-seo',
+        destination: '/ecommerce/online-shop-seo',
+        permanent: true,
+      },
+
+      {
+        source: '/seo-analyse',
+        destination: '/seo/seo-analyse',
+        permanent: true,
+      },
+
+      {
+        source: '/local-seo',
+        destination: '/seo/local-seo',
+        permanent: true,
+      },
+
+      {
+        source: '/tiktok-nutzer',
+        destination: '/saas/tiktok-nutzer',
+        permanent: true,
+      },
+
+      {
+        source: '/onlineshop-erstellen-lassen',
+        destination: '/angebot',
+        permanent: true,
+      },
+
+      {
+        source: '/seo-tools/serp-overlap-tool',
+        destination: '/seo/seo-tools',
+        permanent: true,
+      },
+
+          
 
     ]
   },

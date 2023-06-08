@@ -2,7 +2,9 @@ import logo from '../assets/images/logo.png';
 import twitterIcon from '../assets/icons/twitter.svg';
 import facebookIcon from '../assets/icons/facebook.svg';
 import instagramIcon from '../assets/icons/instagram.svg';
-import googlePartner from '../assets/images/mainpage/google-partner.webp';
+import googlePartner from '../assets/images/google-partners.webp';
+import leadinfo from '../assets/images/mainpage/leadinfo.webp';
+import semrush from '../assets/images/mainpage/partner-badge.webp';
 import swissMadeSoftware from '../assets/images/mainpage/swiss-made-software.webp';
 import linkedinIcon from '../assets/icons/linkedin.svg';
 
@@ -82,6 +84,32 @@ export default {
             name: 'Swiss made software',
             image: swissMadeSoftware
         },
+        {
+            name: 'SEMrush Partner',
+            image: semrush
+        },
+        {
+            name: 'Leadinfo Partner',
+            image: leadinfo
+        },
     ],
-    copyright: 'SH Digital © 2023 | Impressum | Datenschutz | AGB | Kontakt'
+    copyright: {
+        description: 'SH Digital © 2023',
+        items: [
+            {
+                name: 'Impressum ',
+                url: '/impressum'
+            },
+            {
+                name: 'Datenschutz ',
+                url: '/datenschutz'
+            },
+            {
+                name: 'AGB ',
+                url: '/agb'
+            },
+            
+            
+        ]
+    }
 }

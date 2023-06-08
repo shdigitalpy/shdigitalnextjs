@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import marketingch from '../../../assets/images/marketingch.jpg';
 import leaderdigital from '../../../assets/images/leaderdigital.jpg';
-import holdingLaptop from '../../../assets/images/holding-laptop.png';
+import suchmaschinenImage from '../../../assets/images/mainpage/suchmaschinenoptimierung-video.webp';
 import playIcon from '../../../assets/icons/play.svg';
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 import VideoContainer from "../../common/VideoContainer";
@@ -38,8 +38,8 @@ const ContentWithVideo = () => {
                         className="video-wrapper flex-1">
                         <VideoContainer url="https://www.youtube.com/embed/1YXnseEjaKs"
                                         className="thumbnail-wrapper relative">
-                            <Image src={holdingLaptop} alt={'thumbnail'} className="thumbnail" />
-                            <Image src={playIcon} alt={"play icon"} className="play-icon" />
+                            <Image src={suchmaschinenImage} alt={'suchmaschinenoptimierung-video'} className="thumbnail" />
+                            <Image src={playIcon} alt={"abspielen icon"} className="play-icon" />
                         </VideoContainer>
                     </FramerMotionAnimation>
                 </div>

@@ -12,7 +12,7 @@ import faqSeoSectionData from '../data/faqSeoSectionData';
 
 const inter = Inter({subsets: ['latin']})
 
-export default function BlogCTADetails() {
+export default function MonatSEO() {
     return (
         <>
             <Head>

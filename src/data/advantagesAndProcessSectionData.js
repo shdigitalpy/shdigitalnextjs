@@ -23,13 +23,13 @@ export default {
                 {
                     id: 2,
                     icon: shieldIcon,
-                    title: 'Die Geheimwaffe',
+                    title: 'Konkurrenzdaten',
                     content: 'Anhand Ihrer Konkurrenz erfahren wir, was in Ihrer Branche funktioniert. Mit unserer Methode werden Sie in den Suchergebnissen besser auffindbar sein und Kunden kaufen schneller bei Ihnen.',
                 },
                 {
                     id: 3,
                     icon: timeIcon,
-                    title: 'Schnelle Umsetzung',
+                    title: 'Umsetzung mit Business Impact',
                     content: 'Für Google Marketing haben wir die Prozesse, die bei anderen Unternehmen bereits erfolgreich im Einsatz sind und wir nur bei Ihnen einsetzen müssen.',
                 }
             ]

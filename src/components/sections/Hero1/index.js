@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import FramerMotionAnimation from "../../common/FramerMotionAnimation";
-import seoagentur from '../../../assets/images/mainpage/seo-agentur.webp';
+import seoagentur from '../../../assets/images/mainpage/seo-agentur-sichtbarkeit.webp';
 import downArrow from '../../../assets/icons/down-arrow-1.svg';
 import upRightArrow from '../../../assets/icons/up-right-arrow.svg';
 
@@ -13,7 +13,7 @@ const Hero = () => {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.25 }}>
-                <Image src={seoagentur} alt={'hero'} className="flex-1 hero-img"  />
+                <Image src={seoagentur} alt={'SEO Agentur - konstante Sichtbarkeit'} className="flex-1 hero-img"  />
             </FramerMotionAnimation>
             <FramerMotionAnimation
                 initial={{ opacity: 0, x: 50 }}

@@ -4,6 +4,8 @@ import user3 from '../assets/images/user1.png';
 import user4 from '../assets/images/andrea.jpg';
 import user5 from '../assets/images/weber.jpg';
 import user6 from '../assets/images/dummy.jpg';
+import user7 from '../assets/images/mk-arr.jpg';
+
 
 export default {
     title: 'Testimonials',
@@ -39,8 +41,8 @@ export default {
         },
 
         {
-            name: 'Arrigato GmbH',
-            image: user6,
+            name: 'Michael Knupp',
+            image: user7,
             content: 'Gab eine 5 Sterne Bewertung auf Google ab.',
         },
        

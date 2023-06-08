@@ -8,7 +8,7 @@ import FramerMotionAnimation from "../../common/FramerMotionAnimation";
 const WorkWithUs = () => {
     return (
         <section id="work-with-us" className="work-with-us relative">
-            <Image src={holdingLaptop} alt="Work with us" className="bg-image" />
+            <Image src={holdingLaptop} alt="Mit uns arbeiten" className="bg-image" />
             <div className="container">
                 <FramerMotionAnimation
                     transition={{ duration: 0.6, delay: 0.3 }}

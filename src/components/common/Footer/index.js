@@ -67,16 +67,19 @@ const Footer = () => {
 
                 ))}
                 <div className="rating-image" data-romw-token="3DBzI9TeO33a7z3RriVaPGNnpjbSEjYlAeQLpuudkx9zN4cW9b"/>
-
-
-
-
-
             </div>
 
 
-            <div className="copyright-wrapper text-center">
-                <p>{ copyright}</p>
+            <div className="copyright-wrapper" style={{ display: "flex", justifyContent: "center"}}>
+                
+                <p>{copyright.description}</p>
+                <p style={{ display: "flex"}}>
+                        { copyright.items?.map((item, index) => (
+                            <div key={index} style={{ marginLeft: "5px"}}>
+                                <Link href={item.url}>{item.name} </Link>
+                            </div>
+                        ))}
+                   </p>
             </div>
 
             <Script async

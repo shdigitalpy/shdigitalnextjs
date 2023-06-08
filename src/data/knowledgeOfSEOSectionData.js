@@ -9,7 +9,7 @@ export default {
     contentList: [
         {
             title: 'Wie man Videos für SEO optimiert',
-            url: '/',
+            url: '/seo/video-seo',
             description: 'Um mit Videos erfolgreicher bei Suchmaschinen und YouTube platziert zu werden, gibt es einige Möglichkeiten.'
         },
         {

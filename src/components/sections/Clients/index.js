@@ -14,6 +14,9 @@ import swissQRreader from '../../../assets/images/clients/swissqrreader.png';
 import locize from '../../../assets/images/clients/locaze.png';
 import crossWorks from '../../../assets/images/clients/cross-works.png';
 import sitrag from '../../../assets/images/clients/blachen.png';
+import contentcloud from '../../../assets/images/clients/contentcloud.webp';
+import geboshop from '../../../assets/images/clients/gebo-shop.webp';
+import biershop from '../../../assets/images/clients/biershop.webp';
 
 
 const data = [
@@ -29,6 +32,10 @@ const data = [
     {
         name: 'Auto Informatic',
         image: autoInformatic
+    },
+    {
+        name: 'Gebo Shop',
+        image: geboshop
     },
     {
         name: 'Haka Gerudor',
@@ -70,6 +77,15 @@ const data = [
         name: 'cross Workx',
         image: crossWorks
     },
+    {
+        name: 'Content Cloud',
+        image: contentcloud
+    },
+    {
+        name: 'Bier Shop',
+        image: biershop
+    },
+    
     
 ];
 
