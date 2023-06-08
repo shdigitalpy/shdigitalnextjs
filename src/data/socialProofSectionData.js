@@ -34,7 +34,11 @@ export default {
             image: user4,
             content: 'Super professionelle Firma, die mein Unternehmen in kürzester Zeit auf die erste Seite bei Google brachte! Danke vielmals, bin froh habe ich Euch gefunden!',
         },
-       
+        {
+            name: 'Albert Weber',
+            image: user5,
+            content: 'Gab eine 5 Sterne Bewertung auf Google ab.',
+        },
 
         {
             name: 'Michael Knupp',
