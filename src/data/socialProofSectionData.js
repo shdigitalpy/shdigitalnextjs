@@ -34,11 +34,7 @@ export default {
             image: user4,
             content: 'Super professionelle Firma, die mein Unternehmen in kürzester Zeit auf die erste Seite bei Google brachte! Danke vielmals, bin froh habe ich Euch gefunden!',
         },
-        {
-            name: 'Albert Weber',
-            image: user5,
-            content: 'SH Digital zeigte sich äußerst professionell und ermöglichte es meinem Unternehmen innerhalb kürzester Zeit auf die erste Seite bei Google zu gelangen. Ich bin sehr dankbar, dass ich auf sie gestoßen bin und möchte mich herzlich bei ihnen bedanken.',
-        },
+       
 
         {
             name: 'Michael Knupp',
