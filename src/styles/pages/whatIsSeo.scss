@@ -36,6 +36,7 @@
 
       .date-time-wrapper {
         display: flex;
+        flex-wrap: wrap;
         gap: pxToRem(15);
         align-items: center;
         margin-bottom: pxToRem(36);
@@ -43,7 +44,7 @@
         .date, .read-time {
           color: #878787;
           font-size: pxToRem(16);
-          line-height: pxToRem(16);
+          line-height: pxToRem(32);
           letter-spacing: -0.02em;
         }
       }
@@ -220,7 +221,7 @@
           .date, .read-time {
             color: #878787;
             font-size: pxToRem(54) !important;
-            line-height: pxToRem(16) !important;
+            line-height: pxToRem(70) !important;
             letter-spacing: -0.02em;
           }
         }

@@ -11,7 +11,8 @@ const Footer = () => {
         currentPosts,
         socialMedia,
         pursue,
-        partnerImages,
+        partnerImagesLeft,
+        partnerImagesRight,
         copyright,
     } = footerData;
 
@@ -59,27 +60,38 @@ const Footer = () => {
                 </div>
             </div>
 
+            {/*<div className="images-wrapper grid grid-cols-1 md:grid-cols-5 justify-between">*/}
             <div className="images-wrapper flex justify-between">
-                { partnerImages?.map((item, index) => (
+                { partnerImagesLeft?.map((item, index) => (
                     <div className="image-container" key={index}>
-                        <Image src={item.image} alt={item.name} width={200} height={116} />
+                        <Image src={item.image} className="image" alt={item.name} width={200} height={116} />
                     </div>
 
                 ))}
-                <div className="rating-image" data-romw-token="3DBzI9TeO33a7z3RriVaPGNnpjbSEjYlAeQLpuudkx9zN4cW9b"/>
+               <div className="image-container">
+                   <div className="rating-image" data-romw-token="3DBzI9TeO33a7z3RriVaPGNnpjbSEjYlAeQLpuudkx9zN4cW9b"/>
+               </div>
+                { partnerImagesRight?.map((item, index) => (
+                    <div className="image-container" key={index}>
+                        <Image src={item.image} className="image" alt={item.name} width={200} height={116} />
+                    </div>
+
+                ))}
             </div>
 
 
-            <div className="copyright-wrapper" style={{ display: "flex", justifyContent: "center"}}>
-                
-                <p>{copyright.description}</p>
-                <p style={{ display: "flex"}}>
+            <div className="copyright-wrapper">
+
+                <p className="description">{copyright.description}</p>
+                <div className="footer-link-items-wrapper">
                         { copyright.items?.map((item, index) => (
-                            <div key={index} style={{ marginLeft: "5px"}}>
-                                <Link href={item.url}>{item.name} </Link>
+                            <div key={index} className="footer-link-item" style={{ marginLeft: "5px"}}>
+                                <p>
+                                    <Link href={item.url}>{item.name} </Link>
+                                </p>
                             </div>
                         ))}
-                   </p>
+                   </div>
             </div>
 
             <Script async

@@ -7,14 +7,15 @@ const BlogCategoriesFilter = ({ category }) => {
     const [activeCategory, setActiveCategory] = useState('');
     const { categories } = blogCategoriesData;
 
-    const { push } = useRouter();
+    const { push, reload } = useRouter();
 
-    const categoryChangeHandler = (categoryAlias) => {
+    const categoryChangeHandler = async (categoryAlias) => {
         if (categoryAlias === 'overview') return push('/blog');
 
-        push({
+        await push({
             pathname: `/${categoryAlias}`,
         });
+        reload();
     };
 
     useEffect(() => {

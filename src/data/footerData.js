@@ -34,20 +34,20 @@ export default {
                 name: 'SEO-Check',
                 url: '/seo/seo-analyse'
             },
-            
+
         ]
     },
     socialMedia: {
         title: 'SOCIAL MEDIA',
         items: [
-            
-            
+
+
             {
                 name: 'Facebook',
                 icon: facebookIcon,
                 url: 'https://www.facebook.com/shdigitalch'
             },
-            
+
             {
                 name: 'LinkedIn',
                 icon: linkedinIcon,
@@ -74,8 +74,7 @@ export default {
             },
         ],
     },
-    partnerImages: [
-        
+    partnerImagesLeft: [
         {
             name: 'Partnered with Google',
             image: googlePartner
@@ -83,7 +82,9 @@ export default {
         {
             name: 'Swiss made software',
             image: swissMadeSoftware
-        },
+        }
+    ],
+    partnerImagesRight: [
         {
             name: 'SEMrush Partner',
             image: semrush
@@ -108,8 +109,8 @@ export default {
                 name: 'AGB ',
                 url: '/agb'
             },
-            
-            
+
+
         ]
     }
 }

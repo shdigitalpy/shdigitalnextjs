@@ -1,0 +1,12 @@
+.custom-404-page {
+
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    position: relative;
+    top: pxToRem(-50);
+  }
+}

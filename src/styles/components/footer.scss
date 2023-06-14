@@ -76,29 +76,29 @@
   }
 
   .images-wrapper {
+    gap: pxToRem(50);
+    align-items: center;
     padding-top: pxToRem(44);
     padding-bottom: pxToRem(44);
     border-top: pxToRem(1) solid #ddd;
 
     .image-container {
-      &:nth-child(1) {
-        .image {
-          width: pxToRem(214);
-          height: pxToRem(72);
-        }
+      text-align: center;
+
+      .image {
+        width: 100%;
+        max-width: pxToRem(220);
+        margin: auto;
+        max-height: pxToRem(75);
       }
 
-      &:nth-child(2) {
-        .image {
-          width: pxToRem(145);
-          height: pxToRem(72);
-        }
-      }
+      .rating-image {
+        width: 100%;
+        transform: scale(0.9);
 
-      &:nth-child(3) {
-        .image {
-          width: pxToRem(195);
-          height: pxToRem(72);
+        iframe {
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }
@@ -108,9 +108,26 @@
     padding-top: pxToRem(32);
     padding-bottom: pxToRem(19);
     border-top: pxToRem(1) solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     p {
       line-height: pxToRem(25);
+
+      &.description {
+        //margin-right: pxToRem(20);
+        margin-right: auto;
+      }
+    }
+
+    .footer-link-item {
+      margin-left: pxToRem(20);
+      margin-right: pxToRem(20);
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -207,37 +224,41 @@
       border-top: pxToRem(1) solid #ddd;
 
       .image-container {
-        &:nth-child(1) {
-          .image {
-            width: pxToRem(340);
-            height: pxToRem(140);
-          }
-        }
-
-        &:nth-child(2) {
-          .image {
-            width: pxToRem(280);
-            height: pxToRem(140);
-          }
-        }
-
-        &:nth-child(3) {
-          .image {
-            width: pxToRem(280);
-            height: pxToRem(140);
-          }
+        .image {
+          max-width: pxToRem(550);
+          max-height: 100%;
+          width: 100%;
+          height: 100%;
+          margin: auto;
         }
       }
     }
 
     .rating-image {
-      width: 100%;
+      iframe {
+
+      }
     }
 
     .copyright-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
       padding-top: pxToRem(80);
       padding-bottom: pxToRem(100);
       border-top: pxToRem(1) solid #ddd;
+
+      .description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .footer-link-items-wrapper {
+        display: flex;
+        margin-bottom: pxToRem(20);
+        gap: pxToRem(25);
+        justify-content: center;
+      }
 
       p {
         line-height: pxToRem(25);

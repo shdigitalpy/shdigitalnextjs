@@ -46,6 +46,19 @@
         }
       }
     }
+
+    .list-items {
+      display: flex;
+      flex-direction: column;
+      gap: pxToRem(10);
+      padding-left: pxToRem(15);
+      list-style-type: square;
+      margin-bottom: pxToRem(30);
+
+      li {
+        color: $white;
+      }
+    }
   }
 }
 
@@ -103,6 +116,21 @@
             padding-top: pxToRem(50);
             padding-bottom: pxToRem(50);
           }
+        }
+      }
+
+      .list-items {
+        margin-top: pxToRem(30);
+        display: flex;
+        font-size: pxToRem(54);
+        flex-direction: column;
+        gap: pxToRem(20);
+        padding-left: pxToRem(50);
+        list-style-type: square;
+        margin-bottom: pxToRem(75);
+
+        li {
+          color: $white;
         }
       }
     }

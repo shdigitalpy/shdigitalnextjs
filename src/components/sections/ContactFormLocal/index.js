@@ -57,19 +57,20 @@ const ContactForm = () => {
                 <FramerMotionAnimation
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }} >
-                                <p className="desc-sm mb-15 text-white">
-
+                                <h6 className="title-secondary mb-15 text-white">
                                 Enthält Checklisten für
-                    <br /> Local Pack 
-                    <br /> Google My Business
-                    <br /> Für lokale Keywords ranken
-                    <br />Grundregeln bei den Google Bewertungen
+                                </h6>
 
-                                </p>
-                                
+                    <ul className="list-items">
+                        <li>Local Pack</li>
+                        <li>Google My Business</li>
+                        <li>Für lokale Keywords ranken</li>
+                        <li>Grundregeln bei den Google Bewertungen</li>
+                    </ul>
+
                             </FramerMotionAnimation>
 
-                
+
 
                 <FramerMotionAnimation
                     initial={{ opacity: 0, x: 50 }}

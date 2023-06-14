@@ -46,13 +46,14 @@ const ContentListWithImage = ({ data }) => {
                     { contentList?.map((item, index) => (
                         <div className="item md:flex hover:bg-gray"
                             key={index}>
-                            <h4 className="content-title w-full"><Link href={item.url} title={item.title}>
-
-                                { item.title }
-                                <Image src={upRightArrowIcon} alt="icon" className="redirect-icon-2" />
-                            </Link></h4>
+                            <h4 className="content-title w-full"><
+                                Link href={item.url} title={item.title}>
+                                    { item.title }
+                                    <Image src={upRightArrowIcon} alt="icon" className="redirect-icon-2" />
+                                </Link>
+                            </h4>
                             <p className="content-description"> { item.description }</p>
-                            <Link href={item.url} title={item.title}><Image src={upRightArrowIcon} alt="icon" className="redirect-icon" /> </Link>
+                            <Link href={item.url} title={item.title} className="redirect-link"><Image src={upRightArrowIcon} alt="icon" className="redirect-icon" /> </Link>
                         </div>
                     ))}
                 </FramerMotionAnimation>

@@ -79,11 +79,11 @@ const formattedFollower3 = follower3.toLocaleString('en-CH', {
 
 
 export default function tiktokNutzer() {
-    
+
 
     return (
         <>
-            
+
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
                     <BreadCrumb category={post.category} categoryUrl={post.categoryUrl} post={post} />
@@ -129,13 +129,13 @@ export default function tiktokNutzer() {
                             type="p" className="desc-md mb-15 md:mb-15">
                        TikTok ist als Video-Plattform 2016 in China entstanden. Merkmal der App sind mit dem Smartphone gedrehte Kurzvideos. Der Slogan <b>Make every second count</b> reflektiert sich in den meist nur 15 Sekunden dauernden Handy-Videos, die Nutzer mit Musik veredeln.
                         </FramerMotionAnimation>
-                        
 
-                       
+
+
                     </div>
                 </section>
 
-               
+
 
                 <section className="section-wrapper keywords">
                     <div className="container">
@@ -146,7 +146,7 @@ export default function tiktokNutzer() {
 
                             </FramerMotionAnimation>
                         </div>
-                        
+
 
                         <div id="uebersicht" className="inner-content-wrapper bg-gray">
                             <div className="content-wrapper content-grid-wrapper grid md:grid-cols-2">
@@ -155,7 +155,7 @@ export default function tiktokNutzer() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
                                     <h4 className="content-title">Aktive Nutzer</h4>
-                                  
+
                                     <p className="desc-md mt-15">
                                     TikTok hat 1.6 Milliarden aktive Nutzer, die weltweit die App verwenden.</p>
                                 </FramerMotionAnimation>
@@ -306,7 +306,7 @@ export default function tiktokNutzer() {
 
                             </div>
 
-                           
+
                         </div>
                     </div>
                 </section>
@@ -329,50 +329,50 @@ export default function tiktokNutzer() {
 
                         </FramerMotionAnimation>
 
-                        <table class="tg">
+                        <table className="tg">
                         <thead>
                           <tr>
-                            <th class="tg-1oat" >Jahr</th>
-                            <th class="tg-1oat" >Aktive Nutzer ⌀</th>
-                            <th class="tg-1oat" >Wachstum</th>
-                            
+                            <th className="tg-1oat" >Jahr</th>
+                            <th className="tg-1oat" >Aktive Nutzer ⌀</th>
+                            <th className="tg-1oat" >Wachstum</th>
+
                           </tr>
                         </thead>
                         <tbody>
-                          
-                          
-                          
-                          
-                            
+
+
+
+
+
                             <tr>
                             <td class="tg-1oat">2022</td>
                             <td class="tg-1oat">{formattedNumber1}</td>
                             <td class="tg-1oat">28%</td>
-                            
+
                           </tr>
 
                           <tr>
-                            <td class="tg-1oat">2021 </td>      
+                            <td class="tg-1oat">2021 </td>
                             <td class="tg-1oat">{formattedNumber2}</td>
                             <td class="tg-1oat">25%</td>
-                            
-                            
+
+
                           </tr>
 
                           <tr>
-                            <td class="tg-1oat">2020</td>                       
+                            <td class="tg-1oat">2020</td>
                             <td class="tg-1oat">{formattedNumber3}</td>
-                            <td class="tg-1oat">-</td>                          
-                            
-                            
+                            <td class="tg-1oat">-</td>
+
+
                           </tr>
 
 
                         </tbody>
                         </table>
-                        
 
-                       
+
+
                     </div>
                 </section>
 
@@ -389,7 +389,7 @@ export default function tiktokNutzer() {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             type="p" className="desc-md mb-15 md:mb-15">
-                                Wenn man davon ausgeht, dass das Wachstum der Nutzerzahlen in der Schweiz leicht unter dem weltweiten Schnitt liegt, verwenden <b>aktuell im 2022 ca. 2 Mio. Menschen in der Schweiz</b> TikTok. Gemäss Statista waren es im Jahr 2021 noch rund 1.7 Mio. Nutzer auf der Videoplattform. 
+                                Wenn man davon ausgeht, dass das Wachstum der Nutzerzahlen in der Schweiz leicht unter dem weltweiten Schnitt liegt, verwenden <b>aktuell im 2022 ca. 2 Mio. Menschen in der Schweiz</b> TikTok. Gemäss Statista waren es im Jahr 2021 noch rund 1.7 Mio. Nutzer auf der Videoplattform.
 
                         </FramerMotionAnimation>
 
@@ -398,39 +398,39 @@ export default function tiktokNutzer() {
                           <tr>
                             <th class="tg-1oat">Jahr</th>
                             <th class="tg-1oat">Aktive Nutzer (Schätzungen)</th>
-                            
-                            
+
+
                           </tr>
                         </thead>
                         <tbody>
-                          
-                          
-                          
-                          
-                            
+
+
+
+
+
                             <tr>
                             <td class="tg-1oat">2022</td>
                             <td class="tg-1oat">2 Mio.</td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
-                            <td class="tg-1oat">2021 </td>      
+                            <td class="tg-1oat">2021 </td>
                             <td class="tg-1oat">1.7 Mio.</td>
-                           
-                            
-                            
+
+
+
                           </tr>
 
-                          
+
 
 
                         </tbody>
                         </table>
-                        
 
-                       
+
+
                     </div>
                 </section>
 
@@ -457,48 +457,48 @@ export default function tiktokNutzer() {
                             <th class="tg-1oat">in Prozent</th>
                             <th class="tg-1oat">Geschlecht</th>
                             <th class="tg-1oat">Alter</th>
-                            
+
                           </tr>
                         </thead>
                         <tbody>
-                          
-                          
-                          
-                          
-                            
+
+
+
+
+
                             <tr>
                             <td class="tg-1oat">25.0%</td>
                             <td class="tg-1oat">Frauen</td>
                             <td class="tg-1oat">zwischen 18 und 24 Jahren</td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">18.0%</td>
                             <td class="tg-1oat">Männer</td>
                             <td class="tg-1oat">zwischen 18 und 24 Jahren</td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">17.6%</td>
                             <td class="tg-1oat">Frauen</td>
                             <td class="tg-1oat">zwischen 25 und 34 Jahren</td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">13.6%</td>
                             <td class="tg-1oat">Männer</td>
                             <td class="tg-1oat">zwischen 25 und 34 Jahren</td>
-                           
-                            
+
+
                           </tr>
 
-                          
+
 
 
                         </tbody>
@@ -508,20 +508,20 @@ export default function tiktokNutzer() {
                         <p>Um die Video-App nutzen zu dürfen, müssen alle User mindestens 13 Jahre alt sein </p>
 
                        <br />
-                        <p>Der Grossteil der Nutzer sind also Millennials oder aus der Generation Z. 
-                        Zur <a href="https://de.wikipedia.org/wiki/Generation_Z" title="Generation Z" target="__blank">Generation Z</a> 
-                        werden Leute dazugerechnet, die zwischen 1997 und 2010 zur Welt gekommen sind. 
+                        <p>Der Grossteil der Nutzer sind also Millennials oder aus der Generation Z.
+                        Zur <a href="https://de.wikipedia.org/wiki/Generation_Z" title="Generation Z" target="__blank">Generation Z</a>
+                        werden Leute dazugerechnet, die zwischen 1997 und 2010 zur Welt gekommen sind.
                         Bei der <a href="https://de.wikipedia.org/wiki/Generation_Y" title="Generation Y" target="__blank">Generation Y</a>
-                        bzw. den Millennials von 1981 bis 1996. Aufgrund von kulturellen und technischen Einflüssen können 
+                        bzw. den Millennials von 1981 bis 1996. Aufgrund von kulturellen und technischen Einflüssen können
                         diese Altersgruppen auf Mobiltelefonen bereits intuitiv überlegen. </p>
                         <br />
 
                         <Image src={tiktokdemoImage} alt="TikTok Demografie" />
 
-                        
-                        
 
-                       
+
+
+
                     </div>
                 </section>
 
@@ -550,12 +550,12 @@ export default function tiktokNutzer() {
 
                             <p className="desc-md mb-15 md:mb-15">Die chinesische Video-App hat die höchste Verweildauer <a href="https://www.statista.com/statistics/579411/top-us-social-networking-apps-ranked-by-session-length/" title="bei den Nutzern in den USA" target="__blank">bei den Nutzern in den USA</a>. Im Durchschnitt pro Sitzung rund 10 Minuten. Facebook als Vergleich hat etwas weniger als 5 Minuten. TikTok-Marketing kann also aus Sicht der Aufmerksamkeit eine sehr effektive Werbeform sein.</p>
 
-                         
+
 
                         </FramerMotionAnimation>
 
                         <Image src={tiktokengImage} alt="TikTok Engagement" />
-                        
+
 
 
                     </div>
@@ -579,7 +579,7 @@ export default function tiktokNutzer() {
                  <small>Quelle Play Store: <a href="https://de.statista.com/statistik/daten/studie/1028345/umfrage/anzahl-der-downloads-von-tiktok-ueber-den-google-play-store-weltweit/" title="Play Store" target="__blank">Play Store</a></small><br />
                     <small>Quelle Apple Store: <a href="https://de.statista.com/statistik/daten/studie/1028358/umfrage/anzahl-der-downloads-von-tiktok-ueber-den-apple-app-store-weltweit/" title="Apple Store" target="__blank">Apple Store</a><a href="https://de.statista.com/statistik/daten/studie/1028358/umfrage/anzahl-der-downloads-von-tiktok-ueber-den-apple-app-store-weltweit/" title="Apple Store" target="__blank">Apple Store</a></small>
 
-                
+
                 </div>
                 </section>
 
@@ -602,7 +602,7 @@ export default function tiktokNutzer() {
 
                     <p className="desc-md mb-15 md:mb-15">Der Mutterkonzern ByteDance startete kürzlich eine Runde von Aktienrückkäufen im Besitz von Mitarbeitern zu einem Preis von 132 US-Dollar pro Aktie, teilten drei Quellen mit, was einem Anstieg von etwa 5 % pro Aktie gegenüber dem Rückkauf des Unternehmens im Mai entspricht. Das würde das Unternehmen jedoch weniger als 200 Milliarden Dollar wert machen.</p>
 
-                
+
                 </div>
                 </section>
 
@@ -625,7 +625,7 @@ export default function tiktokNutzer() {
                             <th class="tg-1oat">Plattform</th>
                             <th class="tg-1oat" >Follower für </th>
                             <th class="tg-1oat">Verdienst</th>
-                                            
+
                           </tr>
                         </thead>
                         <tbody>
@@ -634,23 +634,23 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">YouTube</td>
                             <td class="tg-1oat">{formattedFollower} Subscribers, 24 Millionen Aufrufe</td>
                             <td class="tg-1oat">für {formattedhundertUSD}</td>
-                            
+
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">Instagram</td>
                             <td class="tg-1oat">{formattedFollower2} Follower und 308 bezahlte Posts</td>
                             <td class="tg-1oat">für {formattedhundertUSD}</td>
-                         
-                            
+
+
                           </tr>
 
                           <tr>
                             <td class="tg-1oat">TikTok</td>
                             <td class="tg-1oat">{formattedFollower3} Follower und 270 Millionen Aufrufe</td>
                             <td class="tg-1oat">für {formattedhundertUSD} </td>
-                
-                            
+
+
                           </tr>
 
                         </tbody>
@@ -670,14 +670,14 @@ export default function tiktokNutzer() {
 
                             </FramerMotionAnimation>
                         </div>
-                 <p  className="desc-md mb-15 md:mb-15">Das sind die erfolgreichsten Plattformen nach Nutzern in Milliarden. Facebook liegt nach wie vor von der Beliebtheit bei Nutzern ganz vorne. Das App von ByteDance hat in den letzten Jahren massiv aufgeholt. 
+                 <p  className="desc-md mb-15 md:mb-15">Das sind die erfolgreichsten Plattformen nach Nutzern in Milliarden. Facebook liegt nach wie vor von der Beliebtheit bei Nutzern ganz vorne. Das App von ByteDance hat in den letzten Jahren massiv aufgeholt.
             </p>
             <p  className="desc-md mb-15 md:mb-15">
 
                 Eingangs haben wir uns gefragt, ob nun TikTok die am schnellsten wachsende Video-Plattform ist. YouTube ist im 2021 von 2.3 Milliarden auf 2.6 Milliarden User gewachsen. Es ergibt sich ein Nutzerwachstum von 13.04%.
             </p>
             <p  className="desc-md mb-15 md:mb-15">Weiter oben in diesem Beitrag haben wir bereits gesehen, dass die chinesische Videoplattform rund 25% gewachsen ist. <b>Es ist also richtig, TikTok ist von den grössten Social Media Unternehmen die am schnellsten wachsende Video-Plattform.</b> </p>
-                
+
              <Image src={tiktokcomImage} alt="Vergleich Plattformen" />
              <small>Quelle unter anderem: <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/" title="Statista" target="__blank">Statista</a></small>
 
@@ -707,13 +707,13 @@ export default function tiktokNutzer() {
                             <th class="tg-1oat">Follower</th>
                             <th class="tg-1oat">Vergleich Okt 21 / April 22</th>
                             <th class="tg-1oat">Link</th>
-                            
-                            
+
+
                           </tr>
                         </thead>
                         <tbody>
-                          
-                          
+
+
 
                          <tr>
                             <td class="tg-1oat">Nr. 1</td>
@@ -721,8 +721,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">15.5 Mio.</td>
                             <td class="tg-1oat">+ 1.8 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@thispronto" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -731,8 +731,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">12.7 Mio.</td>
                             <td class="tg-1oat">+ 1.1 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@noeminikita" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -741,8 +741,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">12.0 Mio.</td>
                             <td class="tg-1oat">+ 0.3 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@nickychampa" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -751,8 +751,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">10.0 Mio.</td>
                             <td class="tg-1oat">- 0.1 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@deanschneider.official" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -761,8 +761,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">5.6 Mio.</td>
                             <td class="tg-1oat">+ 1.1 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@tugcedmr61" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -771,8 +771,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">3.1 Mio.</td>
                             <td class="tg-1oat">+ 0.3 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@kris8an" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -781,8 +781,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">2.9 Mio.</td>
                             <td class="tg-1oat">+ 0.2 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@marcoandredasilva" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -791,8 +791,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">1.9 Mio.</td>
                             <td class="tg-1oat">+ 0.2 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@aditotoro" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -801,8 +801,8 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">1.4 Mio.</td>
                             <td class="tg-1oat">+ 0.0 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@diana_mengyan" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
                           <tr>
@@ -811,11 +811,11 @@ export default function tiktokNutzer() {
                             <td class="tg-1oat">1.4 Mio.</td>
                             <td class="tg-1oat">+ 0.0 Mio.</td>
                             <td class="tg-1oat"><a href="https://www.tiktok.com/@kevinbannier_" target="__blank" title="Profil">Profil</a></td>
-                           
-                            
+
+
                           </tr>
 
-                                                  
+
 
 
                         </tbody>
@@ -870,12 +870,12 @@ const post = {
                         item: 'Demografie & Alter',
                         link: '#demografie'
                     },
-                   
+
                     {
                         item: 'Verweildauer',
                         link: '#verweildauer'
                     },
-                    
+
                     {
                         item: 'Downloads',
                         link: '#downloads'
@@ -896,15 +896,15 @@ const post = {
                         item: 'Influencer in der Schweiz',
                         link: '#influencerch'
                     },
-                   
-                  
-                
+
+
+
                 ],
                 introTitle: '',
                 introDescription: 'Ist TikTok wirklich die am stärksten wachsende Video-Plattform? \n\nWenn es bei Apps um Wachstum geht, interessieren immer die Nutzerzahlen. \n\nWen hat die Video-Plattform seit Q1 2022 hinter sich gelassen?\n\nHeute geht es um harte Zahlen des sozialen Netzwerks aus China. Los geht es!',
-                
-               
-            
+
+
+
             };
 
 const listId = 'test'

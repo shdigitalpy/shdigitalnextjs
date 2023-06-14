@@ -112,6 +112,39 @@ img {
   font-size: pxToRem(16);
 }
 
+table {
+  width: 100%;
+  border-radius: pxToRem(10);
+  border: pxToRem(3) solid #000;
+  overflow: hidden;
+
+  th, td {
+    text-align: left;
+    padding: pxToRem(15) pxToRem(30);
+  }
+
+  th {
+    color: $white;
+    //background-color: rgba(255, 122, 0, 0.9);
+    background-color: $primary;
+  }
+
+  tr {
+    &:nth-child(even) {
+      td {
+        background-color: #F9F9F9;
+      }
+    }
+
+    &:nth-child(odd) {
+      td {
+        background-color: #F2F2F2;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .container {
     padding-left: 4rem;
@@ -128,7 +161,7 @@ img {
     line-height: pxToRem(80);
   }
 
-  p {
+  p, li {
     font-size: pxToRem(60);
     line-height: pxToRem(104) !important;
   }
