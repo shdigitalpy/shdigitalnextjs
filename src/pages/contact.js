@@ -16,7 +16,7 @@ export default function Contact() {
         <>
             <Head>
                 <title>Kontakt | SH Digital</title>
-                <meta name="description" content="SH Digital - Services"/>
+                <meta name="description" content="Kontakt | SH Digital"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 
             </Head>

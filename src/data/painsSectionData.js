@@ -20,21 +20,21 @@ export default {
             icon: usersIcon,
             titleUp: 'Grosse',
             titleBelow: 'Abhängigkeit',
-            description: 'Sie haben eine grosse Abhängigkeit vom persönlichen Netzwerk und wenigen großen Bestandskunden?',
+            description: 'Sie haben eine grosse Abhängigkeit vom persönlichen Netzwerk und wenigen grossen Bestandskunden?',
             readMoreLink: '/angebot',
         },
         {
             icon: cpuIcon,
             titleUp: 'Bisher ohne',
             titleBelow: 'Erfolg',
-            description: 'Sie nutzen bereits MarketingKanäle wie Google oder LinkedIn bis jetzt ohne Erfolg?',
+            description: 'Marketingkanäle wie Google oder LinkedIn bringen bei Ihnen bisher keinen Erfolg?',
             readMoreLink: '/angebot',
         },
         {
             icon: layersIcon,
             titleUp: 'Keine datenbasierte',
             titleBelow: 'Strategie',
-            description: 'Sie treffen die Entscheidung bei Ihrer Neukundengewinnung aus dem Bauch heraus?',
+            description: 'Die Entscheidung bei der Neukundengewinnung treffen Sie aus dem Bauch heraus?',
             readMoreLink: '/angebot',
         },
         {
@@ -48,7 +48,7 @@ export default {
             icon: cpuIcon,
             titleUp: 'Zu lange',
             titleBelow: 'Sales-Cycles',
-            description: 'Sie haben lange Sales-Cycles und können Neukunden nur über Monate/Jahre gewinnen?',
+            description: 'Sie haben lange Sales-Cycles und können Neukunden nur über Monate / Jahre gewinnen?',
             readMoreLink: '/angebot',
         }
     ],

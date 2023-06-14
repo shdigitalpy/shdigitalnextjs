@@ -32,6 +32,9 @@ import FAQ from "../../components/sections/FAQSEO";
 
 import faqSeoRelaunchData from '../../data/faqSeoRelaunchData';
 
+const url = 'https://www.sh-digital.ch'
+const category = 'seo'
+
 const inter = Inter({subsets: ['latin']})
 
 export default function seoRelaunch() {
@@ -40,6 +43,13 @@ export default function seoRelaunch() {
     return (
         <>
             
+             <Head>
+      
+                <title>Relaunch SEO & Website - Checkliste | SH Digital</title>
+                <meta name="description" content="Mit einer Checkliste den SEO-Relaunch erfolgreich meistern. Diese Anleitung zeigt den Prozess und potenzielle Fehlerquellen."/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
                     <BreadCrumb category={post.category} categoryUrl={post.categoryUrl} post={post} />
@@ -56,10 +66,10 @@ export default function seoRelaunch() {
                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -373,8 +383,8 @@ const post =  {
                 cta: 'Relaunch SEO',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                category: 'Ratgeber',
-                categoryUrl: '/blog',
+                category: 'SEO',
+                categoryUrl: '/seo',
                 introId: '',
                 introTitle: 'Checkliste für den perfekten Neustart Ihrer Webseite',
                 introDescription: 'Es gibt gute Gründe für einen CMS-Wechsel, Redesign oder Rebranding. Bei einem Relaunch sollte SEO berücksichtigt werden, denn eine Website kann schnell Sichtbarkeit und Traffic verlieren. \n\nHeute zeigen wir, auf was man bei einem SEO-Relaunch achten sollte. Mit der Schritt-für-Schritt-Anleitung gelingt jeder Neustart, ohne wichtige Rankings bei Suchmaschinen zu verlieren.',

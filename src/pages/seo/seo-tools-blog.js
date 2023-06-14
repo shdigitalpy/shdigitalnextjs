@@ -23,12 +23,22 @@ import seobilityImage from '../../assets/images/seo/seobility.png'
 import kweverywhereImage from '../../assets/images/seo/keywords-everywhere.png'
 import MoreInterestingPostsTools from "../../components/sections/MoreInterestingPostsTools";
 
+const url = 'https://www.sh-digital.ch'
+const category = 'seo'
 
 export default function seoTools() {
     
 
     return (
         <>
+
+        <Head>
+      
+                <title>SEO Tools von Anbietern im Vergleich | SH Digital</title>
+                <meta name="description" content="Wir vergleichen fünf SEO-Tools in der Funktionalität, dem Preis sowie dem generellen Nutzen für Suchmaschinenoptimierung."/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
@@ -46,10 +56,10 @@ export default function seoTools() {
                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -585,7 +595,7 @@ export default function seoTools() {
 
 const post =  {
                 slug: 'seo-tools-blog',
-                shortTitle: '5 SEO Tools, die man kennen sollte',
+                shortTitle: 'SEO Tools',
                 title: '5 SEO Tools, die man kennen sollte',
                 description: 'Haben Sie schon davon geträumt, mit einem SEO-Tool über Nacht ganz an die Spitze der Suchergebnisse zu kommen? In diesem Artikel erfahren Sie wie das geht. Natürlich nicht! Bei SEO geht es um Keywords, um Rankings und um Optimierungspotentiale, bei deren Themen-Umfang viele Marketingverantwortliche und Selbstumsetzer an Ihre Grenzen stossen.',
                 image: seotoolsImage,
@@ -597,8 +607,8 @@ const post =  {
                 cta: 'SEO-Tools',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                category: 'Ratgeber',
-                categoryUrl: '/blog',
+                category: 'SEO',
+                categoryUrl: '/seo',
                 
                 googleId: 'seotools',
                 introTitle: '',

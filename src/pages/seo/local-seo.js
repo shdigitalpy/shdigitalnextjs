@@ -41,7 +41,8 @@ import suggestImage from '../../assets/images/seo/google-suggest.jpg';
 
 import fiveTippsData from '../../data/fiveTippsData';
 import faqSeoSectionDataWIS from '../../data/faqVideoData';
-
+const url = 'https://www.sh-digital.ch'
+const category = 'seo'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -50,6 +51,14 @@ export default function localSEO() {
 
     return (
         <>
+
+        <Head>
+      
+                <title>Local SEO Checkliste - Tipps zu Google My Business für Unternehmen</title>
+                <meta name="description" content="Local SEO Tipps zu Links und Keywords. Eine Schritt-für-Schritt-Anleitung wie man lokal gefunden wird."/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
@@ -67,10 +76,10 @@ export default function localSEO() {
                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -585,8 +594,8 @@ const post =  {
                 cta: 'Local SEO',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                category: 'Ratgeber',
-                categoryUrl: '/blog',
+                category: 'SEO',
+                categoryUrl: '/seo',
                 
                 introId: 'definition',
                 introTitle: 'Tipps & Checkliste',

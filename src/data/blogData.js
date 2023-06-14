@@ -141,11 +141,14 @@ export default {
                 slug: 'seo-analyse',
                 shortTitle: 'SEO Analyse',
                 title: 'SEO Analyse',
+                pagetitle: 'SEO Analyse: Wie vorgehen inklusive Checklisten',
+                metadescription: 'Unser SEO Analyse Tool testet Ihre Webseite kostenlos. Anhand von Checklisten ✅ erfahren, wie Sie vorgehen sollten',
                 description: 'Möchtest du, dass deine Webseite von potenziellen Kunden gefunden wird? Dann ist SEO das A und O!',
                 image: seoAnalyseImage,
                 imageAlt: 'SEO Analyse',
                 readMoreUrl: '/seo/post1',
                 date: '08.11.2022',
+                update: '08.11.2022',
                 readingTime: '5min Lesedauer',
                 cta: 'SEO Analyse',
                 author: 'Sandro Huber',
@@ -411,9 +414,9 @@ export default {
                 
 
     },
-    'content-marketing': {
-        name: 'Content Marketing',
-        alias: 'content-marketing',
+    'content': {
+        name: 'Content',
+        alias: 'content',
         posts: [
 
             {
@@ -430,18 +433,7 @@ export default {
                 cta: 'Was ist Content Marketing',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-            }
-            
-
-        ]
-    },
-
-    'saas': {
-        name: 'Saas Marketing',
-        alias: 'saas',
-        posts: [
-
-           
+            },
             {
                slug: 'tiktok-nutzer',
                 shortTitle: 'TikTok Zahlen 2022',
@@ -459,11 +451,14 @@ export default {
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
+            
+
         ]
     },
+
     
-    'ecommerce-marketing': {
-        name: 'E-Commerce Marketing',
+    'ecommerce': {
+        name: 'E-Commerce',
         alias: 'ecommerce',
         posts: [
             {

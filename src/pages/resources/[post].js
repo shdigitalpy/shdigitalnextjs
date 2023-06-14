@@ -12,8 +12,8 @@ export default function BlogCTADetails() {
     return (
         <>
             <Head>
-                <title>SH Digital - Blog CTA Details</title>
-                <meta name="description" content={`SH Digital - Blog CTA Details`}/>
+                <title>Onpage Analyse | SH Digital</title>
+                <meta name="description" content={`Onpage Analyse | SH Digital`}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>

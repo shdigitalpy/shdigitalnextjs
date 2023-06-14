@@ -34,12 +34,22 @@ import SiteAnalysis from '../../components/sections/SiteAnalysis';
 
 const inter = Inter({subsets: ['latin']})
 
+const url = 'https://www.sh-digital.ch'
+const category = 'content-marketing'
 
 export default function contentMarketing() {
     
 
     return (
         <>
+
+        <Head>
+      
+                <title>Content Marketing: Grundlagen und wie nutzen</title>
+                <meta name="description" content="Was steckt hinter dem Begriff Content-Marketing und wie können es Unternehmen nutzen. ▲ Grundlagen ▲ Checkliste ▲Beispiele"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
@@ -57,10 +67,10 @@ export default function contentMarketing() {
                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -967,7 +977,8 @@ const post =  {
                 cta: 'Was ist Content Marketing',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-                
+                category: 'Content',
+                categoryUrl: '/content',
 
                 googleId: 'definition',
                 introTitle: 'Was ist Content Marketing?',

@@ -26,21 +26,16 @@ export default {
         },
         {
             icon: marketingIcon,
-            name: 'Content Marketing',
-            alias: 'content-marketing',
-            path: '/content-marketing'
+            name: 'Content',
+            alias: 'content',
+            path: '/content'
         },
-        {
-            icon: hostingServicesIcon,
-            name: 'Saas Marketing',
-            alias: 'saas-marketing',
-            path: '/saas-marketing'
-        },
+       
         {
             icon: shoppingBagIcon,
-            name: 'E-Commerce Marketing',
-            alias: 'ecommerce-marketing',
-            path: '/e-commerce-marketing'
+            name: 'E-Commerce',
+            alias: 'ecommerce',
+            path: '/e-commerce'
         },
         
     ]

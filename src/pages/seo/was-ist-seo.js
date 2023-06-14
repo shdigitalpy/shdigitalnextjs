@@ -51,6 +51,9 @@ import faqSeoSectionDataWIS from '../../data/FAQSectionDataWIS';
 
 const inter = Inter({subsets: ['latin']})
 
+const url = 'https://www.sh-digital.ch'
+const category = 'seo'
+
 const structuredData = {
 
 
@@ -151,10 +154,10 @@ export default function BlogPost() {
                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -933,8 +936,8 @@ const post = {
     introDescription: 'Bei SEO werden relevante Inhalte auf Webseiten platziert und mit benutzerfreundlichem Design sowie schneller Webtechnologie optimal für Besucher zugänglich gemacht. Mit den richtigen SEO-Massnahmen können Webseiten besser von Suchmaschinen gelesen werden, was die Platzierung in den Ergebnissen verbessert. Unternehmen nutzen Suchmaschinenoptimierung als Marketing, um weiter oben als die Konkurrenz in den Suchergebnissen platziert zu sein.',
     introDescription2: 'Vielen Dank, dass Sie auf meinen Artikel gestossen sind. Suchmaschinenoptimierung ist und bleibt brandaktuell. Neben einem Guide für Einsteiger ins Thema möchte ich Ihnen die neusten Entwicklungen näherbringen.',
     introDescription3: 'Zudem findet sich zu jedem Themenbereich die Möglichkeit, sich noch detaillierter über ein Subthema zu informieren.',
-    category: 'Ratgeber',
-    categoryUrl: '/blog',
+    category: 'SEO',
+    categoryUrl: '/seo',
     author: 'Sandro Huber',
     authorImage: sandro,
     date: '5. Februar 2021',

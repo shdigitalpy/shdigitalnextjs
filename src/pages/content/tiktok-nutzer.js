@@ -78,11 +78,22 @@ const formattedFollower3 = follower3.toLocaleString('en-CH', {
   });
 
 
+const url = 'https://www.sh-digital.ch'
+const category = 'content'
+
 export default function tiktokNutzer() {
 
 
     return (
         <>
+
+        <Head>
+      
+                <title>TikTok in Zahlen | Nutzer, Downloads, usw.</title>
+                <meta name="description" content="Diese Statistiken zeigen Ihnen die wichtigsten Zahlen rund um TikTok. ✅Nutzerzahlen ✅Downloads ✅Firmenbewertung und mehr."/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
 
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
@@ -848,8 +859,8 @@ const post = {
                 update: '11.04.2022',
                 readingTime: '7min Lesedauer',
                 cta: 'TikTok Nutzerzahlen',
-                category: 'Ratgeber',
-                categoryUrl: '/blog',
+                category: 'Content',
+                categoryUrl: '/content',
                 author: 'Sandro Huber',
                 authorImage: sandro,
                 contentList: [

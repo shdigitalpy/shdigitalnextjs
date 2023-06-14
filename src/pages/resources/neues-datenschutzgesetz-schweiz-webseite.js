@@ -36,13 +36,21 @@ import allinOneViewData from '../../data/allinOneViewData';
 
 const inter = Inter({subsets: ['latin']})
 
+const url = 'https://www.sh-digital.ch'
+const category = 'resources'
 
 export default function neuesDatenschutz() {
     
 
     return (
         <>
-            
+            <Head>
+      
+                <title>Neues Datenschutzgesetz Schweiz | SH Digital</title>
+                <meta name="description" content="Neues Datenschutzgesetz: Eine Übersicht mit den wichtigsten Fakten für Webseitenbetreiber und Firmeninhaber."/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
                     <BreadCrumb category={post.category} categoryUrl={post.categoryUrl} post={post} />
@@ -59,10 +67,10 @@ export default function neuesDatenschutz() {
                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -164,7 +172,8 @@ const post =  {
                 cta: 'Neues Datenschutzgesetz in der Schweiz',
                 author: 'Sandro Huber',
                 authorImage: sandro,
-
+                category: 'Ressourcen',
+                categoryUrl: '/resources',
                 introTitle: 'Wichtig zu wissen',
                 introDescription: 'Wir haben für Sie die wichtigsten Aspekte des neuen Datenschutzgesetzes (nDSG) für Webseitenbetreiber zusammengestellt. \n\nFalls es neuere Entwicklungen geben sollte, werden wir den Beitrag weiter anpassen. Wichtig, lesen Sie den Haftungsausschluss am Ende dieses Beitrags.',
                 

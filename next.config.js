@@ -5,6 +5,13 @@ const nextConfig = {
     return [
 
       {
+        source: '/potentialanalyse',
+        destination: '/contact',
+        permanent: true,
+      },
+
+
+      {
         source: '/was-ist-seo',
         destination: '/seo/was-ist-seo',
         permanent: true,

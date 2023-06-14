@@ -30,7 +30,8 @@ import offpageOptimizationSectionData from '../../data/offpageOptimizationSectio
 import faqSeoKostenData from '../../data/faqSeoKostenData';
 
 const inter = Inter({subsets: ['latin']})
-
+const url = 'https://www.sh-digital.ch'
+const category = 'seo'
 
 const number1 = 1500;
 const number2 = 2500;
@@ -62,6 +63,14 @@ export default function seoKosten() {
 
     return (
         <>
+
+        <Head>
+      
+                <title>SEO-Kosten: Ab welchem Budget lohnt es sich</title>
+                <meta name="description" content="Wie viel kostet SEO und ab welchem Budget kann man eine Agentur beauftragen. Lohnt sich SEO überhaupt für mich?"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             
             <main className="what-is-seo">
                 <Banner arrow={false} bg={holdingLaptop} className="post-banner">
@@ -76,13 +85,13 @@ export default function seoKosten() {
                                  <p className="date">Aktualisiert: {post.update}</p> ·
                                 <p className="read-time">{post.readingTime}</p>
                             </div>
-                            <div className="social-wrapper">
+                             <div className="social-wrapper">
                                 Teilen :
                                 <div className="social-links-wrapper">
-                                    <Link href={`https://twitter.com/intent/tweet?url=${post.slug}&text=${post.title}`}>
+                                    <Link target="__blank" href={`https://twitter.com/intent/tweet?url=${url}/${category}/${post.slug}&text=${post.title}`}>
                                         <Image src={twitterIcon} alt="twitter" className="social-icon" />
                                     </Link>
-                                    <Link href={`https://www.facebook.com/sharer.php?u=${post.slug}`}>
+                                    <Link target="__blank" href={`https://www.facebook.com/sharer.php?u=${url}/${category}/${post.slug}`}>
                                         <Image src={facebookIcon} alt="facebook" className="social-icon" />
                                     </Link>
                                 </div>
@@ -586,7 +595,7 @@ export default function seoKosten() {
 
 const post = {
                 slug: 'seo-kosten',
-                shortTitle: 'SEO-Kosten Guide',
+                shortTitle: 'SEO-Kosten',
                 title: 'SEO-Kosten Guide',
                 description: '',
                 image: seoKostenImage,
@@ -596,8 +605,8 @@ const post = {
                 update: '9.03.2022',
                 readingTime: '10min Lesedauer',
                 cta: 'Was kostet SEO',
-                category: 'Ratgeber',
-                categoryUrl: '/blog',
+                category: 'SEO',
+                categoryUrl: '/seo',
                 author: 'Sandro Huber',
                 authorImage: sandro,
                 contentList: [
