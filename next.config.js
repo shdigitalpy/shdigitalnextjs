@@ -141,7 +141,10 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
-  }
+  },
+
+  siteUrl: process.env.SITE_URL,
+  generateRobotsTxt: true,
 }
 
 module.exports = nextConfig

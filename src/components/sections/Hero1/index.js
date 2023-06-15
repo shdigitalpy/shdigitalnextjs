@@ -26,8 +26,13 @@ const Hero = () => {
                 </div>
                 <h1 className="title font-semibold">SEO Agentur: Konstante Sichtbarkeit im Web</h1>
                 <p className="desc">
-                    Die von uns entwickelte und einmalige <strong className="underline">Performance SEO-Pro-Methode®</strong> hilft Software, Industrie sowie
-                    E-Commerce Unternehmen mit dem Angebot bei Google auf die erste Seite zu kommen. Ausserdem unterstützen wir Sie mit bezahlten Werbeanzeigen gezielt eine konstante Sichtbarkeit bei Ihrer Zielgruppe zu erreichen und zu nutzen.
+                    Unsere Performance SEO-Pro-Methode® unterstützt Unternehmen aus den Bereichen Software, Industrie sowie E-Commerce / B2C dabei, online sichtbar zu werden, insbesondere bei komplexen und erklärungsbedürftigen Angeboten. 
+                    Durch eine effektive Kombination aus SEO-Strategien und gezielten Werbeanzeigen generieren wir für Ihr Unternehmen mehr qualifizierte Besucher auf Ihrer Webseite, füllen dadurch Ihre Sales-Pipeline und verbessern die Conversion Rate.
+
+
+
+
+
                 </p>
                 <Link href="/contact">
                 <button className="cta-btn text-white bg-primary">

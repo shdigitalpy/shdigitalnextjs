@@ -12,13 +12,13 @@ export default {
         {
             icon: premiumIcon,
             title: 'Performance-SEO Pro-Methode® für Software und Industrie B2B',
-            description: 'Unsere Performance-SEO Pro-Methode® geht über klassisches SEO hinaus und verleiht zusätzliche Power. Wir unterstützen Kunden damit, sichtbar zu bleiben und qualifizierte Anfragen und Neukundentermine zu generieren.'
+            description: 'Die Performance-SEO Pro-Methode® von SH Digital ist high-level SEO kombiniert mit weiteren B2B Marketingkanälen. Wir unterstützen Kunden damit, dauerhaft sichtbar zu sein sowie qualifizierte Anfragen und automatisierte Neukundentermine zu generieren.'
         },
         {
             icon: adsIcon,
             link: "/monatliche-seo-betreuung",
-            title: 'SEO- / SEA-Betreuung für B2C und Onlineshops',
-            description: 'Die klassische SEO Betreuung für mehr Sichtbarkeit bei bei Suchmaschinen. Steigern Sie das Suchmaschinenranking und gewinnen Sie dadurch neue Kunden.'
+            title: 'Performance-SEO Pro-Methode® für B2C und Onlineshops',
+            description: 'Die SEO Dienstleistung für mehr Sichtbarkeit bei bei Suchmaschinen für E-Commerce und B2C. Lassen Sie mit einem Top Suchmaschinenranking die Konkurrenz hinter sich und ziehen Sie automatisiert potentielle Käufer für Ihr Unternehmen an.'
         },
         
        
