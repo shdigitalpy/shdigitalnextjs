@@ -143,8 +143,6 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  siteUrl: process.env.SITE_URL,
-  generateRobotsTxt: true,
 }
 
 module.exports = nextConfig

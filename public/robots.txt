@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.sh-digital.ch/
+
+# Sitemaps
+Sitemap: https://www.sh-digital.ch/sitemap.xml
