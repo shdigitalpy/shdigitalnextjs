@@ -6,11 +6,16 @@ import {useReCaptcha} from "next-recaptcha-v3";
 import {postForm} from "../../../api/form";
 import {useRouter} from "next/navigation";
 
+
+
+
 const ContactForm = () => {
     const [success, setSuccess] = useState(false);
 
     const { push } = useRouter();
     const { executeRecaptcha } = useReCaptcha();
+
+    const { pathname } = useRouter();
 
     const submitHandler = async (e) => {
         e.preventDefault();
@@ -68,6 +73,9 @@ const ContactForm = () => {
                         </div>
                         <div className="input-wrapper">
                             <input type="text" name="position" className="input" placeholder="Position im Unternehmen" required />
+                        </div>
+                        <div className="input-wrapper">
+                            <input type="hidden" name="interest" className="input" placeholder="Quelle" value={pathname} required />
                         </div>
                         <div className="input-wrapper">
                             <button className="submit-btn bg-white text-primary2" type="submit">Jetzt senden</button>
