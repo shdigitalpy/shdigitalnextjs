@@ -30,10 +30,12 @@ const site = "https://www.sh-digital.ch";
 export default function App({Component, pageProps}) {
 
     useEffect(() => {
-    const script = document.querySelector('script[src="https://www.google.com/recaptcha/api.js"]');
-    if (script) {
-      script.setAttribute("strategy", "lazyOnload");
-    }
+    const script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    script.async = true;
+    script.defer = true;
+    script.setAttribute("strategy", "lazyOnload");
+    document.head.appendChild(script);
   }, []);
 
   
@@ -50,7 +52,7 @@ export default function App({Component, pageProps}) {
              
         
         </Head>
-                <ReCaptchaProvider strategy="lazyOnload" reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
+                <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
                     <Component {...pageProps} />
                 </ReCaptchaProvider>
                <ScrollToTop smooth component={<p  style={{ backgroundColor:"FF7A00", display: "flex", justifyContent: "center", alignItems:"center"}}><FiArrowUp /></p>} />
