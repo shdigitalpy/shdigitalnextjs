@@ -42,7 +42,7 @@ export default function App({Component, pageProps}) {
              
         
         </Head>
-                <ReCaptchaProvider strategy="lazyOnload" reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
+                <ReCaptchaProvider strategy={'lazyOnload'} reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
                     <Component {...pageProps} />
                 </ReCaptchaProvider>
                <ScrollToTop smooth component={<p  style={{ backgroundColor:"FF7A00", display: "flex", justifyContent: "center", alignItems:"center"}}><FiArrowUp /></p>} />
