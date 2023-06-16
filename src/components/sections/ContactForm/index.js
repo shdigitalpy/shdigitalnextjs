@@ -9,13 +9,13 @@ import {useRouter} from "next/navigation";
 
 
 
-const ContactForm = () => {
+const ContactForm = ( { pathname }) => {
     const [success, setSuccess] = useState(false);
 
     const { push } = useRouter();
     const { executeRecaptcha } = useReCaptcha();
 
-    const { pathname } = useRouter();
+    
 
     const submitHandler = async (e) => {
         e.preventDefault();
@@ -43,6 +43,7 @@ const ContactForm = () => {
     }, [success]);
 
     return (
+
         <section className="contact-form md:flex">
             <FramerMotionAnimation
                 initial={{ opacity: 0, x: -50 }}

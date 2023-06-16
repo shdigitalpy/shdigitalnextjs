@@ -5,10 +5,15 @@ import SEOAnalysisInvite from "../../components/sections/SEOAnalaysisInvite";
 import AnalysisFactors from "../../components/sections/AnalysisFactors";
 import SocialProof from "../../components/sections/SocialProof";
 import ContactForm from "../../components/sections/ContactForm";
+import {useRouter} from "next/router";
 
 const inter = Inter({subsets: ['latin']})
 
+
 export default function BlogCTADetails() {
+
+    const router = useRouter();
+
     return (
         <>
             <Head>
@@ -25,7 +30,7 @@ export default function BlogCTADetails() {
                 <SEOAnalysisInvite />
                 <AnalysisFactors />
                 <SocialProof />
-                <ContactForm />
+                <ContactForm pathname={router.asPath} />
             </main>
         </>
     )

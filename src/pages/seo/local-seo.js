@@ -48,6 +48,7 @@ const inter = Inter({subsets: ['latin']})
 
 export default function localSEO() {
     
+    const router = useRouter();
 
     return (
         <>
@@ -369,7 +370,7 @@ export default function localSEO() {
 
 
 
-                <ContactFormLocal />
+                <ContactFormLocal pathname={router.asPath} />
 
                 <section id="kosten" className="section-wrapper keywords">
                     <div className="container">
