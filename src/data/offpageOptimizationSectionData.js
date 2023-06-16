@@ -59,7 +59,7 @@ export default {
                 description: 'Als Linkquellen gibt es auch die lokalen Branchenverzeichnisse, in dem man sein Unternehmen mit den Basisdaten ähnlich dem Google My Business Eintrag eingeben kann. Dadurch erhöht sich die Bekanntheit eines Unternehmens im Internet, was von den Suchmaschinen positiv bewertet wird. Ein lokaler Brancheneintrag hilft potenziellen Kunden Ihre Webseite zu finden und signalisiert den Suchmaschinen, dass es sich dabei um ein echtes Unternehmen handelt. Bei solchen Einträgen sollte man auf Qualität achten, nicht jedes Verzeichnis eignet sich',
                 description2: 'Lesen Sie weiter in unserem Guide für', 
                 linktext: 'Local-SEO',
-                linklocation: 'seo/local-seo'
+                linklocation: '/local-seo'
                 
             },
         },
