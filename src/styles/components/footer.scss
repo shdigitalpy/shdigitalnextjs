@@ -121,6 +121,10 @@
       }
     }
 
+    .footer-link-items-wrapper {
+      display: flex;
+    }
+
     .footer-link-item {
       margin-left: pxToRem(20);
       margin-right: pxToRem(20);
