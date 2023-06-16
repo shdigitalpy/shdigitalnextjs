@@ -3,7 +3,7 @@ import usersIcon from "../assets/icons/users.svg";
 import cpuIcon from "../assets/icons/cpu.svg";
 import locazeLogo from "../assets/images/locaze-logo.png";
 import workinLogo from "../assets/images/workin-logo.png";
-import hakagerodurLogo from "../assets/images/hakagerodur-logo.png";
+import geboshop from '../assets/images/clients/gebo-shop.webp';
 import crossworkslogo from "../assets/images/cross-works.png";
 
 export default {
@@ -65,9 +65,9 @@ export default {
             image: workinLogo
         },
         {
-            alt: 'hakagerodur logo',
-            'link': 'https://www.hakagerodur.ch/',
-            image: hakagerodurLogo
+            alt: 'gebo shop logo',
+            'link': 'https://www.gastrokuehlung.ch/',
+            image: geboshop
         },
         {
             alt: 'crossworks logo',

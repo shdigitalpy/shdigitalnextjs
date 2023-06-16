@@ -40,6 +40,10 @@ const SocialProof = () => {
                                         <Image src={item.image} alt="user image" className="user-image" />
                                         <div>
                                             <p className="name font-semibold">{ item.name }</p>
+
+                                            { item.title ? <p className="name">{ item.title }</p> : "" }
+
+                                            { item.company ? <p className="name">{ item.company }</p> : "" }
                                           
                                         </div>
 

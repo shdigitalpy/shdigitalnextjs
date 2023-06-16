@@ -1,4 +1,4 @@
-import Mehr from '../assets/images/mainpage/weiterfuehrend.png';
+import Mehr from '../assets/images/mainpage/weiterfuehrend.webp';
 
 export default {
     title: 'Mehr zum Thema',
