@@ -8,6 +8,7 @@ import Router from "next/router";
 import ScrollToTop from "react-scroll-to-top";
 import { FiArrowUp } from 'react-icons/fi';
 import { useRouter } from 'next/router';
+import { useEffect } from "react";
 
 const progress = new ProgressBar({
   size: 2,
@@ -27,6 +28,13 @@ const site = "https://www.sh-digital.ch";
 
 
 export default function App({Component, pageProps}) {
+
+    useEffect(() => {
+    const script = document.querySelector('script[src="https://www.google.com/recaptcha/api.js"]');
+    if (script) {
+      script.setAttribute("strategy", "lazyOnload");
+    }
+  }, []);
 
   
     const canonicalURL1 = site + useRouter().pathname;
