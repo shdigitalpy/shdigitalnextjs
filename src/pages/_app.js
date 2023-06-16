@@ -8,7 +8,6 @@ import Router from "next/router";
 import ScrollToTop from "react-scroll-to-top";
 import { FiArrowUp } from 'react-icons/fi';
 import { useRouter } from 'next/router';
-import { useEffect } from "react";
 
 const progress = new ProgressBar({
   size: 2,
@@ -29,15 +28,6 @@ const site = "https://www.sh-digital.ch";
 
 export default function App({Component, pageProps}) {
 
-    useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/api.js";
-    script.async = true;
-    script.defer = true;
-    script.setAttribute("strategy", "lazyOnload");
-    document.head.appendChild(script);
-  }, []);
-
   
     const canonicalURL1 = site + useRouter().pathname;
     const canonicalURL = canonicalURL1 ? canonicalURL1 : undefined
@@ -52,7 +42,7 @@ export default function App({Component, pageProps}) {
              
         
         </Head>
-                <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
+                <ReCaptchaProvider strategy="lazyOnload" reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
                     <Component {...pageProps} />
                 </ReCaptchaProvider>
                <ScrollToTop smooth component={<p  style={{ backgroundColor:"FF7A00", display: "flex", justifyContent: "center", alignItems:"center"}}><FiArrowUp /></p>} />
