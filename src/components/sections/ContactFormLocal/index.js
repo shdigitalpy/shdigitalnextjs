@@ -6,7 +6,7 @@ import {useReCaptcha} from "next-recaptcha-v3";
 import {postForm} from "../../../api/form";
 import {useRouter} from "next/navigation";
 
-const ContactForm = ({pathname}) => {
+const ContactForm = () => {
     const [success, setSuccess] = useState(false);
 
     const { push } = useRouter();
@@ -36,6 +36,9 @@ const ContactForm = ({pathname}) => {
             setTimeout(() => setSuccess(false), 5000)
         }
     }, [success]);
+
+
+    const pathname = '/local/'
 
     return (
         <section id="guide" className="contact-form md:flex">
