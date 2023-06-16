@@ -18,7 +18,7 @@ export default function Impressum() {
         <>
             <Head>
                 <title>Impressum | SH Digital</title>
-                <meta name="description" content={`Das Impressum von SH Digital - Sandro Huber ist Geschäftsführer von SH Digital`}/>
+                <meta name="description" content={`Das Impressum von SH Digital`}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
