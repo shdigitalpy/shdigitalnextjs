@@ -105,7 +105,7 @@ export default function Document() {
 
 
   return (
-    <Html lang="en">
+    <Html lang="de">
       <Head>
       
       <link rel="icon" href="/favicon.ico"/>

@@ -39,7 +39,7 @@ export default function App({Component, pageProps}) {
             <Head>
       
         <link rel="canonical" href={canonicalURL} />
-        <link rel="alternate" href={canonicalURL} hrefLang="de-ch" />        
+             
         
         </Head>
                 <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>

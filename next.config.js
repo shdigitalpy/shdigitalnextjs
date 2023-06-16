@@ -4,6 +4,7 @@ const nextConfig = {
   async redirects() {
     return [
 
+      
       {
         source: '/potentialanalyse',
         destination: '/contact',
