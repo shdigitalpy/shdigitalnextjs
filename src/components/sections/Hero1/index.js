@@ -31,7 +31,7 @@ const Hero = () => {
                     die Sichtbarkeit im Online-Bereich signifikant zu steigern. 
                     Insbesondere bei komplexen und erklärungsbedürftigen Angeboten 
                     setzen wir auf eine effektive Kombination aus SEO-Strategien und 
-                    gezielten Werbeanzeigen. Durch diese Maßnahmen generieren wir 
+                    gezielten Werbeanzeigen. Durch diese Massnahmen generieren wir 
                     für Ihr Unternehmen eine höhere Anzahl qualifizierter Besucher 
                     auf Ihrer Webseite. Dies wiederum trägt dazu bei, 
                     Ihre Sales-Pipeline zu füllen und die Conversion Rate zu verbessern, 
