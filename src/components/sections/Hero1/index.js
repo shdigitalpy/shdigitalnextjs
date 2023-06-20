@@ -26,8 +26,16 @@ const Hero = () => {
                 </div>
                 <h1 className="title font-semibold">SEO Agentur: Konstante Sichtbarkeit im Web</h1>
                 <p className="desc">
-                    Unsere Performance SEO-Pro-Methode® unterstützt Unternehmen aus den Bereichen Software, Industrie sowie E-Commerce / B2C dabei, online sichtbar zu werden, insbesondere bei komplexen und erklärungsbedürftigen Angeboten. 
-                    Durch eine effektive Kombination aus SEO-Strategien und gezielten Werbeanzeigen generieren wir für Ihr Unternehmen mehr qualifizierte Besucher auf Ihrer Webseite, füllen dadurch Ihre Sales-Pipeline und verbessern die Conversion Rate.
+                    Unser Ansatz, die Performance SEO-Pro-Methode®, ist speziell darauf ausgerichtet, 
+                    Unternehmen in den Bereichen Software, Industrie und E-Commerce dabei zu unterstützen, 
+                    die Sichtbarkeit im Online-Bereich signifikant zu steigern. 
+                    Insbesondere bei komplexen und erklärungsbedürftigen Angeboten 
+                    setzen wir auf eine effektive Kombination aus SEO-Strategien und 
+                    gezielten Werbeanzeigen. Durch diese Maßnahmen generieren wir 
+                    für Ihr Unternehmen eine höhere Anzahl qualifizierter Besucher 
+                    auf Ihrer Webseite. Dies wiederum trägt dazu bei, 
+                    Ihre Sales-Pipeline zu füllen und die Conversion Rate zu verbessern, 
+                    um letztendlich Ihren Geschäftserfolg zu maximieren.
 
 
 
