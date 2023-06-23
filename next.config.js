@@ -134,6 +134,12 @@ const nextConfig = {
         permanent: true,
       },
 
+      {
+        source: '/neues-datenschutzgesetz-schweiz-webseite',
+        destination: '/resources/neues-datenschutzgesetz-schweiz-webseite',
+        permanent: true,
+      },
+
           
 
     ]
