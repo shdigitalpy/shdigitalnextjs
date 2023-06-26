@@ -128,11 +128,7 @@ const nextConfig = {
         permanent: true,
       },
 
-      {
-        source: '/seo-tools/serp-overlap-tool',
-        destination: '/seo/seo-tools',
-        permanent: true,
-      },
+      
 
       {
         source: '/neues-datenschutzgesetz-schweiz-webseite',
@@ -140,7 +136,12 @@ const nextConfig = {
         permanent: true,
       },
 
-          
+      {
+        source: '/seo-tools/serp-overlap-tool',
+        destination: 'https://shdigital.herokuapp.com/seo-tools/serp-overlap-tool',
+        permanent: true,
+      },
+      
 
     ]
   },
