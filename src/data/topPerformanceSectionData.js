@@ -20,6 +20,12 @@ export default {
             title: 'Performance-SEO Pro-Methode® für B2C und Onlineshops',
             description: 'Die SEO Dienstleistung für mehr Sichtbarkeit bei bei Suchmaschinen für E-Commerce und B2C. Lassen Sie mit einem Top Suchmaschinenranking die Konkurrenz hinter sich und ziehen Sie automatisiert potentielle Käufer für Ihr Unternehmen an.'
         },
+
+         {
+            icon: scriptIcon,
+            title: 'Google Ads für sämtliche Branchen',
+            description: 'Unsere Agentur bietet massgeschneiderte Google Ads-Kampagnen für Unternehmen. Durch eine gezielte Strategie mit KI-Werbeanzeigen können wir Ihre Werbung präzise auf Ihre Zielgruppe zuschneiden. Das Resultat: verbesserte Ergebnisse, mehr Neukundenanfragen und geringere Klickpreise für Ihre Kampagnen.'
+        },
         
        
         

@@ -15,7 +15,7 @@ export default [
     {
         name: 'Sandro Huber',
         image: SandroImage,
-        position: 'SEO Berater & Geschäftsleiter, Dipl.  Betriebswirtschafter HF, Wirtschaftsinformatiker',
+        position: 'SEO Berater, Google Ads & Geschäftsleiter, Dipl.  Betriebswirtschafter HF, Wirtschaftsinformatiker',
         social: [
             
             {
