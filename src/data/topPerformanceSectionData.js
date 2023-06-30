@@ -15,14 +15,14 @@ export default {
             description: 'Die Performance-SEO Pro-Methode® von SH Digital ist high-level SEO kombiniert mit weiteren B2B Marketingkanälen. Wir unterstützen Kunden damit, dauerhaft sichtbar zu sein sowie qualifizierte Anfragen und automatisierte Neukundentermine zu generieren.'
         },
         {
-            icon: adsIcon,
+            icon: scriptIcon,
             link: "/monatliche-seo-betreuung",
             title: 'Performance-SEO Pro-Methode® für B2C und Onlineshops',
             description: 'Die SEO Dienstleistung für mehr Sichtbarkeit bei bei Suchmaschinen für E-Commerce und B2C. Lassen Sie mit einem Top Suchmaschinenranking die Konkurrenz hinter sich und ziehen Sie automatisiert potentielle Käufer für Ihr Unternehmen an.'
         },
 
          {
-            icon: scriptIcon,
+            icon: adsIcon,
             title: 'Google Ads für sämtliche Branchen',
             description: 'Unsere Agentur bietet massgeschneiderte Google Ads-Kampagnen für Unternehmen. Durch eine gezielte Strategie mit KI-Werbeanzeigen können wir Ihre Werbung präzise auf Ihre Zielgruppe zuschneiden. Das Resultat: verbesserte Ergebnisse, mehr Neukundenanfragen und geringere Klickpreise für Ihre Kampagnen.'
         },
