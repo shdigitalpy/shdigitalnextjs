@@ -29,7 +29,7 @@ import seotoolsImage from '../assets/images/seo/seo-tools.jpg'
 import tiktokImage from '../assets/images/tiktok/tiktok-nutzerzahlen.svg'
 import videoSEOImage from '../assets/images/seo/videos-im-seo.jpg'
 import localSEOImage from '../assets/images/seo/local-tipps.jpg'
-
+import saasMImage from '../assets/images/saas-marketing-ai.jpg'
 
 export default {
 
@@ -60,6 +60,21 @@ export default {
                 update: '10.02.2023',
                 readingTime: '3min Lesedauer',
                 cta: 'Neues Datenschutzgesetz in der Schweiz',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+            },
+
+            {
+               slug: 'saas-marketing',
+                shortTitle: 'Effektives Marketing in der Software-Branche',
+                title: 'Effektives Marketing in der Software-Branche',
+                description: 'Effektives Marketing in der Software-Branche',
+                image: saasMImage,
+                imageAlt: 'Effektives Marketing in der Software-Branche',
+                date: '13.07.2023',
+                update: '13.07.2023',
+                readingTime: '1min Lesedauer',
+                cta: 'Zum Beitrag',
                 author: 'Sandro Huber',
                 authorImage: sandro,
             },
