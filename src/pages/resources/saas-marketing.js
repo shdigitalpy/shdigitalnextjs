@@ -162,7 +162,7 @@ export default function effektivesMarketing() {
                             type="p" className="desc-md mb-15 md:mb-15">
                              
                             <br /><br />
-                            <b>Dafür haben wir in den letzten Jahren die Performance-SEO Pro-Methode®</b> entwickelt:  
+                            <b>Dafür haben wir in den letzten Jahren die Performance-<a href="/seo/was-ist-seo" title="SEO">SEO</a> Pro-Methode®</b> entwickelt:  
 
                             
                          </FramerMotionAnimation>

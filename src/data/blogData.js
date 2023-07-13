@@ -39,6 +39,20 @@ export default {
         posts: [
 
             {
+               slug: 'saas-marketing',
+                shortTitle: 'Effektives Marketing in der Software-Branche',
+                title: 'Effektives Marketing in der Software-Branche',
+                description: 'Die herkömmlichen Marketing Kanäle erzielen nicht mehr die gleichen Erfolge wie noch vor einigen Jahren. ',
+                image: saasMImage,
+                imageAlt: 'Effektives Marketing in der Software-Branche',
+                date: '13.07.2023',
+                update: '13.07.2023',
+                readingTime: '1min Lesedauer',
+                cta: 'Zum Beitrag',
+                author: 'Sandro Huber',
+                authorImage: sandro,
+            },
+            {
                 slug: 'onpage-analyse',
                 shortTitle: 'Wie Lange e Dauert SEO',
                 title: 'Kostenlose Website-Analyse – individuell und ausführlich',
@@ -64,20 +78,7 @@ export default {
                 authorImage: sandro,
             },
 
-            {
-               slug: 'saas-marketing',
-                shortTitle: 'Effektives Marketing in der Software-Branche',
-                title: 'Effektives Marketing in der Software-Branche',
-                description: 'Effektives Marketing in der Software-Branche',
-                image: saasMImage,
-                imageAlt: 'Effektives Marketing in der Software-Branche',
-                date: '13.07.2023',
-                update: '13.07.2023',
-                readingTime: '1min Lesedauer',
-                cta: 'Zum Beitrag',
-                author: 'Sandro Huber',
-                authorImage: sandro,
-            },
+            
         ]
     },
 
